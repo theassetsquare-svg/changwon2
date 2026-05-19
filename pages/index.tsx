@@ -1,4 +1,5 @@
 import Head from "next/head";
+import type { GetStaticProps } from "next";
 
 const SITE_URL = "https://changwon2.pages.dev";
 const TITLE =
@@ -6,160 +7,412 @@ const TITLE =
 const DESCRIPTION =
   "창원 룰루랄라 나이트 짱구 직통 안내. 상남동 모아엔트몰 지하 3층. 매일 19:00~05:00. 부킹/룸 예약. 19세 이상 성인 영업.";
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "NightClub",
-  name: "창원 룰루랄라 나이트클럽",
-  alternateName: ["창원 룰루랄라", "룰루랄라 나이트"],
-  url: SITE_URL,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "마디미로43번길 10, 모아엔트몰 지하 3층",
-    addressLocality: "창원시 성산구",
-    addressRegion: "경상남도",
-    postalCode: "",
-    addressCountry: "KR",
-  },
-  telephone: "+82-10-3854-6887",
-  openingHours: "Mo-Su 19:00-05:00",
-  areaServed: "창원시",
-  publicAccess: false,
-  smokingAllowed: true,
-  sameAs: [
-    "https://www.instagram.com/rulruralra_nightclub_/",
-    "https://www.instagram.com/lulu__lala._.cw/",
-  ],
+// 좌표 (상남동 22-4 / 마디미로43번길 10 근처 — 정확값은 추후 보정)
+const GEO_LAT = 35.2298;
+const GEO_LNG = 128.681;
+const DATE_PUBLISHED = "2026-05-19";
+
+type Props = { dateModified: string };
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  return {
+    props: {
+      dateModified: new Date().toISOString().slice(0, 10),
+    },
+  };
 };
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "창원 룰루랄라 나이트 어디에 있나요?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "경상남도 창원시 성산구 마디미로43번길 10, 모아엔트몰 지하 3층입니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "영업시간은?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "매일 19:00 ~ 다음날 05:00 영업합니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "부킹 예약은 어떻게?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "짱구 매니저 직통 010-3854-6887로 전화 예약하시면 됩니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "입장 가능 연령?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "만 19세 이상 성인만 입장 가능합니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "면적은 얼마나?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "약 457평(1,508.46㎡)으로 창원 최대 규모입니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "룸 종류는?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "짱구 매니저에게 문의하시면 상세 안내받으실 수 있습니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "주차 가능한가요?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "모아엔트몰 건물 지하 주차장 이용 가능합니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "가까운 지하철은?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "창원 상남동 중심부로 대중교통 편리합니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "단체 예약 가능한가요?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "짱구 매니저 010-3854-6887로 사전 문의 부탁드립니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "영업 허가는 정상?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "행정안전부 영업허가번호 5670140-102-2019-00002, 2019년부터 정상 영업 중입니다.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "인스타 계정은?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "@rulruralra_nightclub_ 또는 @lulu__lala._.cw 팔로우 가능합니다.",
-      },
-    },
-  ],
-};
+function buildSchemas(dateModified: string) {
+  const orgId = SITE_URL + "/#organization";
+  const placeId = SITE_URL + "/#place";
+  const personId = SITE_URL + "/#person-janggu";
+  const articleId = SITE_URL + "/#article";
+  const websiteId = SITE_URL + "/#website";
 
-export default function Home() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["NightClub", "LocalBusiness"],
+        "@id": placeId,
+        name: "창원 룰루랄라 나이트클럽",
+        alternateName: [
+          "창원 룰루랄라",
+          "룰루랄라 나이트",
+          "창원 나이트 룰루랄라",
+          "Changwon Rululala Nightclub",
+        ],
+        description:
+          "경상남도 창원시 성산구 상남동 모아엔트몰 지하 3층에 위치한 약 457평 규모의 합법 유흥주점.",
+        url: SITE_URL + "/",
+        image: [
+          SITE_URL + "/images/og-cover.svg",
+          SITE_URL + "/images/1-exterior.svg",
+          SITE_URL + "/images/2-mainhall.svg",
+          SITE_URL + "/images/3-room.svg",
+          SITE_URL + "/images/4-dj.svg",
+          SITE_URL + "/images/5-bar.svg",
+        ],
+        telephone: "+82-10-3854-6887",
+        priceRange: "문의 (별도 표기 없음)",
+        currenciesAccepted: "KRW",
+        paymentAccepted: "Cash, Credit Card",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "마디미로43번길 10, 모아엔트몰 지하 3층",
+          addressLocality: "창원시 성산구",
+          addressRegion: "경상남도",
+          postalCode: "51495",
+          addressCountry: "KR",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: GEO_LAT,
+          longitude: GEO_LNG,
+        },
+        hasMap:
+          "https://map.naver.com/p/search/" +
+          encodeURIComponent("창원 룰루랄라 나이트클럽 마디미로43번길 10"),
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday",
+            ],
+            opens: "19:00",
+            closes: "05:00",
+          },
+        ],
+        openingHours: "Mo-Su 19:00-05:00",
+        areaServed: { "@type": "City", name: "창원시" },
+        publicAccess: false,
+        smokingAllowed: true,
+        isAccessibleForFree: false,
+        slogan: "상남동 한복판, 모아엔트몰 지하 3층 — 매니저 짱구 직통 010-3854-6887",
+        foundingDate: "2019-11-13",
+        identifier: {
+          "@type": "PropertyValue",
+          propertyID: "영업허가번호",
+          value: "5670140-102-2019-00002",
+        },
+        employee: { "@id": personId },
+        parentOrganization: { "@id": orgId },
+        sameAs: [
+          "https://www.instagram.com/rulruralra_nightclub_/",
+          "https://www.instagram.com/lulu__lala._.cw/",
+        ],
+      },
+      {
+        "@type": "Organization",
+        "@id": orgId,
+        name: "창원 룰루랄라 나이트클럽",
+        url: SITE_URL + "/",
+        logo: SITE_URL + "/images/og-cover.svg",
+        contactPoint: [
+          {
+            "@type": "ContactPoint",
+            telephone: "+82-10-3854-6887",
+            contactType: "reservations",
+            availableLanguage: ["ko"],
+            areaServed: "KR",
+          },
+        ],
+        sameAs: [
+          "https://www.instagram.com/rulruralra_nightclub_/",
+          "https://www.instagram.com/lulu__lala._.cw/",
+        ],
+      },
+      {
+        "@type": "Person",
+        "@id": personId,
+        name: "짱구",
+        jobTitle: "매니저",
+        telephone: "+82-10-3854-6887",
+        worksFor: { "@id": orgId },
+        knowsAbout: [
+          "창원 룰루랄라 나이트",
+          "상남동 나이트",
+          "부킹",
+          "룸 예약",
+          "단체 예약",
+        ],
+        url: SITE_URL + "/",
+      },
+      {
+        "@type": "WebSite",
+        "@id": websiteId,
+        url: SITE_URL + "/",
+        name: "창원 룰루랄라 나이트클럽 공식 안내",
+        inLanguage: "ko-KR",
+        publisher: { "@id": orgId },
+        potentialAction: {
+          "@type": "SearchAction",
+          target: SITE_URL + "/?q={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "홈",
+            item: SITE_URL + "/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "창원 나이트",
+            item: SITE_URL + "/",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "창원 룰루랄라 나이트 짱구",
+            item: SITE_URL + "/",
+          },
+        ],
+      },
+      {
+        "@type": "Article",
+        "@id": articleId,
+        headline: TITLE,
+        description: DESCRIPTION,
+        inLanguage: "ko-KR",
+        url: SITE_URL + "/",
+        mainEntityOfPage: SITE_URL + "/",
+        image: SITE_URL + "/images/og-cover.svg",
+        datePublished: DATE_PUBLISHED,
+        dateModified,
+        author: { "@id": personId },
+        publisher: { "@id": orgId },
+        about: { "@id": placeId },
+        keywords:
+          "창원 룰루랄라 나이트, 짱구, 상남동 나이트, 마디미로43번길, 모아엔트몰, 창원 나이트클럽",
+        articleSection: "창원 나이트",
+      },
+      {
+        "@type": "HowTo",
+        name: "창원 룰루랄라 나이트 부킹·룸 예약 방법",
+        description:
+          "창원 룰루랄라 나이트 매니저 짱구를 통해 부킹과 룸을 예약하는 단계별 가이드입니다.",
+        totalTime: "PT2M",
+        supply: [],
+        tool: [{ "@type": "HowToTool", name: "휴대전화" }],
+        step: [
+          {
+            "@type": "HowToStep",
+            position: 1,
+            name: "짱구 직통 전화",
+            text: "010-3854-6887로 전화합니다. 카톡보다 전화가 가장 빠릅니다.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 2,
+            name: "인원·연령대·분위기 전달",
+            text: "방문 인원, 연령대, 원하는 분위기(조용한 룸 / 메인 플로어 / DJ 부스 근처)를 미리 알려줍니다.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 3,
+            name: "방문일·시간 확정",
+            text: "방문 날짜와 도착 예정 시간을 알려 자리를 잡습니다. 매일 19:00~05:00 영업.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 4,
+            name: "신분증 지참 후 방문",
+            text: "모아엔트몰 지하 3층 입구에서 신분증을 확인 후 입장합니다. 만 19세 이상 성인만 입장 가능.",
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "창원 룰루랄라 나이트 어디에 있나요?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "경상남도 창원시 성산구 마디미로43번길 10, 모아엔트몰 지하 3층입니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "영업시간은?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "매일 19:00 ~ 다음날 05:00 영업합니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "부킹 예약은 어떻게?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "짱구 매니저 직통 010-3854-6887로 전화 예약하시면 됩니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "입장 가능 연령?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "만 19세 이상 성인만 입장 가능합니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "면적은 얼마나?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "약 457평(1,508.46㎡)으로 창원 최대 규모입니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "룸 종류는?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "짱구 매니저에게 문의하시면 상세 안내받으실 수 있습니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "주차 가능한가요?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "모아엔트몰 건물 지하 주차장 이용 가능합니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "가까운 지하철은?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "창원 상남동 중심부로 대중교통 편리합니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "단체 예약 가능한가요?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "짱구 매니저 010-3854-6887로 사전 문의 부탁드립니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "영업 허가는 정상?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "행정안전부 영업허가번호 5670140-102-2019-00002, 2019년부터 정상 영업 중입니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "인스타 계정은?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "@rulruralra_nightclub_ 또는 @lulu__lala._.cw 팔로우 가능합니다.",
+            },
+          },
+        ],
+      },
+    ],
+  };
+}
+
+export default function Home({ dateModified }: Props) {
+  const schemas = buildSchemas(dateModified);
+  const ogImage = SITE_URL + "/images/og-cover.svg";
+
   return (
     <>
       <Head>
         <title>{TITLE}</title>
         <meta name="description" content={DESCRIPTION} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <meta
+          name="googlebot"
+          content="index, follow, max-image-preview:large, max-snippet:-1"
+        />
         <meta name="rating" content="adult" />
+        <meta name="author" content="짱구 매니저 · 창원 룰루랄라 나이트클럽" />
+        <meta name="publisher" content="창원 룰루랄라 나이트클럽" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="theme-color" content="#0b0410" />
         <meta
           name="keywords"
-          content="창원 룰루랄라 나이트, 창원 룰루랄라, 룰루랄라 나이트, 짱구, 창원 나이트, 상남동 나이트, 마디미로43번길, 모아엔트몰"
+          content="창원 룰루랄라 나이트, 창원 룰루랄라, 룰루랄라 나이트, 짱구, 창원 나이트, 상남동 나이트, 마디미로43번길, 모아엔트몰, 창원 나이트클럽, 창원 부킹, 상남동 부킹, 창원 나이트 추천"
         />
+
+        {/* 지역 SEO (네이버/구글 로컬) */}
+        <meta name="geo.region" content="KR-48" />
+        <meta name="geo.placename" content="경상남도 창원시 성산구 상남동" />
+        <meta name="geo.position" content={`${GEO_LAT};${GEO_LNG}`} />
+        <meta name="ICBM" content={`${GEO_LAT}, ${GEO_LNG}`} />
+
         <link rel="canonical" href={SITE_URL + "/"} />
+        <link rel="alternate" hrefLang="ko" href={SITE_URL + "/"} />
+        <link rel="alternate" hrefLang="x-default" href={SITE_URL + "/"} />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="창원 룰루랄라 나이트 RSS"
+          href={SITE_URL + "/feed.xml"}
+        />
         <link rel="icon" href="/favicon.ico" />
 
+        {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:url" content={SITE_URL + "/"} />
         <meta property="og:locale" content="ko_KR" />
         <meta property="og:site_name" content="창원 룰루랄라 나이트클럽" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:secure_url" content={ogImage} />
+        <meta property="og:image:type" content="image/svg+xml" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="창원 룰루랄라 나이트 짱구 - 상남동 모아엔트몰 지하 3층"
+        />
 
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        <meta name="twitter:image" content={ogImage} />
+        <meta
+          name="twitter:image:alt"
+          content="창원 룰루랄라 나이트 짱구 - 상남동 모아엔트몰 지하 3층"
         />
+
+        {/* AI 봇 명시 (HTML 레벨, robots.txt와 이중화) */}
+        <meta name="GPTBot" content="index, follow" />
+        <meta name="ClaudeBot" content="index, follow" />
+        <meta name="PerplexityBot" content="index, follow" />
+        <meta name="Google-Extended" content="index, follow" />
+        <meta name="Yeti" content="index, follow" />
+
+        {/* JSON-LD Schema 8종 풀세트 */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
         />
       </Head>
 
@@ -171,10 +424,10 @@ export default function Home() {
             (마디미로43번길)
           </h1>
           <p className="lead">
-            창원에서 진짜 놀 만한 데를 찾고 계신 분께. 상남동 한복판,
-            모아엔트몰 지하 3층에 있는 창원 룰루랄라 나이트를 다녀온 솔직한
-            후기를 한 페이지에 정리했습니다. 매니저 짱구 직통 번호는 글
-            마지막에 다시 한 번 적어두었으니 끝까지 봐주세요.
+            <strong>창원 룰루랄라 나이트</strong>는 상남동 모아엔트몰 지하 3층에
+            자리한 약 457평 규모의 합법 유흥주점입니다. 매니저{" "}
+            <strong>짱구 직통 010-3854-6887</strong>로 부킹·룸 예약을 받으며,
+            매일 19:00~05:00 영업합니다. 만 19세 이상 성인 입장.
           </p>
 
           <div className="cta">
@@ -208,14 +461,30 @@ export default function Home() {
               <dd>5670140-102-2019-00002 (행정안전부)</dd>
               <dt>연령</dt>
               <dd>만 19세 이상 성인 입장</dd>
+              <dt>업데이트</dt>
+              <dd>{dateModified}</dd>
             </dl>
           </div>
         </div>
       </header>
 
       <main className="wrap">
+        <nav aria-label="Breadcrumb" className="breadcrumb">
+          <ol>
+            <li>
+              <a href={SITE_URL + "/"}>홈</a>
+            </li>
+            <li aria-current="page">창원 룰루랄라 나이트 짱구</li>
+          </ol>
+        </nav>
+
         <section>
           <h2>위치 - 창원 상남동 한복판</h2>
+          <p className="capsule">
+            <strong>직답:</strong> 창원 룰루랄라 나이트는 경상남도 창원시
+            성산구 마디미로43번길 10(상남동 22-4), 모아엔트몰 지하 3층에
+            있습니다. 창원시청에서 차로 약 5분 거리입니다.
+          </p>
           <p>
             창원 룰루랄라 나이트 주소는 경상남도 창원시 성산구 마디미로43번길
             10이고, 지번 주소로는 상남동 22-4입니다. 모아엔트몰 건물 지하
@@ -275,6 +544,11 @@ export default function Home() {
 
         <section>
           <h2>매장 규모 - 약 457평, 창원 최대 규모</h2>
+          <p className="capsule">
+            <strong>직답:</strong> 창원 룰루랄라 나이트 매장 면적은
+            457.1평(1,508.46㎡)으로 창원 시내 나이트클럽 중 가장 큰 축에
+            속하며, 천장이 높아 사운드가 묵직하게 떨어집니다.
+          </p>
           <p>
             창원 룰루랄라 나이트의 매장 면적은 457.1평(1,508.46㎡)으로, 창원
             시내 나이트클럽 중에서도 가장 큰 축에 듭니다. 메인 홀이 워낙 넓어서
@@ -287,6 +561,11 @@ export default function Home() {
 
         <section>
           <h2>영업시간 - 매일 저녁 7시부터 새벽 5시까지</h2>
+          <p className="capsule">
+            <strong>직답:</strong> 창원 룰루랄라 나이트는 매일 19:00 ~ 다음날
+            05:00 영업하며 휴무일이 없습니다. 영업허가번호
+            5670140-102-2019-00002로 정식 등록된 합법 영업장입니다.
+          </p>
           <p>
             창원 룰루랄라 나이트는 매일 19:00부터 다음날 05:00까지 영업합니다.
             휴무일 따로 없고, 명절 연휴에도 정상 영업합니다. 영업허가번호
@@ -299,6 +578,11 @@ export default function Home() {
 
         <section>
           <h2>매니저 짱구 - 직통 010-3854-6887</h2>
+          <p className="capsule">
+            <strong>직답:</strong> 창원 룰루랄라 나이트의 부킹·룸 예약은 매니저
+            짱구 직통 010-3854-6887로 전화하면 가장 빠르게 처리됩니다.
+            카톡보다 전화가 우선입니다.
+          </p>
           <p>
             창원 룰루랄라 나이트에서 가장 많이 찾는 매니저가 바로 짱구입니다.
             손님 한 명 한 명 챙기는 스타일이라, 처음 오시는 분도 어색하지 않게
@@ -312,6 +596,11 @@ export default function Home() {
 
         <section>
           <h2>분위기와 음악</h2>
+          <p className="capsule">
+            <strong>직답:</strong> 최신 EDM, K-팝, 힙합을 그날 분위기에 맞춰
+            믹스하며, LED 무빙 헤드와 레이저 조명으로 사진·영상이 잘 받는
+            플로어입니다.
+          </p>
           <p>
             창원 룰루랄라 나이트는 최신 EDM, K-팝, 힙합을 그날 분위기에 맞춰
             믹스합니다. DJ 부스가 메인 홀을 정면으로 마주보고 있어서 비트
@@ -325,6 +614,11 @@ export default function Home() {
 
         <section>
           <h2>부킹과 룸 안내</h2>
+          <p className="capsule">
+            <strong>직답:</strong> 부킹은 짱구 매니저 직통 010-3854-6887 라인이
+            가장 빠르며, 8명 이상 단체는 사전 예약 필수입니다. 콘셉트 세팅도
+            가능합니다.
+          </p>
           <p>
             창원 룰루랄라 나이트의 부킹은 짱구 매니저 라인이 가장 빠르고
             정확합니다. 룸 종류와 위치는 인원·연령대·콘셉트에 따라 달라지니,
@@ -333,10 +627,35 @@ export default function Home() {
             예약이 사실상 필수이고, 생일·송별·모임 콘셉트에 맞춘 자리 세팅도
             미리 부탁하실 수 있습니다.
           </p>
+
+          <h3>부킹·룸 예약 4단계 (HowTo)</h3>
+          <ol className="howto">
+            <li>
+              <strong>1. 짱구 직통 전화</strong> — 010-3854-6887로 전화. 카톡보다
+              전화가 가장 빠릅니다.
+            </li>
+            <li>
+              <strong>2. 인원·연령대·분위기 전달</strong> — 인원, 연령대, 원하는
+              분위기(룸/메인/DJ 근처)를 미리 알려주세요.
+            </li>
+            <li>
+              <strong>3. 방문일·시간 확정</strong> — 방문 날짜와 도착 예정
+              시간으로 자리를 확정합니다.
+            </li>
+            <li>
+              <strong>4. 신분증 지참 후 방문</strong> — 모아엔트몰 지하 3층
+              입구에서 신분증 확인 후 입장. 만 19세 이상.
+            </li>
+          </ol>
         </section>
 
         <section>
           <h2>자리 추천</h2>
+          <p className="capsule">
+            <strong>직답:</strong> 처음이면 사이드 룸, 진하게 놀고 싶으면 DJ
+            부스 근처, 대화 위주면 안쪽 프라이빗 룸이 베스트. 짱구
+            010-3854-6887로 미리 잡아두세요.
+          </p>
           <p>
             처음 오시는 분은 메인 플로어가 잘 보이는 사이드 쪽 룸을 추천합니다.
             분위기 다 보면서 천천히 적응할 수 있고, 부킹 흐름도 자연스럽게
@@ -351,6 +670,8 @@ export default function Home() {
             <span className="tag">#룰루랄라나이트</span>
             <span className="tag">#짱구매니저</span>
             <span className="tag">#모아엔트몰</span>
+            <span className="tag">#창원나이트추천</span>
+            <span className="tag">#상남동부킹</span>
           </p>
         </section>
 
@@ -475,7 +796,7 @@ export default function Home() {
           </p>
           <p>
             본 페이지는 만 19세 이상 성인을 대상으로 하는 합법 유흥주점 안내
-            페이지입니다.
+            페이지입니다. 최종 업데이트: {dateModified}.
           </p>
         </footer>
       </main>

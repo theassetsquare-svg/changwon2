@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="창원 룰루랄라 나이트 짱구 - 상남동 모아엔트몰 지하 3층">
+  <defs>
+    <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#190b25"/>
+      <stop offset="1" stop-color="#0b0410"/>
+    </linearGradient>
+    <linearGradient id="ogPink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff2ea6"/>
+      <stop offset="1" stop-color="#ff77c8"/>
+    </linearGradient>
+    <radialGradient id="ogGlow1" cx="0.2" cy="0" r="0.7">
+      <stop offset="0" stop-color="#ff2ea6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff2ea6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ogGlow2" cx="0.85" cy="1" r="0.7">
+      <stop offset="0" stop-color="#7c4dff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#7c4dff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ogGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect width="1200" height="630" fill="url(#ogGlow1)"/>
+  <rect width="1200" height="630" fill="url(#ogGlow2)"/>
+
+  <!-- top eyebrow -->
+  <g>
+    <rect x="80" y="70" width="280" height="36" rx="18" fill="none" stroke="#ffd166" stroke-width="2"/>
+    <text x="220" y="95" text-anchor="middle" fill="#ffd166" font-family="Arial, sans-serif" font-size="14" letter-spacing="6">CHANGWON · 상남동</text>
+  </g>
+
+  <!-- big title -->
+  <g filter="url(#ogGlow)">
+    <text x="80" y="220" fill="url(#ogPink)" font-family="'Noto Sans KR', Arial Black, sans-serif" font-size="76" font-weight="900" letter-spacing="-2">창원 룰루랄라 나이트</text>
+  </g>
+  <text x="80" y="290" fill="#f7f3ff" font-family="'Noto Sans KR', Arial, sans-serif" font-size="44" font-weight="700">매니저 짱구 · 솔직 후기</text>
+
+  <!-- info card -->
+  <rect x="80" y="340" width="1040" height="170" rx="20" fill="#15081e" stroke="#3a1f54" stroke-width="2"/>
+
+  <g font-family="'Noto Sans KR', Arial, sans-serif">
+    <text x="110" y="385" fill="#b9a8d3" font-size="18" letter-spacing="2">위치</text>
+    <text x="110" y="418" fill="#f7f3ff" font-size="22" font-weight="700">마디미로43번길 10, 모아엔트몰 지하 3층</text>
+    <text x="110" y="445" fill="#b9a8d3" font-size="16">경남 창원시 성산구 상남동 22-4</text>
+
+    <text x="710" y="385" fill="#b9a8d3" font-size="18" letter-spacing="2">영업</text>
+    <text x="710" y="418" fill="#f7f3ff" font-size="22" font-weight="700">매일 19:00 ~ 05:00</text>
+    <text x="710" y="445" fill="#b9a8d3" font-size="16">457평 · 19세 이상 성인</text>
+
+    <text x="110" y="486" fill="#ffd166" font-size="20" font-weight="900">📞 짱구 직통 010-3854-6887</text>
+  </g>
+
+  <!-- bottom bar -->
+  <rect x="0" y="560" width="1200" height="70" fill="#0e0617"/>
+  <text x="80" y="603" fill="#f7f3ff" font-family="'Noto Sans KR', Arial, sans-serif" font-size="20" font-weight="700">changwon2.pages.dev</text>
+  <text x="1120" y="603" text-anchor="end" fill="#b9a8d3" font-family="Arial, sans-serif" font-size="14" letter-spacing="4">RULULALA · NIGHTCLUB</text>
+</svg>

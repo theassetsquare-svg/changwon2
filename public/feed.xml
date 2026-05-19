@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>창원 룰루랄라 나이트클럽 - 짱구 매니저 공식 안내</title>
+    <link>https://changwon2.pages.dev/</link>
+    <description>창원 상남동 모아엔트몰 지하 3층, 창원 룰루랄라 나이트클럽 공식 안내. 매니저 짱구 직통 010-3854-6887. 매일 19:00~05:00 영업, 19세 이상 성인 입장.</description>
+    <language>ko-KR</language>
+    <copyright>© 2026 창원 룰루랄라 나이트클럽</copyright>
+    <managingEditor>noreply@changwon2.pages.dev (창원 룰루랄라 나이트)</managingEditor>
+    <webMaster>noreply@changwon2.pages.dev (창원 룰루랄라 나이트)</webMaster>
+    <pubDate>Tue, 19 May 2026 00:00:00 +0900</pubDate>
+    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0900</lastBuildDate>
+    <generator>Cloudflare Pages / Next.js</generator>
+    <atom:link href="https://changwon2.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://changwon2.pages.dev/images/og-cover.svg</url>
+      <title>창원 룰루랄라 나이트클럽</title>
+      <link>https://changwon2.pages.dev/</link>
+    </image>
+    <item>
+      <title>창원 룰루랄라 나이트 짱구 솔직 후기 - 상남동 No.1 (마디미로43번길)</title>
+      <link>https://changwon2.pages.dev/</link>
+      <guid isPermaLink="true">https://changwon2.pages.dev/</guid>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0900</pubDate>
+      <dc:creator>짱구 매니저</dc:creator>
+      <category>창원 나이트</category>
+      <category>상남동 나이트</category>
+      <category>룰루랄라 나이트</category>
+      <description><![CDATA[창원 룰루랄라 나이트클럽은 경상남도 창원시 성산구 마디미로43번길 10, 모아엔트몰 지하 3층에 위치한 약 457평 규모의 대형 나이트클럽입니다. 매일 19:00~05:00 영업하며, 매니저 짱구 직통 010-3854-6887로 부킹/룸 예약을 받습니다. 만 19세 이상 성인만 입장 가능하며, 영업허가번호 5670140-102-2019-00002로 행정안전부에 정식 등록된 합법 영업장입니다.]]></description>
+    </item>
+  </channel>
+</rss>
