@@ -226,25 +226,50 @@ export default function Home() {
             분들도 동선이 단순합니다.
           </p>
 
-          <div className="gallery" aria-hidden="false">
-            <div className="ph wide" role="img" aria-label="창원 룰루랄라 나이트 모아엔트몰 외관">
-              사진 1 · 외관 (모아엔트몰)
-            </div>
-            <div className="ph" role="img" aria-label="창원 룰루랄라 나이트 메인홀 457평">
-              사진 2 · 메인홀 457평
-            </div>
-            <div className="ph" role="img" aria-label="창원 룰루랄라 나이트 프라이빗 룸">
-              사진 3 · 프라이빗 룸
-            </div>
-            <div className="ph" role="img" aria-label="창원 룰루랄라 나이트 DJ 부스">
-              사진 4 · DJ 부스
-            </div>
-            <div className="ph" role="img" aria-label="창원 룰루랄라 나이트 바 카운터">
-              사진 5 · 바 카운터
-            </div>
+          <div className="gallery">
+            <img
+              className="ph wide"
+              src="/images/1-exterior.svg"
+              alt="창원 룰루랄라 나이트 모아엔트몰 외관"
+              width={1600}
+              height={900}
+              loading="lazy"
+            />
+            <img
+              className="ph"
+              src="/images/2-mainhall.svg"
+              alt="창원 룰루랄라 나이트 메인홀 457평"
+              width={1200}
+              height={900}
+              loading="lazy"
+            />
+            <img
+              className="ph"
+              src="/images/3-room.svg"
+              alt="창원 룰루랄라 나이트 프라이빗 룸"
+              width={1200}
+              height={900}
+              loading="lazy"
+            />
+            <img
+              className="ph"
+              src="/images/4-dj.svg"
+              alt="창원 룰루랄라 나이트 DJ 부스"
+              width={1200}
+              height={900}
+              loading="lazy"
+            />
+            <img
+              className="ph"
+              src="/images/5-bar.svg"
+              alt="창원 룰루랄라 나이트 바 카운터"
+              width={1200}
+              height={900}
+              loading="lazy"
+            />
           </div>
           <p style={{ fontSize: 12, color: "var(--muted)", marginTop: 4 }}>
-            ※ 실제 매장 사진은 추후 교체 예정.
+            ※ 일러스트형 플레이스홀더. 실제 매장 사진은 받는 대로 교체 예정.
           </p>
         </section>
 

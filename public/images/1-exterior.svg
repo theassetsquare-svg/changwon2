@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="창원 룰루랄라 나이트 모아엔트몰 외관">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a0a26"/>
+      <stop offset="1" stop-color="#0b0410"/>
+    </linearGradient>
+    <linearGradient id="neonPink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff2ea6"/>
+      <stop offset="1" stop-color="#ff77c8"/>
+    </linearGradient>
+    <linearGradient id="neonViolet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c4dff"/>
+      <stop offset="1" stop-color="#4a1fbf"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd166" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- ground glow -->
+  <ellipse cx="800" cy="900" rx="900" ry="220" fill="url(#neonViolet)" opacity="0.25"/>
+
+  <!-- building -->
+  <rect x="180" y="200" width="1240" height="560" fill="#190b25" stroke="#2a153e" stroke-width="2"/>
+  <!-- floors -->
+  <g fill="#0e0617">
+    <rect x="220" y="240" width="1160" height="120"/>
+    <rect x="220" y="400" width="1160" height="120"/>
+    <rect x="220" y="560" width="1160" height="120"/>
+  </g>
+  <!-- windows -->
+  <g fill="#ffd166" opacity="0.55">
+    <rect x="260" y="260" width="50" height="80"/>
+    <rect x="340" y="260" width="50" height="80"/>
+    <rect x="500" y="260" width="50" height="80"/>
+    <rect x="660" y="260" width="50" height="80"/>
+    <rect x="820" y="260" width="50" height="80"/>
+    <rect x="980" y="260" width="50" height="80"/>
+    <rect x="1140" y="260" width="50" height="80"/>
+    <rect x="1300" y="260" width="50" height="80"/>
+  </g>
+  <g fill="#7c4dff" opacity="0.4">
+    <rect x="260" y="420" width="50" height="80"/>
+    <rect x="420" y="420" width="50" height="80"/>
+    <rect x="580" y="420" width="50" height="80"/>
+    <rect x="740" y="420" width="50" height="80"/>
+    <rect x="900" y="420" width="50" height="80"/>
+    <rect x="1060" y="420" width="50" height="80"/>
+    <rect x="1220" y="420" width="50" height="80"/>
+    <rect x="1300" y="420" width="50" height="80"/>
+  </g>
+
+  <!-- moa ent mall sign -->
+  <g filter="url(#glow)">
+    <rect x="500" y="120" width="600" height="80" rx="10" fill="#0e0617" stroke="url(#neonPink)" stroke-width="3"/>
+    <text x="800" y="173" text-anchor="middle" fill="#ff77c8" font-family="Arial Black, Helvetica, sans-serif" font-size="44" font-weight="900" letter-spacing="6">MOA ENT MALL</text>
+  </g>
+
+  <!-- entrance (B3) -->
+  <g>
+    <rect x="700" y="640" width="200" height="120" fill="#0b0410" stroke="url(#neonPink)" stroke-width="2"/>
+    <text x="800" y="710" text-anchor="middle" fill="#ff2ea6" font-family="Arial Black, Helvetica, sans-serif" font-size="42" font-weight="900">B3</text>
+    <text x="800" y="745" text-anchor="middle" fill="#b9a8d3" font-family="Arial, sans-serif" font-size="14" letter-spacing="3">ENTRANCE</text>
+  </g>
+
+  <!-- big neon sign on roof -->
+  <g filter="url(#glow)">
+    <text x="800" y="80" text-anchor="middle" fill="url(#neonPink)" font-family="Arial Black, Helvetica, sans-serif" font-size="58" font-weight="900" letter-spacing="8">RULULALA</text>
+  </g>
+  <text x="800" y="108" text-anchor="middle" fill="#ffd166" font-family="Arial, sans-serif" font-size="14" letter-spacing="10" opacity="0.9">CHANGWON · SANGNAM-DONG</text>
+
+  <!-- street lamps -->
+  <circle cx="220" cy="780" r="120" fill="url(#lamp)" opacity="0.7"/>
+  <circle cx="1380" cy="780" r="120" fill="url(#lamp)" opacity="0.7"/>
+
+  <!-- pedestrians silhouette -->
+  <g fill="#000" opacity="0.55">
+    <ellipse cx="350" cy="820" rx="14" ry="6"/>
+    <rect x="343" y="770" width="14" height="50" rx="4"/>
+    <circle cx="350" cy="760" r="9"/>
+    <ellipse cx="1250" cy="820" rx="14" ry="6"/>
+    <rect x="1243" y="770" width="14" height="50" rx="4"/>
+    <circle cx="1250" cy="760" r="9"/>
+    <ellipse cx="1290" cy="822" rx="14" ry="6"/>
+    <rect x="1283" y="772" width="14" height="48" rx="4"/>
+    <circle cx="1290" cy="762" r="9"/>
+  </g>
+
+  <!-- arrow strip on bottom -->
+  <rect x="0" y="860" width="1600" height="40" fill="url(#neonViolet)" opacity="0.3"/>
+  <text x="800" y="888" text-anchor="middle" fill="#ffd166" font-family="Arial, sans-serif" font-size="14" letter-spacing="6">EXTERIOR · 사진 1 · 실제 사진은 추후 교체</text>
+</svg>

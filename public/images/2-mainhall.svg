@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="창원 룰루랄라 나이트 메인홀 457평">
+  <defs>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a0a26"/>
+      <stop offset="1" stop-color="#0b0410"/>
+    </linearGradient>
+    <radialGradient id="spot1" cx="0.5" cy="0" r="0.7">
+      <stop offset="0" stop-color="#ff2ea6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff2ea6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spot2" cx="0.5" cy="0" r="0.7">
+      <stop offset="0" stop-color="#7c4dff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c4dff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spot3" cx="0.5" cy="0" r="0.7">
+      <stop offset="0" stop-color="#ffd166" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glowM" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#floor)"/>
+
+  <!-- ceiling beams in perspective -->
+  <g stroke="#3a1f54" stroke-width="2" fill="none">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="100" y1="60" x2="200" y2="120"/>
+    <line x1="300" y1="60" x2="380" y2="120"/>
+    <line x1="500" y1="60" x2="560" y2="120"/>
+    <line x1="700" y1="60" x2="740" y2="120"/>
+    <line x1="900" y1="60" x2="920" y2="120"/>
+    <line x1="1100" y1="60" x2="1100" y2="120"/>
+  </g>
+
+  <!-- truss lights (LED moving heads) -->
+  <g fill="#0e0617" stroke="#2a153e">
+    <rect x="180" y="100" width="40" height="22" rx="4"/>
+    <rect x="380" y="100" width="40" height="22" rx="4"/>
+    <rect x="580" y="100" width="40" height="22" rx="4"/>
+    <rect x="780" y="100" width="40" height="22" rx="4"/>
+    <rect x="980" y="100" width="40" height="22" rx="4"/>
+  </g>
+
+  <!-- spotlights cones -->
+  <path d="M200,122 L80,560 L320,560 Z" fill="url(#spot1)"/>
+  <path d="M400,122 L320,560 L520,560 Z" fill="url(#spot3)"/>
+  <path d="M600,122 L520,560 L720,560 Z" fill="url(#spot2)"/>
+  <path d="M800,122 L720,560 L920,560 Z" fill="url(#spot1)"/>
+  <path d="M1000,122 L920,560 L1140,560 Z" fill="url(#spot2)"/>
+
+  <!-- DJ booth back -->
+  <g>
+    <rect x="450" y="380" width="300" height="120" fill="#15081e" stroke="#3a1f54"/>
+    <rect x="470" y="410" width="260" height="60" fill="#1a0a26"/>
+    <text x="600" y="445" text-anchor="middle" fill="#ffd166" font-family="Arial Black, sans-serif" font-size="18" letter-spacing="4">DJ BOOTH</text>
+    <!-- equalizer bars -->
+    <g fill="#ff2ea6">
+      <rect x="480" y="445" width="6" height="18"/>
+      <rect x="492" y="430" width="6" height="33"/>
+      <rect x="504" y="420" width="6" height="43"/>
+      <rect x="516" y="438" width="6" height="25"/>
+      <rect x="528" y="425" width="6" height="38"/>
+      <rect x="540" y="442" width="6" height="21"/>
+      <rect x="552" y="430" width="6" height="33"/>
+      <rect x="564" y="418" width="6" height="45"/>
+      <rect x="576" y="432" width="6" height="31"/>
+    </g>
+  </g>
+
+  <!-- main floor perspective -->
+  <polygon points="40,900 1160,900 940,560 260,560" fill="#150825" stroke="#2a153e"/>
+
+  <!-- floor grid -->
+  <g stroke="#2a153e" stroke-width="1" opacity="0.6">
+    <line x1="260" y1="560" x2="40" y2="900"/>
+    <line x1="380" y1="560" x2="240" y2="900"/>
+    <line x1="500" y1="560" x2="440" y2="900"/>
+    <line x1="600" y1="560" x2="600" y2="900"/>
+    <line x1="700" y1="560" x2="760" y2="900"/>
+    <line x1="820" y1="560" x2="960" y2="900"/>
+    <line x1="940" y1="560" x2="1160" y2="900"/>
+    <line x1="260" y1="615" x2="940" y2="615"/>
+    <line x1="240" y1="685" x2="960" y2="685"/>
+    <line x1="200" y1="770" x2="1000" y2="770"/>
+  </g>
+
+  <!-- crowd silhouettes -->
+  <g fill="#000" opacity="0.7">
+    <circle cx="320" cy="640" r="10"/><rect x="312" y="650" width="16" height="34" rx="4"/>
+    <circle cx="380" cy="635" r="10"/><rect x="372" y="645" width="16" height="34" rx="4"/>
+    <circle cx="440" cy="640" r="10"/><rect x="432" y="650" width="16" height="36" rx="4"/>
+    <circle cx="500" cy="630" r="10"/><rect x="492" y="640" width="16" height="38" rx="4"/>
+    <circle cx="560" cy="640" r="10"/><rect x="552" y="650" width="16" height="36" rx="4"/>
+    <circle cx="620" cy="635" r="10"/><rect x="612" y="645" width="16" height="36" rx="4"/>
+    <circle cx="680" cy="640" r="10"/><rect x="672" y="650" width="16" height="36" rx="4"/>
+    <circle cx="740" cy="635" r="10"/><rect x="732" y="645" width="16" height="36" rx="4"/>
+    <circle cx="800" cy="640" r="10"/><rect x="792" y="650" width="16" height="34" rx="4"/>
+    <circle cx="860" cy="635" r="10"/><rect x="852" y="645" width="16" height="36" rx="4"/>
+
+    <circle cx="280" cy="720" r="12"/><rect x="270" y="732" width="20" height="42" rx="5"/>
+    <circle cx="360" cy="725" r="12"/><rect x="350" y="737" width="20" height="42" rx="5"/>
+    <circle cx="450" cy="722" r="12"/><rect x="440" y="734" width="20" height="44" rx="5"/>
+    <circle cx="540" cy="725" r="12"/><rect x="530" y="737" width="20" height="44" rx="5"/>
+    <circle cx="640" cy="722" r="12"/><rect x="630" y="734" width="20" height="44" rx="5"/>
+    <circle cx="740" cy="725" r="12"/><rect x="730" y="737" width="20" height="44" rx="5"/>
+    <circle cx="840" cy="722" r="12"/><rect x="830" y="734" width="20" height="44" rx="5"/>
+    <circle cx="930" cy="725" r="12"/><rect x="920" y="737" width="20" height="44" rx="5"/>
+
+    <circle cx="220" cy="820" r="14"/><rect x="208" y="833" width="24" height="55" rx="6"/>
+    <circle cx="350" cy="825" r="14"/><rect x="338" y="838" width="24" height="55" rx="6"/>
+    <circle cx="500" cy="822" r="14"/><rect x="488" y="835" width="24" height="56" rx="6"/>
+    <circle cx="650" cy="822" r="14"/><rect x="638" y="835" width="24" height="56" rx="6"/>
+    <circle cx="800" cy="822" r="14"/><rect x="788" y="835" width="24" height="56" rx="6"/>
+    <circle cx="970" cy="822" r="14"/><rect x="958" y="835" width="24" height="56" rx="6"/>
+  </g>
+
+  <!-- header text -->
+  <g filter="url(#glowM)">
+    <text x="600" y="50" text-anchor="middle" fill="#ff77c8" font-family="Arial Black, sans-serif" font-size="26" letter-spacing="6" font-weight="900">MAIN HALL · 457평</text>
+  </g>
+</svg>

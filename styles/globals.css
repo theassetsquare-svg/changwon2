@@ -169,22 +169,14 @@ p {
 }
 
 .gallery .ph {
+  width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
   border-radius: 12px;
   border: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  background: linear-gradient(
-      135deg,
-      rgba(255, 46, 166, 0.18),
-      rgba(124, 77, 255, 0.18)
-    ),
-    #1a0a26;
+  background: #1a0a26;
 }
 
 .gallery .ph.wide {
