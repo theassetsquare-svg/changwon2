@@ -4,40 +4,89 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://changwon2.pages.dev/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://changwon2.pages.dev/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://changwon2.pages.dev/"/>
     <image:image>
       <image:loc>https://changwon2.pages.dev/images/og-cover.svg</image:loc>
       <image:title>창원 룰루랄라 나이트 짱구 OG 커버</image:title>
-      <image:caption>창원 룰루랄라 나이트클럽 - 상남동 모아엔트몰 지하 3층</image:caption>
+      <image:caption>상남동 모아엔트몰 지하 3층 · 매일 19시~05시</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://changwon2.pages.dev/images/1-exterior.svg</image:loc>
-      <image:title>창원 룰루랄라 나이트 모아엔트몰 외관</image:title>
-      <image:caption>마디미로43번길 10, 모아엔트몰 외관</image:caption>
+      <image:title>모아엔트몰 외관</image:title>
     </image:image>
     <image:image>
       <image:loc>https://changwon2.pages.dev/images/2-mainhall.svg</image:loc>
-      <image:title>창원 룰루랄라 나이트 메인홀 457평</image:title>
-      <image:caption>약 457평 메인 홀과 DJ 부스</image:caption>
+      <image:title>457평 메인홀</image:title>
     </image:image>
     <image:image>
       <image:loc>https://changwon2.pages.dev/images/3-room.svg</image:loc>
-      <image:title>창원 룰루랄라 나이트 프라이빗 룸</image:title>
-      <image:caption>일행끼리 편한 프라이빗 룸</image:caption>
+      <image:title>프라이빗 룸</image:title>
     </image:image>
     <image:image>
       <image:loc>https://changwon2.pages.dev/images/4-dj.svg</image:loc>
-      <image:title>창원 룰루랄라 나이트 DJ 부스</image:title>
-      <image:caption>EDM/K-팝/힙합 믹스</image:caption>
+      <image:title>DJ 부스</image:title>
     </image:image>
     <image:image>
       <image:loc>https://changwon2.pages.dev/images/5-bar.svg</image:loc>
-      <image:title>창원 룰루랄라 나이트 바 카운터</image:title>
-      <image:caption>대형 바 카운터</image:caption>
+      <image:title>바 카운터</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/location/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/booking/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/rooms/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/hours/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/parking/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/access/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/vip/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/reviews/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://changwon2.pages.dev/faq/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 </urlset>

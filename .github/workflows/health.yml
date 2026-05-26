@@ -1,0 +1,19 @@
+name: Health — live site 6시간 주기
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  fetch-all:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch every page
+        run: node scripts/health-check.mjs

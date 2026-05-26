@@ -1,0 +1,40 @@
+name: Lighthouse — 모바일·PC 매일
+
+on:
+  schedule:
+    # 매일 KST 03:30 (UTC 18:30 전일)
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        preset: [desktop, mobile]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Lighthouse CI
+        run: npm i -g @lhci/cli@0.14.x
+
+      - name: Override preset (${{ matrix.preset }})
+        run: |
+          jq --arg p "${{ matrix.preset }}" '.ci.collect.settings.preset = $p' .lighthouserc.json > tmp.json
+          mv tmp.json .lighthouserc.json
+          cat .lighthouserc.json
+
+      - name: Run Lighthouse CI
+        run: lhci autorun --config=.lighthouserc.json || true
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lhci-${{ matrix.preset }}-${{ github.run_id }}
+          path: .lighthouseci
+          retention-days: 14

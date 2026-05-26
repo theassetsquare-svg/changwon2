@@ -1,0 +1,33 @@
+name: Build — Next static export + 키워드 밀도 점검
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci || npm install
+
+      - name: Build (static export)
+        run: npx next build
+
+      - name: Audit keyword density
+        run: node scripts/audit-keyword-density.mjs
+
+      - name: Upload out/
+        uses: actions/upload-artifact@v4
+        with:
+          name: out-${{ github.sha }}
+          path: out
+          retention-days: 7

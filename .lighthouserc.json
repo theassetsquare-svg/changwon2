@@ -1,0 +1,37 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "https://changwon2.pages.dev/",
+        "https://changwon2.pages.dev/location/",
+        "https://changwon2.pages.dev/booking/",
+        "https://changwon2.pages.dev/rooms/",
+        "https://changwon2.pages.dev/hours/",
+        "https://changwon2.pages.dev/parking/",
+        "https://changwon2.pages.dev/access/",
+        "https://changwon2.pages.dev/vip/",
+        "https://changwon2.pages.dev/reviews/",
+        "https://changwon2.pages.dev/faq/"
+      ],
+      "numberOfRuns": 1,
+      "settings": {
+        "preset": "desktop"
+      }
+    },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "categories:performance": ["warn", { "minScore": 0.85 }],
+        "categories:accessibility": ["error", { "minScore": 0.9 }],
+        "categories:best-practices": ["warn", { "minScore": 0.85 }],
+        "categories:seo": ["error", { "minScore": 0.95 }],
+        "uses-text-compression": "off",
+        "csp-xss": "off",
+        "uses-rel-preconnect": "off"
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
