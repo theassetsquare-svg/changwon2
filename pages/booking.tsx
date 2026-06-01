@@ -7,7 +7,7 @@ import { BIZ_PHONE, BIZ_TEL_HREF, SITE_URL } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/booking/";
-const TITLE = "부킹·룸 예약 4단계 | 짱구 직통  한 통 가이드";
+const TITLE = "부킹·룸 예약 4단계 | 짱구 직통 010-3854-6887 한 통 가이드";
 const DESCRIPTION = "전화 30초로 자리·부킹·룸을 다 잡는 법. 인원·성비·콘셉트별 매칭, 주말 골든타임 사전 콜 타이밍, 단체·생일·송별 세팅까지 정리.";
 const PUBLISHED = "2026-05-26";
 
@@ -23,7 +23,7 @@ export default function Booking({ dateModified }: { dateModified: string }) {
     totalTime: "PT2M",
     tool: [{ "@type": "HowToTool", name: "휴대전화" }],
     step: [
-      { "@type": "HowToStep", position: 1, name: "직통 콜", text: "로 전화. 카톡보다 전화가 빠릅니다." },
+      { "@type": "HowToStep", position: 1, name: "직통 콜", text: "010-3854-6887로 전화. 카톡보다 전화가 빠릅니다." },
       { "@type": "HowToStep", position: 2, name: "정보 전달", text: "인원, 성비, 연령대, 원하는 분위기(룸/메인/DJ 근처)를 한 줄로 전달." },
       { "@type": "HowToStep", position: 3, name: "시간 확정", text: "도착 예정 시각으로 자리 홀딩. 주말은 22:30 이전 도착 추천." },
       { "@type": "HowToStep", position: 4, name: "신분증 지참", text: "모아엔트몰 지하 3층 입구에서 신분증 확인 후 입장." },
@@ -65,7 +65,7 @@ export default function Booking({ dateModified }: { dateModified: string }) {
         <section>
           <h2>4단계 — 전화 30초 컷</h2>
           <ol className="howto numbered">
-            <li><span className="step-no">1</span><div><strong>직통 콜</strong><p>로 전화하세요. 카톡은 응답이 늦을 수 있어요. 한 줄 통화가 가장 빠릅니다.</p></div></li>
+            <li><span className="step-no">1</span><div><strong>직통 콜</strong><p>010-3854-6887로 전화하세요. 카톡은 응답이 늦을 수 있어요. 한 줄 통화가 가장 빠릅니다.</p></div></li>
             <li><span className="step-no">2</span><div><strong>한 줄 정보</strong><p>몇 명, 성비, 연령대, 원하는 분위기(조용한 룸/메인 플로어/DJ 부근) 한 번에 전달.</p></div></li>
             <li><span className="step-no">3</span><div><strong>시간 확정</strong><p>도착 예정 시각을 알려주시면 자리 홀딩됩니다. 주말은 22:30 이전 도착이 자리 잡기 좋아요.</p></div></li>
             <li><span className="step-no">4</span><div><strong>신분증 지참</strong><p>{`만 19세 이상 입장. 입구에서 한 번 확인 후 바로 메인 홀로 이어집니다.`}</p></div></li>
