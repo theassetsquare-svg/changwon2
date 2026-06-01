@@ -27,7 +27,7 @@ const PATH = "/";
 const TITLE =
   "창원 룰루랄라 나이트 | 짱구 직통 한 통이면 자리 끝 · 상남동 No.1";
 const DESCRIPTION =
-  "상남동 모아엔트몰 지하 3층, 457평 메인홀에서 매일 19시부터 새벽 5시. 부킹·룸·VIP는 짱구 010-3854-6887 직통이 가장 빠릅니다.";
+  "상남동 모아엔트몰 지하 3층, 457평 메인홀에서 매일 19시부터 새벽 5시. 부킹·룸·VIP는 짱구  직통이 가장 빠릅니다.";
 const PUBLISHED = "2026-05-19";
 
 export const getStaticProps: GetStaticProps<{ dateModified: string }> = async () => ({
@@ -41,7 +41,7 @@ const HOME_FAQ = [
   },
   {
     q: "예약 없이 그냥 가도 되나요?",
-    a: "평일은 워크인 가능하지만 주말 골든타임(22:30~02:00)은 짱구 010-3854-6887 사전 콜이 사실상 필수입니다.",
+    a: "평일은 워크인 가능하지만 주말 골든타임(22:30~02:00)은 짱구  사전 콜이 사실상 필수입니다.",
   },
   {
     q: "여성/남성/단체 구성에 따라 자리가 달라지나요?",
@@ -93,7 +93,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
           <p className="lead">
             상남동 모아엔트몰 지하 3층. 457평 메인홀과 프라이빗 룸, 매일{" "}
             <strong>19시부터 새벽 5시</strong>. 부킹·룸·VIP·단체까지{" "}
-            <strong>짱구 010-3854-6887</strong> 한 라인으로 정리됩니다.
+            <strong>짱구 </strong> 한 라인으로 정리됩니다.
           </p>
 
           <div className="cta">
