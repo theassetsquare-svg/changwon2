@@ -1,0 +1,35 @@
+name: GSC Monitor — 색인/순위/장애 자동 감시 + 이메일
+
+on:
+  schedule:
+    # 매일 KST 09:00 (UTC 00:00)
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      alert_always:
+        description: "문제 없어도 다이제스트 메일 보내기"
+        type: boolean
+        default: false
+
+concurrency:
+  group: gsc-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run GSC monitor (사이트맵 재제출 + 색인검사 + 순위 + 라이브 점검)
+        env:
+          # GitHub repo Settings → Secrets 에 서비스계정 JSON '내용' 전체를 GSC_SA_KEY 로 저장
+          GSC_SA_KEY: ${{ secrets.GSC_SA_KEY }}
+          # (선택) Resend API 키 — 있으면 문제 발생 시 이메일 발송
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERT_TO: theassetsquare@gmail.com
+          ALERT_ALWAYS: ${{ inputs.alert_always && '1' || '' }}
+        run: node scripts/gsc-monitor.mjs

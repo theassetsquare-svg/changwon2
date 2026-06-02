@@ -19,7 +19,12 @@ const PATHS = [
   "/llms.txt",
 ];
 
-const REQUIRE_META = ["<title>", "name=\"description\"", "rel=\"canonical\""];
+// Next.js 는 <title data-next-head=""> 형태로 렌더링하므로 정규식으로 검사.
+const REQUIRE_META = [
+  { name: "<title>", re: /<title[^>]*>[^<]+<\/title>/i },
+  { name: 'name="description"', re: /name="description"/i },
+  { name: 'rel="canonical"', re: /rel="canonical"/i },
+];
 
 let failures = 0;
 
@@ -37,7 +42,7 @@ for (const p of PATHS) {
     }
     if (p.endsWith("/")) {
       const html = await res.text();
-      const missing = REQUIRE_META.filter((m) => !html.includes(m));
+      const missing = REQUIRE_META.filter((m) => !m.re.test(html)).map((m) => m.name);
       if (missing.length) {
         console.error(`✗ ${p} -> missing ${missing.join(", ")}`);
         failures++;
