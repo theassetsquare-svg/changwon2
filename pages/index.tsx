@@ -4,8 +4,6 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
 import {
-  BIZ_PHONE,
-  BIZ_TEL_HREF,
   BIZ_ADDRESS_ROAD,
   BIZ_FLOOR,
   BIZ_HOURS,
@@ -25,9 +23,9 @@ import {
 
 const PATH = "/";
 const TITLE =
-  "창원 룰루랄라 나이트 | 짱구 직통 한 통이면 자리 끝 · 상남동 No.1";
+  "창원 룰루랄라 나이트 | 한 통이면 자리 끝 · 상남동 No.1";
 const DESCRIPTION =
-  "상남동 모아엔트몰 지하 3층, 457평 메인홀에서 매일 19시부터 새벽 5시. 부킹·룸·VIP는 짱구 010-3854-6887 직통이 가장 빠릅니다.";
+  "상남동 모아엔트몰 지하 3층, 457평 메인홀에서 매일 19시부터 새벽 5시. 부킹·룸·VIP는 매장 직통이 가장 빠릅니다.";
 const PUBLISHED = "2026-05-19";
 
 export const getStaticProps: GetStaticProps<{ dateModified: string }> = async () => ({
@@ -41,11 +39,11 @@ const HOME_FAQ = [
   },
   {
     q: "예약 없이 그냥 가도 되나요?",
-    a: "평일은 워크인 가능하지만 주말 골든타임(22:30~02:00)은 짱구 010-3854-6887 사전 콜이 사실상 필수입니다.",
+    a: "평일은 워크인 가능하지만 주말 골든타임(22:30~02:00)은 사전 콜이 사실상 필수입니다.",
   },
   {
     q: "여성/남성/단체 구성에 따라 자리가 달라지나요?",
-    a: "네. 인원·성비·연령대·콘셉트에 맞춰 자리와 부킹 라인이 매칭됩니다. 미리 짱구에게 한 통 부탁드립니다.",
+    a: "네. 인원·성비·연령대·콘셉트에 맞춰 자리와 부킹 라인이 매칭됩니다. 미리 매장에 한 통 부탁드립니다.",
   },
   {
     q: "결제는 카드 되나요?",
@@ -76,7 +74,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
         title={TITLE}
         description={DESCRIPTION}
         path={PATH}
-        ogImageAlt="창원 룰루랄라 나이트 짱구 직통 라인 - 상남동 모아엔트몰 지하 3층"
+        ogImageAlt="창원 룰루랄라 나이트 - 상남동 모아엔트몰 지하 3층"
         jsonLd={ld}
       />
 
@@ -88,18 +86,15 @@ export default function Home({ dateModified }: { dateModified: string }) {
           <h1>
             창원 룰루랄라 나이트
             <br />
-            <span className="grad">짱구 직통 한 통</span>이면 자리 끝.
+            <span className="grad">한 통</span>이면 자리 끝.
           </h1>
           <p className="lead">
             상남동 모아엔트몰 지하 3층. 457평 메인홀과 프라이빗 룸, 매일{" "}
             <strong>19시부터 새벽 5시</strong>. 부킹·룸·VIP·단체까지{" "}
-            <strong>짱구 010-3854-6887</strong> 한 라인으로 정리됩니다.
+            <strong>매장 직통</strong> 한 라인으로 정리됩니다.
           </p>
 
           <div className="cta">
-            <a className="btn btn-primary btn-lg" href={BIZ_TEL_HREF}>
-              <span aria-hidden>📞</span> 짱구 직통 {BIZ_PHONE}
-            </a>
             <a className="btn btn-ghost btn-lg" href="/booking/">
               부킹 가이드 →
             </a>
@@ -131,7 +126,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
         </nav>
 
         <section>
-          <h2>왜 짱구 라인인가</h2>
+          <h2>왜 룰루랄라 라인인가</h2>
           <p className="capsule">
             <strong>한 줄 요약:</strong> 자리·부킹·룸 매칭이 매니저 라인 하나로 끝납니다.
             평일 워크인도, 주말 골든타임도, 단체 8인 이상도 같은 번호 한 통입니다.
@@ -139,7 +134,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
           <p>
             클럽은 어떤 자리에 앉느냐가 그날 밤의 8할입니다. 메인 플로어가 잘 보이는 사이드 룸,
             DJ 부스 바로 옆 진한 자리, 일행끼리 대화하기 좋은 안쪽 — 같은 매장이라도 자리에 따라
-            완전히 다른 곳이 됩니다. 매니저 짱구는 그날 분위기·성비·온도를 읽고 자리와 부킹 동선을
+            완전히 다른 곳이 됩니다. 매니저는 그날 분위기·성비·온도를 읽고 자리와 부킹 동선을
             짭니다. 처음 오시는 분이 어색하지 않게 흐름부터 잡아주는 게 단골이 많은 이유입니다.
           </p>
         </section>
@@ -220,8 +215,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
         <section className="ps">
           <h3>마지막으로</h3>
           <p>
-            출발 전 한 통이면 자리·부킹·룸이 한 번에 정리됩니다. 짱구 매니저 직통{" "}
-            <a href={BIZ_TEL_HREF}>{BIZ_PHONE}</a>. 카톡보다 전화가 빠릅니다.
+            출발 전 한 통이면 자리·부킹·룸이 한 번에 정리됩니다.
             인스타 <a href={INSTA_1} target="_blank" rel="noopener noreferrer">@rulruralra_nightclub_</a> 에서 최근 분위기 컷도 확인 가능합니다.
           </p>
         </section>

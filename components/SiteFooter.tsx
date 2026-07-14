@@ -1,7 +1,5 @@
 import {
   PAGES,
-  BIZ_TEL_HREF,
-  BIZ_PHONE,
   BIZ_HOURS,
   BIZ_ADDRESS_ROAD,
   BIZ_FLOOR,
@@ -39,9 +37,6 @@ export default function SiteFooter({ dateModified }: Props) {
         <div>
           <div className="sitefoot-h">연결</div>
           <ul className="sitefoot-links">
-            <li>
-              <a href={BIZ_TEL_HREF}>📞 짱구 직통 {BIZ_PHONE}</a>
-            </li>
             <li>
               <a href={INSTA_1} target="_blank" rel="noopener noreferrer">
                 인스타 @rulruralra_nightclub_

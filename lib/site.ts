@@ -1,8 +1,5 @@
 export const SITE_URL = "https://changwon2.pages.dev";
 export const SITE_NAME = "창원 룰루랄라 나이트클럽";
-export const BIZ_PHONE = "010-3854-6887";
-export const BIZ_PHONE_INTL = "+82-10-3854-6887";
-export const BIZ_TEL_HREF = "tel:01038546887";
 export const BIZ_ADDRESS_ROAD = "경상남도 창원시 성산구 마디미로43번길 10";
 export const BIZ_ADDRESS_LOT = "경상남도 창원시 성산구 상남동 22-4";
 export const BIZ_FLOOR = "모아엔트몰 지하 3층";

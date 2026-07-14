@@ -3,7 +3,7 @@ import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
-import { BIZ_PHONE, BIZ_TEL_HREF, BIZ_AREA } from "@/lib/site";
+import { BIZ_AREA } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/rooms/";
@@ -84,7 +84,7 @@ export default function Rooms({ dateModified }: { dateModified: string }) {
 
         <section className="ps">
           <h3>자리는 무조건 사전 콜</h3>
-          <p>어떤 자리든 짱구 매니저 <a href={BIZ_TEL_HREF}>{BIZ_PHONE}</a>로 미리 잡고 가시는 게 가장 확실합니다.</p>
+          <p>어떤 자리든 매장에 미리 연락하고 가시는 게 가장 확실합니다.</p>
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />

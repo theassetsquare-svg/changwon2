@@ -3,7 +3,6 @@ import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
-import { BIZ_PHONE, BIZ_TEL_HREF } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/access/";
@@ -69,7 +68,7 @@ export default function Access({ dateModified }: { dateModified: string }) {
 
         <section className="ps">
           <h3>새벽 귀가 동선이 헷갈리면</h3>
-          <p>매니저 <a href={BIZ_TEL_HREF}>{BIZ_PHONE}</a>로 전화 주시면 출발지 기준으로 동선을 한 줄로 안내해드립니다.</p>
+          <p>매장에 문의 주시면 출발지 기준으로 동선을 한 줄로 안내해드립니다.</p>
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />

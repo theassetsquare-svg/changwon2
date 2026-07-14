@@ -1,6 +1,5 @@
 import {
   SITE_URL,
-  BIZ_PHONE_INTL,
   BIZ_ADDRESS_ROAD,
   BIZ_FLOOR,
   BIZ_HOURS,
@@ -14,7 +13,6 @@ import {
 
 export const ORG_ID = SITE_URL + "/#organization";
 export const PLACE_ID = SITE_URL + "/#place";
-export const PERSON_ID = SITE_URL + "/#person-janggu";
 export const WEBSITE_ID = SITE_URL + "/#website";
 
 export function placeSchema() {
@@ -39,7 +37,6 @@ export function placeSchema() {
       SITE_URL + "/images/4-dj.svg",
       SITE_URL + "/images/5-bar.svg",
     ],
-    telephone: BIZ_PHONE_INTL,
     priceRange: "문의 (별도 표기 없음)",
     currenciesAccepted: "KRW",
     paymentAccepted: "Cash, Credit Card",
@@ -76,14 +73,13 @@ export function placeSchema() {
     publicAccess: false,
     smokingAllowed: true,
     isAccessibleForFree: false,
-    slogan: "상남동 한복판, " + BIZ_FLOOR + " — 매니저 짱구 직통",
+    slogan: "상남동 한복판, " + BIZ_FLOOR,
     foundingDate: BIZ_FOUNDED,
     identifier: {
       "@type": "PropertyValue",
       propertyID: "영업허가번호",
       value: BIZ_LICENSE,
     },
-    employee: { "@id": PERSON_ID },
     parentOrganization: { "@id": ORG_ID },
     sameAs: [INSTA_1, INSTA_2],
   };
@@ -96,35 +92,7 @@ export function organizationSchema() {
     name: "창원 룰루랄라 나이트클럽",
     url: SITE_URL + "/",
     logo: SITE_URL + "/images/og-cover.svg",
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        telephone: BIZ_PHONE_INTL,
-        contactType: "reservations",
-        availableLanguage: ["ko"],
-        areaServed: "KR",
-      },
-    ],
     sameAs: [INSTA_1, INSTA_2],
-  };
-}
-
-export function personSchema() {
-  return {
-    "@type": "Person",
-    "@id": PERSON_ID,
-    name: "짱구",
-    jobTitle: "매니저",
-    telephone: BIZ_PHONE_INTL,
-    worksFor: { "@id": ORG_ID },
-    knowsAbout: [
-      "창원 룰루랄라 나이트",
-      "상남동 나이트",
-      "부킹",
-      "룸 예약",
-      "단체 예약",
-    ],
-    url: SITE_URL + "/",
   };
 }
 
@@ -176,7 +144,6 @@ export function articleSchema(opts: {
     image: SITE_URL + "/images/og-cover.svg",
     datePublished: opts.datePublished,
     dateModified: opts.dateModified,
-    author: { "@id": PERSON_ID },
     publisher: { "@id": ORG_ID },
     about: { "@id": PLACE_ID },
   };
@@ -200,7 +167,6 @@ export function graph(items: object[]) {
 export const BASE_GRAPH = [
   placeSchema(),
   organizationSchema(),
-  personSchema(),
   websiteSchema(),
 ];
 

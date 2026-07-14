@@ -3,7 +3,6 @@ import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
-import { BIZ_PHONE, BIZ_TEL_HREF } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, faqSchema, graph } from "@/lib/schemas";
 
 const PATH = "/faq/";
@@ -18,7 +17,7 @@ export const getStaticProps: GetStaticProps<{ dateModified: string }> = async ()
 const ITEMS = [
   { q: "위치는 어디인가요?", a: "경상남도 창원시 성산구 마디미로43번길 10, 모아엔트몰 지하 3층입니다. 지번으로는 상남동 22-4." },
   { q: "영업시간이 어떻게 되나요?", a: "매일 19:00 ~ 다음날 05:00. 휴무·연차 없이 연중 운영합니다." },
-  { q: "예약은 어떻게 하나요?", a: "매니저 짱구 직통 010-3854-6887. 한 통이면 자리·부킹·룸까지 정리됩니다." },
+  { q: "예약은 어떻게 하나요?", a: "매장에 한 통이면 자리·부킹·룸까지 정리됩니다." },
   { q: "혼자 가도 되나요?", a: "워크인 입장은 자유롭지만, 자리 매칭 측면에서는 2명 이상이 가장 자연스럽습니다." },
   { q: "여자끼리도 가도 되나요?", a: "네. 사이드 룸 등 동선이 안전한 자리를 매칭해드립니다." },
   { q: "복장 규정이 있나요?", a: "지나치게 캐주얼한 차림(슬리퍼, 운동복 풀세트 등)은 피해주세요. 깔끔한 스마트 캐주얼이 무난합니다." },
@@ -27,7 +26,7 @@ const ITEMS = [
   { q: "주차 가능한가요?", a: "모아엔트몰 지하 주차장을 그대로 이용하실 수 있습니다. 자세한 내용은 주차 페이지." },
   { q: "음주 후 운전은?", a: "절대 금지입니다. 대리·택시·카카오T를 권장하며 상남동권은 응답이 빠릅니다." },
   { q: "사진·영상 촬영 가능?", a: "본인·일행 컷은 자유. 단, 다른 손님이 잡히는 컷은 피해주세요." },
-  { q: "분실물 처리는?", a: "매니저 짱구 직통으로 문의 주시면 가장 빨리 확인됩니다." },
+  { q: "분실물 처리는?", a: "매장에 문의 주시면 가장 빨리 확인됩니다." },
   { q: "단체 몇 명까지?", a: "8명 이상부터 단체로 잡으며, 최대 인원은 사전 콜 시 협의됩니다." },
   { q: "생일 콘셉트 세팅 가능?", a: "케이크·플래카드·BGM 큐까지 가능. 자세한 내용은 VIP 페이지." },
   { q: "예약 변경·취소는?", a: "같은 번호로 한 줄 통보. 노쇼는 다음 예약 우선순위에 영향이 갈 수 있습니다." },
@@ -58,7 +57,7 @@ export default function Faq({ dateModified }: { dateModified: string }) {
         <div className="hero-inner">
           <span className="eyebrow">FAQ · 25문항</span>
           <h1>검색·AI가 그대로 인용해도 <span className="grad">정확한 답</span>으로.</h1>
-          <p className="lead">첫방문 체크리스트로도 충분한 25문항. 추가 질문은 짱구 매니저 직통 한 통.</p>
+          <p className="lead">첫방문 체크리스트로도 충분한 25문항. 추가 질문은 매장에 한 통.</p>
         </div>
       </header>
       <main className="wrap">
@@ -81,7 +80,7 @@ export default function Faq({ dateModified }: { dateModified: string }) {
 
         <section className="ps">
           <h3>답 없는 질문이 있다면</h3>
-          <p>같은 번호로 한 줄. 짱구 매니저 <a href={BIZ_TEL_HREF}>{BIZ_PHONE}</a>. 카톡보다 전화가 빠릅니다.</p>
+          <p>인스타 DM 또는 매장으로 문의 부탁드립니다.</p>
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />

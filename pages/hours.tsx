@@ -3,7 +3,7 @@ import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
-import { BIZ_PHONE, BIZ_TEL_HREF, BIZ_HOURS } from "@/lib/site";
+import { BIZ_HOURS } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/hours/";
@@ -85,7 +85,7 @@ export default function Hours({ dateModified }: { dateModified: string }) {
 
         <section className="ps">
           <h3>오늘 가실 거면</h3>
-          <p>지금 바로 짱구 매니저 직통 <a href={BIZ_TEL_HREF}>{BIZ_PHONE}</a>. 자리 상황은 시간 단위로 바뀝니다.</p>
+          <p>자리 상황은 시간 단위로 바뀝니다. 매장에 문의하세요.</p>
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />

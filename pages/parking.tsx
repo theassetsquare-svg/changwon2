@@ -3,7 +3,6 @@ import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
-import { BIZ_PHONE, BIZ_TEL_HREF } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/parking/";
@@ -63,7 +62,7 @@ export default function Parking({ dateModified }: { dateModified: string }) {
 
         <section className="ps">
           <h3>당일 막혀 있으면</h3>
-          <p>주차 상황이 헷갈리면 짱구 매니저 <a href={BIZ_TEL_HREF}>{BIZ_PHONE}</a>로 전화 주세요. 들어오시는 동안 동선을 잡아드립니다.</p>
+          <p>주차 상황이 헷갈리면 매장에 문의 주세요. 들어오시는 동안 동선을 잡아드립니다.</p>
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />

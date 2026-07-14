@@ -3,7 +3,6 @@ import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
-import { BIZ_PHONE, BIZ_TEL_HREF } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/vip/";
@@ -69,7 +68,7 @@ export default function Vip({ dateModified }: { dateModified: string }) {
 
         <section className="ps">
           <h3>단체 라인은 직통이 가장 빠름</h3>
-          <p>매니저 <a href={BIZ_TEL_HREF}>{BIZ_PHONE}</a>. 한 번에 정리됩니다.</p>
+          <p>매장 직통으로 연락하시면 한 번에 정리됩니다.</p>
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />

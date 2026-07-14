@@ -3,7 +3,7 @@ import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
-import { BIZ_PHONE, BIZ_TEL_HREF, BIZ_ADDRESS_ROAD, BIZ_ADDRESS_LOT, BIZ_FLOOR, GEO_LAT, GEO_LNG } from "@/lib/site";
+import { BIZ_ADDRESS_ROAD, BIZ_ADDRESS_LOT, BIZ_FLOOR, GEO_LAT, GEO_LNG } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/location/";
@@ -84,7 +84,7 @@ export default function Location({ dateModified }: { dateModified: string }) {
 
         <section className="ps">
           <h3>출발 전 한 통</h3>
-          <p>위치 헷갈리면 짱구 매니저 직통 <a href={BIZ_TEL_HREF}>{BIZ_PHONE}</a>로 전화하시면 입구까지 라이브로 안내됩니다.</p>
+          <p>위치 헷갈리면 매장에 문의하시면 입구까지 안내됩니다.</p>
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />
