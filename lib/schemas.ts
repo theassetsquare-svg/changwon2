@@ -5,6 +5,7 @@ import {
   BIZ_HOURS,
   BIZ_FOUNDED,
   BIZ_LICENSE,
+  BIZ_PHONE,
   GEO_LAT,
   GEO_LNG,
   INSTA_1,
@@ -30,6 +31,7 @@ export function placeSchema() {
       "경상남도 창원시 성산구 상남동 모아엔트몰 지하 3층, 약 457평 규모의 합법 유흥주점.",
     url: SITE_URL + "/",
     image: [
+      SITE_URL + "/images/og-square.png",
       SITE_URL + "/images/og-cover.svg",
       SITE_URL + "/images/1-exterior.svg",
       SITE_URL + "/images/2-mainhall.svg",
@@ -37,6 +39,7 @@ export function placeSchema() {
       SITE_URL + "/images/4-dj.svg",
       SITE_URL + "/images/5-bar.svg",
     ],
+    telephone: BIZ_PHONE,
     priceRange: "문의 (별도 표기 없음)",
     currenciesAccepted: "KRW",
     paymentAccepted: "Cash, Credit Card",

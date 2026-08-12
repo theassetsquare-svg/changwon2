@@ -164,7 +164,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
             </div>
             <div className="fact">
               <div className="fact-label">연령</div>
-              <div className="fact-value">만 19세 이상</div>
+              <div className="fact-value">만 27세 이상</div>
               <div className="fact-sub">신분증 지참 필수</div>
             </div>
             <div className="fact">

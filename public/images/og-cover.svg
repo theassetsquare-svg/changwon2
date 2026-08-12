@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="창원 룰루랄라 나이트 짱구 - 상남동 모아엔트몰 지하 3층">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="창원 룰루랄라 나이트 로또 010 7528 4936 - 상남동 모아엔트몰 지하 3층">
   <defs>
     <linearGradient id="ogBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#190b25"/>
@@ -36,7 +36,7 @@
   <g filter="url(#ogGlow)">
     <text x="80" y="220" fill="url(#ogPink)" font-family="'Noto Sans KR', Arial Black, sans-serif" font-size="76" font-weight="900" letter-spacing="-2">창원 룰루랄라 나이트</text>
   </g>
-  <text x="80" y="290" fill="#f7f3ff" font-family="'Noto Sans KR', Arial, sans-serif" font-size="44" font-weight="700">매니저 짱구 · 솔직 후기</text>
+  <text x="80" y="290" fill="#f7f3ff" font-family="'Noto Sans KR', Arial, sans-serif" font-size="44" font-weight="700">예약문의 로또 · 부킹·룸</text>
 
   <!-- info card -->
   <rect x="80" y="340" width="1040" height="170" rx="20" fill="#15081e" stroke="#3a1f54" stroke-width="2"/>
@@ -48,9 +48,9 @@
 
     <text x="710" y="385" fill="#b9a8d3" font-size="18" letter-spacing="2">영업</text>
     <text x="710" y="418" fill="#f7f3ff" font-size="22" font-weight="700">매일 19:00 ~ 05:00</text>
-    <text x="710" y="445" fill="#b9a8d3" font-size="16">457평 · 19세 이상 성인</text>
+    <text x="710" y="445" fill="#b9a8d3" font-size="16">457평 · 만 27세 이상 성인</text>
 
-    <text x="110" y="486" fill="#ffd166" font-size="20" font-weight="900">📞 짱구 직통 010-3854-6887</text>
+    <text x="110" y="486" fill="#ffd166" font-size="20" font-weight="900">📞 예약문의 로또 직통 010 7528 4936</text>
   </g>
 
   <!-- bottom bar -->

@@ -3,7 +3,7 @@ import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, BIZ_NICKNAME, BIZ_PHONE, BIZ_PHONE_TEL } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/booking/";
@@ -49,6 +49,7 @@ export default function Booking({ dateModified }: { dateModified: string }) {
           <h1>한 통이면 <span className="grad">자리·부킹·룸</span>이 끝납니다.</h1>
           <p className="lead">인원·성비·콘셉트만 알려주시면 그날 분위기에 맞는 자리로 매칭됩니다.</p>
           <div className="cta">
+            <a className="btn btn-primary" href={`tel:${BIZ_PHONE_TEL}`}>📞 예약문의 {BIZ_NICKNAME} {BIZ_PHONE}</a>
             <a className="btn btn-ghost" href="/vip/">단체·VIP는 여기 →</a>
           </div>
         </div>
@@ -67,7 +68,7 @@ export default function Booking({ dateModified }: { dateModified: string }) {
             <li><span className="step-no">1</span><div><strong>직통 콜</strong><p>매장 직통으로 연락하세요. 한 줄 통화가 가장 빠릅니다.</p></div></li>
             <li><span className="step-no">2</span><div><strong>한 줄 정보</strong><p>몇 명, 성비, 연령대, 원하는 분위기(조용한 룸/메인 플로어/DJ 부근) 한 번에 전달.</p></div></li>
             <li><span className="step-no">3</span><div><strong>시간 확정</strong><p>도착 예정 시각을 알려주시면 자리 홀딩됩니다. 주말은 22:30 이전 도착이 자리 잡기 좋아요.</p></div></li>
-            <li><span className="step-no">4</span><div><strong>신분증 지참</strong><p>{`만 19세 이상 입장. 입구에서 한 번 확인 후 바로 메인 홀로 이어집니다.`}</p></div></li>
+            <li><span className="step-no">4</span><div><strong>신분증 지참</strong><p>{`만 27세 이상 입장. 입구에서 한 번 확인 후 바로 메인 홀로 이어집니다.`}</p></div></li>
           </ol>
         </section>
 
@@ -90,7 +91,12 @@ export default function Booking({ dateModified }: { dateModified: string }) {
 
         <section className="ps">
           <h3>저장해두면 편한 연락처</h3>
-          <p>단축번호 등록해두시면 출발 전 한 번에 끝납니다.</p>
+          <p>
+            예약문의 {BIZ_NICKNAME}{" "}
+            <a href={`tel:${BIZ_PHONE_TEL}`}><strong>{BIZ_PHONE}</strong></a>
+            {" "}— 예약·부킹·룸 모두 전화 한 통으로. 단축번호 등록해두시면 출발 전 한 번에 끝납니다.
+          </p>
+          <p className="muted-mini">※ 만 27세 이상 신분증 지참 시 입장 가능합니다.</p>
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />

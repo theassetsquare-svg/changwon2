@@ -41,7 +41,7 @@ export default function Hours({ dateModified }: { dateModified: string }) {
         <div className="hero-inner">
           <span className="eyebrow">OPEN · 365 / 19→05</span>
           <h1>휴무 <span className="grad">0일</span>. {BIZ_HOURS}.</h1>
-          <p className="lead">연차도, 명절도, 비 와도 같습니다. 만 19세 이상 신분증 지참 후 입장.</p>
+          <p className="lead">연차도, 명절도, 비 와도 같습니다. 만 27세 이상 신분증 지참 후 입장.</p>
         </div>
       </header>
       <main className="wrap">

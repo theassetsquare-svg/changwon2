@@ -1,5 +1,9 @@
 export const SITE_URL = "https://changwon2.pages.dev";
 export const SITE_NAME = "창원 룰루랄라 나이트클럽";
+export const BIZ_NICKNAME = "로또";
+export const BIZ_PHONE = "010 7528 4936";
+export const BIZ_PHONE_TEL = "01075284936";
+export const BIZ_MIN_AGE = "만 27세 이상";
 export const BIZ_ADDRESS_ROAD = "경상남도 창원시 성산구 마디미로43번길 10";
 export const BIZ_ADDRESS_LOT = "경상남도 창원시 성산구 상남동 22-4";
 export const BIZ_FLOOR = "모아엔트몰 지하 3층";

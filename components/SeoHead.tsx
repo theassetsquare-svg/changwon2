@@ -26,7 +26,7 @@ export default function SeoHead({
   noindex,
 }: Props) {
   const url = SITE_URL + path;
-  const image = ogImage ?? SITE_URL + "/images/og-cover.svg";
+  const image = ogImage ?? SITE_URL + "/images/og-square.png";
   const imageAlt = ogImageAlt ?? title;
 
   return (
@@ -66,9 +66,9 @@ export default function SeoHead({
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:image" content={image} />
       <meta property="og:image:secure_url" content={image} />
-      <meta property="og:image:type" content="image/svg+xml" />
+      <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image:height" content="1200" />
       <meta property="og:image:alt" content={imageAlt} />
 
       <meta name="twitter:card" content="summary_large_image" />
