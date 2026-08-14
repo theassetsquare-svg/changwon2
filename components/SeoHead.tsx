@@ -55,7 +55,8 @@ export default function SeoHead({
       <link rel="canonical" href={url} />
       <link rel="alternate" hrefLang="ko" href={url} />
       <link rel="alternate" hrefLang="x-default" href={url} />
-      <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} RSS`} href={SITE_URL + "/feed.xml"} />
+      <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} RSS`} href={SITE_URL + "/rss.xml"} />
+      <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} 피드`} href={SITE_URL + "/feed.xml"} />
       <link rel="icon" href="/favicon.ico" />
 
       <meta property="og:type" content="website" />

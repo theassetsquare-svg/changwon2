@@ -15,6 +15,7 @@ const PATHS = [
   "/faq/",
   "/robots.txt",
   "/sitemap.xml",
+  "/rss.xml",
   "/feed.xml",
   "/llms.txt",
 ];

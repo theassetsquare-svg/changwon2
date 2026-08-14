@@ -117,6 +117,7 @@ Allow: /
 
 # ── 사이트맵/피드 ─────────────────────────
 Sitemap: https://changwona.pages.dev/sitemap.xml
+Sitemap: https://changwona.pages.dev/rss.xml
 Sitemap: https://changwona.pages.dev/feed.xml
 
 Host: https://changwona.pages.dev
