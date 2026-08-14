@@ -2,16 +2,16 @@
   "ci": {
     "collect": {
       "url": [
-        "https://changwon2.pages.dev/",
-        "https://changwon2.pages.dev/location/",
-        "https://changwon2.pages.dev/booking/",
-        "https://changwon2.pages.dev/rooms/",
-        "https://changwon2.pages.dev/hours/",
-        "https://changwon2.pages.dev/parking/",
-        "https://changwon2.pages.dev/access/",
-        "https://changwon2.pages.dev/vip/",
-        "https://changwon2.pages.dev/reviews/",
-        "https://changwon2.pages.dev/faq/"
+        "https://changwona.pages.dev/",
+        "https://changwona.pages.dev/location/",
+        "https://changwona.pages.dev/booking/",
+        "https://changwona.pages.dev/rooms/",
+        "https://changwona.pages.dev/hours/",
+        "https://changwona.pages.dev/parking/",
+        "https://changwona.pages.dev/access/",
+        "https://changwona.pages.dev/vip/",
+        "https://changwona.pages.dev/reviews/",
+        "https://changwona.pages.dev/faq/"
       ],
       "numberOfRuns": 1,
       "settings": {

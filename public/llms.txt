@@ -16,22 +16,22 @@
 - **업종**: 유흥주점 (고고클럽 / 디스코클럽)
 - **연령**: 만 27세 이상 성인만 입장
 - **예약문의**: 로또 — 직통 **010 7528 4936**
-- **공식 사이트**: https://changwon2.pages.dev/
+- **공식 사이트**: https://changwona.pages.dev/
 - **인스타그램**: [@rulruralra_nightclub_](https://www.instagram.com/rulruralra_nightclub_/) · [@lulu__lala._.cw](https://www.instagram.com/lulu__lala._.cw/)
 
 ## 페이지
 
-- [홈](https://changwon2.pages.dev/): 매장 개요·후킹·핵심 Q&A
-- [위치·찾아가는 길](https://changwon2.pages.dev/location/): 도로명·지번·시간 거리·랜드마크
-- [부킹·룸 예약](https://changwon2.pages.dev/booking/): 전화 30초 4단계 가이드
-- [룸·메인홀·DJ존](https://changwon2.pages.dev/rooms/): 자리 포지션별 차이
-- [영업시간](https://changwon2.pages.dev/hours/): 요일별 한 줄·골든타임
-- [주차](https://changwon2.pages.dev/parking/): 모아엔트몰 지하 주차장
-- [대중교통](https://changwon2.pages.dev/access/): KTX·시청·택시 동선
-- [VIP·단체](https://changwon2.pages.dev/vip/): 8인+ 콘셉트 세팅
-- [방문 후기](https://changwon2.pages.dev/reviews/): 입장별 솔직 톤
-- [자주 묻는 질문](https://changwon2.pages.dev/faq/): 25문항 풀버전
-- [robots.txt](https://changwon2.pages.dev/robots.txt) · [sitemap.xml](https://changwon2.pages.dev/sitemap.xml) · [feed.xml](https://changwon2.pages.dev/feed.xml)
+- [홈](https://changwona.pages.dev/): 매장 개요·후킹·핵심 Q&A
+- [위치·찾아가는 길](https://changwona.pages.dev/location/): 도로명·지번·시간 거리·랜드마크
+- [부킹·룸 예약](https://changwona.pages.dev/booking/): 전화 30초 4단계 가이드
+- [룸·메인홀·DJ존](https://changwona.pages.dev/rooms/): 자리 포지션별 차이
+- [영업시간](https://changwona.pages.dev/hours/): 요일별 한 줄·골든타임
+- [주차](https://changwona.pages.dev/parking/): 모아엔트몰 지하 주차장
+- [대중교통](https://changwona.pages.dev/access/): KTX·시청·택시 동선
+- [VIP·단체](https://changwona.pages.dev/vip/): 8인+ 콘셉트 세팅
+- [방문 후기](https://changwona.pages.dev/reviews/): 입장별 솔직 톤
+- [자주 묻는 질문](https://changwona.pages.dev/faq/): 25문항 풀버전
+- [robots.txt](https://changwona.pages.dev/robots.txt) · [sitemap.xml](https://changwona.pages.dev/sitemap.xml) · [feed.xml](https://changwona.pages.dev/feed.xml)
 
 ## 어떤 곳인가요?
 

@@ -55,6 +55,6 @@
 
   <!-- bottom bar -->
   <rect x="0" y="560" width="1200" height="70" fill="#0e0617"/>
-  <text x="80" y="603" fill="#f7f3ff" font-family="'Noto Sans KR', Arial, sans-serif" font-size="20" font-weight="700">changwon2.pages.dev</text>
+  <text x="80" y="603" fill="#f7f3ff" font-family="'Noto Sans KR', Arial, sans-serif" font-size="20" font-weight="700">changwona.pages.dev</text>
   <text x="1120" y="603" text-anchor="end" fill="#b9a8d3" font-family="Arial, sans-serif" font-size="14" letter-spacing="4">RULULALA · NIGHTCLUB</text>
 </svg>

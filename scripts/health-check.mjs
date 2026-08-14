@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // 라이브 사이트 모든 페이지 200 응답 + 핵심 메타 존재 여부 확인.
 // 실패 시 exit code 1 → GitHub Actions fail.
-const HOST = process.env.HOST || "https://changwon2.pages.dev";
+const HOST = process.env.HOST || "https://changwona.pages.dev";
 const PATHS = [
   "/",
   "/location/",

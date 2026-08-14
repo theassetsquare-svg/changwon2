@@ -9,10 +9,10 @@ import {
   dateNDaysAgo,
 } from "./lib/gsc.mjs";
 
-const SITE_HOST = "changwon2.pages.dev";
+const SITE_HOST = "changwona.pages.dev";
 
 function pickProperty(sites) {
-  // 우선순위: url-prefix(https://changwon2.pages.dev/) > sc-domain:changwon2.pages.dev
+  // 우선순위: url-prefix(https://changwona.pages.dev/) > sc-domain:changwona.pages.dev
   const cands = sites.filter((s) => s.siteUrl.includes(SITE_HOST));
   const urlPrefix = cands.find((s) => s.siteUrl.startsWith("https://"));
   return (urlPrefix || cands[0])?.siteUrl || null;
@@ -42,7 +42,7 @@ async function main() {
   const property = pickProperty(sites);
   if (!property) {
     console.log(
-      `\n⚠ changwon2.pages.dev 속성에 대한 권한이 없습니다.\n` +
+      `\n⚠ changwona.pages.dev 속성에 대한 권한이 없습니다.\n` +
         `  Search Console에서 gsc-mcp@theasset-gsc.iam.gserviceaccount.com 을\n` +
         `  소유자/사용자로 추가해야 데이터가 읽힙니다.`,
     );

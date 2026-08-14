@@ -2,10 +2,10 @@
 // 사이트맵 상태 확인 + (재)제출. 서브페이지가 크롤되지 않는 핵심 원인 대응.
 import { getAccessToken } from "./lib/gsc.mjs";
 
-const SITE = "https://changwon2.pages.dev/";
+const SITE = "https://changwona.pages.dev/";
 const SITEMAPS = [
-  "https://changwon2.pages.dev/sitemap.xml",
-  "https://changwon2.pages.dev/feed.xml",
+  "https://changwona.pages.dev/sitemap.xml",
+  "https://changwona.pages.dev/feed.xml",
 ];
 
 async function listSitemaps(token) {

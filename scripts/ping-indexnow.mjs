@@ -4,7 +4,7 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { resolve, join } from "node:path";
 
-const HOST = "changwon2.pages.dev";
+const HOST = "changwona.pages.dev";
 const KEY_TXT = readdirSync(resolve(process.cwd(), "public"))
   .find((f) => f.endsWith(".txt") && /^[0-9a-f]{32}\.txt$/i.test(f));
 

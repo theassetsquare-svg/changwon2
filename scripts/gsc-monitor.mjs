@@ -19,8 +19,8 @@ import {
   dateNDaysAgo,
 } from "./lib/gsc.mjs";
 
-const SITE = "https://changwon2.pages.dev/";
-const HOST = "https://changwon2.pages.dev";
+const SITE = "https://changwona.pages.dev/";
+const HOST = "https://changwona.pages.dev";
 const PATHS = ["/", "/location/", "/booking/", "/rooms/", "/hours/", "/parking/", "/access/", "/vip/", "/reviews/", "/faq/"];
 const SITEMAPS = [`${HOST}/sitemap.xml`, `${HOST}/feed.xml`];
 const ALERT_TO = process.env.ALERT_TO || "theassetsquare@gmail.com";

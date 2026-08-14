@@ -3,7 +3,7 @@
 // 0 노출의 원인(미색인 / 크롤 차단 / noindex 등)을 권위 있게 진단한다.
 import { getAccessToken } from "./lib/gsc.mjs";
 
-const SITE = "https://changwon2.pages.dev/";
+const SITE = "https://changwona.pages.dev/";
 const PATHS = ["/", "/location/", "/booking/", "/rooms/", "/hours/", "/parking/", "/access/", "/vip/", "/reviews/", "/faq/"];
 
 async function inspect(token, url) {
