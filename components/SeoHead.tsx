@@ -43,7 +43,6 @@ export default function SeoHead({
         }
       />
       <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1" />
-      <meta name="rating" content="adult" />
       <meta name="theme-color" content="#0b0410" />
       <meta name="format-detection" content="telephone=yes" />
 
