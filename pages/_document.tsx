@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="ko">
       <Head>
         <meta charSet="utf-8" />
-        <meta name="naver-site-verification" content="b13c5040a8817de8a6cb724399c3c2acef621720" />
+        <meta name="naver-site-verification" content="fb77bafd6276354f9e3aae2754d325d44526e700" />
         <meta name="google-site-verification" content="HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88" />
         <meta name="color-scheme" content="dark" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
