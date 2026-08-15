@@ -78,21 +78,21 @@
 
 ## /night/ 업소 안내 13페이지
 
-> 각 페이지는 지역 단위 위치·교통·출입 연령 안내만 담는다. 상세 번지·영업시간·가격은 공개 자료로 확인되지 않아 싣지 않았다.
+> 각 페이지는 업소별로 다른 각도(문답·시간 흐름·비교·요약·인원별 등)로 작성한 이용 안내다. 본문 대부분은 나이트클럽 이용 문화 일반론이며, 주소·영업시간·좌석 구성은 2곳 이상 교차 확인된 항목만 실었다. 가격 정보는 싣지 않는다.
 
 - https://changwona.pages.dev/night/ — 전국 나이트 업소 안내 목록 — 13곳 지역별 인덱스
-- https://changwona.pages.dev/night/bulgwang-hobak-night/ — 불광동호박나이트 — 서울 은평구 불광동 — 불광동호박나이트는 서울 은평구 불광동에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/changwon-lululala-night/ — 창원룰루랄라나이트 — 경남 창원시 성산구 상남동 (27세 이상 출입) — 창원룰루랄라나이트는 경상남도 창원시 성산구 상남동에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/ulsan-champion-night/ — 울산챔피언나이트 — 울산광역시 — 울산챔피언나이트는 울산광역시에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/cheongdam-night/ — 청담나이트 — 서울 강남구 청담동 — 청담나이트는 서울 강남구 청담동에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/daejeon-one-night/ — 대전원나이트 — 대전광역시 (38세 이상 출입) — 대전원나이트는 대전광역시에 위치한 나이트클럽이며, 만 38세 이상만 출입이 가능합니다.
-- https://changwona.pages.dev/night/sillim-grandprix-night/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 신림그랑프리나이트는 서울 관악구 신림동에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/sangbong-hangukgwan-night/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 상봉동한국관나이트는 서울 중랑구 상봉동에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/suyu-shampoo-night/ — 수유샴푸나이트 — 서울 강북구 수유동 — 수유샴푸나이트는 서울 강북구 수유동에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/busan-asiad-night/ — 부산아시아드나이트 — 부산광역시 — 부산아시아드나이트는 부산광역시에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/suwon-chance-dome-night/ — 수원찬스돔나이트 — 경기도 수원시 — 수원찬스돔나이트는 경기도 수원시에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/ansan-hit-night/ — 안산히트나이트 — 경기도 안산시 — 안산히트나이트는 경기도 안산시에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/daejeon-seven-night/ — 대전세븐나이트 — 대전광역시 — 대전세븐나이트는 대전광역시에 위치한 나이트클럽입니다.
-- https://changwona.pages.dev/night/ilsan-shampoo-night/ — 일산샴푸나이트 — 경기도 고양시 일산 — 일산샴푸나이트는 경기도 고양시 일산 지역에 위치한 나이트클럽입니다.
+- https://changwona.pages.dev/night/bulgwang-hobak-night/ — 불광동호박나이트 — 서울 은평구 불광동 — 불광동호박나이트는 서울 은평구 불광동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/changwon-lululala-night/ — 창원룰루랄라나이트 — 경남 창원시 성산구 상남동 (만 27세 이상 출입) — 창원룰루랄라나이트는 경상남도 창원시 성산구 상남동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/ulsan-champion-night/ — 울산챔피언나이트 — 울산 남구 삼산동 — 울산챔피언나이트는 울산광역시 남구 삼산동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/cheongdam-night/ — 청담나이트 — 서울 강남구 청담동 — 청담나이트는 서울 강남구 청담동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/daejeon-one-night/ — 대전원나이트 — 대전 동구 용전동 (만 38세 이상 출입) — 대전원나이트는 대전광역시에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/sillim-grandprix-night/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 신림그랑프리나이트는 서울 관악구 신림동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/sangbong-hangukgwan-night/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 상봉동한국관나이트는 서울 중랑구 상봉동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/suyu-shampoo-night/ — 수유샴푸나이트 — 서울 강북구 수유동 — 수유샴푸나이트는 서울 강북구 수유동 일대에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/busan-asiad-night/ — 부산아시아드나이트 — 부산 동래구 온천동 — 부산아시아드나이트는 부산광역시 동래구 온천동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/suwon-chance-dome-night/ — 수원찬스돔나이트 — 경기 수원시 권선구 권선동 — 수원찬스돔나이트는 경기도 수원시 권선구 권선동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/ansan-hit-night/ — 안산히트나이트 — 경기 안산시 상록구 본오동 — 안산히트나이트는 경기도 안산시 상록구 본오동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/daejeon-seven-night/ — 대전세븐나이트 — 대전 중구 유천동 — 대전세븐나이트는 대전광역시 중구 유천동에 있는 나이트클럽입니다.
+- https://changwona.pages.dev/night/ilsan-shampoo-night/ — 일산샴푸나이트 — 경기 고양시 일산동구 마두동 — 일산샴푸나이트는 경기도 고양시 일산동구 마두동에 있는 나이트클럽입니다.
 
 광고·제휴 입점 문의(업소 사장님 대상): 카카오톡 besta12 — 손님 예약 채널이 아님.

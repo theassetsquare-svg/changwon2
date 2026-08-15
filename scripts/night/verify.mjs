@@ -7,7 +7,7 @@ import { readFileSync } from "node:fs";
 import { resolve, join } from "node:path";
 import { createRequire } from "node:module";
 
-const require = createRequire("/tmp/claude-1000/-home-user-changwon2/c721e1c1-fbdf-41d9-883f-d19650ee5218/scratchpad/");
+const require = createRequire("/tmp/claude-1000/-home-user-changwon2/a781cf4c-1113-46b1-9974-170b64a03aff/scratchpad/");
 const { chromium } = require("playwright-core");
 
 const BASE = (process.argv[2] || "http://127.0.0.1:4321").replace(/\/$/, "");
@@ -192,8 +192,16 @@ for (const v of VENUES) {
       results.g10.push({ slug: v.slug, links });
 
       // ── G12: 고정바가 .ad-inquiry 를 가리는지 (문서 최하단 스크롤 상태에서 실측) ──
-      await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
-      await page.waitForTimeout(300);
+      // 레이아웃이 늦게 확정되는 경우가 있어 바닥에 실제로 닿을 때까지 반복한다.
+      for (let i = 0; i < 8; i++) {
+        const done = await page.evaluate(() => {
+          window.scrollTo(0, document.documentElement.scrollHeight);
+          const max = document.documentElement.scrollHeight - window.innerHeight;
+          return Math.abs(window.scrollY - max) <= 1;
+        });
+        await page.waitForTimeout(150);
+        if (done) break;
+      }
       const overlap = await page.evaluate(() => {
         const bar = document.querySelector(".callbar").getBoundingClientRect();
         const ad = document.querySelector(".ad-inquiry").getBoundingClientRect();

@@ -284,6 +284,78 @@ export default function NightStyles() {
         line-height: 1.75;
         margin-top: 26px;
       }
+
+      /* ── 본문 표 / 목록 / 요약 ── */
+      .night-updated {
+        font-size: 13px;
+        color: #b9a8d3;
+        margin: 0 0 14px;
+      }
+      .night-table-wrap {
+        overflow-x: auto;
+        margin: 6px 0 8px;
+      }
+      .night-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #e7defc;
+      }
+      .night-table caption {
+        text-align: left;
+        font-size: 13px;
+        color: #b9a8d3;
+        padding-bottom: 8px;
+      }
+      .night-table th,
+      .night-table td {
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+      .night-table thead th {
+        background: rgba(255, 255, 255, 0.07);
+        color: #f7f3ff;
+        font-weight: 800;
+      }
+      .night-table tbody th {
+        font-weight: 700;
+        color: #f7f3ff;
+        white-space: nowrap;
+      }
+      .night-bullets {
+        margin: 4px 0 12px;
+        padding-left: 20px;
+        color: #e7defc;
+        font-size: 16px;
+        line-height: 1.85;
+      }
+      .night-bullets li {
+        margin-bottom: 4px;
+      }
+      .night-summary {
+        margin: 34px 0 8px;
+        padding: 16px 18px;
+        border-radius: 14px;
+        background: rgba(255, 212, 0, 0.08);
+        border: 1px solid rgba(255, 212, 0, 0.4);
+      }
+      .night-summary p {
+        margin: 0 0 6px;
+        font-size: 15px;
+        line-height: 1.75;
+        color: #f7f3ff;
+      }
+      .night-summary p:last-child {
+        margin-bottom: 0;
+      }
+      .night-summary b {
+        color: #ffd400;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+      }
     `}</style>
   );
 }

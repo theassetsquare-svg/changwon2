@@ -47,10 +47,10 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
       />
       <NightStyles />
 
-      <div className="night-top">
+      <header className="night-top">
         <a href="/">홈</a>
         <a href={NIGHT_BASE}>나이트 목록</a>
-      </div>
+      </header>
 
       <main className="night-wrap">
         <nav aria-label="Breadcrumb" className="night-crumb">
@@ -65,7 +65,12 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
           </ol>
         </nav>
 
+        <article>
         <h1>{venue.name}</h1>
+
+        <p className="night-updated">
+          최종 정리 <time dateTime="2026-08-15">2026년 8월 15일</time>
+        </p>
 
         <div className="answer-box">
           <p>{venue.answer}</p>
@@ -81,8 +86,12 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
             <span>{venue.ageBadge ?? "성인 · 신분증 확인"}</span>
           </li>
           <li>
-            <b>상세 주소</b>
-            <span>{venue.addressVerified ? venue.region : "확인 불가"}</span>
+            <b>주소</b>
+            <span>{venue.address ?? "확인 불가"}</span>
+          </li>
+          <li>
+            <b>영업시간</b>
+            <span>{venue.hours ?? "확인 불가"}</span>
           </li>
           <li>
             <b>{venue.contact ? "문의" : "광고·제휴 입점 문의"}</b>
@@ -100,11 +109,59 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
             {s.body.map((p, j) => (
               <p key={j}>{p}</p>
             ))}
+            {s.list ? (
+              <ul className="night-bullets">
+                {s.list.map((it, j) => (
+                  <li key={j}>{it}</li>
+                ))}
+              </ul>
+            ) : null}
+            {s.table ? (
+              <div className="night-table-wrap">
+                <table className="night-table">
+                  <caption>{s.table.caption}</caption>
+                  <thead>
+                    <tr>
+                      {s.table.head.map((h, j) => (
+                        <th key={j} scope="col">
+                          {h}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {s.table.rows.map((row, j) => (
+                      <tr key={j}>
+                        {row.map((cell, k) =>
+                          k === 0 ? (
+                            <th key={k} scope="row">
+                              {cell}
+                            </th>
+                          ) : (
+                            <td key={k}>{cell}</td>
+                          ),
+                        )}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : null}
           </section>
         ))}
 
-        <section className="night-related">
-          <h2>같이 보면 좋은 지역 안내</h2>
+        <div className="night-summary">
+          <p>
+            <b>세 줄 요약</b>
+          </p>
+          <p>① {venue.summary[0]}</p>
+          <p>② {venue.summary[1]}</p>
+          <p>③ {venue.summary[2]}</p>
+        </div>
+        </article>
+
+        <aside className="night-related" aria-label="관련 업소 안내">
+          <h2>같이 보면 좋은 업소</h2>
           <ul>
             {related.map((r) => (
               <li key={r.slug}>
@@ -117,7 +174,7 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
               <a href={NIGHT_BASE}>전체 목록 보기</a>
             </li>
           </ul>
-        </section>
+        </aside>
 
         <p className="night-note">
           이 페이지는 업소 정보를 정리해 제공하는 안내 문서입니다. 영업시간, 가격, 상세
