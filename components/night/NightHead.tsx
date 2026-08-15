@@ -36,7 +36,8 @@ export default function NightHead({
         name="robots"
         content="index, follow, max-image-preview:large, max-snippet:-1"
       />
-      <meta name="rating" content="adult" />
+      {/* rating=adult 는 넣지 않는다. 세이프서치 필터에 걸려 검색 노출이 막히므로
+          본편에서도 82e1c6f 로 제거된 태그다. */}
       <meta name="theme-color" content="#0b0410" />
       <meta name="format-detection" content="telephone=yes" />
 
