@@ -121,3 +121,12 @@ Sitemap: https://changwona.pages.dev/rss.xml
 Sitemap: https://changwona.pages.dev/feed.xml
 
 Host: https://changwona.pages.dev
+
+# night-13pages:begin
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://changwona.pages.dev/sitemap.xml

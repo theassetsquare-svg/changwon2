@@ -1,0 +1,59 @@
+import { SITE_URL } from "@/lib/site";
+import type { Venue } from "./venues";
+import { nightPath, NIGHT_BASE } from "./venues";
+
+export const ogImagePath = (slug: string) => `/og/${slug}-og.png`;
+export const absUrl = (path: string) => SITE_URL + path;
+
+/** ① NightClub — 확인 불가 항목(상세번지·영업시간·가격)은 키 자체를 넣지 않는다. */
+export function nightClubSchema(v: Venue) {
+  const url = absUrl(nightPath(v.slug));
+  const schema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "NightClub",
+    name: v.name,
+    url,
+    image: absUrl(ogImagePath(v.slug)),
+    description: v.answer,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: v.locality,
+      addressRegion: v.addressRegion,
+      addressCountry: "KR",
+    },
+  };
+  if (v.contact) schema.telephone = v.contact.phone;
+  if (v.ageRange) schema.typicalAgeRange = v.ageRange;
+  return schema;
+}
+
+/** ② FAQPage */
+export function faqPageSchema(v: Venue) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: v.faq.map((it) => ({
+      "@type": "Question",
+      name: it.q,
+      acceptedAnswer: { "@type": "Answer", text: it.a },
+    })),
+  };
+}
+
+/** ③ BreadcrumbList — 홈 > 나이트 > {업소명} */
+export function breadcrumbSchema(v: Venue) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "홈", item: absUrl("/") },
+      { "@type": "ListItem", position: 2, name: "나이트", item: absUrl(NIGHT_BASE) },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: v.name,
+        item: absUrl(nightPath(v.slug)),
+      },
+    ],
+  };
+}
