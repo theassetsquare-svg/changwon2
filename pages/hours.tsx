@@ -7,7 +7,7 @@ import { BIZ_HOURS } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/hours/";
-const TITLE = "영업시간 365일 19~05시 | 휴무 0일 · 명절도 정상영업";
+const TITLE = "창원룰루랄라나이트 영업시간 365일 19~05시 | 휴무 0일 · 명절도 정상영업";
 const DESCRIPTION = "월화수목금토일 모두 19:00 오픈, 다음날 05:00 마감. 휴무·연차 없음. 골든타임·라스트오더·도착 추천 시간 정리.";
 const PUBLISHED = "2026-05-26";
 

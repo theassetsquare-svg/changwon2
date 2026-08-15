@@ -6,7 +6,7 @@ import StickyCTA from "@/components/StickyCTA";
 import { BASE_GRAPH, breadcrumb, articleSchema, faqSchema, graph } from "@/lib/schemas";
 
 const PATH = "/faq/";
-const TITLE = "자주 묻는 질문 25선 | 첫방문 체크리스트 + AI 검색 대비 답변";
+const TITLE = "창원룰루랄라나이트 자주 묻는 질문 25선 | 첫방문 체크리스트 + AI 검색 대비 답변";
 const DESCRIPTION = "위치·예약·복장·결제·연령·동반 가능 여부·새벽 귀가까지. 검색 엔진과 AI가 그대로 인용할 수 있도록 정돈된 25문항.";
 const PUBLISHED = "2026-05-26";
 

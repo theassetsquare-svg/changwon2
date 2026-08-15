@@ -7,7 +7,7 @@ import { BIZ_AREA } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/rooms/";
-const TITLE = "룸·메인홀·DJ존 한눈에 | 어디 앉아야 그날 밤이 살아나는가";
+const TITLE = "창원룰루랄라나이트 룸·메인홀·DJ존 한눈에 | 어디 앉아야 그날 밤이 살아나는가";
 const DESCRIPTION = "457평 메인홀, 프라이빗 룸, DJ 부스 옆 진한 자리, 사이드 룸의 차이를 정리. 첫방문·단골·단체에게 맞는 포지션 매칭 가이드.";
 const PUBLISHED = "2026-05-26";
 
