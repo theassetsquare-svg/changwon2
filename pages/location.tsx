@@ -7,7 +7,7 @@ import { BIZ_ADDRESS_ROAD, BIZ_ADDRESS_LOT, BIZ_FLOOR, GEO_LAT, GEO_LNG } from "
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/location/";
-const TITLE = "위치 · 찾아가는 길 | 상남동 모아엔트몰 지하 3층 도착 5분컷";
+const TITLE = "창원룰루랄라나이트 위치 · 찾아가는 길 | 상남동 모아엔트몰 지하 3층 도착 5분컷";
 const DESCRIPTION = "마디미로43번길 10, 상남동 22-4. 창원시청 차로 5분, KTX 창원중앙 15분. 모아엔트몰 지하 주차장 그대로 사용. 도보·차·택시 동선 정리.";
 const PUBLISHED = "2026-05-26";
 

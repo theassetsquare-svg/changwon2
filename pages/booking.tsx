@@ -7,7 +7,7 @@ import { SITE_URL, BIZ_NICKNAME, BIZ_PHONE, BIZ_PHONE_TEL } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/booking/";
-const TITLE = "부킹·룸 예약 4단계 | 한 통 가이드";
+const TITLE = "창원룰루랄라나이트 부킹·룸 예약 4단계 | 한 통 가이드";
 const DESCRIPTION = "전화 30초로 자리·부킹·룸을 다 잡는 법. 인원·성비·콘셉트별 매칭, 주말 골든타임 사전 콜 타이밍, 단체·생일·송별 세팅까지 정리.";
 const PUBLISHED = "2026-05-26";
 

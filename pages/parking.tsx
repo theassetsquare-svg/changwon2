@@ -6,7 +6,7 @@ import StickyCTA from "@/components/StickyCTA";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/parking/";
-const TITLE = "주차 OK | 모아엔트몰 지하 주차장 그대로 — 발렛·대리 동선";
+const TITLE = "창원룰루랄라나이트 주차 OK | 모아엔트몰 지하 주차장 그대로 — 발렛·대리 동선";
 const DESCRIPTION = "건물 지하 주차장 직접 이용. 진입로·출차 동선, 대리운전 호출 위치, 인근 대체 주차장까지 정리. 음주 시 대중교통·대리 사용 권장.";
 const PUBLISHED = "2026-05-26";
 

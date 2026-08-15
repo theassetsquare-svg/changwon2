@@ -6,7 +6,7 @@ import StickyCTA from "@/components/StickyCTA";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/access/";
-const TITLE = "대중교통 가이드 | KTX·시청·시외버스에서 가장 짧은 동선";
+const TITLE = "창원룰루랄라나이트 대중교통 가이드 | KTX·시청·시외버스에서 가장 짧은 동선";
 const DESCRIPTION = "KTX 창원중앙역 차로 15분, 창원시청 5분, 마산역 20분. 시내버스·택시·카카오T 호출 동선과 새벽 귀가 루트까지 정리.";
 const PUBLISHED = "2026-05-26";
 
