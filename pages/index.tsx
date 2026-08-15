@@ -20,6 +20,7 @@ import {
   faqSchema,
   graph,
 } from "@/lib/schemas";
+import { VENUES as NIGHT_VENUES } from "@/lib/night/venues";
 
 const PATH = "/";
 const TITLE =
@@ -210,6 +211,25 @@ export default function Home({ dateModified }: { dateModified: string }) {
           <p className="muted-mini" style={{ marginTop: 12 }}>
             더 자세한 25문항은 <a href="/faq/">자주 묻는 질문</a> 페이지에서.
           </p>
+        </section>
+
+        <section>
+          <h2>전국 나이트 업소 안내</h2>
+          <p className="muted-mini">
+            지역별 위치·교통·출입 연령 안내를 정리한 별도 페이지입니다.{" "}
+            <a href="/night/">전체 목록 보기</a>
+          </p>
+          <div className="link-grid">
+            {NIGHT_VENUES.map((v) => (
+              <a key={v.slug} className="link-card" href={`/night/${v.slug}/`}>
+                <span className="link-card-label">
+                  {v.name}
+                  {v.ageBadge ? ` · ${v.ageBadge}` : ""}
+                </span>
+                <span className="link-card-arrow" aria-hidden>→</span>
+              </a>
+            ))}
+          </div>
         </section>
 
         <section className="ps">
