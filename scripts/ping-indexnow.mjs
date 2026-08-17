@@ -18,7 +18,8 @@ const KEY_LOC = `https://${HOST}/${KEY_TXT}`;
 const SITEMAP = readFileSync(resolve(process.cwd(), "public/sitemap.xml"), "utf8");
 const URLS = Array.from(SITEMAP.matchAll(/<loc>([^<]+)<\/loc>/g))
   .map((m) => m[1])
-  .filter((u) => /^https?:\/\/changwon2\.pages\.dev\//.test(u));
+  // 호스트는 changwona.pages.dev — 이전 필터가 changwon2 를 보고 있어 항상 0건이었다.
+  .filter((u) => u.startsWith(`https://${HOST}/`));
 
 if (URLS.length === 0) {
   console.error("URL을 찾지 못했습니다.");
