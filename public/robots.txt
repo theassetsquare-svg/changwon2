@@ -122,6 +122,19 @@ Sitemap: https://changwona.pages.dev/feed.xml
 
 Host: https://changwona.pages.dev
 
+
+
+# booking-40pages:begin
+# /booking/ 부킹 안내 41페이지(허브 1 + 업소 40) 전체 허용
+User-agent: Yeti
+Allow: /booking/
+
+User-agent: Googlebot
+Allow: /booking/
+
+Sitemap: https://changwona.pages.dev/sitemap.xml
+# booking-40pages:end
+
 # night-13pages:begin
 User-agent: Yeti
 Allow: /

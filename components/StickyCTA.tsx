@@ -2,13 +2,16 @@ import { INSTA_1, BIZ_NICKNAME, BIZ_PHONE, BIZ_PHONE_TEL } from "@/lib/site";
 
 export default function StickyCTA() {
   return (
-    <div className="sticky-cta" aria-label={`예약문의 전화 ${BIZ_NICKNAME} ${BIZ_PHONE}`}>
+    <div
+      className="sticky-cta"
+      aria-label={`창원룰루랄라나이트 예약문의 ${BIZ_NICKNAME} ${BIZ_PHONE}`}
+    >
       <a className="sticky-cta-call" href={`tel:${BIZ_PHONE_TEL}`}>
         <span className="sticky-cta-icon" aria-hidden>
           📞
         </span>
         <span className="sticky-cta-body">
-          <strong>예약문의 {BIZ_NICKNAME}</strong>
+          <strong>창원룰루랄라나이트 {BIZ_NICKNAME}</strong>
           <span>{BIZ_PHONE}</span>
         </span>
       </a>

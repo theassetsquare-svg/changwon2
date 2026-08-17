@@ -52,6 +52,41 @@ const HOME_FAQ = [
   },
 ];
 
+/** 홈 "부킹이 도는 방식" 4단계 — 입장 → 자리 → 부킹 시작 → 이어가기·거절 */
+const BOOKING_FLOW_HOWTO = {
+  "@type": "HowTo",
+  name: "창원룰루랄라나이트에서 부킹이 도는 방식",
+  description:
+    "부킹은 웨이터가 팀과 팀을 잇는 흐름입니다. 입장, 자리, 부킹 시작, 이어가기와 거절까지 네 단계로 정리했습니다.",
+  totalTime: "PT2M",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "입장",
+      text: "인원, 성비, 도착 시각, 머무는 시간을 한 문장으로 전하면 자리 배정이 정확해집니다.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "자리",
+      text: "좋은 자리는 등급이 아니라 담당 웨이터의 동선 위에 있는 자리입니다. 원하는 자리 성격만 말해두면 됩니다.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "부킹 시작",
+      text: "담당자가 팀을 데려오면 일어서서 인사하고 자리를 조금 내어주는 것으로 시작됩니다.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "이어가기와 거절",
+      text: "맞지 않으면 담당 웨이터를 불러 정리를 부탁합니다. 상대 앞에서 이유를 말하지 않는 것이 기본 매너입니다.",
+    },
+  ],
+};
+
 export default function Home({ dateModified }: { dateModified: string }) {
   const ld = graph([
     ...BASE_GRAPH,
@@ -67,6 +102,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
       dateModified,
     }),
     faqSchema(HOME_FAQ),
+    BOOKING_FLOW_HOWTO,
   ]);
 
   return (
@@ -96,8 +132,8 @@ export default function Home({ dateModified }: { dateModified: string }) {
           </p>
 
           <div className="cta">
-            <a className="btn btn-ghost btn-lg" href="/booking/">
-              부킹 가이드 →
+            <a className="btn btn-ghost btn-lg" href="#booking-flow">
+              부킹이 도는 방식 →
             </a>
           </div>
 
@@ -137,6 +173,62 @@ export default function Home({ dateModified }: { dateModified: string }) {
             DJ 부스 바로 옆 진한 자리, 일행끼리 대화하기 좋은 안쪽 — 같은 매장이라도 자리에 따라
             완전히 다른 곳이 됩니다. 매니저는 그날 분위기·성비·온도를 읽고 자리와 부킹 동선을
             짭니다. 처음 오시는 분이 어색하지 않게 흐름부터 잡아주는 게 단골이 많은 이유입니다.
+          </p>
+        </section>
+
+        <section id="booking-flow">
+          <h2>부킹이 도는 방식</h2>
+          <p className="capsule">
+            <strong>한 줄 요약:</strong> 부킹은 손님이 만드는 것이 아니라 웨이터가 팀과 팀을
+            잇는 흐름입니다. 그 흐름에 정확히 얹히는 순서가 아래 네 단계입니다.
+          </p>
+          <ol className="howto numbered">
+            <li>
+              <span className="step-no">1</span>
+              <div>
+                <strong>입장 — 정보를 먼저 넘긴다</strong>
+                <p>
+                  인원, 성비, 도착 시각, 몇 시까지 있을지. 이 네 가지를 한 문장으로 전하면 자리
+                  배정이 그 자리에서 정확해집니다. 좋은 자리로 부탁한다는 말만으로는 담당자가
+                  추측을 하게 됩니다.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span className="step-no">2</span>
+              <div>
+                <strong>자리 — 동선 위에 앉는다</strong>
+                <p>
+                  좋은 자리는 등급이 아니라 담당 웨이터의 동선 위에 있는 자리입니다. 조용히
+                  이야기할지, 메인 플로어 쪽에 붙을지만 말해두면 그에 맞는 자리로 잡힙니다.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span className="step-no">3</span>
+              <div>
+                <strong>부킹 시작 — 팀 단위로 붙는다</strong>
+                <p>
+                  손님이 홀을 직접 돌아다니는 구조가 아닙니다. 담당자가 맞을 것 같은 팀을 데려오고,
+                  일어서서 인사하고 자리를 조금 내어주는 것으로 시작됩니다.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span className="step-no">4</span>
+              <div>
+                <strong>이어가기 · 거절 — 정리는 담당자에게</strong>
+                <p>
+                  맞지 않으면 담당 웨이터를 불러 정리를 부탁하면 됩니다. 상대 앞에서 이유를 말하지
+                  않는 것이 기본 매너이고, 빨리 정리한 팀일수록 남은 시간에 더 많이 연결됩니다.
+                </p>
+              </div>
+            </li>
+          </ol>
+          <p>
+            입장은 <strong>만 27세 이상</strong> 기준으로 안내되며 입구에서 신분증을 확인합니다.
+            일행 전원이 챙겨 주세요. 업소별로 부킹이 어떻게 도는지는{" "}
+            <a href="/booking/">전국 나이트 부킹 안내 40</a> 에 정리해 두었습니다.
           </p>
         </section>
 
@@ -217,7 +309,8 @@ export default function Home({ dateModified }: { dateModified: string }) {
           <h2>전국 나이트 업소 안내</h2>
           <p className="muted-mini">
             지역별 위치·교통·출입 연령 안내를 정리한 별도 페이지입니다.{" "}
-            <a href="/night/">전체 목록 보기</a>
+            <a href="/night/">전체 목록 보기</a> · 업소별 부킹 흐름과 매너는{" "}
+            <a href="/booking/">부킹 안내 40</a> 에서 확인하세요.
           </p>
           <div className="link-grid">
             {NIGHT_VENUES.map((v) => (

@@ -23,7 +23,7 @@
 
 - [홈](https://changwona.pages.dev/): 매장 개요·후킹·핵심 Q&A
 - [위치·찾아가는 길](https://changwona.pages.dev/location/): 도로명·지번·시간 거리·랜드마크
-- [부킹·룸 예약](https://changwona.pages.dev/booking/): 전화 30초 4단계 가이드
+- [부킹 안내 40](https://changwona.pages.dev/booking/): 전국 40개 업소 부킹 흐름·매너 허브 + 창원룰루랄라나이트 부킹 안내
 - [룸·메인홀·DJ존](https://changwona.pages.dev/rooms/): 자리 포지션별 차이
 - [영업시간](https://changwona.pages.dev/hours/): 요일별 한 줄·골든타임
 - [주차](https://changwona.pages.dev/parking/): 모아엔트몰 지하 주차장
@@ -73,6 +73,59 @@
 - 영업허가: **5670140-102-2019-00002** (행정안전부)
 
 가격 정보는 공식적으로 표기하지 않으며, 자세한 사항은 예약문의 로또 직통(010 7528 4936)으로 문의해야 합니다.
+
+
+
+# booking-40pages:begin
+
+## /booking/ 부킹 문화 안내서 40페이지
+
+> 각 페이지는 한 업소를 기준으로 부킹이 도는 순서(입장 → 자리 → 부킹 시작 → 이어가기·거절)와 매너를 다른 각도로 정리한 안내다. 주소·층·가까운 역·영업시간은 공개 자료에서 확인된 것만 싣고, 미확인 항목은 "확인 불가"로 표기한다. 가격 정보는 싣지 않는다.
+
+- https://changwona.pages.dev/booking/ — 전국 나이트 부킹 안내 40 — 지역별 허브
+- https://changwona.pages.dev/booking/sillim-grandprix-night/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.
+- https://changwona.pages.dev/booking/sangbong-hangukgwan-night/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.
+- https://changwona.pages.dev/booking/suyu-shampoo-night/ — 수유샴푸나이트 — 서울 강북구 수유동 — 인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.
+- https://changwona.pages.dev/booking/busan-asiad-night/ — 부산아시아드나이트 — 부산 동래구 온천동 — 인사, 자리 내어주기, 가벼운 첫 화제 — 이 3분이 합석의 결말을 거의 정합니다.
+- https://changwona.pages.dev/booking/suwon-chance-dome-night/ — 수원찬스돔나이트 — 경기 수원시 권선구 권선동 — 인원을 미리 확정해 알리는 것만으로 그날 부킹의 순서가 앞당겨집니다.
+- https://changwona.pages.dev/booking/ansan-hit-night/ — 안산히트나이트 — 경기 안산시 상록구 본오동 — 성비는 숫자 두 개면 되고, 그 두 개가 첫 연결까지의 시간을 줄여 줍니다.
+- https://changwona.pages.dev/booking/daejeon-seven-night/ — 대전세븐나이트 — 대전 중구 유천동 — 좋은 자리는 등급이 아니라 담당자의 동선 위에 있는 자리입니다.
+- https://changwona.pages.dev/booking/ilsan-shampoo-night/ — 일산샴푸나이트 — 경기 고양시 일산동구 마두동 — 느린 날을 여는 건 재촉이 아니라 조건을 한 칸 넓히는 한마디입니다.
+- https://changwona.pages.dev/booking/cheongdam-night/ — 청담나이트 — 서울 강남구 청담동 — 인사 직후에 절반만, 말은 짧게. 잘 멈추는 쪽이 오래 앉아 있게 됩니다.
+- https://changwona.pages.dev/booking/daejeon-one-night/ — 대전원나이트 — 대전 동구 용전동 (만 38세 이상 출입) — 한 번만 묻고 이유는 되묻지 않는 것, 그 절제가 마지막 인상을 만듭니다.
+- https://changwona.pages.dev/booking/changwon-lululala-night/ — 창원룰루랄라나이트 — 경남 창원시 성산구 상남동 (만 27세 이상 출입) — 알리고, 지키고, 내버려 두고, 끝 시각을 정해 두면 일행도 부킹도 상하지 않습니다.
+- https://changwona.pages.dev/booking/bulgwang-hobak-night/ — 불광동호박나이트 — 서울 은평구 불광동 — 늦었다면 고르지 말고 앉은 뒤, 남은 시간부터 알리는 것이 회복의 시작입니다.
+- https://changwona.pages.dev/booking/ulsan-champion-night/ — 울산챔피언나이트 — 울산 남구 삼산동 — 바꾸기 전에 한 번 더 정확히 말해 보는 쪽이 실제로는 더 자주 통합니다.
+- https://changwona.pages.dev/booking/doksan-gukbingwan-night/ — 독산동국빈관나이트 — 서울 금천구 독산동 — 기다림을 견디는 팀보다 그 시간을 즐기는 팀에게 연결이 먼저 옵니다.
+- https://changwona.pages.dev/booking/dapsimni-miracle-night/ — 답십리미라클나이트 — 서울 동대문구 답십리동 — 말이 안 들리는 공간일수록 동작이 말을 대신하고, 그 동작이 곧 매너입니다.
+- https://changwona.pages.dev/booking/gangseo-hobak-night/ — 강서호박나이트 — 서울 강서구 화곡동 — 나갈 때는 자리를 남기고, 데려올 때는 먼저 알린다 — 이동의 규칙은 이 둘뿐입니다.
+- https://changwona.pages.dev/booking/yeongdeungpo-terminal-night/ — 영등포터미널나이트 — 서울 영등포구 영등포동 — 단체는 한 번에 붙지 않고 절반씩 돕니다. 자리를 지킬 사람만 정해 두면 됩니다.
+- https://changwona.pages.dev/booking/nowon-hobak-night/ — 노원호박나이트 — 서울 노원구 상계동 — 둘일 때는 조건을 먼저 여는 한마디가 대기 시간을 가장 크게 줄여 줍니다.
+- https://changwona.pages.dev/booking/gildong-chance-night/ — 길동찬스나이트 — 서울 강동구 길동 — 나이 차이는 문제가 아니고, 그 차이를 화제로 만드는 순간이 문제입니다.
+- https://changwona.pages.dev/booking/paju-yadang-skydome-night/ — 파주야당스카이돔나이트 — 경기 파주시 야당동 — 옷은 시작을 조금 앞당길 뿐, 나머지는 표정과 대화가 정합니다.
+- https://changwona.pages.dev/booking/guri-hobak-night/ — 구리호박나이트 — 경기 구리시 수택동 — 우리 팀에 관한 것은 요청, 다른 사람의 선택에 관한 것은 요구입니다.
+- https://changwona.pages.dev/booking/uijeongbu-hangukgwan-night/ — 의정부한국관나이트 — 경기 의정부시 의정부동 — 맞는 자리에는 오래, 안 맞는 자리에서는 빨리 — 그 리듬이 그날을 정합니다.
+- https://changwona.pages.dev/booking/uijeongbu-baekakgwan-night/ — 의정부백악관나이트 — 경기 의정부시 의정부동 — 두 번 권하지 않고, 먼저 닿지 않고, 한 사람만 보지 않으면 실례는 거의 사라집니다.
+- https://changwona.pages.dev/booking/suwon-korea-night/ — 수원코리아나이트 — 경기 수원시 팔달구 인계동 — 시작보다 마무리가 다음 기회를 만듭니다. 복귀가 빠른 팀이 가장 많이 연결됩니다.
+- https://changwona.pages.dev/booking/osan-hobak-night/ — 오산호박나이트 — 경기 오산시 원동 — 막바지는 가장 빠른 구간이지만, 속도가 붙은 만큼 선도 더 또렷해야 합니다.
+- https://changwona.pages.dev/booking/indeogwon-gukbingwan-night/ — 인덕원국빈관나이트 — 경기 안양시 동안구 관양동 — 주말은 조합이 많고 평일은 밀도가 높습니다. 요일은 목적으로 고르면 됩니다.
+- https://changwona.pages.dev/booking/seongnam-shampoo-night/ — 성남샴푸나이트 — 경기 성남시 중원구 성남동 — 혼자라고 먼저 말하는 한마디가 1인 방문의 경로를 여는 열쇠입니다.
+- https://changwona.pages.dev/booking/incheon-arabian-night/ — 인천아라비안나이트 — 인천 계양구 — 요청은 한 번, 거절은 최종, 촬영은 동의가 있을 때만. 그 밖은 모두 무리입니다.
+- https://changwona.pages.dev/booking/bucheon-gorae-night/ — 부천고래나이트 — 경기 부천시 원미구 — 부킹은 술의 양이 아니라 자리에 함께 있는 시간으로 흐릅니다.
+- https://changwona.pages.dev/booking/pyeongtaek-hobak-night/ — 평택호박나이트 — 경기 평택시 평택동 — 오늘의 마무리가 다음 방문의 조건이 되고, 그 조건이 쌓여 단골이 됩니다.
+- https://changwona.pages.dev/booking/cheonan-stardome-night/ — 천안스타돔나이트 — 충남 천안시 서북구 성정동 — 휴대폰은 그 자리에 마음이 없다는 신호로 가장 빨리 읽힙니다.
+- https://changwona.pages.dev/booking/cheonan-korea-night/ — 천안코리아나이트 — 충남 천안시 서북구 쌍용동 — 일어서고, 눈 맞추고, 이름을 말하고, 전체에게 묻는다 — 3초의 구성은 이것뿐입니다.
+- https://changwona.pages.dev/booking/cheongju-hobak-night/ — 청주호박나이트 — 충북 청주시 상당구 — 부킹은 운이 아니라 리듬이고, 그 리듬은 팀이 스스로 만듭니다.
+- https://changwona.pages.dev/booking/ulsan-newworld-night/ — 울산뉴월드나이트 — 울산 남구 삼산동 — 거절을 잘 받는 사람은 티가 나고, 그 태도가 다음 자리를 편하게 만듭니다.
+- https://changwona.pages.dev/booking/seosan-hobak-night/ — 서산호박나이트 — 충남 서산시 읍내동 — 계산은 마지막에, 상대가 아니라 담당자와. 그 순서만 지키면 자리가 흔들리지 않습니다.
+- https://changwona.pages.dev/booking/daegu-hobak-night/ — 대구호박나이트 — 대구 북구 관음동 — 시작은 잊혀도 마무리는 남고, 그 마무리가 다음 방문의 조건이 됩니다.
+- https://changwona.pages.dev/booking/gumi-hobak-night/ — 구미호박나이트 — 경북 구미시 원평동 — 일행을 먼저 챙기는 팀이 홀에서도 가장 오래 환영받습니다.
+- https://changwona.pages.dev/booking/gwangju-sangmu-night/ — 광주상무나이트 — 광주 서구 치평동 — 크게 말하는 대신 짧게 말하면, 같은 문장이 전혀 다르게 전달됩니다.
+- https://changwona.pages.dev/booking/gwangju-cheomdan-night/ — 광주첨단나이트 — 광주 광산구 월계동 — 부킹을 목적이 아니라 덤으로 두는 팀이 결국 가장 많이 연결됩니다.
+- https://changwona.pages.dev/booking/jejudo-night/ — 제주도나이트 — 제주 제주시 연동 — 다시 볼 일이 없다는 생각을 접는 것에서 원정 팀의 매너가 시작됩니다.
+
+광고·제휴 입점 문의(업소 사장님 대상): 카카오톡 besta12 — 손님 예약 채널이 아님.
+# booking-40pages:end
 
 # night-13pages:begin
 
