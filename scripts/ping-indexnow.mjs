@@ -4,7 +4,7 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { resolve, join } from "node:path";
 
-const HOST = "changwona.pages.dev";
+const HOST = "changwonc.pages.dev";
 const KEY_TXT = readdirSync(resolve(process.cwd(), "public"))
   .find((f) => f.endsWith(".txt") && /^[0-9a-f]{32}\.txt$/i.test(f));
 
@@ -18,7 +18,7 @@ const KEY_LOC = `https://${HOST}/${KEY_TXT}`;
 const SITEMAP = readFileSync(resolve(process.cwd(), "public/sitemap.xml"), "utf8");
 const URLS = Array.from(SITEMAP.matchAll(/<loc>([^<]+)<\/loc>/g))
   .map((m) => m[1])
-  // 호스트는 changwona.pages.dev — 이전 필터가 changwon2 를 보고 있어 항상 0건이었다.
+  // 호스트는 changwonc.pages.dev — 이전 필터가 changwon2 를 보고 있어 항상 0건이었다.
   .filter((u) => u.startsWith(`https://${HOST}/`));
 
 if (URLS.length === 0) {

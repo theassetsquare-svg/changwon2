@@ -1,4 +1,4 @@
-export const SITE_URL = "https://changwona.pages.dev";
+export const SITE_URL = "https://changwonc.pages.dev";
 export const SITE_NAME = "창원 룰루랄라 나이트클럽";
 export const BIZ_NICKNAME = "로또";
 export const BIZ_PHONE = "010 7528 4936";

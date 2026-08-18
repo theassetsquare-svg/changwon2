@@ -17,7 +17,7 @@ const ROOT = resolve(import.meta.dirname, "../..");
 const OUT_DIR = join(ROOT, "public/og");
 const WORK = join(tmpdir(), "booking-og-build");
 const FONT_DIR = join(process.env.HOME ?? "/home/user", ".fonts");
-const BRAND = "changwona.pages.dev";
+const BRAND = "changwonc.pages.dev";
 const SIZE = 1200;
 
 // venues-*.ts 에서 카드에 필요한 필드만 파싱한다(TS 직접 import 불가).

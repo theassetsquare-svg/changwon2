@@ -5,7 +5,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, join } from "node:path";
 
 const ROOT = resolve(import.meta.dirname, "../..");
-const SITE = "https://changwona.pages.dev";
+const SITE = "https://changwonc.pages.dev";
 const MARK = "<!-- night-13pages:begin -->";
 const MARK_TXT = "# night-13pages:begin";
 

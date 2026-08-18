@@ -203,7 +203,7 @@ const f19 = pages.filter((p) => p.h2.filter((h) => h.includes(p.name)).length < 
 gate("G19", f19.length === 0, `위반 ${f19.length}p ${f19.map((p) => `${p.slug}(${p.h2.filter((h) => h.includes(p.name)).length}개)`).join(", ")}`);
 
 // ── G24 중복 URL / canonical 자기참조 ──
-const canonOk = pages.every((p) => p.canon === `https://changwona.pages.dev/night/${p.slug}/`);
+const canonOk = pages.every((p) => p.canon === `https://changwonc.pages.dev/night/${p.slug}/`);
 gate("G24", canonOk && new Set(pages.map((p) => p.canon)).size === 13, `canonical 자기참조 ${pages.filter((p) => p.canon.endsWith(`/night/${p.slug}/`)).length}/13, xxx-2 형태 0건`);
 
 // ── G25 첫 문단 금지어 ──
