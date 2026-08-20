@@ -57,6 +57,9 @@ export default function NightHead({
       <meta property="og:image:height" content="1200" />
       <meta property="og:image:alt" content={imageAlt} />
 
+      {/* 네이버 썸네일 수집용 */}
+      <meta name="thumbnail" content={img} />
+
       {/* 1:1 이미지이므로 summary. summary_large_image 는 좌우가 잘린다. */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />

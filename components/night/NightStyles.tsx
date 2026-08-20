@@ -356,6 +356,28 @@ export default function NightStyles() {
         font-size: 13px;
         letter-spacing: 0.04em;
       }
+      .night-og {
+        margin: 18px 0 6px;
+      }
+      .night-og img {
+        display: block;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+      }
+      .night-og figcaption {
+        margin: 8px 0 0;
+        text-align: center;
+        font-size: 13px;
+        color: #cfc2e0;
+      }
+      .night-kw {
+        color: #f7f3ff;
+        font-weight: 600;
+        line-height: 1.8;
+      }
     `}</style>
   );
 }

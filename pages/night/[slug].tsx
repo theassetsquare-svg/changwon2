@@ -10,6 +10,7 @@ import {
   NIGHT_BASE,
   type Venue,
 } from "@/lib/night/venues";
+import { kwLead, kwClose } from "@/lib/kw";
 import {
   breadcrumbSchema,
   faqPageSchema,
@@ -75,6 +76,20 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
         <div className="answer-box">
           <p>{venue.answer}</p>
         </div>
+
+        <figure className="night-og">
+          <img
+            src={ogImagePath(venue.slug)}
+            alt={`${venue.name} 위치·이용 안내`}
+            width={1200}
+            height={1200}
+            style={{ maxWidth: "100%", height: "auto" }}
+            loading="eager"
+          />
+          <figcaption>{venue.name} 안내 카드</figcaption>
+        </figure>
+
+        <p className="night-kw">{kwLead(venue.name, venue.region, venue.slug)}</p>
 
         <ul className="night-facts">
           <li>
@@ -158,6 +173,8 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
           <p>② {venue.summary[1]}</p>
           <p>③ {venue.summary[2]}</p>
         </div>
+
+        <p className="night-kw">{kwClose(venue.name, venue.slug)}</p>
         </article>
 
         <aside className="night-related" aria-label="관련 업소 안내">

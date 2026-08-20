@@ -10,6 +10,7 @@ import {
   BOOKING_BASE,
   type BookingVenue,
 } from "@/lib/booking/venues";
+import { kwLead, kwClose } from "@/lib/kw";
 import {
   bookingBreadcrumbSchema,
   bookingClubSchema,
@@ -98,6 +99,7 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
             {venue.lead.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
+            <p className="bk-kw">{kwLead(venue.name, venue.region, venue.slug)}</p>
           </section>
 
           <div className="answer-box">
@@ -108,6 +110,18 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
               </p>
             ))}
           </div>
+
+          <figure className="bk-og">
+            <img
+              src={bookingOgPath(venue.slug)}
+              alt={`${venue.name} 부킹 안내`}
+              width={1200}
+              height={1200}
+              style={{ maxWidth: "100%", height: "auto" }}
+              loading="eager"
+            />
+            <figcaption>{venue.name} 부킹 안내 카드</figcaption>
+          </figure>
 
           <div className="bk-table-wrap">
             <table className="bk-facts">
@@ -137,6 +151,7 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
             {venue.closing.body.map((p, j) => (
               <p key={j}>{p}</p>
             ))}
+            <p className="bk-kw">{kwClose(venue.name, venue.slug)}</p>
           </section>
 
           <section className="bk-faq">

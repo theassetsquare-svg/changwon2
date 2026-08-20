@@ -367,6 +367,27 @@ export default function BookingStyles() {
         margin: 12px 0 0;
         line-height: 1.7;
       }
+      .bk-og {
+        margin: 18px 0 6px;
+      }
+      .bk-og img {
+        display: block;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+      }
+      .bk-og figcaption {
+        margin: 8px 0 0;
+        text-align: center;
+        font-size: 13px;
+        color: #cfc2e0;
+      }
+      .bk-kw {
+        color: #f0e7ff;
+        font-weight: 600;
+      }
     `}</style>
   );
 }
