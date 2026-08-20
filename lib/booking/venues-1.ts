@@ -81,7 +81,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.",
-    related: ["sangbong-hangukgwan-night", "suyu-shampoo-night", "gangseo-hobak-night"],
+    related: ["sangbong-hangukgwan-night", "suyu-shampoo-night", "gangseo-hobak-night-guide"],
     og: { bg: "#151032", bg2: "#0b0410" },
   },
 
@@ -165,7 +165,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.",
-    related: ["sillim-grandprix-night", "nowon-hobak-night", "dapsimni-miracle-night"],
+    related: ["sillim-grandprix-night", "nowon-hobak-night-guide", "dapsimni-miracle-night"],
     og: { bg: "#1e1349", bg2: "#0b0410" },
   },
 
@@ -249,7 +249,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.",
-    related: ["sillim-grandprix-night", "nowon-hobak-night", "seongnam-shampoo-night"],
+    related: ["sillim-grandprix-night", "nowon-hobak-night-guide", "seongnam-shampoo-night-guide"],
     og: { bg: "#180c3b", bg2: "#0b0410" },
   },
 
@@ -333,7 +333,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인사, 자리 내어주기, 가벼운 첫 화제 — 이 3분이 합석의 결말을 거의 정합니다.",
-    related: ["ulsan-newworld-night", "daegu-hobak-night", "changwon-lululala-night"],
+    related: ["ulsan-newworld-night-guide", "daegu-hobak-night-guide", "changwon-lululala-night"],
     og: { bg: "#230d54", bg2: "#0b0410" },
   },
 
@@ -415,7 +415,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인원을 미리 확정해 알리는 것만으로 그날 부킹의 순서가 앞당겨집니다.",
-    related: ["suwon-korea-night", "osan-hobak-night", "ansan-hit-night"],
+    related: ["suwon-korea-night-guide", "osan-hobak-night-guide", "ansan-hit-night"],
     og: { bg: "#20103c", bg2: "#0b0410" },
   },
 
@@ -498,7 +498,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "성비는 숫자 두 개면 되고, 그 두 개가 첫 연결까지의 시간을 줄여 줍니다.",
-    related: ["suwon-chance-dome-night", "bucheon-gorae-night", "incheon-arabian-night"],
+    related: ["suwon-chance-dome-night", "bucheon-gorae-night-guide", "incheon-arabian-night-guide"],
     og: { bg: "#2f1254", bg2: "#0b0410" },
   },
 
@@ -580,7 +580,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "좋은 자리는 등급이 아니라 담당자의 동선 위에 있는 자리입니다.",
-    related: ["daejeon-one-night", "cheonan-korea-night", "cheongju-hobak-night"],
+    related: ["daejeon-one-night", "cheonan-korea-night-guide", "cheongju-hobak-night-guide"],
     og: { bg: "#290b46", bg2: "#0b0410" },
   },
 
@@ -663,7 +663,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "느린 날을 여는 건 재촉이 아니라 조건을 한 칸 넓히는 한마디입니다.",
-    related: ["paju-yadang-skydome-night", "guri-hobak-night", "uijeongbu-hangukgwan-night"],
+    related: ["paju-yadang-skydome-night-guide", "guri-hobak-night-guide", "uijeongbu-hangukgwan-night-guide"],
     og: { bg: "#391754", bg2: "#0b0410" },
   },
 
@@ -746,7 +746,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인사 직후에 절반만, 말은 짧게. 잘 멈추는 쪽이 오래 앉아 있게 됩니다.",
-    related: ["gildong-chance-night", "yeongdeungpo-terminal-night", "gangseo-hobak-night"],
+    related: ["gildong-chance-night-guide", "yeongdeungpo-terminal-night-guide", "gangseo-hobak-night-guide"],
     og: { bg: "#321047", bg2: "#0b0410" },
   },
 
@@ -829,7 +829,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "한 번만 묻고 이유는 되묻지 않는 것, 그 절제가 마지막 인상을 만듭니다.",
-    related: ["daejeon-seven-night", "cheonan-stardome-night", "seosan-hobak-night"],
+    related: ["daejeon-seven-night", "cheonan-stardome-night-guide", "seosan-hobak-night-guide"],
     og: { bg: "#290a39", bg2: "#0b0410" },
   },
 ];
