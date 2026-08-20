@@ -85,13 +85,13 @@
 - https://changwonc.pages.dev/booking/ — 전국 나이트 부킹 안내 40 — 지역별 허브
 - https://changwonc.pages.dev/booking/sillim-grandprix-night/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.
 - https://changwonc.pages.dev/booking/sangbong-hangukgwan-night/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.
-- https://changwonc.pages.dev/booking/suyu-shampoo-night-guide/ — 수유샴푸나이트 — 서울 강북구 수유동 — 인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.
+- https://changwonc.pages.dev/booking/suyu-shampoo-night/ — 수유샴푸나이트 — 서울 강북구 수유동 — 인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.
 - https://changwonc.pages.dev/booking/busan-asiad-night/ — 부산아시아드나이트 — 부산 동래구 온천동 — 인사, 자리 내어주기, 가벼운 첫 화제 — 이 3분이 합석의 결말을 거의 정합니다.
-- https://changwonc.pages.dev/booking/suwon-chance-dome-night-guide/ — 수원찬스돔나이트 — 경기 수원시 권선구 권선동 — 인원을 미리 확정해 알리는 것만으로 그날 부킹의 순서가 앞당겨집니다.
-- https://changwonc.pages.dev/booking/ansan-hit-night-guide/ — 안산히트나이트 — 경기 안산시 상록구 본오동 — 성비는 숫자 두 개면 되고, 그 두 개가 첫 연결까지의 시간을 줄여 줍니다.
-- https://changwonc.pages.dev/booking/daejeon-seven-night-guide/ — 대전세븐나이트 — 대전 중구 유천동 — 좋은 자리는 등급이 아니라 담당자의 동선 위에 있는 자리입니다.
-- https://changwonc.pages.dev/booking/ilsan-shampoo-night-guide/ — 일산샴푸나이트 — 경기 고양시 일산동구 마두동 — 느린 날을 여는 건 재촉이 아니라 조건을 한 칸 넓히는 한마디입니다.
-- https://changwonc.pages.dev/booking/cheongdam-night-guide/ — 청담나이트 — 서울 강남구 청담동 — 인사 직후에 절반만, 말은 짧게. 잘 멈추는 쪽이 오래 앉아 있게 됩니다.
+- https://changwonc.pages.dev/booking/suwon-chance-dome-night/ — 수원찬스돔나이트 — 경기 수원시 권선구 권선동 — 인원을 미리 확정해 알리는 것만으로 그날 부킹의 순서가 앞당겨집니다.
+- https://changwonc.pages.dev/booking/ansan-hit-night/ — 안산히트나이트 — 경기 안산시 상록구 본오동 — 성비는 숫자 두 개면 되고, 그 두 개가 첫 연결까지의 시간을 줄여 줍니다.
+- https://changwonc.pages.dev/booking/daejeon-seven-night/ — 대전세븐나이트 — 대전 중구 유천동 — 좋은 자리는 등급이 아니라 담당자의 동선 위에 있는 자리입니다.
+- https://changwonc.pages.dev/booking/ilsan-shampoo-night/ — 일산샴푸나이트 — 경기 고양시 일산동구 마두동 — 느린 날을 여는 건 재촉이 아니라 조건을 한 칸 넓히는 한마디입니다.
+- https://changwonc.pages.dev/booking/cheongdam-night/ — 청담나이트 — 서울 강남구 청담동 — 인사 직후에 절반만, 말은 짧게. 잘 멈추는 쪽이 오래 앉아 있게 됩니다.
 - https://changwonc.pages.dev/booking/daejeon-one-night/ — 대전원나이트 — 대전 동구 용전동 (만 38세 이상 출입) — 한 번만 묻고 이유는 되묻지 않는 것, 그 절제가 마지막 인상을 만듭니다.
 - https://changwonc.pages.dev/booking/changwon-lululala-night/ — 창원룰루랄라나이트 — 경남 창원시 성산구 상남동 (만 27세 이상 출입) — 알리고, 지키고, 내버려 두고, 끝 시각을 정해 두면 일행도 부킹도 상하지 않습니다.
 - https://changwonc.pages.dev/booking/bulgwang-hobak-night/ — 불광동호박나이트 — 서울 은평구 불광동 — 늦었다면 고르지 말고 앉은 뒤, 남은 시간부터 알리는 것이 회복의 시작입니다.
