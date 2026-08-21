@@ -60,7 +60,7 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
         title={venue.title}
         description={venue.description}
         path={path}
-        image={bookingOgPath(venue.slug)}
+        image={bookingOgPath(venue.slug, (venue as any).ogV)}
         imageAlt={venue.ogAlt}
         jsonLd={[
           bookingClubSchema(venue),
@@ -113,7 +113,7 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
 
           <figure className="bk-og">
             <img
-              src={bookingOgPath(venue.slug)}
+              src={bookingOgPath(venue.slug, (venue as any).ogV)}
               alt={`${venue.name} 부킹 안내`}
               width={1200}
               height={1200}

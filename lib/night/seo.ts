@@ -2,7 +2,7 @@ import { SITE_URL } from "@/lib/site";
 import type { Venue } from "./venues";
 import { nightPath, NIGHT_BASE } from "./venues";
 
-export const ogImagePath = (slug: string) => `/og/${slug}-og.png`;
+export const ogImagePath = (slug: string, v?: string) => `/og/${slug}-og${v ?? ""}.png`;
 export const absUrl = (path: string) => SITE_URL + path;
 
 /** ① NightClub — 확인 불가 항목(상세번지·영업시간·가격)은 키 자체를 넣지 않는다. */
@@ -13,7 +13,7 @@ export function nightClubSchema(v: Venue) {
     "@type": "NightClub",
     name: v.name,
     url,
-    image: absUrl(ogImagePath(v.slug)),
+    image: absUrl(ogImagePath(v.slug, (v as any).ogV)),
     description: v.answer,
     address: {
       "@type": "PostalAddress",

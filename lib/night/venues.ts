@@ -45,6 +45,8 @@ export type Venue = {
   hours?: string;
   /** A그룹만 값이 있다. B그룹은 생략(=undefined) → 고정바에 광고·제휴 문의가 노출된다. */
   contact?: { nick: string; phone: string; tel: string };
+  /** 썸네일 그림을 바꿨을 때 캐시를 피하려고 붙이는 판 번호. 없으면 기존 파일명 그대로. */
+  ogV?: string;
   ageRange?: string;
   ageBadge?: string;
   title: string;
@@ -1087,7 +1089,9 @@ export const VENUES: Venue[] = [
   {
     slug: "daejeon-seven-night-guide",
     name: "대전세븐나이트",
-    group: "B",
+    group: "A",
+    contact: { nick: "영탁", phone: "010-7770-0869", tel: "01077700869" },
+    ogV: "-v2",
     region: "대전 중구 유천동",
     locality: "중구",
     addressRegion: "대전광역시",

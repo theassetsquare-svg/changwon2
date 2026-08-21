@@ -42,7 +42,7 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
         title={venue.title}
         description={venue.description}
         path={path}
-        image={ogImagePath(venue.slug)}
+        image={ogImagePath(venue.slug, (venue as any).ogV)}
         imageAlt={venue.ogAlt}
         jsonLd={[nightClubSchema(venue), faqPageSchema(venue), breadcrumbSchema(venue)]}
       />
@@ -79,7 +79,7 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
 
         <figure className="night-og">
           <img
-            src={ogImagePath(venue.slug)}
+            src={ogImagePath(venue.slug, (venue as any).ogV)}
             alt={`${venue.name} 위치·이용 안내`}
             width={1200}
             height={1200}

@@ -51,6 +51,8 @@ export type BookingVenue = {
   ageBadge?: string;
   ageRange?: string;
   contact?: { nick: string; phone: string; tel: string };
+  /** 썸네일 그림을 바꿨을 때 캐시를 피하려고 붙이는 판 번호. 없으면 기존 파일명 그대로. */
+  ogV?: string;
   /** 같은 업소의 /night/ 안내 페이지가 있으면 슬러그 */
   nightSlug?: string;
 

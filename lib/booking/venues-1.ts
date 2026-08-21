@@ -505,7 +505,9 @@ export const VENUES_1: BookingVenue[] = [
   {
     slug: "daejeon-seven-night",
     name: "대전세븐나이트",
-    group: "B",
+    group: "A",
+    contact: { nick: "영탁", phone: "010-7770-0869", tel: "01077700869" },
+    ogV: "-v2",
     region: "대전 중구 유천동",
     locality: "중구",
     addressRegion: "대전광역시",
