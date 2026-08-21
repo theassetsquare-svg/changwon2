@@ -10,14 +10,14 @@ export * from "./types";
 const ALL = [...VENUES_1, ...VENUES_2, ...VENUES_3, ...VENUES_4];
 
 const ORDER = [
-  "sillim-grandprix-night-guide",
+  "sillim-grandprix-night-hall",
   "sangbong-hangukgwan-night",
-  "suyu-shampoo-night",
+  "suyu-shampoo-night-guide",
   "busan-asiad-night",
   "suwon-chance-dome-night",
   "ansan-hit-night",
   "daejeon-seven-night",
-  "ilsan-shampoo-night",
+  "ilsan-shampoo-night-guide",
   "cheongdam-night",
   "daejeon-one-night",
   "changwon-lululala-night",
@@ -72,9 +72,9 @@ export const REGION_GROUPS: { key: string; label: string; slugs: string[] }[] = 
     key: "seoul",
     label: "서울",
     slugs: [
-      "sillim-grandprix-night-guide",
+      "sillim-grandprix-night-hall",
       "sangbong-hangukgwan-night",
-      "suyu-shampoo-night",
+      "suyu-shampoo-night-guide",
       "cheongdam-night",
       "bulgwang-hobak-night",
       "doksan-gukbingwan-night-guide",
@@ -91,7 +91,7 @@ export const REGION_GROUPS: { key: string; label: string; slugs: string[] }[] = 
     slugs: [
       "suwon-chance-dome-night",
       "ansan-hit-night",
-      "ilsan-shampoo-night",
+      "ilsan-shampoo-night-guide",
       "paju-yadang-skydome-night-guide",
       "guri-hobak-night-guide",
       "uijeongbu-hangukgwan-night-guide",

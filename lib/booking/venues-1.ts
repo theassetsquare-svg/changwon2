@@ -3,7 +3,7 @@ import type { BookingVenue } from "./types";
 /** 1~10번 업소. 각도: 실수 / 거절 / 첫마디 / 합석 3분 / 인원 / 성비 / 자리 / 신호 / 잔 / 연락처 */
 export const VENUES_1: BookingVenue[] = [
   {
-    slug: "sillim-grandprix-night-guide",
+    slug: "sillim-grandprix-night-hall",
     name: "신림그랑프리나이트",
     group: "B",
     region: "서울 관악구 신림동",
@@ -12,7 +12,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "서울 관악구 신림로 340 (신림동 1422-5)",
     floor: "르네상스 쇼핑몰 14층",
     station: "신림역",
-    nightSlug: "sillim-grandprix-night-guide",
+    nightSlug: "sillim-grandprix-night-hall",
     title: "신림그랑프리나이트, 첫 부킹에서 하는 흔한 실수",
     description:
       "부킹은 손님이 만드는 게 아니라 홀이 돌리는 흐름에 얹히는 일입니다. 신림그랑프리나이트를 예로 들어 입장부터 자리, 첫 연결, 마무리까지 초보가 자주 어긋나는 지점을 순서대로 짚었습니다.",
@@ -81,7 +81,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.",
-    related: ["sangbong-hangukgwan-night", "suyu-shampoo-night", "gangseo-hobak-night-guide"],
+    related: ["sangbong-hangukgwan-night", "suyu-shampoo-night-guide", "gangseo-hobak-night-guide"],
     og: { bg: "#151032", bg2: "#0b0410" },
   },
 
@@ -165,12 +165,12 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.",
-    related: ["sillim-grandprix-night-guide", "nowon-hobak-night-guide", "dapsimni-miracle-night"],
+    related: ["sillim-grandprix-night-hall", "nowon-hobak-night-guide", "dapsimni-miracle-night"],
     og: { bg: "#1e1349", bg2: "#0b0410" },
   },
 
   {
-    slug: "suyu-shampoo-night",
+    slug: "suyu-shampoo-night-guide",
     name: "수유샴푸나이트",
     group: "B",
     region: "서울 강북구 수유동",
@@ -180,7 +180,7 @@ export const VENUES_1: BookingVenue[] = [
     floor: "지하 1~2층",
     station: "수유역",
     hours: "저녁 19:00 ~ 다음 날 05:00",
-    nightSlug: "suyu-shampoo-night",
+    nightSlug: "suyu-shampoo-night-guide",
     title: "수유샴푸나이트, 웨이터에게 건네는 첫마디",
     description:
       "부킹의 속도는 담당 웨이터에게 처음 건네는 한 문장에서 갈립니다. 수유샴푸나이트를 기준으로 무엇을 말하고 무엇을 말하지 않아야 하는지, 자리 배정부터 연결까지 순서대로 정리했습니다.",
@@ -249,7 +249,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.",
-    related: ["sillim-grandprix-night-guide", "nowon-hobak-night-guide", "seongnam-shampoo-night-guide"],
+    related: ["sillim-grandprix-night-hall", "nowon-hobak-night-guide", "seongnam-shampoo-night-guide"],
     og: { bg: "#180c3b", bg2: "#0b0410" },
   },
 
@@ -587,7 +587,7 @@ export const VENUES_1: BookingVenue[] = [
   },
 
   {
-    slug: "ilsan-shampoo-night",
+    slug: "ilsan-shampoo-night-guide",
     name: "일산샴푸나이트",
     group: "B",
     region: "경기 고양시 일산동구 마두동",
@@ -596,7 +596,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "경기 고양시 일산동구 중앙로 1160 (마두동 805-1)",
     floor: "오원빌딩 8~9층",
     station: "마두역",
-    nightSlug: "ilsan-shampoo-night",
+    nightSlug: "ilsan-shampoo-night-guide",
     title: "일산샴푸나이트, 부킹이 안 도는 날의 신호",
     description:
       "홀에는 부킹이 잘 도는 날과 그렇지 않은 날이 있습니다. 일산샴푸나이트를 기준으로 그날의 흐름을 읽는 신호와, 흐름이 느릴 때 팀이 취할 수 있는 매너 있는 대응을 정리했습니다.",

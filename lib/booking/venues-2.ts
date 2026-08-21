@@ -656,7 +656,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "둘일 때는 조건을 먼저 여는 한마디가 대기 시간을 가장 크게 줄여 줍니다.",
-    related: ["suyu-shampoo-night", "sangbong-hangukgwan-night", "uijeongbu-baekakgwan-night-guide"],
+    related: ["suyu-shampoo-night-guide", "sangbong-hangukgwan-night", "uijeongbu-baekakgwan-night-guide"],
     og: { bg: "#46113e", bg2: "#0b0410" },
   },
 
@@ -820,7 +820,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "옷은 시작을 조금 앞당길 뿐, 나머지는 표정과 대화가 정합니다.",
-    related: ["ilsan-shampoo-night", "guri-hobak-night-guide", "uijeongbu-hangukgwan-night-guide"],
+    related: ["ilsan-shampoo-night-guide", "guri-hobak-night-guide", "uijeongbu-hangukgwan-night-guide"],
     og: { bg: "#461639", bg2: "#0b0410" },
   },
 ];

@@ -78,7 +78,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "우리 팀에 관한 것은 요청, 다른 사람의 선택에 관한 것은 요구입니다.",
-    related: ["uijeongbu-hangukgwan-night-guide", "ilsan-shampoo-night", "paju-yadang-skydome-night-guide"],
+    related: ["uijeongbu-hangukgwan-night-guide", "ilsan-shampoo-night-guide", "paju-yadang-skydome-night-guide"],
     og: { bg: "#210e39", bg2: "#0b0410" },
   },
 
@@ -566,7 +566,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "혼자라고 먼저 말하는 한마디가 1인 방문의 경로를 여는 열쇠입니다.",
-    related: ["suyu-shampoo-night", "suwon-korea-night-guide", "indeogwon-gukbingwan-night-guide"],
+    related: ["suyu-shampoo-night-guide", "suwon-korea-night-guide", "indeogwon-gukbingwan-night-guide"],
     og: { bg: "#3a1244", bg2: "#0b0410" },
   },
 
