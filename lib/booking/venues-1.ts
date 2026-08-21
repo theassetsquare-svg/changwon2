@@ -3,7 +3,7 @@ import type { BookingVenue } from "./types";
 /** 1~10번 업소. 각도: 실수 / 거절 / 첫마디 / 합석 3분 / 인원 / 성비 / 자리 / 신호 / 잔 / 연락처 */
 export const VENUES_1: BookingVenue[] = [
   {
-    slug: "sillim-grandprix-night",
+    slug: "sillim-grandprix-night-guide",
     name: "신림그랑프리나이트",
     group: "B",
     region: "서울 관악구 신림동",
@@ -12,7 +12,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "서울 관악구 신림로 340 (신림동 1422-5)",
     floor: "르네상스 쇼핑몰 14층",
     station: "신림역",
-    nightSlug: "sillim-grandprix-night",
+    nightSlug: "sillim-grandprix-night-guide",
     title: "신림그랑프리나이트, 첫 부킹에서 하는 흔한 실수",
     description:
       "부킹은 손님이 만드는 게 아니라 홀이 돌리는 흐름에 얹히는 일입니다. 신림그랑프리나이트를 예로 들어 입장부터 자리, 첫 연결, 마무리까지 초보가 자주 어긋나는 지점을 순서대로 짚었습니다.",
@@ -165,7 +165,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.",
-    related: ["sillim-grandprix-night", "nowon-hobak-night-guide", "dapsimni-miracle-night"],
+    related: ["sillim-grandprix-night-guide", "nowon-hobak-night-guide", "dapsimni-miracle-night"],
     og: { bg: "#1e1349", bg2: "#0b0410" },
   },
 
@@ -249,7 +249,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.",
-    related: ["sillim-grandprix-night", "nowon-hobak-night-guide", "seongnam-shampoo-night-guide"],
+    related: ["sillim-grandprix-night-guide", "nowon-hobak-night-guide", "seongnam-shampoo-night-guide"],
     og: { bg: "#180c3b", bg2: "#0b0410" },
   },
 

@@ -83,7 +83,7 @@
 > 각 페이지는 한 업소를 기준으로 부킹이 도는 순서(입장 → 자리 → 부킹 시작 → 이어가기·거절)와 매너를 다른 각도로 정리한 안내다. 주소·층·가까운 역·영업시간은 공개 자료에서 확인된 것만 싣고, 미확인 항목은 "확인 불가"로 표기한다. 가격 정보는 싣지 않는다.
 
 - https://changwonc.pages.dev/booking/ — 전국 나이트 부킹 안내 40 — 지역별 허브
-- https://changwonc.pages.dev/booking/sillim-grandprix-night/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.
+- https://changwonc.pages.dev/booking/sillim-grandprix-night-guide/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.
 - https://changwonc.pages.dev/booking/sangbong-hangukgwan-night/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.
 - https://changwonc.pages.dev/booking/suyu-shampoo-night/ — 수유샴푸나이트 — 서울 강북구 수유동 — 인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.
 - https://changwonc.pages.dev/booking/busan-asiad-night/ — 부산아시아드나이트 — 부산 동래구 온천동 — 인사, 자리 내어주기, 가벼운 첫 화제 — 이 3분이 합석의 결말을 거의 정합니다.
@@ -139,7 +139,7 @@
 - https://changwonc.pages.dev/night/ulsan-champion-night/ — 울산챔피언나이트 — 울산 남구 삼산동 — 울산챔피언나이트는 울산광역시 남구 삼산동에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/cheongdam-night-guide/ — 청담나이트 — 서울 강남구 청담동 — 청담나이트는 서울 강남구 청담동에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/daejeon-one-night/ — 대전원나이트 — 대전 동구 용전동 (만 38세 이상 출입) — 대전원나이트는 대전광역시에 있는 나이트클럽입니다.
-- https://changwonc.pages.dev/night/sillim-grandprix-night/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 신림그랑프리나이트는 서울 관악구 신림동에 있는 나이트클럽입니다.
+- https://changwonc.pages.dev/night/sillim-grandprix-night-guide/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 신림그랑프리나이트는 서울 관악구 신림동에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/sangbong-hangukgwan-night/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 상봉동한국관나이트는 서울 중랑구 상봉동에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/suyu-shampoo-night-guide/ — 수유샴푸나이트 — 서울 강북구 수유동 — 수유샴푸나이트는 서울 강북구 수유동 일대에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/busan-asiad-night/ — 부산아시아드나이트 — 부산 동래구 온천동 — 부산아시아드나이트는 부산광역시 동래구 온천동에 있는 나이트클럽입니다.

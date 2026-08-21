@@ -196,7 +196,7 @@ export const VENUES: Venue[] = [
       "넷이 기준 인원이고, 인원과 성비를 미리 말하면 부킹이 빨라집니다.",
       "서울 은평구 통일로 730 보광빌딩 지하, 문의는 손흥민 010-2221-1937.",
     ],
-    related: ["suyu-shampoo-night-guide", "sangbong-hangukgwan-night", "sillim-grandprix-night"],
+    related: ["suyu-shampoo-night-guide", "sangbong-hangukgwan-night", "sillim-grandprix-night-guide"],
     og: { bg: "#3a1b04", bg2: "#0b0410", fg: "#ffffff", accent: "#ff9a2e" },
   },
 
@@ -569,7 +569,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "sillim-grandprix-night",
+    slug: "sillim-grandprix-night-guide",
     name: "신림그랑프리나이트",
     group: "B",
     region: "서울 관악구 신림동",

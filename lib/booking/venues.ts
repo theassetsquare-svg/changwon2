@@ -10,7 +10,7 @@ export * from "./types";
 const ALL = [...VENUES_1, ...VENUES_2, ...VENUES_3, ...VENUES_4];
 
 const ORDER = [
-  "sillim-grandprix-night",
+  "sillim-grandprix-night-guide",
   "sangbong-hangukgwan-night",
   "suyu-shampoo-night",
   "busan-asiad-night",
@@ -72,7 +72,7 @@ export const REGION_GROUPS: { key: string; label: string; slugs: string[] }[] = 
     key: "seoul",
     label: "서울",
     slugs: [
-      "sillim-grandprix-night",
+      "sillim-grandprix-night-guide",
       "sangbong-hangukgwan-night",
       "suyu-shampoo-night",
       "cheongdam-night",
