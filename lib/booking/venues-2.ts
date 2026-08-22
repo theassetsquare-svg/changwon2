@@ -410,7 +410,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "말이 안 들리는 공간일수록 동작이 말을 대신하고, 그 동작이 곧 매너입니다.",
-    related: ["sangbong-hangukgwan-night", "nowon-hobak-night-hall", "gildong-chance-night-hall"],
+    related: ["sangbong-hangukgwan-1", "nowon-hobak-night-hall", "gildong-chance-night-hall"],
     og: { bg: "#511353", bg2: "#0b0410" },
   },
 
@@ -656,7 +656,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "둘일 때는 조건을 먼저 여는 한마디가 대기 시간을 가장 크게 줄여 줍니다.",
-    related: ["night-shampoo-suyu", "sangbong-hangukgwan-night", "uijeongbu-baekakgwan-night-hall"],
+    related: ["suyu-shampoo-1", "sangbong-hangukgwan-1", "uijeongbu-baekakgwan-night-hall"],
     og: { bg: "#46113e", bg2: "#0b0410" },
   },
 
@@ -820,7 +820,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "옷은 시작을 조금 앞당길 뿐, 나머지는 표정과 대화가 정합니다.",
-    related: ["ilsan-shampoo-night-hall", "guri-hobak-night-hall", "uijeongbu-hangukgwan-night-hall"],
+    related: ["ilsan-shampoo-1", "guri-hobak-night-hall", "uijeongbu-hangukgwan-night-hall"],
     og: { bg: "#461639", bg2: "#0b0410" },
   },
 ];

@@ -78,7 +78,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "우리 팀에 관한 것은 요청, 다른 사람의 선택에 관한 것은 요구입니다.",
-    related: ["uijeongbu-hangukgwan-night-hall", "ilsan-shampoo-night-hall", "paju-yadang-skydome-night-hall"],
+    related: ["uijeongbu-hangukgwan-night-hall", "ilsan-shampoo-1", "paju-yadang-skydome-night-hall"],
     og: { bg: "#210e39", bg2: "#0b0410" },
   },
 
@@ -323,7 +323,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "시작보다 마무리가 다음 기회를 만듭니다. 복귀가 빠른 팀이 가장 많이 연결됩니다.",
-    related: ["suwon-chance-dome-night", "osan-hobak-night-hall", "seongnam-shampoo-night-hall"],
+    related: ["suwon-chancedome-1", "osan-hobak-night-hall", "seongnam-shampoo-night-hall"],
     og: { bg: "#3a1551", bg2: "#0b0410" },
   },
 
@@ -405,7 +405,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "막바지는 가장 빠른 구간이지만, 속도가 붙은 만큼 선도 더 또렷해야 합니다.",
-    related: ["suwon-korea-night-hall", "pyeongtaek-hobak-night-hall", "suwon-chance-dome-night"],
+    related: ["suwon-korea-night-hall", "pyeongtaek-hobak-night-hall", "suwon-chancedome-1"],
     og: { bg: "#320e44", bg2: "#0b0410" },
   },
 
@@ -566,7 +566,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "혼자라고 먼저 말하는 한마디가 1인 방문의 경로를 여는 열쇠입니다.",
-    related: ["night-shampoo-suyu", "suwon-korea-night-hall", "indeogwon-gukbingwan-night-hall"],
+    related: ["suyu-shampoo-1", "suwon-korea-night-hall", "indeogwon-gukbingwan-night-hall"],
     og: { bg: "#3a1244", bg2: "#0b0410" },
   },
 
@@ -808,7 +808,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "오늘의 마무리가 다음 방문의 조건이 되고, 그 조건이 쌓여 단골이 됩니다.",
-    related: ["osan-hobak-night-hall", "cheonan-stardome-night-hall", "suwon-chance-dome-night"],
+    related: ["osan-hobak-night-hall", "cheonan-stardome-night-hall", "suwon-chancedome-1"],
     og: { bg: "#370f38", bg2: "#0b0410" },
   },
 ];

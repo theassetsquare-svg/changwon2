@@ -3,8 +3,8 @@
   "count": 55,
   "items": [
     {
-      "file": "/og/booking-night-grandprix-sillim-guide-og.png",
-      "page": "https://changwonc.pages.dev/booking/night-grandprix-sillim/",
+      "file": "/og/booking-sillim-grandprix-1-guide-og.png",
+      "page": "https://changwonc.pages.dev/booking/sillim-grandprix-1/",
       "venue": "신림그랑프리나이트",
       "text": [
         "BOOKING",
@@ -17,8 +17,8 @@
       "height": 1200
     },
     {
-      "file": "/og/booking-sangbong-hangukgwan-night-og.png",
-      "page": "https://changwonc.pages.dev/booking/sangbong-hangukgwan-night/",
+      "file": "/og/booking-sangbong-hangukgwan-1-og.png",
+      "page": "https://changwonc.pages.dev/booking/sangbong-hangukgwan-1/",
       "venue": "상봉동한국관나이트",
       "text": [
         "BOOKING",
@@ -31,8 +31,8 @@
       "height": 1200
     },
     {
-      "file": "/og/booking-night-shampoo-suyu-hall-og.png",
-      "page": "https://changwonc.pages.dev/booking/night-shampoo-suyu/",
+      "file": "/og/booking-suyu-shampoo-1-hall-og.png",
+      "page": "https://changwonc.pages.dev/booking/suyu-shampoo-1/",
       "venue": "수유샴푸나이트",
       "text": [
         "BOOKING",
@@ -59,8 +59,8 @@
       "height": 1200
     },
     {
-      "file": "/og/booking-night-dome-chance-suwon-og.png",
-      "page": "https://changwonc.pages.dev/booking/suwon-chance-dome-night/",
+      "file": "/og/booking-suwon-chancedome-1-og.png",
+      "page": "https://changwonc.pages.dev/booking/suwon-chancedome-1/",
       "venue": "수원찬스돔나이트",
       "text": [
         "BOOKING",
@@ -73,7 +73,7 @@
       "height": 1200
     },
     {
-      "file": "/og/booking-night-hit-ansan-og.png",
+      "file": "/og/booking-ansan-hit-1-og.png",
       "page": "https://changwonc.pages.dev/booking/ansan-hit-night/",
       "venue": "안산히트나이트",
       "text": [
@@ -87,7 +87,7 @@
       "height": 1200
     },
     {
-      "file": "/og/booking-night-seven-daejeon-og.png",
+      "file": "/og/booking-daejeon-seven-1-og.png",
       "page": "https://changwonc.pages.dev/booking/daejeon-seven-night/",
       "venue": "대전세븐나이트",
       "text": [
@@ -101,8 +101,8 @@
       "height": 1200
     },
     {
-      "file": "/og/booking-ilsan-shampoo-night-hall-hall-og.png",
-      "page": "https://changwonc.pages.dev/booking/ilsan-shampoo-night-hall/",
+      "file": "/og/booking-ilsan-shampoo-1-hall-og.png",
+      "page": "https://changwonc.pages.dev/booking/ilsan-shampoo-1/",
       "venue": "일산샴푸나이트",
       "text": [
         "BOOKING",
@@ -115,7 +115,7 @@
       "height": 1200
     },
     {
-      "file": "/og/booking-night-cheongdam-og.png",
+      "file": "/og/booking-cheongdam-1-og.png",
       "page": "https://changwonc.pages.dev/booking/cheongdam-night/",
       "venue": "청담나이트",
       "text": [
@@ -612,8 +612,8 @@
       "height": 1200
     },
     {
-      "file": "/og/night-cheongdam-og.png",
-      "page": "https://changwonc.pages.dev/night/night-cheongdam/",
+      "file": "/og/cheongdam-1-og.png",
+      "page": "https://changwonc.pages.dev/night/cheongdam-1/",
       "venue": "청담나이트",
       "text": [
         "청담나이트",
@@ -640,8 +640,8 @@
       "height": 1200
     },
     {
-      "file": "/og/night-grandprix-sillim-guide-og.png",
-      "page": "https://changwonc.pages.dev/night/night-grandprix-sillim/",
+      "file": "/og/sillim-grandprix-1-guide-og.png",
+      "page": "https://changwonc.pages.dev/night/sillim-grandprix-1/",
       "venue": "신림그랑프리나이트",
       "text": [
         "신림그랑프리나이트",
@@ -653,7 +653,7 @@
       "height": 1200
     },
     {
-      "file": "/og/sangbong-hangukgwan-night-og.png",
+      "file": "/og/sangbong-hangukgwan-1-og.png",
       "page": "https://changwonc.pages.dev/night/sangbong-hangukgwan-night/",
       "venue": "상봉동한국관나이트",
       "text": [
@@ -666,8 +666,8 @@
       "height": 1200
     },
     {
-      "file": "/og/night-shampoo-suyu-hall-og.png",
-      "page": "https://changwonc.pages.dev/night/night-shampoo-suyu-guide/",
+      "file": "/og/suyu-shampoo-1-hall-og.png",
+      "page": "https://changwonc.pages.dev/night/suyu-shampoo-1/",
       "venue": "수유샴푸나이트",
       "text": [
         "수유샴푸나이트",
@@ -692,8 +692,8 @@
       "height": 1200
     },
     {
-      "file": "/og/night-dome-chance-suwon-og.png",
-      "page": "https://changwonc.pages.dev/night/night-dome-chance-suwon/",
+      "file": "/og/suwon-chancedome-1-og.png",
+      "page": "https://changwonc.pages.dev/night/suwon-chancedome-1/",
       "venue": "수원찬스돔나이트",
       "text": [
         "수원찬스돔나이트",
@@ -705,8 +705,8 @@
       "height": 1200
     },
     {
-      "file": "/og/night-hit-ansan-og.png",
-      "page": "https://changwonc.pages.dev/night/night-hit-ansan/",
+      "file": "/og/ansan-hit-1-og.png",
+      "page": "https://changwonc.pages.dev/night/ansan-hit-1/",
       "venue": "안산히트나이트",
       "text": [
         "안산히트나이트",
@@ -718,8 +718,8 @@
       "height": 1200
     },
     {
-      "file": "/og/night-seven-daejeon-og.png",
-      "page": "https://changwonc.pages.dev/night/night-seven-daejeon/",
+      "file": "/og/daejeon-seven-1-og.png",
+      "page": "https://changwonc.pages.dev/night/daejeon-seven-1/",
       "venue": "대전세븐나이트",
       "text": [
         "대전세븐나이트",
@@ -731,8 +731,8 @@
       "height": 1200
     },
     {
-      "file": "/og/ilsan-shampoo-night-hall-hall-og.png",
-      "page": "https://changwonc.pages.dev/night/night-shampoo-ilsan/",
+      "file": "/og/ilsan-shampoo-1-hall-og.png",
+      "page": "https://changwonc.pages.dev/night/ilsan-shampoo-1/",
       "venue": "일산샴푸나이트",
       "text": [
         "일산샴푸나이트",

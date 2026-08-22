@@ -115,7 +115,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/night-cheongdam/</loc>
+    <loc>https://changwonc.pages.dev/night/cheongdam-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -127,7 +127,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/night-grandprix-sillim/</loc>
+    <loc>https://changwonc.pages.dev/night/sillim-grandprix-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -139,7 +139,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/night-shampoo-suyu-guide/</loc>
+    <loc>https://changwonc.pages.dev/night/suyu-shampoo-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -151,25 +151,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/night-dome-chance-suwon/</loc>
+    <loc>https://changwonc.pages.dev/night/suwon-chancedome-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/night-hit-ansan/</loc>
+    <loc>https://changwonc.pages.dev/night/ansan-hit-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/night-seven-daejeon/</loc>
+    <loc>https://changwonc.pages.dev/night/daejeon-seven-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/night-shampoo-ilsan/</loc>
+    <loc>https://changwonc.pages.dev/night/ilsan-shampoo-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -177,19 +177,19 @@
   <!-- night-13pages:end -->
 <!-- booking-40pages:begin -->
   <url>
-    <loc>https://changwonc.pages.dev/booking/night-grandprix-sillim/</loc>
+    <loc>https://changwonc.pages.dev/booking/sillim-grandprix-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/sangbong-hangukgwan-night/</loc>
+    <loc>https://changwonc.pages.dev/booking/sangbong-hangukgwan-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/night-shampoo-suyu/</loc>
+    <loc>https://changwonc.pages.dev/booking/suyu-shampoo-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -201,7 +201,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/suwon-chance-dome-night/</loc>
+    <loc>https://changwonc.pages.dev/booking/suwon-chancedome-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -219,7 +219,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/ilsan-shampoo-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/booking/ilsan-shampoo-1/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
