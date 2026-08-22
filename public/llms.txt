@@ -85,7 +85,7 @@
 - https://changwonc.pages.dev/booking/ — 전국 나이트 부킹 안내 40 — 지역별 허브
 - https://changwonc.pages.dev/booking/night-grandprix-sillim/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.
 - https://changwonc.pages.dev/booking/sangbong-hangukgwan-night/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.
-- https://changwonc.pages.dev/booking/suyu-shampoo-night-hall/ — 수유샴푸나이트 — 서울 강북구 수유동 — 인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.
+- https://changwonc.pages.dev/booking/night-shampoo-suyu/ — 수유샴푸나이트 — 서울 강북구 수유동 — 인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.
 - https://changwonc.pages.dev/booking/busan-asiad-night/ — 부산아시아드나이트 — 부산 동래구 온천동 — 인사, 자리 내어주기, 가벼운 첫 화제 — 이 3분이 합석의 결말을 거의 정합니다.
 - https://changwonc.pages.dev/booking/suwon-chance-dome-night/ — 수원찬스돔나이트 — 경기 수원시 권선구 권선동 — 인원을 미리 확정해 알리는 것만으로 그날 부킹의 순서가 앞당겨집니다.
 - https://changwonc.pages.dev/booking/ansan-hit-night/ — 안산히트나이트 — 경기 안산시 상록구 본오동 — 성비는 숫자 두 개면 되고, 그 두 개가 첫 연결까지의 시간을 줄여 줍니다.
@@ -141,7 +141,7 @@
 - https://changwonc.pages.dev/night/daejeon-one-night/ — 대전원나이트 — 대전 동구 용전동 (만 38세 이상 출입) — 대전원나이트는 대전광역시에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/night-grandprix-sillim/ — 신림그랑프리나이트 — 서울 관악구 신림동 — 신림그랑프리나이트는 서울 관악구 신림동에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/sangbong-hangukgwan-night/ — 상봉동한국관나이트 — 서울 중랑구 상봉동 — 상봉동한국관나이트는 서울 중랑구 상봉동에 있는 나이트클럽입니다.
-- https://changwonc.pages.dev/night/night-shampoo-suyu/ — 수유샴푸나이트 — 서울 강북구 수유동 — 수유샴푸나이트는 서울 강북구 수유동 일대에 있는 나이트클럽입니다.
+- https://changwonc.pages.dev/night/night-shampoo-suyu-guide/ — 수유샴푸나이트 — 서울 강북구 수유동 — 수유샴푸나이트는 서울 강북구 수유동 일대에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/busan-asiad-night/ — 부산아시아드나이트 — 부산 동래구 온천동 — 부산아시아드나이트는 부산광역시 동래구 온천동에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/night-dome-chance-suwon/ — 수원찬스돔나이트 — 경기 수원시 권선구 권선동 — 수원찬스돔나이트는 경기도 수원시 권선구 권선동에 있는 나이트클럽입니다.
 - https://changwonc.pages.dev/night/night-hit-ansan/ — 안산히트나이트 — 경기 안산시 상록구 본오동 — 안산히트나이트는 경기도 안산시 상록구 본오동에 있는 나이트클럽입니다.

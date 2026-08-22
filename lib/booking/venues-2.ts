@@ -656,7 +656,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "둘일 때는 조건을 먼저 여는 한마디가 대기 시간을 가장 크게 줄여 줍니다.",
-    related: ["suyu-shampoo-night-hall", "sangbong-hangukgwan-night", "uijeongbu-baekakgwan-night-hall"],
+    related: ["night-shampoo-suyu", "sangbong-hangukgwan-night", "uijeongbu-baekakgwan-night-hall"],
     og: { bg: "#46113e", bg2: "#0b0410" },
   },
 

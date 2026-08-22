@@ -81,7 +81,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.",
-    related: ["sangbong-hangukgwan-night", "suyu-shampoo-night-hall", "gangseo-hobak-night-hall"],
+    related: ["sangbong-hangukgwan-night", "night-shampoo-suyu", "gangseo-hobak-night-hall"],
     og: { bg: "#151032", bg2: "#0b0410" },
   },
 
@@ -170,7 +170,7 @@ export const VENUES_1: BookingVenue[] = [
   },
 
   {
-    slug: "suyu-shampoo-night-hall",
+    slug: "night-shampoo-suyu",
     name: "수유샴푸나이트",
     group: "B",
     region: "서울 강북구 수유동",
@@ -180,7 +180,7 @@ export const VENUES_1: BookingVenue[] = [
     floor: "지하 1~2층",
     station: "수유역",
     hours: "저녁 19:00 ~ 다음 날 05:00",
-    nightSlug: "suyu-shampoo-night-hall",
+    nightSlug: "night-shampoo-suyu",
     title: "수유샴푸나이트, 웨이터에게 건네는 첫마디",
     description:
       "부킹의 속도는 담당 웨이터에게 처음 건네는 한 문장에서 갈립니다. 수유샴푸나이트를 기준으로 무엇을 말하고 무엇을 말하지 않아야 하는지, 자리 배정부터 연결까지 순서대로 정리했습니다.",

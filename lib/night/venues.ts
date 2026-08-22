@@ -198,7 +198,7 @@ export const VENUES: Venue[] = [
       "넷이 기준 인원이고, 인원과 성비를 미리 말하면 부킹이 빨라집니다.",
       "서울 은평구 통일로 730 보광빌딩 지하, 문의는 손흥민 010-2221-1937.",
     ],
-    related: ["night-shampoo-suyu", "sangbong-hangukgwan-night", "night-grandprix-sillim"],
+    related: ["night-shampoo-suyu-guide", "sangbong-hangukgwan-night", "night-grandprix-sillim"],
     og: { bg: "#3a1b04", bg2: "#0b0410", fg: "#ffffff", accent: "#ff9a2e" },
   },
 
@@ -478,7 +478,7 @@ export const VENUES: Venue[] = [
       "열 시 전 도착을 권합니다. 주말 룸이 먼저 나갑니다.",
       "서울 강남구 영동대로 737 지하 1층, 문의는 펩시맨 010-5655-4866.",
     ],
-    related: ["sangbong-hangukgwan-night", "night-shampoo-suyu", "night-shampoo-ilsan"],
+    related: ["sangbong-hangukgwan-night", "night-shampoo-suyu-guide", "night-shampoo-ilsan"],
     og: { bg: "#1f0a3d", bg2: "#0b0410", fg: "#ffffff", accent: "#b98bff" },
   },
 
@@ -651,7 +651,7 @@ export const VENUES: Venue[] = [
       "원하는 자리 성격을 먼저 말하면 배정이 달라집니다.",
       "서울 관악구 신림로 340, 신림역 7번 출구 앞 건물입니다.",
     ],
-    related: ["bulgwang-hobak-night", "night-shampoo-suyu", "night-cheongdam"],
+    related: ["bulgwang-hobak-night", "night-shampoo-suyu-guide", "night-cheongdam"],
     og: { bg: "#40170a", bg2: "#0b0410", fg: "#ffffff", accent: "#ff7a3d" },
   },
 
@@ -738,12 +738,12 @@ export const VENUES: Venue[] = [
       "테이블·부스·룸이 각각 다른 용도로 쓰입니다.",
       "금·토는 1부와 2부로 나뉘어 운영되는 것으로 안내됩니다.",
     ],
-    related: ["night-shampoo-suyu", "bulgwang-hobak-night", "night-shampoo-ilsan"],
+    related: ["night-shampoo-suyu-guide", "bulgwang-hobak-night", "night-shampoo-ilsan"],
     og: { bg: "#2b1145", bg2: "#0b0410", fg: "#ffffff", accent: "#c77dff" },
   },
 
   {
-    slug: "night-shampoo-suyu",
+    slug: "night-shampoo-suyu-guide",
     name: "수유샴푸나이트",
     group: "B",
     region: "서울 강북구 수유동",
@@ -1082,7 +1082,7 @@ export const VENUES: Venue[] = [
       "처음이면 룸보다 테이블이나 부스가 무난합니다.",
       "경기 안산시 상록구 상록수로 34, 상록수아카데미타워 지층.",
     ],
-    related: ["night-dome-chance-suwon", "night-shampoo-ilsan", "night-shampoo-suyu"],
+    related: ["night-dome-chance-suwon", "night-shampoo-ilsan", "night-shampoo-suyu-guide"],
     og: { bg: "#341a02", bg2: "#0b0410", fg: "#ffffff", accent: "#ffb703" },
   },
 

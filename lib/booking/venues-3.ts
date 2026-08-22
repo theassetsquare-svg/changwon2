@@ -566,7 +566,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "혼자라고 먼저 말하는 한마디가 1인 방문의 경로를 여는 열쇠입니다.",
-    related: ["suyu-shampoo-night-hall", "suwon-korea-night-hall", "indeogwon-gukbingwan-night-hall"],
+    related: ["night-shampoo-suyu", "suwon-korea-night-hall", "indeogwon-gukbingwan-night-hall"],
     og: { bg: "#3a1244", bg2: "#0b0410" },
   },
 

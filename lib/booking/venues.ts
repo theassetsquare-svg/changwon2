@@ -12,7 +12,7 @@ const ALL = [...VENUES_1, ...VENUES_2, ...VENUES_3, ...VENUES_4];
 const ORDER = [
   "night-grandprix-sillim",
   "sangbong-hangukgwan-night",
-  "suyu-shampoo-night-hall",
+  "night-shampoo-suyu",
   "busan-asiad-night",
   "suwon-chance-dome-night",
   "ansan-hit-night",
@@ -74,7 +74,7 @@ export const REGION_GROUPS: { key: string; label: string; slugs: string[] }[] = 
     slugs: [
       "night-grandprix-sillim",
       "sangbong-hangukgwan-night",
-      "suyu-shampoo-night-hall",
+      "night-shampoo-suyu",
       "cheongdam-night",
       "bulgwang-hobak-night",
       "doksan-gukbingwan-night-hall",
