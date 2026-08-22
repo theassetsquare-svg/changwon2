@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // 13개 업소 페이지 본문의 한글 순수 글자수 + 78쌍 5-gram 자카드 유사도 측정.
-// 도어웨이 판정 회피 검증용. node scripts/night/similarity.mjs
+// 도어웨이 판정 회피 검증용. node scripts/night-guide/similarity.mjs
 import { readFileSync } from "node:fs";
 
 const src = readFileSync(new URL("../../lib/night/venues.ts", import.meta.url), "utf8");

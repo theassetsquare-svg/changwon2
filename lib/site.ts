@@ -19,7 +19,7 @@ export const INSTA_2 = "https://www.instagram.com/lulu__lala._.cw/";
 export const PAGES = [
   { path: "/", label: "홈" },
   { path: "/location/", label: "위치·찾아가는길" },
-  { path: "/booking/", label: "부킹 안내 40" },
+  { path: "/booking-guide/", label: "부킹 안내 40" },
   { path: "/rooms/", label: "룸·메인홀·DJ존" },
   { path: "/hours/", label: "영업시간" },
   { path: "/parking/", label: "주차 안내" },

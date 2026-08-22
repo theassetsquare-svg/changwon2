@@ -3,7 +3,7 @@ import type { BookingVenue } from "./types";
 /** 1~10번 업소. 각도: 실수 / 거절 / 첫마디 / 합석 3분 / 인원 / 성비 / 자리 / 신호 / 잔 / 연락처 */
 export const VENUES_1: BookingVenue[] = [
   {
-    slug: "sillim-grandprix-night-hall",
+    slug: "night-grandprix-sillim",
     name: "신림그랑프리나이트",
     group: "B",
     region: "서울 관악구 신림동",
@@ -12,7 +12,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "서울 관악구 신림로 340 (신림동 1422-5)",
     floor: "르네상스 쇼핑몰 14층",
     station: "신림역",
-    nightSlug: "sillim-grandprix-night-hall",
+    nightSlug: "night-grandprix-sillim",
     title: "신림그랑프리나이트, 첫 부킹에서 하는 흔한 실수",
     description:
       "부킹은 손님이 만드는 게 아니라 홀이 돌리는 흐름에 얹히는 일입니다. 신림그랑프리나이트를 예로 들어 입장부터 자리, 첫 연결, 마무리까지 초보가 자주 어긋나는 지점을 순서대로 짚었습니다.",
@@ -81,7 +81,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.",
-    related: ["sangbong-hangukgwan-night", "suyu-shampoo-night-guide", "gangseo-hobak-night-guide"],
+    related: ["sangbong-hangukgwan-night", "suyu-shampoo-night-hall", "gangseo-hobak-night-hall"],
     og: { bg: "#151032", bg2: "#0b0410" },
   },
 
@@ -165,12 +165,12 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.",
-    related: ["sillim-grandprix-night-hall", "nowon-hobak-night-guide", "dapsimni-miracle-night"],
+    related: ["night-grandprix-sillim", "nowon-hobak-night-hall", "dapsimni-miracle-night"],
     og: { bg: "#1e1349", bg2: "#0b0410" },
   },
 
   {
-    slug: "suyu-shampoo-night-guide",
+    slug: "suyu-shampoo-night-hall",
     name: "수유샴푸나이트",
     group: "B",
     region: "서울 강북구 수유동",
@@ -180,7 +180,7 @@ export const VENUES_1: BookingVenue[] = [
     floor: "지하 1~2층",
     station: "수유역",
     hours: "저녁 19:00 ~ 다음 날 05:00",
-    nightSlug: "suyu-shampoo-night-guide",
+    nightSlug: "suyu-shampoo-night-hall",
     title: "수유샴푸나이트, 웨이터에게 건네는 첫마디",
     description:
       "부킹의 속도는 담당 웨이터에게 처음 건네는 한 문장에서 갈립니다. 수유샴푸나이트를 기준으로 무엇을 말하고 무엇을 말하지 않아야 하는지, 자리 배정부터 연결까지 순서대로 정리했습니다.",
@@ -249,7 +249,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.",
-    related: ["sillim-grandprix-night-hall", "nowon-hobak-night-guide", "seongnam-shampoo-night-guide"],
+    related: ["night-grandprix-sillim", "nowon-hobak-night-hall", "seongnam-shampoo-night-hall"],
     og: { bg: "#180c3b", bg2: "#0b0410" },
   },
 
@@ -333,7 +333,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인사, 자리 내어주기, 가벼운 첫 화제 — 이 3분이 합석의 결말을 거의 정합니다.",
-    related: ["ulsan-newworld-night-guide", "daegu-hobak-night-guide", "changwon-lululala-night"],
+    related: ["ulsan-newworld-night-hall", "daegu-hobak-night-hall", "changwon-lululala-night"],
     og: { bg: "#230d54", bg2: "#0b0410" },
   },
 
@@ -415,7 +415,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인원을 미리 확정해 알리는 것만으로 그날 부킹의 순서가 앞당겨집니다.",
-    related: ["suwon-korea-night-guide", "osan-hobak-night-guide", "ansan-hit-night"],
+    related: ["suwon-korea-night-hall", "osan-hobak-night-hall", "ansan-hit-night"],
     og: { bg: "#20103c", bg2: "#0b0410" },
   },
 
@@ -498,7 +498,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "성비는 숫자 두 개면 되고, 그 두 개가 첫 연결까지의 시간을 줄여 줍니다.",
-    related: ["suwon-chance-dome-night", "bucheon-gorae-night-guide", "incheon-arabian-night-guide"],
+    related: ["suwon-chance-dome-night", "bucheon-gorae-night-hall", "incheon-arabian-night-hall"],
     og: { bg: "#2f1254", bg2: "#0b0410" },
   },
 
@@ -582,12 +582,12 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "좋은 자리는 등급이 아니라 담당자의 동선 위에 있는 자리입니다.",
-    related: ["daejeon-one-night", "cheonan-korea-night-guide", "cheongju-hobak-night-guide"],
+    related: ["daejeon-one-night", "cheonan-korea-night-hall", "cheongju-hobak-night-hall"],
     og: { bg: "#290b46", bg2: "#0b0410" },
   },
 
   {
-    slug: "ilsan-shampoo-night-guide",
+    slug: "ilsan-shampoo-night-hall",
     name: "일산샴푸나이트",
     group: "B",
     region: "경기 고양시 일산동구 마두동",
@@ -596,7 +596,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "경기 고양시 일산동구 중앙로 1160 (마두동 805-1)",
     floor: "오원빌딩 8~9층",
     station: "마두역",
-    nightSlug: "ilsan-shampoo-night-guide",
+    nightSlug: "ilsan-shampoo-night-hall",
     title: "일산샴푸나이트, 부킹이 안 도는 날의 신호",
     description:
       "홀에는 부킹이 잘 도는 날과 그렇지 않은 날이 있습니다. 일산샴푸나이트를 기준으로 그날의 흐름을 읽는 신호와, 흐름이 느릴 때 팀이 취할 수 있는 매너 있는 대응을 정리했습니다.",
@@ -665,7 +665,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "느린 날을 여는 건 재촉이 아니라 조건을 한 칸 넓히는 한마디입니다.",
-    related: ["paju-yadang-skydome-night-guide", "guri-hobak-night-guide", "uijeongbu-hangukgwan-night-guide"],
+    related: ["paju-yadang-skydome-night-hall", "guri-hobak-night-hall", "uijeongbu-hangukgwan-night-hall"],
     og: { bg: "#391754", bg2: "#0b0410" },
   },
 
@@ -748,7 +748,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인사 직후에 절반만, 말은 짧게. 잘 멈추는 쪽이 오래 앉아 있게 됩니다.",
-    related: ["gildong-chance-night-guide", "yeongdeungpo-terminal-night-guide", "gangseo-hobak-night-guide"],
+    related: ["gildong-chance-night-hall", "yeongdeungpo-terminal-night-hall", "gangseo-hobak-night-hall"],
     og: { bg: "#321047", bg2: "#0b0410" },
   },
 
@@ -831,7 +831,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "한 번만 묻고 이유는 되묻지 않는 것, 그 절제가 마지막 인상을 만듭니다.",
-    related: ["daejeon-seven-night", "cheonan-stardome-night-guide", "seosan-hobak-night-guide"],
+    related: ["daejeon-seven-night", "cheonan-stardome-night-hall", "seosan-hobak-night-hall"],
     og: { bg: "#290a39", bg2: "#0b0410" },
   },
 ];

@@ -84,7 +84,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "알리고, 지키고, 내버려 두고, 끝 시각을 정해 두면 일행도 부킹도 상하지 않습니다.",
-    related: ["ulsan-champion-night", "busan-asiad-night", "gumi-hobak-night-guide"],
+    related: ["ulsan-champion-night", "busan-asiad-night", "gumi-hobak-night-hall"],
     og: { bg: "#3a1448", bg2: "#0b0410" },
   },
 
@@ -168,7 +168,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "늦었다면 고르지 말고 앉은 뒤, 남은 시간부터 알리는 것이 회복의 시작입니다.",
-    related: ["nowon-hobak-night-guide", "gangseo-hobak-night-guide", "doksan-gukbingwan-night-guide"],
+    related: ["nowon-hobak-night-hall", "gangseo-hobak-night-hall", "doksan-gukbingwan-night-hall"],
     og: { bg: "#310d3a", bg2: "#0b0410" },
   },
 
@@ -250,12 +250,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "바꾸기 전에 한 번 더 정확히 말해 보는 쪽이 실제로는 더 자주 통합니다.",
-    related: ["ulsan-newworld-night-guide", "changwon-lululala-night", "busan-asiad-night"],
+    related: ["ulsan-newworld-night-hall", "changwon-lululala-night", "busan-asiad-night"],
     og: { bg: "#480f52", bg2: "#0b0410" },
   },
 
   {
-    slug: "doksan-gukbingwan-night-guide",
+    slug: "doksan-gukbingwan-night-hall",
     name: "독산동국빈관나이트",
     group: "B",
     region: "서울 금천구 독산동",
@@ -331,7 +331,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "기다림을 견디는 팀보다 그 시간을 즐기는 팀에게 연결이 먼저 옵니다.",
-    related: ["gwangju-sangmu-night-guide", "yeongdeungpo-terminal-night-guide", "indeogwon-gukbingwan-night-guide"],
+    related: ["gwangju-sangmu-night-hall", "yeongdeungpo-terminal-night-hall", "indeogwon-gukbingwan-night-hall"],
     og: { bg: "#38113b", bg2: "#0b0410" },
   },
 
@@ -410,12 +410,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "말이 안 들리는 공간일수록 동작이 말을 대신하고, 그 동작이 곧 매너입니다.",
-    related: ["sangbong-hangukgwan-night", "nowon-hobak-night-guide", "gildong-chance-night-guide"],
+    related: ["sangbong-hangukgwan-night", "nowon-hobak-night-hall", "gildong-chance-night-hall"],
     og: { bg: "#511353", bg2: "#0b0410" },
   },
 
   {
-    slug: "gangseo-hobak-night-guide",
+    slug: "gangseo-hobak-night-hall",
     name: "강서호박나이트",
     group: "B",
     region: "서울 강서구 화곡동",
@@ -492,12 +492,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "나갈 때는 자리를 남기고, 데려올 때는 먼저 알린다 — 이동의 규칙은 이 둘뿐입니다.",
-    related: ["yeongdeungpo-terminal-night-guide", "bulgwang-hobak-night", "bucheon-gorae-night-guide"],
+    related: ["yeongdeungpo-terminal-night-hall", "bulgwang-hobak-night", "bucheon-gorae-night-hall"],
     og: { bg: "#450d43", bg2: "#0b0410" },
   },
 
   {
-    slug: "yeongdeungpo-terminal-night-guide",
+    slug: "yeongdeungpo-terminal-night-hall",
     name: "영등포터미널나이트",
     group: "B",
     region: "서울 영등포구 영등포동",
@@ -574,12 +574,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "단체는 한 번에 붙지 않고 절반씩 돕니다. 자리를 지킬 사람만 정해 두면 됩니다.",
-    related: ["gangseo-hobak-night-guide", "doksan-gukbingwan-night-guide", "gildong-chance-night-guide"],
+    related: ["gangseo-hobak-night-hall", "doksan-gukbingwan-night-hall", "gildong-chance-night-hall"],
     og: { bg: "#52194d", bg2: "#0b0410" },
   },
 
   {
-    slug: "nowon-hobak-night-guide",
+    slug: "nowon-hobak-night-hall",
     name: "노원호박나이트",
     group: "B",
     region: "서울 노원구 상계동",
@@ -656,12 +656,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "둘일 때는 조건을 먼저 여는 한마디가 대기 시간을 가장 크게 줄여 줍니다.",
-    related: ["suyu-shampoo-night-guide", "sangbong-hangukgwan-night", "uijeongbu-baekakgwan-night-guide"],
+    related: ["suyu-shampoo-night-hall", "sangbong-hangukgwan-night", "uijeongbu-baekakgwan-night-hall"],
     og: { bg: "#46113e", bg2: "#0b0410" },
   },
 
   {
-    slug: "gildong-chance-night-guide",
+    slug: "gildong-chance-night-hall",
     name: "길동찬스나이트",
     group: "B",
     region: "서울 강동구 길동",
@@ -738,12 +738,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "나이 차이는 문제가 아니고, 그 차이를 화제로 만드는 순간이 문제입니다.",
-    related: ["cheongdam-night", "dapsimni-miracle-night", "yeongdeungpo-terminal-night-guide"],
+    related: ["cheongdam-night", "dapsimni-miracle-night", "yeongdeungpo-terminal-night-hall"],
     og: { bg: "#380b2e", bg2: "#0b0410" },
   },
 
   {
-    slug: "paju-yadang-skydome-night-guide",
+    slug: "paju-yadang-skydome-night-hall",
     name: "파주야당스카이돔나이트",
     group: "B",
     region: "경기 파주시 야당동",
@@ -820,7 +820,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "옷은 시작을 조금 앞당길 뿐, 나머지는 표정과 대화가 정합니다.",
-    related: ["ilsan-shampoo-night-guide", "guri-hobak-night-guide", "uijeongbu-hangukgwan-night-guide"],
+    related: ["ilsan-shampoo-night-hall", "guri-hobak-night-hall", "uijeongbu-hangukgwan-night-hall"],
     og: { bg: "#461639", bg2: "#0b0410" },
   },
 ];

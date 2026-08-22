@@ -42,7 +42,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/</loc>
+    <loc>https://changwonc.pages.dev/booking-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -91,7 +91,7 @@
   </url>
 <!-- night-13pages:begin -->
   <url>
-    <loc>https://changwonc.pages.dev/night/</loc>
+    <loc>https://changwonc.pages.dev/night-guide/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -115,7 +115,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/cheongdam-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/night/night-cheongdam/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -127,7 +127,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/sillim-grandprix-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/night/night-grandprix-sillim/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -139,7 +139,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/suyu-shampoo-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/night/night-shampoo-suyu/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -151,25 +151,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/suwon-chance-dome-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/night/night-dome-chance-suwon/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/ansan-hit-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/night/night-hit-ansan/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/daejeon-seven-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/night/night-seven-daejeon/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/night/ilsan-shampoo-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/night/night-shampoo-ilsan/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -177,7 +177,7 @@
   <!-- night-13pages:end -->
 <!-- booking-40pages:begin -->
   <url>
-    <loc>https://changwonc.pages.dev/booking/sillim-grandprix-night-hall/</loc>
+    <loc>https://changwonc.pages.dev/booking/night-grandprix-sillim/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -189,7 +189,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/suyu-shampoo-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/suyu-shampoo-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -219,7 +219,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/ilsan-shampoo-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/ilsan-shampoo-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -255,7 +255,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/doksan-gukbingwan-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/doksan-gukbingwan-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -267,151 +267,151 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/gangseo-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/gangseo-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/yeongdeungpo-terminal-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/yeongdeungpo-terminal-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/nowon-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/nowon-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/gildong-chance-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/gildong-chance-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/paju-yadang-skydome-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/paju-yadang-skydome-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/guri-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/guri-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/uijeongbu-hangukgwan-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/uijeongbu-hangukgwan-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/uijeongbu-baekakgwan-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/uijeongbu-baekakgwan-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/suwon-korea-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/suwon-korea-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/osan-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/osan-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/indeogwon-gukbingwan-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/indeogwon-gukbingwan-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/seongnam-shampoo-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/seongnam-shampoo-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/incheon-arabian-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/incheon-arabian-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/bucheon-gorae-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/bucheon-gorae-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/pyeongtaek-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/pyeongtaek-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/cheonan-stardome-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/cheonan-stardome-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/cheonan-korea-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/cheonan-korea-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/cheongju-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/cheongju-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/ulsan-newworld-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/ulsan-newworld-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/seosan-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/seosan-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/daegu-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/daegu-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/gumi-hobak-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/gumi-hobak-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/gwangju-sangmu-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/gwangju-sangmu-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/gwangju-cheomdan-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/gwangju-cheomdan-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://changwonc.pages.dev/booking/jejudo-night-guide/</loc>
+    <loc>https://changwonc.pages.dev/booking/jejudo-night-hall/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

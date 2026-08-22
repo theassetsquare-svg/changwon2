@@ -3,7 +3,7 @@ import type { BookingVenue } from "./types";
 /** 21~30번 업소. 각도: 팁 / 이탈 / 실례 / 복귀 / 마감 / 요일 / 혼자 / 촬영 / 무알코올 / 재방문 */
 export const VENUES_3: BookingVenue[] = [
   {
-    slug: "guri-hobak-night-guide",
+    slug: "guri-hobak-night-hall",
     name: "구리호박나이트",
     group: "B",
     region: "경기 구리시 수택동",
@@ -78,12 +78,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "우리 팀에 관한 것은 요청, 다른 사람의 선택에 관한 것은 요구입니다.",
-    related: ["uijeongbu-hangukgwan-night-guide", "ilsan-shampoo-night-guide", "paju-yadang-skydome-night-guide"],
+    related: ["uijeongbu-hangukgwan-night-hall", "ilsan-shampoo-night-hall", "paju-yadang-skydome-night-hall"],
     og: { bg: "#210e39", bg2: "#0b0410" },
   },
 
   {
-    slug: "uijeongbu-hangukgwan-night-guide",
+    slug: "uijeongbu-hangukgwan-night-hall",
     name: "의정부한국관나이트",
     group: "B",
     region: "경기 의정부시 의정부동",
@@ -160,12 +160,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "맞는 자리에는 오래, 안 맞는 자리에서는 빨리 — 그 리듬이 그날을 정합니다.",
-    related: ["uijeongbu-baekakgwan-night-guide", "guri-hobak-night-guide", "paju-yadang-skydome-night-guide"],
+    related: ["uijeongbu-baekakgwan-night-hall", "guri-hobak-night-hall", "paju-yadang-skydome-night-hall"],
     og: { bg: "#301051", bg2: "#0b0410" },
   },
 
   {
-    slug: "uijeongbu-baekakgwan-night-guide",
+    slug: "uijeongbu-baekakgwan-night-hall",
     name: "의정부백악관나이트",
     group: "B",
     region: "경기 의정부시 의정부동",
@@ -242,12 +242,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "두 번 권하지 않고, 먼저 닿지 않고, 한 사람만 보지 않으면 실례는 거의 사라집니다.",
-    related: ["uijeongbu-hangukgwan-night-guide", "nowon-hobak-night-guide", "dapsimni-miracle-night"],
+    related: ["uijeongbu-hangukgwan-night-hall", "nowon-hobak-night-hall", "dapsimni-miracle-night"],
     og: { bg: "#28123a", bg2: "#0b0410" },
   },
 
   {
-    slug: "suwon-korea-night-guide",
+    slug: "suwon-korea-night-hall",
     name: "수원코리아나이트",
     group: "B",
     region: "경기 수원시 팔달구 인계동",
@@ -323,12 +323,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "시작보다 마무리가 다음 기회를 만듭니다. 복귀가 빠른 팀이 가장 많이 연결됩니다.",
-    related: ["suwon-chance-dome-night", "osan-hobak-night-guide", "seongnam-shampoo-night-guide"],
+    related: ["suwon-chance-dome-night", "osan-hobak-night-hall", "seongnam-shampoo-night-hall"],
     og: { bg: "#3a1551", bg2: "#0b0410" },
   },
 
   {
-    slug: "osan-hobak-night-guide",
+    slug: "osan-hobak-night-hall",
     name: "오산호박나이트",
     group: "B",
     region: "경기 오산시 원동",
@@ -405,12 +405,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "막바지는 가장 빠른 구간이지만, 속도가 붙은 만큼 선도 더 또렷해야 합니다.",
-    related: ["suwon-korea-night-guide", "pyeongtaek-hobak-night-guide", "suwon-chance-dome-night"],
+    related: ["suwon-korea-night-hall", "pyeongtaek-hobak-night-hall", "suwon-chance-dome-night"],
     og: { bg: "#320e44", bg2: "#0b0410" },
   },
 
   {
-    slug: "indeogwon-gukbingwan-night-guide",
+    slug: "indeogwon-gukbingwan-night-hall",
     name: "인덕원국빈관나이트",
     group: "B",
     region: "경기 안양시 동안구 관양동",
@@ -485,12 +485,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "주말은 조합이 많고 평일은 밀도가 높습니다. 요일은 목적으로 고르면 됩니다.",
-    related: ["doksan-gukbingwan-night-guide", "seongnam-shampoo-night-guide", "suwon-korea-night-guide"],
+    related: ["doksan-gukbingwan-night-hall", "seongnam-shampoo-night-hall", "suwon-korea-night-hall"],
     og: { bg: "#480e5d", bg2: "#0b0410" },
   },
 
   {
-    slug: "seongnam-shampoo-night-guide",
+    slug: "seongnam-shampoo-night-hall",
     name: "성남샴푸나이트",
     group: "B",
     region: "경기 성남시 중원구 성남동",
@@ -566,12 +566,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "혼자라고 먼저 말하는 한마디가 1인 방문의 경로를 여는 열쇠입니다.",
-    related: ["suyu-shampoo-night-guide", "suwon-korea-night-guide", "indeogwon-gukbingwan-night-guide"],
+    related: ["suyu-shampoo-night-hall", "suwon-korea-night-hall", "indeogwon-gukbingwan-night-hall"],
     og: { bg: "#3a1244", bg2: "#0b0410" },
   },
 
   {
-    slug: "incheon-arabian-night-guide",
+    slug: "incheon-arabian-night-hall",
     name: "인천아라비안나이트",
     alias: "인천아라비아나이트",
     group: "B",
@@ -649,12 +649,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "요청은 한 번, 거절은 최종, 촬영은 동의가 있을 때만. 그 밖은 모두 무리입니다.",
-    related: ["bucheon-gorae-night-guide", "ansan-hit-night", "gangseo-hobak-night-guide"],
+    related: ["bucheon-gorae-night-hall", "ansan-hit-night", "gangseo-hobak-night-hall"],
     og: { bg: "#300c37", bg2: "#0b0410" },
   },
 
   {
-    slug: "bucheon-gorae-night-guide",
+    slug: "bucheon-gorae-night-hall",
     name: "부천고래나이트",
     group: "B",
     region: "경기 부천시 원미구",
@@ -728,12 +728,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "부킹은 술의 양이 아니라 자리에 함께 있는 시간으로 흐릅니다.",
-    related: ["incheon-arabian-night-guide", "ansan-hit-night", "gangseo-hobak-night-guide"],
+    related: ["incheon-arabian-night-hall", "ansan-hit-night", "gangseo-hobak-night-hall"],
     og: { bg: "#490d4f", bg2: "#0b0410" },
   },
 
   {
-    slug: "pyeongtaek-hobak-night-guide",
+    slug: "pyeongtaek-hobak-night-hall",
     name: "평택호박나이트",
     group: "B",
     region: "경기 평택시 평택동",
@@ -808,7 +808,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "오늘의 마무리가 다음 방문의 조건이 되고, 그 조건이 쌓여 단골이 됩니다.",
-    related: ["osan-hobak-night-guide", "cheonan-stardome-night-guide", "suwon-chance-dome-night"],
+    related: ["osan-hobak-night-hall", "cheonan-stardome-night-hall", "suwon-chance-dome-night"],
     og: { bg: "#370f38", bg2: "#0b0410" },
   },
 ];

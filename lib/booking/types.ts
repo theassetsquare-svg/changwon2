@@ -9,7 +9,7 @@
 //  · 연령은 "만 27세 이상" / "만 38세 이상" 완전문으로만 쓴다. 축약 금지.
 //  · A그룹(광고주 있음)은 고정바에 담당자 전화, B그룹은 광고·제휴 입점 문의만 노출한다.
 
-export const BOOKING_BASE = "/booking/";
+export const BOOKING_BASE = "/booking-guide/";
 export const bookingPath = (slug: string) => `${BOOKING_BASE}${slug}/`;
 
 export const AD_KAKAO = "besta12";
