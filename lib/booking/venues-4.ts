@@ -3,7 +3,7 @@ import type { BookingVenue } from "./types";
 /** 31~40번 업소. 각도: 휴대폰 / 첫인사 / 반복연결 / 거절수용 / 주대 / 작별 / 취기 / 소음 / 기대치 / 원정 */
 export const VENUES_4: BookingVenue[] = [
   {
-    slug: "cheonan-stardome-night-hall",
+    slug: "cheonan-stardome-1",
     name: "천안스타돔나이트",
     group: "B",
     region: "충남 천안시 서북구 성정동",
@@ -78,12 +78,12 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "휴대폰은 그 자리에 마음이 없다는 신호로 가장 빨리 읽힙니다.",
-    related: ["cheonan-korea-night-hall", "daejeon-one-night", "seosan-hobak-night-hall"],
+    related: ["cheonan-korea-1", "daejeon-one-night", "osan-hobak-2"],
     og: { bg: "#4f114d", bg2: "#0b0410" },
   },
 
   {
-    slug: "cheonan-korea-night-hall",
+    slug: "cheonan-korea-1",
     name: "천안코리아나이트",
     group: "B",
     region: "충남 천안시 서북구 쌍용동",
@@ -159,12 +159,12 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "일어서고, 눈 맞추고, 이름을 말하고, 전체에게 묻는다 — 3초의 구성은 이것뿐입니다.",
-    related: ["cheonan-stardome-night-hall", "daejeon-seven-night", "cheongju-hobak-night-hall"],
+    related: ["cheonan-stardome-1", "daejeon-seven-night", "cheongju-hobak-1"],
     og: { bg: "#410b3c", bg2: "#0b0410" },
   },
 
   {
-    slug: "cheongju-hobak-night-hall",
+    slug: "cheongju-hobak-1",
     name: "청주호박나이트",
     group: "B",
     region: "충북 청주시 상당구",
@@ -238,12 +238,12 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "부킹은 운이 아니라 리듬이고, 그 리듬은 팀이 스스로 만듭니다.",
-    related: ["cheonan-korea-night-hall", "daejeon-seven-night", "seosan-hobak-night-hall"],
+    related: ["cheonan-korea-1", "daejeon-seven-night", "osan-hobak-2"],
     og: { bg: "#501647", bg2: "#0b0410" },
   },
 
   {
-    slug: "ulsan-newworld-night-hall",
+    slug: "ulsan-newworld-1",
     name: "울산뉴월드나이트",
     group: "B",
     region: "울산 남구 삼산동",
@@ -319,12 +319,12 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "거절을 잘 받는 사람은 티가 나고, 그 태도가 다음 자리를 편하게 만듭니다.",
-    related: ["ulsan-champion-night", "busan-asiad-night", "daegu-hobak-night-hall"],
+    related: ["ulsan-champion-night", "busan-asiad-night", "daegu-hobak-1"],
     og: { bg: "#430f37", bg2: "#0b0410" },
   },
 
   {
-    slug: "seosan-hobak-night-hall",
+    slug: "osan-hobak-2",
     name: "서산호박나이트",
     group: "B",
     region: "충남 서산시 읍내동",
@@ -401,12 +401,12 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "계산은 마지막에, 상대가 아니라 담당자와. 그 순서만 지키면 자리가 흔들리지 않습니다.",
-    related: ["cheonan-stardome-night-hall", "cheongju-hobak-night-hall", "daejeon-one-night"],
+    related: ["cheonan-stardome-1", "cheongju-hobak-1", "daejeon-one-night"],
     og: { bg: "#5b1047", bg2: "#0b0410" },
   },
 
   {
-    slug: "daegu-hobak-night-hall",
+    slug: "daegu-hobak-1",
     name: "대구호박나이트",
     group: "B",
     region: "대구 북구 관음동",
@@ -482,12 +482,12 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "시작은 잊혀도 마무리는 남고, 그 마무리가 다음 방문의 조건이 됩니다.",
-    related: ["gumi-hobak-night-hall", "ulsan-newworld-night-hall", "busan-asiad-night"],
+    related: ["gumi-hobak-1", "ulsan-newworld-1", "busan-asiad-night"],
     og: { bg: "#431433", bg2: "#0b0410" },
   },
 
   {
-    slug: "gumi-hobak-night-hall",
+    slug: "gumi-hobak-1",
     name: "구미호박나이트",
     group: "B",
     region: "경북 구미시 원평동",
@@ -561,12 +561,12 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "일행을 먼저 챙기는 팀이 홀에서도 가장 오래 환영받습니다.",
-    related: ["daegu-hobak-night-hall", "changwon-lululala-night", "ulsan-newworld-night-hall"],
+    related: ["daegu-hobak-1", "changwon-lululala-night", "ulsan-newworld-1"],
     og: { bg: "#360d25", bg2: "#0b0410" },
   },
 
   {
-    slug: "gwangju-sangmu-night-hall",
+    slug: "gwangju-sangmu-1",
     name: "광주상무나이트",
     group: "B",
     region: "광주 서구 치평동",
@@ -640,7 +640,7 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "크게 말하는 대신 짧게 말하면, 같은 문장이 전혀 다르게 전달됩니다.",
-    related: ["gwangju-cheomdan-night-hall", "doksan-gukbingwan-night-hall", "jejudo-night-hall"],
+    related: ["gwangju-cheomdan-night-hall", "doksan-gukbingwan-1", "jejudo-night-hall"],
     og: { bg: "#4e0e31", bg2: "#0b0410" },
   },
 
@@ -719,7 +719,7 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "부킹을 목적이 아니라 덤으로 두는 팀이 결국 가장 많이 연결됩니다.",
-    related: ["gwangju-sangmu-night-hall", "jejudo-night-hall", "gumi-hobak-night-hall"],
+    related: ["gwangju-sangmu-1", "jejudo-night-hall", "gumi-hobak-1"],
     og: { bg: "#371023", bg2: "#0b0410" },
   },
 
@@ -798,7 +798,7 @@ export const VENUES_4: BookingVenue[] = [
     ],
     oneline:
       "다시 볼 일이 없다는 생각을 접는 것에서 원정 팀의 매너가 시작됩니다.",
-    related: ["gwangju-cheomdan-night-hall", "gwangju-sangmu-night-hall", "busan-asiad-night"],
+    related: ["gwangju-cheomdan-night-hall", "gwangju-sangmu-1", "busan-asiad-night"],
     og: { bg: "#4e132d", bg2: "#0b0410" },
   },
 ];

@@ -5,7 +5,7 @@ const HOST = process.env.HOST || "https://changwonc.pages.dev";
 const PATHS = [
   "/",
   "/location/",
-  "/booking-guide/",
+  "/booking-1/",
   "/rooms/",
   "/hours/",
   "/parking/",

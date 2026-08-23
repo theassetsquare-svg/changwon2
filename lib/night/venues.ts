@@ -198,7 +198,7 @@ export const VENUES: Venue[] = [
       "넷이 기준 인원이고, 인원과 성비를 미리 말하면 부킹이 빨라집니다.",
       "서울 은평구 통일로 730 보광빌딩 지하, 문의는 손흥민 010-2221-1937.",
     ],
-    related: ["suyu-shampoo-1", "sangbong-hangukgwan-night", "sillim-grandprix-1"],
+    related: ["suyu-shampoo-2", "sangbong-hangukgwan-night", "sillim-grandprix-2"],
     og: { bg: "#3a1b04", bg2: "#0b0410", fg: "#ffffff", accent: "#ff9a2e" },
   },
 
@@ -284,7 +284,7 @@ export const VENUES: Venue[] = [
       "아홉 시에서 열 시 사이 도착이 자리 조건이 가장 좋습니다.",
       "만 27세 이상만 출입하며, 문의는 로또 010-7528-4936.",
     ],
-    related: ["ulsan-champion-night", "busan-asiad-night", "daejeon-seven-1"],
+    related: ["ulsan-champion-night", "busan-asiad-night", "daejeon-seven-2"],
     og: { bg: "#4a0d2e", bg2: "#0b0410", fg: "#ffffff", accent: "#ff2ea6" },
   },
 
@@ -372,7 +372,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "cheongdam-1",
+    slug: "cheongdam-2",
     name: "청담나이트",
     group: "A",
     region: "서울 강남구 청담동",
@@ -478,7 +478,7 @@ export const VENUES: Venue[] = [
       "열 시 전 도착을 권합니다. 주말 룸이 먼저 나갑니다.",
       "서울 강남구 영동대로 737 지하 1층, 문의는 펩시맨 010-5655-4866.",
     ],
-    related: ["sangbong-hangukgwan-night", "suyu-shampoo-1", "ilsan-shampoo-1"],
+    related: ["sangbong-hangukgwan-night", "suyu-shampoo-2", "ilsan-shampoo-2"],
     og: { bg: "#1f0a3d", bg2: "#0b0410", fg: "#ffffff", accent: "#b98bff" },
   },
 
@@ -566,12 +566,12 @@ export const VENUES: Venue[] = [
       "넷이면 테이블 하나, 열 명을 넘기면 룸 쪽이 낫습니다.",
       "대전복합터미널 인근 용전동 일대로 안내됩니다.",
     ],
-    related: ["daejeon-seven-1", "suwon-chancedome-1", "ansan-hit-1"],
+    related: ["daejeon-seven-2", "suwon-chancedome-2", "ansan-hit-2"],
     og: { bg: "#072b1f", bg2: "#0b0410", fg: "#ffffff", accent: "#3ddc97" },
   },
 
   {
-    slug: "sillim-grandprix-1",
+    slug: "sillim-grandprix-2",
     name: "신림그랑프리나이트",
     group: "B",
     region: "서울 관악구 신림동",
@@ -651,7 +651,7 @@ export const VENUES: Venue[] = [
       "원하는 자리 성격을 먼저 말하면 배정이 달라집니다.",
       "서울 관악구 신림로 340, 신림역 7번 출구 앞 건물입니다.",
     ],
-    related: ["bulgwang-hobak-night", "suyu-shampoo-1", "cheongdam-1"],
+    related: ["bulgwang-hobak-night", "suyu-shampoo-2", "cheongdam-2"],
     og: { bg: "#40170a", bg2: "#0b0410", fg: "#ffffff", accent: "#ff7a3d" },
   },
 
@@ -738,12 +738,12 @@ export const VENUES: Venue[] = [
       "테이블·부스·룸이 각각 다른 용도로 쓰입니다.",
       "금·토는 1부와 2부로 나뉘어 운영되는 것으로 안내됩니다.",
     ],
-    related: ["suyu-shampoo-1", "bulgwang-hobak-night", "ilsan-shampoo-1"],
+    related: ["suyu-shampoo-2", "bulgwang-hobak-night", "ilsan-shampoo-2"],
     og: { bg: "#2b1145", bg2: "#0b0410", fg: "#ffffff", accent: "#c77dff" },
   },
 
   {
-    slug: "suyu-shampoo-1",
+    slug: "suyu-shampoo-2",
     name: "수유샴푸나이트",
     group: "B",
     region: "서울 강북구 수유동",
@@ -825,7 +825,7 @@ export const VENUES: Venue[] = [
       "저녁 7시에 열어 다음 날 새벽 5시까지 운영합니다.",
       "서울 강북구 도봉로 308, 대로변 건물 지하입니다.",
     ],
-    related: ["bulgwang-hobak-night", "sangbong-hangukgwan-night", "ansan-hit-1"],
+    related: ["bulgwang-hobak-night", "sangbong-hangukgwan-night", "ansan-hit-2"],
     og: { bg: "#0d2b3f", bg2: "#0b0410", fg: "#ffffff", accent: "#4fd1c5" },
   },
 
@@ -912,12 +912,12 @@ export const VENUES: Venue[] = [
       "몇 시에 가느냐로 같은 홀에 있는 사람이 달라집니다.",
       "부산 동래구 온천장로107번길 32, 온천장역 도보권입니다.",
     ],
-    related: ["ulsan-champion-night", "changwon-lululala-night", "daejeon-seven-1"],
+    related: ["ulsan-champion-night", "changwon-lululala-night", "daejeon-seven-2"],
     og: { bg: "#3d0f18", bg2: "#0b0410", fg: "#ffffff", accent: "#ff6b6b" },
   },
 
   {
-    slug: "suwon-chancedome-1",
+    slug: "suwon-chancedome-2",
     name: "수원찬스돔나이트",
     group: "B",
     region: "경기 수원시 권선구 권선동",
@@ -997,12 +997,12 @@ export const VENUES: Venue[] = [
       "정점 구간은 자정 전후. 그전에 들어가 있어야 합니다.",
       "경기 수원시 권선구 권선로 673, 권선동 중심 축입니다.",
     ],
-    related: ["ansan-hit-1", "ilsan-shampoo-1", "daejeon-one-night"],
+    related: ["ansan-hit-2", "ilsan-shampoo-2", "daejeon-one-night"],
     og: { bg: "#14351a", bg2: "#0b0410", fg: "#ffffff", accent: "#7bed6f" },
   },
 
   {
-    slug: "ansan-hit-1",
+    slug: "ansan-hit-2",
     name: "안산히트나이트",
     group: "B",
     region: "경기 안산시 상록구 본오동",
@@ -1082,12 +1082,12 @@ export const VENUES: Venue[] = [
       "처음이면 룸보다 테이블이나 부스가 무난합니다.",
       "경기 안산시 상록구 상록수로 34, 상록수아카데미타워 지층.",
     ],
-    related: ["suwon-chancedome-1", "ilsan-shampoo-1", "suyu-shampoo-1"],
+    related: ["suwon-chancedome-2", "ilsan-shampoo-2", "suyu-shampoo-2"],
     og: { bg: "#341a02", bg2: "#0b0410", fg: "#ffffff", accent: "#ffb703" },
   },
 
   {
-    slug: "daejeon-seven-1",
+    slug: "daejeon-seven-2",
     name: "대전세븐나이트",
     group: "A",
     contact: { nick: "영탁", phone: "010-7770-0869", tel: "01077700869" },
@@ -1175,7 +1175,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "ilsan-shampoo-1",
+    slug: "ilsan-shampoo-2",
     name: "일산샴푸나이트",
     group: "B",
     region: "경기 고양시 일산동구 마두동",
@@ -1255,7 +1255,7 @@ export const VENUES: Venue[] = [
       "준비물은 신분증 하나. 예약증이나 회원 카드는 필요 없습니다.",
       "경기 고양시 일산동구 중앙로 1160, 마두역 8번 출구 도보 3분.",
     ],
-    related: ["suwon-chancedome-1", "ansan-hit-1", "cheongdam-1"],
+    related: ["suwon-chancedome-2", "ansan-hit-2", "cheongdam-2"],
     og: { bg: "#451236", bg2: "#0b0410", fg: "#ffffff", accent: "#ff8fd0" },
   },
 ];
@@ -1264,5 +1264,5 @@ export const VENUE_BY_SLUG: Record<string, Venue> = Object.fromEntries(
   VENUES.map((v) => [v.slug, v]),
 );
 
-export const NIGHT_BASE = "/night-guide/";
+export const NIGHT_BASE = "/night-1/";
 export const nightPath = (slug: string) => `${NIGHT_BASE}${slug}/`;
