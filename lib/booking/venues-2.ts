@@ -338,10 +338,11 @@ export const VENUES_2: BookingVenue[] = [
   {
     slug: "dapsimni-miracle-night",
     name: "답십리미라클나이트",
-    group: "B",
+    group: "A",
     region: "서울 동대문구 답십리동",
     locality: "동대문구",
     addressRegion: "서울특별시",
+    contact: { nick: "유재석", phone: "010-8156-6558", tel: "01081566558" },
     title: "답십리미라클나이트, 처음 온 팀이 놓치는 신호",
     description:
       "홀 안에서는 말이 아니라 신호로 오가는 정보가 많습니다. 답십리미라클나이트를 기준으로 처음 방문한 팀이 자주 놓치는 신호와, 그 신호에 맞춰 움직이는 매너를 정리했습니다.",
