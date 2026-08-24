@@ -17,6 +17,7 @@ import {
   bookingFaqSchema,
   bookingOgPath,
 } from "@/lib/booking/seo";
+import { VENUE_BY_SLUG as NIGHT_BY_SLUG, nightPath } from "@/lib/night/venues";
 
 const UPDATED = "2026-08-17";
 const UPDATED_LABEL = "2026년 8월 17일";
@@ -181,9 +182,13 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
                 </a>
               </li>
             ))}
-            {venue.nightSlug ? (
+            {/* ★ 2026-08-25 — 주소를 손으로 조립하지 않는다.
+                 주소교체로 night 슬러그가 바뀌었는데 여기 값이 낡아 있어
+                 링크 4개가 404 였다(2026-08-25 실측).
+                 이제 night 쪽에 실제로 있는 가게일 때만 걸고, 주소는 nightPath() 로만 만든다. */}
+            {venue.nightSlug && NIGHT_BY_SLUG[venue.nightSlug] ? (
               <li>
-                <a href={`/night/${venue.nightSlug}/`}>
+                <a href={nightPath(venue.nightSlug)}>
                   {venue.name} 위치·이용 안내
                   <span>같은 업소의 기본 정보 페이지</span>
                 </a>

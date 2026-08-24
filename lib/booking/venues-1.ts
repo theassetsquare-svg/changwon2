@@ -96,7 +96,7 @@ export const VENUES_1: BookingVenue[] = [
     floor: "2층",
     station: "상봉역",
     hours: "저녁 19:00 ~ 다음 날 06:00",
-    nightSlug: "sangbong-hangukgwan-3",
+    nightSlug: "sangbong-hangukgwan-night",
     title: "상봉동한국관나이트, 거절 잘하는 사람이 더 즐긴다",
     description:
       "부킹에서 가장 자주 쓰는 기술은 사실 거절입니다. 상봉동한국관나이트의 부킹 흐름을 따라가며 상대와 일행 모두 상하지 않게 끊는 말과 순서, 그 뒤에 오는 연결까지 정리했습니다.",
@@ -430,7 +430,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "경기 안산시 상록구 상록수로 34 (본오동 874)",
     floor: "상록수아카데미타워 지층",
     station: "상록수역",
-    nightSlug: "ansan-hit-night",
+    nightSlug: "ansan-hit-3",
     title: "안산히트나이트, 성비를 먼저 말하는 이유",
     description:
       "부킹에서 인원만큼 중요한 정보가 성비입니다. 안산히트나이트를 기준으로 성비가 자리 배정과 연결 순서를 어떻게 바꾸는지, 어떻게 전달해야 오해가 없는지 정리했습니다.",
@@ -514,7 +514,7 @@ export const VENUES_1: BookingVenue[] = [
     addressRegion: "대전광역시",
     address: "대전 중구 당디로 112 (유천동 332-28)",
     floor: "2~3층",
-    nightSlug: "daejeon-seven-night",
+    nightSlug: "daejeon-seven-3",
     title: "대전세븐나이트, 자리 위치가 부킹 순서를 만든다",
     description:
       "같은 홀 안에서도 어디에 앉느냐에 따라 부킹이 도는 순서가 달라집니다. 대전세븐나이트를 기준으로 동선과 자리의 관계, 자리 이동을 요청하는 타이밍과 매너를 정리했습니다.",
@@ -680,7 +680,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "서울 강남구 영동대로 737 (청담동)",
     floor: "지하 1층",
     contact: { nick: "펩시맨", phone: "010-5655-4866", tel: "01056554866" },
-    nightSlug: "cheongdam-night",
+    nightSlug: "cheongdam-3",
     title: "청담나이트, 잔을 건네는 타이밍의 매너",
     description:
       "합석 자리에서 잔을 언제 어떻게 건네느냐가 그 자리의 온도를 정합니다. 청담나이트의 부킹 흐름을 따라 첫 잔, 권하는 말, 마시지 않는 사람에 대한 배려까지 정리했습니다.",
