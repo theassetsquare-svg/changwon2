@@ -1265,5 +1265,12 @@ export const VENUE_BY_SLUG: Record<string, Venue> = Object.fromEntries(
   VENUES.map((v) => [v.slug, v]),
 );
 
-export const NIGHT_BASE = "/night-2/";
-export const nightPath = (slug: string) => `${NIGHT_BASE}${slug}/`;
+/* ★ 2026-08-24 — 목록(허브) 주소와 가게 페이지 상위 경로를 **반드시 나눠 둔다.**
+ *
+ * 주소교체로 목록이 /night/ → /night-2/ 로 옮겨졌는데, 가게 페이지는
+ * pages/night/[slug].tsx 라 여전히 /night/<슬러그>/ 다.
+ * 한 상수로 묶여 있어서 가게 링크가 /night-2/<슬러그>/ 가 됐고, 그 주소는 없다.
+ * booking 쪽과 똑같은 사고다. 목록 주소가 또 바뀌어도 가게 경로는 따라가면 안 된다. */
+export const NIGHT_BASE = "/night-2/";        // 목록(허브) 주소
+export const NIGHT_VENUE_BASE = "/night/";    // 가게 페이지 상위 = pages/night/[slug].tsx
+export const nightPath = (slug: string) => `${NIGHT_VENUE_BASE}${slug}/`;
