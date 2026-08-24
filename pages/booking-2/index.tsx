@@ -54,7 +54,7 @@ export default function BookingHub() {
 
       <header className="bk-top">
         <a href="/">홈</a>
-        <a href="/night-1/">나이트 업소 목록</a>
+        <a href="/night-2/">나이트 업소 목록</a>
       </header>
 
       <main className="bk-wrap">
@@ -146,7 +146,7 @@ export default function BookingHub() {
         <p className="bk-note">
           업소를 운영하시는 사장님의 광고·제휴 입점 문의는 카카오톡 {AD_KAKAO} 로 받습니다. 손님
           예약이나 이용 문의를 받는 채널이 아닙니다. 각 업소의 위치와 기본 이용 안내는{" "}
-          <a href="/night-1/">나이트 업소 목록</a> 에서도 확인할 수 있습니다.
+          <a href="/night-2/">나이트 업소 목록</a> 에서도 확인할 수 있습니다.
         </p>
       </main>
 

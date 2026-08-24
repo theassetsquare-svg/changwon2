@@ -3,7 +3,7 @@ import type { BookingVenue } from "./types";
 /** 1~10번 업소. 각도: 실수 / 거절 / 첫마디 / 합석 3분 / 인원 / 성비 / 자리 / 신호 / 잔 / 연락처 */
 export const VENUES_1: BookingVenue[] = [
   {
-    slug: "sillim-grandprix-2",
+    slug: "sillim-grandprix-3",
     name: "신림그랑프리나이트",
     group: "B",
     region: "서울 관악구 신림동",
@@ -12,7 +12,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "서울 관악구 신림로 340 (신림동 1422-5)",
     floor: "르네상스 쇼핑몰 14층",
     station: "신림역",
-    nightSlug: "sillim-grandprix-2",
+    nightSlug: "sillim-grandprix-3",
     title: "신림그랑프리나이트, 첫 부킹에서 하는 흔한 실수",
     description:
       "부킹은 손님이 만드는 게 아니라 홀이 돌리는 흐름에 얹히는 일입니다. 신림그랑프리나이트를 예로 들어 입장부터 자리, 첫 연결, 마무리까지 초보가 자주 어긋나는 지점을 순서대로 짚었습니다.",
@@ -81,12 +81,12 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "정보는 입장할 때 넘기고, 정리는 웨이터에게 맡기면 첫 부킹의 실수는 대부분 사라집니다.",
-    related: ["sangbong-hangukgwan-2", "suyu-shampoo-2", "gangseo-hobak-1"],
+    related: ["sangbong-hangukgwan-3", "suyu-shampoo-3", "gangseo-hobak-2"],
     og: { bg: "#151032", bg2: "#0b0410" },
   },
 
   {
-    slug: "sangbong-hangukgwan-2",
+    slug: "sangbong-hangukgwan-3",
     name: "상봉동한국관나이트",
     group: "B",
     region: "서울 중랑구 상봉동",
@@ -96,7 +96,7 @@ export const VENUES_1: BookingVenue[] = [
     floor: "2층",
     station: "상봉역",
     hours: "저녁 19:00 ~ 다음 날 06:00",
-    nightSlug: "sangbong-hangukgwan-2",
+    nightSlug: "sangbong-hangukgwan-3",
     title: "상봉동한국관나이트, 거절 잘하는 사람이 더 즐긴다",
     description:
       "부킹에서 가장 자주 쓰는 기술은 사실 거절입니다. 상봉동한국관나이트의 부킹 흐름을 따라가며 상대와 일행 모두 상하지 않게 끊는 말과 순서, 그 뒤에 오는 연결까지 정리했습니다.",
@@ -165,12 +165,12 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "빨리 그리고 조용히 끊는 팀이 그날 밤 가장 많은 연결을 받습니다.",
-    related: ["sillim-grandprix-2", "nowon-hobak-1", "dapsimni-miracle-night"],
+    related: ["sillim-grandprix-3", "nowon-hobak-2", "dapsimni-miracle-night"],
     og: { bg: "#1e1349", bg2: "#0b0410" },
   },
 
   {
-    slug: "suyu-shampoo-2",
+    slug: "suyu-shampoo-3",
     name: "수유샴푸나이트",
     group: "B",
     region: "서울 강북구 수유동",
@@ -180,7 +180,7 @@ export const VENUES_1: BookingVenue[] = [
     floor: "지하 1~2층",
     station: "수유역",
     hours: "저녁 19:00 ~ 다음 날 05:00",
-    nightSlug: "suyu-shampoo-2",
+    nightSlug: "suyu-shampoo-3",
     title: "수유샴푸나이트, 웨이터에게 건네는 첫마디",
     description:
       "부킹의 속도는 담당 웨이터에게 처음 건네는 한 문장에서 갈립니다. 수유샴푸나이트를 기준으로 무엇을 말하고 무엇을 말하지 않아야 하는지, 자리 배정부터 연결까지 순서대로 정리했습니다.",
@@ -249,7 +249,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인원·성비·시간·자리 성격 네 가지를 한 문장에 담으면 부킹은 그때부터 빨라집니다.",
-    related: ["sillim-grandprix-2", "nowon-hobak-1", "seongnam-shampoo-1"],
+    related: ["sillim-grandprix-3", "nowon-hobak-2", "seongnam-shampoo-2"],
     og: { bg: "#180c3b", bg2: "#0b0410" },
   },
 
@@ -333,12 +333,12 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인사, 자리 내어주기, 가벼운 첫 화제 — 이 3분이 합석의 결말을 거의 정합니다.",
-    related: ["ulsan-newworld-1", "daegu-hobak-1", "changwon-lululala-night"],
+    related: ["ulsan-newworld-2", "daegu-hobak-2", "changwon-lululala-night"],
     og: { bg: "#230d54", bg2: "#0b0410" },
   },
 
   {
-    slug: "suwon-chancedome-2",
+    slug: "suwon-chancedome-3",
     name: "수원찬스돔나이트",
     group: "B",
     region: "경기 수원시 권선구 권선동",
@@ -346,7 +346,7 @@ export const VENUES_1: BookingVenue[] = [
     addressRegion: "경기도",
     address: "경기 수원시 권선구 권선로 673 (권선동 1019-9)",
     station: "수원시청역",
-    nightSlug: "suwon-chancedome-2",
+    nightSlug: "suwon-chancedome-3",
     title: "수원찬스돔나이트, 인원수가 부킹 속도를 바꾼다",
     description:
       "같은 시간에 들어와도 몇 명이냐에 따라 부킹 속도가 달라집니다. 수원찬스돔나이트를 예로 둘·넷·여섯 이상의 팀이 각각 어떤 순서로 연결되는지와 인원별 매너를 정리했습니다.",
@@ -415,7 +415,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인원을 미리 확정해 알리는 것만으로 그날 부킹의 순서가 앞당겨집니다.",
-    related: ["suwon-korea-1", "osan-hobak-1", "ansan-hit-night"],
+    related: ["suwon-korea-2", "osan-hobak-3", "ansan-hit-night"],
     og: { bg: "#20103c", bg2: "#0b0410" },
   },
 
@@ -498,7 +498,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "성비는 숫자 두 개면 되고, 그 두 개가 첫 연결까지의 시간을 줄여 줍니다.",
-    related: ["suwon-chancedome-2", "bucheon-gorae-1", "incheon-arabian-1"],
+    related: ["suwon-chancedome-3", "bucheon-gorae-2", "incheon-arabian-2"],
     og: { bg: "#2f1254", bg2: "#0b0410" },
   },
 
@@ -582,12 +582,12 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "좋은 자리는 등급이 아니라 담당자의 동선 위에 있는 자리입니다.",
-    related: ["daejeon-one-night", "cheonan-korea-1", "cheongju-hobak-1"],
+    related: ["daejeon-one-night", "cheonan-korea-2", "cheongju-hobak-2"],
     og: { bg: "#290b46", bg2: "#0b0410" },
   },
 
   {
-    slug: "ilsan-shampoo-2",
+    slug: "ilsan-shampoo-3",
     name: "일산샴푸나이트",
     group: "B",
     region: "경기 고양시 일산동구 마두동",
@@ -596,7 +596,7 @@ export const VENUES_1: BookingVenue[] = [
     address: "경기 고양시 일산동구 중앙로 1160 (마두동 805-1)",
     floor: "오원빌딩 8~9층",
     station: "마두역",
-    nightSlug: "ilsan-shampoo-2",
+    nightSlug: "ilsan-shampoo-3",
     title: "일산샴푸나이트, 부킹이 안 도는 날의 신호",
     description:
       "홀에는 부킹이 잘 도는 날과 그렇지 않은 날이 있습니다. 일산샴푸나이트를 기준으로 그날의 흐름을 읽는 신호와, 흐름이 느릴 때 팀이 취할 수 있는 매너 있는 대응을 정리했습니다.",
@@ -665,7 +665,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "느린 날을 여는 건 재촉이 아니라 조건을 한 칸 넓히는 한마디입니다.",
-    related: ["paju-skydome-1", "guri-hobak-1", "uijeongbu-hangukgwan-1"],
+    related: ["paju-skydome-2", "guri-hobak-2", "uijeongbu-hangukgwan-2"],
     og: { bg: "#391754", bg2: "#0b0410" },
   },
 
@@ -748,7 +748,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "인사 직후에 절반만, 말은 짧게. 잘 멈추는 쪽이 오래 앉아 있게 됩니다.",
-    related: ["gildong-chance-1", "yeongdeungpo-terminal-1", "gangseo-hobak-1"],
+    related: ["gildong-chance-2", "yeongdeungpo-terminal-2", "gangseo-hobak-2"],
     og: { bg: "#321047", bg2: "#0b0410" },
   },
 
@@ -831,7 +831,7 @@ export const VENUES_1: BookingVenue[] = [
     ],
     oneline:
       "한 번만 묻고 이유는 되묻지 않는 것, 그 절제가 마지막 인상을 만듭니다.",
-    related: ["daejeon-seven-night", "cheonan-stardome-1", "osan-hobak-2"],
+    related: ["daejeon-seven-night", "cheonan-stardome-2", "osan-hobak-4"],
     og: { bg: "#290a39", bg2: "#0b0410" },
   },
 ];

@@ -3,7 +3,7 @@ import type { BookingVenue } from "./types";
 /** 21~30번 업소. 각도: 팁 / 이탈 / 실례 / 복귀 / 마감 / 요일 / 혼자 / 촬영 / 무알코올 / 재방문 */
 export const VENUES_3: BookingVenue[] = [
   {
-    slug: "guri-hobak-1",
+    slug: "guri-hobak-2",
     name: "구리호박나이트",
     group: "B",
     region: "경기 구리시 수택동",
@@ -78,12 +78,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "우리 팀에 관한 것은 요청, 다른 사람의 선택에 관한 것은 요구입니다.",
-    related: ["uijeongbu-hangukgwan-1", "ilsan-shampoo-2", "paju-skydome-1"],
+    related: ["uijeongbu-hangukgwan-2", "ilsan-shampoo-3", "paju-skydome-2"],
     og: { bg: "#210e39", bg2: "#0b0410" },
   },
 
   {
-    slug: "uijeongbu-hangukgwan-1",
+    slug: "uijeongbu-hangukgwan-2",
     name: "의정부한국관나이트",
     group: "B",
     region: "경기 의정부시 의정부동",
@@ -160,12 +160,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "맞는 자리에는 오래, 안 맞는 자리에서는 빨리 — 그 리듬이 그날을 정합니다.",
-    related: ["uijeongbu-baekakgwan-1", "guri-hobak-1", "paju-skydome-1"],
+    related: ["uijeongbu-baekakgwan-2", "guri-hobak-2", "paju-skydome-2"],
     og: { bg: "#301051", bg2: "#0b0410" },
   },
 
   {
-    slug: "uijeongbu-baekakgwan-1",
+    slug: "uijeongbu-baekakgwan-2",
     name: "의정부백악관나이트",
     group: "B",
     region: "경기 의정부시 의정부동",
@@ -242,12 +242,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "두 번 권하지 않고, 먼저 닿지 않고, 한 사람만 보지 않으면 실례는 거의 사라집니다.",
-    related: ["uijeongbu-hangukgwan-1", "nowon-hobak-1", "dapsimni-miracle-night"],
+    related: ["uijeongbu-hangukgwan-2", "nowon-hobak-2", "dapsimni-miracle-night"],
     og: { bg: "#28123a", bg2: "#0b0410" },
   },
 
   {
-    slug: "suwon-korea-1",
+    slug: "suwon-korea-2",
     name: "수원코리아나이트",
     group: "B",
     region: "경기 수원시 팔달구 인계동",
@@ -323,12 +323,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "시작보다 마무리가 다음 기회를 만듭니다. 복귀가 빠른 팀이 가장 많이 연결됩니다.",
-    related: ["suwon-chancedome-2", "osan-hobak-1", "seongnam-shampoo-1"],
+    related: ["suwon-chancedome-3", "osan-hobak-3", "seongnam-shampoo-2"],
     og: { bg: "#3a1551", bg2: "#0b0410" },
   },
 
   {
-    slug: "osan-hobak-1",
+    slug: "osan-hobak-3",
     name: "오산호박나이트",
     group: "B",
     region: "경기 오산시 원동",
@@ -405,12 +405,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "막바지는 가장 빠른 구간이지만, 속도가 붙은 만큼 선도 더 또렷해야 합니다.",
-    related: ["suwon-korea-1", "pyeongtaek-hobak-1", "suwon-chancedome-2"],
+    related: ["suwon-korea-2", "pyeongtaek-hobak-2", "suwon-chancedome-3"],
     og: { bg: "#320e44", bg2: "#0b0410" },
   },
 
   {
-    slug: "indeogwon-gukbingwan-1",
+    slug: "indeogwon-gukbingwan-2",
     name: "인덕원국빈관나이트",
     group: "B",
     region: "경기 안양시 동안구 관양동",
@@ -485,12 +485,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "주말은 조합이 많고 평일은 밀도가 높습니다. 요일은 목적으로 고르면 됩니다.",
-    related: ["doksan-gukbingwan-1", "seongnam-shampoo-1", "suwon-korea-1"],
+    related: ["doksan-gukbingwan-2", "seongnam-shampoo-2", "suwon-korea-2"],
     og: { bg: "#480e5d", bg2: "#0b0410" },
   },
 
   {
-    slug: "seongnam-shampoo-1",
+    slug: "seongnam-shampoo-2",
     name: "성남샴푸나이트",
     group: "B",
     region: "경기 성남시 중원구 성남동",
@@ -566,12 +566,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "혼자라고 먼저 말하는 한마디가 1인 방문의 경로를 여는 열쇠입니다.",
-    related: ["suyu-shampoo-2", "suwon-korea-1", "indeogwon-gukbingwan-1"],
+    related: ["suyu-shampoo-3", "suwon-korea-2", "indeogwon-gukbingwan-2"],
     og: { bg: "#3a1244", bg2: "#0b0410" },
   },
 
   {
-    slug: "incheon-arabian-1",
+    slug: "incheon-arabian-2",
     name: "인천아라비안나이트",
     alias: "인천아라비아나이트",
     group: "B",
@@ -649,12 +649,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "요청은 한 번, 거절은 최종, 촬영은 동의가 있을 때만. 그 밖은 모두 무리입니다.",
-    related: ["bucheon-gorae-1", "ansan-hit-night", "gangseo-hobak-1"],
+    related: ["bucheon-gorae-2", "ansan-hit-night", "gangseo-hobak-2"],
     og: { bg: "#300c37", bg2: "#0b0410" },
   },
 
   {
-    slug: "bucheon-gorae-1",
+    slug: "bucheon-gorae-2",
     name: "부천고래나이트",
     group: "B",
     region: "경기 부천시 원미구",
@@ -728,12 +728,12 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "부킹은 술의 양이 아니라 자리에 함께 있는 시간으로 흐릅니다.",
-    related: ["incheon-arabian-1", "ansan-hit-night", "gangseo-hobak-1"],
+    related: ["incheon-arabian-2", "ansan-hit-night", "gangseo-hobak-2"],
     og: { bg: "#490d4f", bg2: "#0b0410" },
   },
 
   {
-    slug: "pyeongtaek-hobak-1",
+    slug: "pyeongtaek-hobak-2",
     name: "평택호박나이트",
     group: "B",
     region: "경기 평택시 평택동",
@@ -808,7 +808,7 @@ export const VENUES_3: BookingVenue[] = [
     ],
     oneline:
       "오늘의 마무리가 다음 방문의 조건이 되고, 그 조건이 쌓여 단골이 됩니다.",
-    related: ["osan-hobak-1", "cheonan-stardome-1", "suwon-chancedome-2"],
+    related: ["osan-hobak-3", "cheonan-stardome-2", "suwon-chancedome-3"],
     og: { bg: "#370f38", bg2: "#0b0410" },
   },
 ];

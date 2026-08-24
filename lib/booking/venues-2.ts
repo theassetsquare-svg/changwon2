@@ -84,7 +84,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "알리고, 지키고, 내버려 두고, 끝 시각을 정해 두면 일행도 부킹도 상하지 않습니다.",
-    related: ["ulsan-champion-night", "busan-asiad-night", "gumi-hobak-1"],
+    related: ["ulsan-champion-night", "busan-asiad-night", "gumi-hobak-2"],
     og: { bg: "#3a1448", bg2: "#0b0410" },
   },
 
@@ -168,7 +168,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "늦었다면 고르지 말고 앉은 뒤, 남은 시간부터 알리는 것이 회복의 시작입니다.",
-    related: ["nowon-hobak-1", "gangseo-hobak-1", "doksan-gukbingwan-1"],
+    related: ["nowon-hobak-2", "gangseo-hobak-2", "doksan-gukbingwan-2"],
     og: { bg: "#310d3a", bg2: "#0b0410" },
   },
 
@@ -250,12 +250,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "바꾸기 전에 한 번 더 정확히 말해 보는 쪽이 실제로는 더 자주 통합니다.",
-    related: ["ulsan-newworld-1", "changwon-lululala-night", "busan-asiad-night"],
+    related: ["ulsan-newworld-2", "changwon-lululala-night", "busan-asiad-night"],
     og: { bg: "#480f52", bg2: "#0b0410" },
   },
 
   {
-    slug: "doksan-gukbingwan-1",
+    slug: "doksan-gukbingwan-2",
     name: "독산동국빈관나이트",
     group: "B",
     region: "서울 금천구 독산동",
@@ -331,7 +331,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "기다림을 견디는 팀보다 그 시간을 즐기는 팀에게 연결이 먼저 옵니다.",
-    related: ["gwangju-sangmu-1", "yeongdeungpo-terminal-1", "indeogwon-gukbingwan-1"],
+    related: ["gwangju-sangmu-2", "yeongdeungpo-terminal-2", "indeogwon-gukbingwan-2"],
     og: { bg: "#38113b", bg2: "#0b0410" },
   },
 
@@ -411,12 +411,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "말이 안 들리는 공간일수록 동작이 말을 대신하고, 그 동작이 곧 매너입니다.",
-    related: ["sangbong-hangukgwan-2", "nowon-hobak-1", "gildong-chance-1"],
+    related: ["sangbong-hangukgwan-3", "nowon-hobak-2", "gildong-chance-2"],
     og: { bg: "#511353", bg2: "#0b0410" },
   },
 
   {
-    slug: "gangseo-hobak-1",
+    slug: "gangseo-hobak-2",
     name: "강서호박나이트",
     group: "B",
     region: "서울 강서구 화곡동",
@@ -493,12 +493,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "나갈 때는 자리를 남기고, 데려올 때는 먼저 알린다 — 이동의 규칙은 이 둘뿐입니다.",
-    related: ["yeongdeungpo-terminal-1", "bulgwang-hobak-night", "bucheon-gorae-1"],
+    related: ["yeongdeungpo-terminal-2", "bulgwang-hobak-night", "bucheon-gorae-2"],
     og: { bg: "#450d43", bg2: "#0b0410" },
   },
 
   {
-    slug: "yeongdeungpo-terminal-1",
+    slug: "yeongdeungpo-terminal-2",
     name: "영등포터미널나이트",
     group: "B",
     region: "서울 영등포구 영등포동",
@@ -575,12 +575,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "단체는 한 번에 붙지 않고 절반씩 돕니다. 자리를 지킬 사람만 정해 두면 됩니다.",
-    related: ["gangseo-hobak-1", "doksan-gukbingwan-1", "gildong-chance-1"],
+    related: ["gangseo-hobak-2", "doksan-gukbingwan-2", "gildong-chance-2"],
     og: { bg: "#52194d", bg2: "#0b0410" },
   },
 
   {
-    slug: "nowon-hobak-1",
+    slug: "nowon-hobak-2",
     name: "노원호박나이트",
     group: "B",
     region: "서울 노원구 상계동",
@@ -657,12 +657,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "둘일 때는 조건을 먼저 여는 한마디가 대기 시간을 가장 크게 줄여 줍니다.",
-    related: ["suyu-shampoo-2", "sangbong-hangukgwan-2", "uijeongbu-baekakgwan-1"],
+    related: ["suyu-shampoo-3", "sangbong-hangukgwan-3", "uijeongbu-baekakgwan-2"],
     og: { bg: "#46113e", bg2: "#0b0410" },
   },
 
   {
-    slug: "gildong-chance-1",
+    slug: "gildong-chance-2",
     name: "길동찬스나이트",
     group: "B",
     region: "서울 강동구 길동",
@@ -739,12 +739,12 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "나이 차이는 문제가 아니고, 그 차이를 화제로 만드는 순간이 문제입니다.",
-    related: ["cheongdam-night", "dapsimni-miracle-night", "yeongdeungpo-terminal-1"],
+    related: ["cheongdam-night", "dapsimni-miracle-night", "yeongdeungpo-terminal-2"],
     og: { bg: "#380b2e", bg2: "#0b0410" },
   },
 
   {
-    slug: "paju-skydome-1",
+    slug: "paju-skydome-2",
     name: "파주야당스카이돔나이트",
     group: "B",
     region: "경기 파주시 야당동",
@@ -821,7 +821,7 @@ export const VENUES_2: BookingVenue[] = [
     ],
     oneline:
       "옷은 시작을 조금 앞당길 뿐, 나머지는 표정과 대화가 정합니다.",
-    related: ["ilsan-shampoo-2", "guri-hobak-1", "uijeongbu-hangukgwan-1"],
+    related: ["ilsan-shampoo-3", "guri-hobak-2", "uijeongbu-hangukgwan-2"],
     og: { bg: "#461639", bg2: "#0b0410" },
   },
 ];

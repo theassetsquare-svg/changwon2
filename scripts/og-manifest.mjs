@@ -60,8 +60,8 @@ for (const c of night) {
   push(`${c.slug}-og.png`, `/night/${c.slug}/`, c.name, t);
 }
 // 허브 카드 — 여러 업소를 다루는 목록이라 중립 문구만 그려져 있다.
-push("booking-index-og.png", "/booking-1/", null, ["BOOKING", "전국 나이트 부킹 안내", "부킹 흐름과 매너 · 40곳", BRAND]);
-push("index-og.png", "/night-1/", null, ["전국 나이트 안내", "지역별 목록", BRAND]);
+push("booking-index-og.png", "/booking-2/", null, ["BOOKING", "전국 나이트 부킹 안내", "부킹 흐름과 매너 · 40곳", BRAND]);
+push("index-og.png", "/night-2/", null, ["전국 나이트 안내", "지역별 목록", BRAND]);
 
 // G14: 자기 이름 외 다른 업소명이 그려져 있으면 실패
 const names = [...booking, ...night].map((c) => c.name);
