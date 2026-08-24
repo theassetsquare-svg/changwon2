@@ -7,53 +7,53 @@
     "nick": "손흥민",
     "phone": "010-2221-1937",
     "phoneH": 117,
-    "phoneW": 1100,
+    "phoneW": 1097,
     "contrast": "21.0",
     "clipped": "없음",
     "badge": "-",
-    "bright": "8.7"
+    "bright": "9.0"
   },
   {
     "slug": "changwon-lululala-night",
     "group": "A",
-    "kb": "76",
+    "kb": "80",
     "bg": "#4a0d2e",
     "nick": "로또",
     "phone": "010-7528-4936",
     "phoneH": 117,
-    "phoneW": 1101,
+    "phoneW": 1098,
     "contrast": "21.0",
     "clipped": "없음",
     "badge": "만 27세 이상",
-    "bright": "8.4"
+    "bright": "8.7"
   },
   {
     "slug": "ulsan-champion-night",
     "group": "A",
-    "kb": "81",
+    "kb": "78",
     "bg": "#06304a",
     "nick": "춘자",
     "phone": "010-5653-0069",
     "phoneH": 117,
-    "phoneW": 1100,
+    "phoneW": 1097,
     "contrast": "21.0",
     "clipped": "없음",
     "badge": "-",
     "bright": "8.8"
   },
   {
-    "slug": "cheongdam-night",
+    "slug": "cheongdam-3",
     "group": "A",
-    "kb": "79",
+    "kb": "77",
     "bg": "#1f0a3d",
     "nick": "펩시맨",
     "phone": "010-5655-4866",
     "phoneH": 117,
-    "phoneW": 1102,
+    "phoneW": 1099,
     "contrast": "21.0",
     "clipped": "없음",
     "badge": "-",
-    "bright": "8.6"
+    "bright": "8.7"
   },
   {
     "slug": "daejeon-one-night",
@@ -67,12 +67,12 @@
     "contrast": "-",
     "clipped": "-",
     "badge": "만 38세 이상",
-    "bright": "5.4"
+    "bright": "5.5"
   },
   {
-    "slug": "sillim-grandprix-night",
+    "slug": "sillim-grandprix-3",
     "group": "B",
-    "kb": "114",
+    "kb": "113",
     "bg": "#40170a",
     "nick": "-",
     "phone": "-",
@@ -86,7 +86,7 @@
   {
     "slug": "sangbong-hangukgwan-night",
     "group": "B",
-    "kb": "122",
+    "kb": "110",
     "bg": "#2b1145",
     "nick": "-",
     "phone": "-",
@@ -95,10 +95,10 @@
     "contrast": "-",
     "clipped": "-",
     "badge": "-",
-    "bright": "4.6"
+    "bright": "4.7"
   },
   {
-    "slug": "suyu-shampoo-night",
+    "slug": "suyu-shampoo-3",
     "group": "B",
     "kb": "113",
     "bg": "#0d2b3f",
@@ -109,26 +109,26 @@
     "contrast": "-",
     "clipped": "-",
     "badge": "-",
-    "bright": "4.2"
+    "bright": "4.3"
   },
   {
     "slug": "busan-asiad-night",
-    "group": "B",
-    "kb": "116",
+    "group": "A",
+    "kb": "76",
     "bg": "#3d0f18",
-    "nick": "-",
-    "phone": "-",
-    "phoneH": "-",
-    "phoneW": "-",
-    "contrast": "-",
-    "clipped": "-",
+    "nick": "새우깡",
+    "phone": "010-3614-1056",
+    "phoneH": 117,
+    "phoneW": 1098,
+    "contrast": "21.0",
+    "clipped": "없음",
     "badge": "-",
-    "bright": "4.4"
+    "bright": "8.5"
   },
   {
-    "slug": "suwon-chance-dome-night",
+    "slug": "suwon-chancedome-3",
     "group": "B",
-    "kb": "102",
+    "kb": "107",
     "bg": "#14351a",
     "nick": "-",
     "phone": "-",
@@ -137,12 +137,12 @@
     "contrast": "-",
     "clipped": "-",
     "badge": "-",
-    "bright": "4.9"
+    "bright": "5.0"
   },
   {
-    "slug": "ansan-hit-night",
+    "slug": "ansan-hit-3",
     "group": "B",
-    "kb": "114",
+    "kb": "108",
     "bg": "#341a02",
     "nick": "-",
     "phone": "-",
@@ -151,26 +151,26 @@
     "contrast": "-",
     "clipped": "-",
     "badge": "-",
-    "bright": "4.5"
+    "bright": "4.6"
   },
   {
-    "slug": "daejeon-seven-night",
-    "group": "B",
-    "kb": "122",
+    "slug": "daejeon-seven-3",
+    "group": "A",
+    "kb": "80",
     "bg": "#101f4d",
-    "nick": "-",
-    "phone": "-",
-    "phoneH": "-",
-    "phoneW": "-",
-    "contrast": "-",
-    "clipped": "-",
+    "nick": "영탁",
+    "phone": "010-7770-0869",
+    "phoneH": 117,
+    "phoneW": 1097,
+    "contrast": "21.0",
+    "clipped": "없음",
     "badge": "-",
-    "bright": "4.5"
+    "bright": "8.1"
   },
   {
-    "slug": "ilsan-shampoo-night",
+    "slug": "ilsan-shampoo-3",
     "group": "B",
-    "kb": "119",
+    "kb": "125",
     "bg": "#451236",
     "nick": "-",
     "phone": "-",
@@ -179,7 +179,7 @@
     "contrast": "-",
     "clipped": "-",
     "badge": "-",
-    "bright": "4.6"
+    "bright": "4.7"
   },
   {
     "slug": "index",
@@ -193,6 +193,6 @@
     "contrast": "-",
     "clipped": "-",
     "badge": "-",
-    "bright": "3.7"
+    "bright": "3.8"
   }
 ]

@@ -256,7 +256,8 @@ export const VENUES_1: BookingVenue[] = [
   {
     slug: "busan-asiad-night",
     name: "부산아시아드나이트",
-    group: "B",
+    group: "A",
+    contact: { nick: "새우깡", phone: "010-3614-1056", tel: "01036141056" },
     region: "부산 동래구 온천동",
     locality: "동래구",
     addressRegion: "부산광역시",

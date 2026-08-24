@@ -151,7 +151,9 @@ function shot(name, html, outPath) {
   const page = join(WORK, `${name}.html`);
   writeFileSync(page, html);
   execFileSync(
-    "chromium",
+    /* ★ 윈도우에는 PATH 에 chromium 이 없다. 환경변수로 받을 수 있게 한다.
+       리눅스에서는 예전과 똑같이 "chromium" 을 쓴다(2026-08-24). */
+    process.env.CHROMIUM_BIN || "chromium",
     [
       "--headless",
       "--no-sandbox",
