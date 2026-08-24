@@ -110,6 +110,8 @@ const CSS = `
 }
 `;
 
+const OG_IMAGE = SITE_URL + "/og/index-og.png";
+
 export default function Home({ dateModified }: { dateModified: string }) {
   const ld = {
     "@context": "https://schema.org",
@@ -137,6 +139,24 @@ export default function Home({ dateModified }: { dateModified: string }) {
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:url" content={SITE_URL + PATH} />
         <meta property="og:locale" content="ko_KR" />
+        {/* ★ 2026-08-25 — 홈에 썸네일이 아예 없었다.
+            홈은 이 사이트에서 제일 중요한 페이지인데, 네이버·카카오가 미리보기를 못 만들고
+            검색 결과에도 그림 없이 나온다. 그림 파일(public/og/index-og.png)은 이미 있었는데
+            연결만 빠져 있었다. 1200x1200 확인함.
+            네이버는 상대경로 og:image 를 못 읽으므로 반드시 전체 주소로 넣는다. */}
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta property="og:image:secure_url" content={OG_IMAGE} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+        <meta property="og:image:alt" content={TITLE} />
+        {/* 네이버 썸네일 수집용 */}
+        <meta name="thumbnail" content={OG_IMAGE} />
+        {/* 1:1 그림이라 summary. summary_large_image 는 좌우가 잘린다. */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={TITLE} />
+        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:image" content={OG_IMAGE} />
         <link rel="icon" href="/favicon.ico" />
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
         <script
