@@ -2,16 +2,16 @@
   "ci": {
     "collect": {
       "url": [
-        "https://changwonc.pages.dev/",
-        "https://changwonc.pages.dev/location/",
-        "https://changwonc.pages.dev/booking/",
-        "https://changwonc.pages.dev/rooms/",
-        "https://changwonc.pages.dev/hours/",
-        "https://changwonc.pages.dev/parking/",
-        "https://changwonc.pages.dev/access/",
-        "https://changwonc.pages.dev/vip/",
-        "https://changwonc.pages.dev/reviews/",
-        "https://changwonc.pages.dev/faq/"
+        "https://i.nolcool.com/",
+        "https://i.nolcool.com/location/",
+        "https://i.nolcool.com/booking/",
+        "https://i.nolcool.com/rooms/",
+        "https://i.nolcool.com/hours/",
+        "https://i.nolcool.com/parking/",
+        "https://i.nolcool.com/access/",
+        "https://i.nolcool.com/vip/",
+        "https://i.nolcool.com/reviews/",
+        "https://i.nolcool.com/faq/"
       ],
       "numberOfRuns": 1,
       "settings": {

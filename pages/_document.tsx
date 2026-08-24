@@ -5,10 +5,12 @@ export default function Document() {
     <Html lang="ko">
       <Head>
         <meta charSet="utf-8" />
-        {/* 신규 등록(changwonc.pages.dev) — 2026-08-18 */}
+        {/* 구 등록(changwonc.pages.dev) 유지 — 2026-08-18 */}
         <meta name="naver-site-verification" content="3bb98ddc2b6fee3ffb0f267744f3689f8f3a7ca6" />
         {/* 구 등록(changwona.pages.dev) 유지 */}
         <meta name="naver-site-verification" content="fb77bafd6276354f9e3aae2754d325d44526e700" />
+        {/* 새 도메인 등록(i.nolcool.com) — 2026-08-24 */}
+        <meta name="naver-site-verification" content="c93b0d8d68e8ea14bee02e62cbf04f5e824057b5" />
         <meta name="google-site-verification" content="HJjm7MRxykCQ7d_9L7glaTeeaWrmJIzAKY0BcNcfm88" />
         <meta name="color-scheme" content="dark" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

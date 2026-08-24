@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync, statSync, existsSync } from "node:fs";
 import { resolve, join } from "node:path";
 
 const ROOT = resolve(import.meta.dirname, "..");
-const BRAND = "changwonc.pages.dev";
+const BRAND = "i.nolcool.com";
 
 function parse(file, sep) {
   const src = readFileSync(join(ROOT, file), "utf8");
@@ -38,7 +38,7 @@ const push = (file, page, venue, text) => {
   const abs = join(ROOT, "public/og", file);
   items.push({
     file: `/og/${file}`,
-    page: `https://changwonc.pages.dev${page}`,
+    page: `https://i.nolcool.com${page}`,
     venue,
     text,
     bytes: existsSync(abs) ? statSync(abs).size : null,

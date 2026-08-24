@@ -5,7 +5,7 @@
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>창원 룰루랄라 나이트클럽</title>
-    <link>https://changwonc.pages.dev/</link>
+    <link>https://i.nolcool.com/</link>
     <description>상남동 모아엔트몰 지하 3층, 약 457평 메인홀. 매일 19:00~05:00 연중무휴. 부킹·룸·VIP 예약문의 로또 010 7528 4936. 만 27세 이상 입장.</description>
     <language>ko-KR</language>
     <copyright>© 2026 창원 룰루랄라 나이트클럽</copyright>
@@ -15,17 +15,17 @@
     <ttl>60</ttl>
     <pubDate>Mon, 17 Aug 2026 13:00:30 +0900</pubDate>
     <lastBuildDate>Mon, 17 Aug 2026 13:00:30 +0900</lastBuildDate>
-    <atom:link href="https://changwonc.pages.dev/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://i.nolcool.com/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
-      <url>https://changwonc.pages.dev/images/og-square.png</url>
+      <url>https://i.nolcool.com/images/og-square.png</url>
       <title>창원 룰루랄라 나이트클럽</title>
-      <link>https://changwonc.pages.dev/</link>
+      <link>https://i.nolcool.com/</link>
     </image>
 
     <item>
       <title>새벽 4시 40분 — 무너진 자리에서 다시 일어선 세 사람의 기록</title>
-      <link>https://changwonc.pages.dev/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/</guid>
+      <link>https://i.nolcool.com/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/</guid>
       <pubDate>Thu, 13 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>창원 나이트</category>
@@ -34,8 +34,8 @@
 
     <item>
       <title>위치·찾아가는 길 — 상남동 모아엔트몰 지하 3층 도착 5분컷</title>
-      <link>https://changwonc.pages.dev/location/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/location/</guid>
+      <link>https://i.nolcool.com/location/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/location/</guid>
       <pubDate>Wed, 12 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>위치 안내</category>
@@ -44,8 +44,8 @@
 
     <item>
       <title>부킹·룸 예약 4단계 — 전화 한 통 가이드</title>
-      <link>https://changwonc.pages.dev/booking-2/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/booking-2/</guid>
+      <link>https://i.nolcool.com/booking-2/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/booking-2/</guid>
       <pubDate>Tue, 11 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>예약</category>
@@ -54,8 +54,8 @@
 
     <item>
       <title>룸·메인홀·DJ존 한눈에 — 어디 앉아야 그날 밤이 살아나는가</title>
-      <link>https://changwonc.pages.dev/rooms/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/rooms/</guid>
+      <link>https://i.nolcool.com/rooms/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/rooms/</guid>
       <pubDate>Mon, 10 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>자리 안내</category>
@@ -64,8 +64,8 @@
 
     <item>
       <title>영업시간 365일 19~05시 — 휴무 0일 · 명절도 정상영업</title>
-      <link>https://changwonc.pages.dev/hours/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/hours/</guid>
+      <link>https://i.nolcool.com/hours/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/hours/</guid>
       <pubDate>Sun, 09 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>영업시간</category>
@@ -74,8 +74,8 @@
 
     <item>
       <title>주차 OK — 모아엔트몰 지하 주차장 그대로 · 발렛·대리 동선</title>
-      <link>https://changwonc.pages.dev/parking/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/parking/</guid>
+      <link>https://i.nolcool.com/parking/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/parking/</guid>
       <pubDate>Sat, 08 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>주차</category>
@@ -84,8 +84,8 @@
 
     <item>
       <title>대중교통 가이드 — KTX·시청·시외버스에서 가장 짧은 동선</title>
-      <link>https://changwonc.pages.dev/access/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/access/</guid>
+      <link>https://i.nolcool.com/access/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/access/</guid>
       <pubDate>Fri, 07 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>교통</category>
@@ -94,8 +94,8 @@
 
     <item>
       <title>VIP·단체 8인+ — 생일·송별·동호회 콘셉트 세팅 한 번에</title>
-      <link>https://changwonc.pages.dev/vip/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/vip/</guid>
+      <link>https://i.nolcool.com/vip/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/vip/</guid>
       <pubDate>Thu, 06 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>VIP·단체</category>
@@ -104,8 +104,8 @@
 
     <item>
       <title>방문 후기 모음 — 왜 단골들이 룰루랄라만 찾는가</title>
-      <link>https://changwonc.pages.dev/reviews/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/reviews/</guid>
+      <link>https://i.nolcool.com/reviews/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/reviews/</guid>
       <pubDate>Wed, 05 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>후기</category>
@@ -114,8 +114,8 @@
 
     <item>
       <title>자주 묻는 질문 25선 — 첫방문 체크리스트</title>
-      <link>https://changwonc.pages.dev/faq/</link>
-      <guid isPermaLink="true">https://changwonc.pages.dev/faq/</guid>
+      <link>https://i.nolcool.com/faq/</link>
+      <guid isPermaLink="true">https://i.nolcool.com/faq/</guid>
       <pubDate>Tue, 04 Aug 2026 19:00:00 +0900</pubDate>
       <dc:creator>로또</dc:creator>
       <category>FAQ</category>

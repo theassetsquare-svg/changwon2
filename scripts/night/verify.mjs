@@ -2,7 +2,7 @@
 // /night/ 13페이지 배포 전·후 게이트 실측.
 // 사용: node scripts/night/verify.mjs <BASE_URL>
 //   예) node scripts/night/verify.mjs http://127.0.0.1:4321
-//       node scripts/night/verify.mjs https://changwonc.pages.dev
+//       node scripts/night/verify.mjs https://i.nolcool.com
 import { readFileSync } from "node:fs";
 import { resolve, join } from "node:path";
 import { createRequire } from "node:module";

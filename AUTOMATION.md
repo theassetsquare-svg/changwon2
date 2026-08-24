@@ -58,7 +58,7 @@ Gmail 접근 권한을 가진 Claude(이 세션의 MCP 커넥터)가 수행한�
 
 ## 5. 색인/순위 현황 (2026-06-02 기준)
 
-- 서비스계정 `gsc-mcp@theasset-gsc.iam.gserviceaccount.com` = `changwonc.pages.dev` **소유자** 확인.
+- 서비스계정 `gsc-mcp@theasset-gsc.iam.gserviceaccount.com` = `i.nolcool.com` **소유자** 확인.
 - 홈 `/` : **색인 완료(PASS)**, 6/1 모바일 크롤 성공.
 - 서브페이지 9개 : 크롤 대기(사이트맵이 2주간 `isPending` 상태였음 → **재제출 완료**).
 - 노출/클릭 0 : 신생 사이트 색인 적체. 사이트맵 재제출·내부링크로 발견 유도, 이후는 구글 크롤 시간 문제.
