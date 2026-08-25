@@ -1273,4 +1273,24 @@ export const VENUE_BY_SLUG: Record<string, Venue> = Object.fromEntries(
  * booking 쪽과 똑같은 사고다. 목록 주소가 또 바뀌어도 가게 경로는 따라가면 안 된다. */
 export const NIGHT_BASE = "/night-2/";        // 목록(허브) 주소
 export const NIGHT_VENUE_BASE = "/night/";    // 가게 페이지 상위 = pages/night/[slug].tsx
-export const nightPath = (slug: string) => `${NIGHT_VENUE_BASE}${slug}/`;
+
+/* ★ 2026-08-26 — 메인주소 뒤에 가게이름. 네이버에 나오는 것만 옛 경로 유지 */
+export const NIGHT_KEEP_OLD = new Set<string>(["busan-asiad-night", "sangbong-hangukgwan-night"]);
+export const NIGHT_URL_MAP: Record<string, string> = {
+  "bulgwang-hobak-night": "bulgwang-hobak-night",
+  "changwon-lululala-night": "changwon-lululala-night",
+  "ulsan-champion-night": "ulsan-champion-night",
+  "cheongdam-3": "cheongdam-night-1",
+  "daejeon-one-night": "daejeon-one-night-1",
+  "sillim-grandprix-3": "sillim-grandprix-night-1",
+  "suyu-shampoo-3": "suyu-shampoo-night-1",
+  "suwon-chancedome-3": "suwon-chancedome-night-1",
+  "ansan-hit-3": "ansan-hit-night",
+  "daejeon-seven-3": "daejeon-seven-night-1",
+  "ilsan-shampoo-3": "ilsan-shampoo-night-1",
+};
+export const NIGHT_SLUG_BY_URL: Record<string, string> = Object.fromEntries(
+  Object.entries(NIGHT_URL_MAP).map(([slug, url]) => [url, slug])
+);
+export const nightPath = (slug: string) =>
+  NIGHT_KEEP_OLD.has(slug) ? `${NIGHT_VENUE_BASE}${slug}/` : `/${NIGHT_URL_MAP[slug] ?? slug}/`;

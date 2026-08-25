@@ -18,7 +18,51 @@
  * 목록 주소가 또 바뀌어도 가게 경로는 따라가면 안 된다. */
 export const BOOKING_BASE = "/booking-2/";        // 목록(허브) 주소
 export const BOOKING_VENUE_BASE = "/booking/";    // 가게 페이지 상위 = pages/booking/[slug].tsx
-export const bookingPath = (slug: string) => `${BOOKING_VENUE_BASE}${slug}/`;
+
+/* ★ 2026-08-26 대표님 확정 — 가게 페이지 주소는 메인주소 바로 뒤에 가게이름.
+ *   네이버에 이미 나오는 슬러그만 옛 /booking/ 경로를 그대로 쓴다. */
+export const BOOKING_KEEP_OLD = new Set<string>(["ansan-hit-night", "bulgwang-hobak-night", "busan-asiad-night", "changwon-lululala-night", "dapsimni-miracle-night", "ulsan-champion-night"]);
+export const BOOKING_URL_MAP: Record<string, string> = {
+  "sillim-grandprix-3": "sillim-grandprix-night",
+  "sangbong-hangukgwan-3": "sangbong-hangukgwan-night",
+  "suyu-shampoo-3": "suyu-shampoo-night",
+  "suwon-chancedome-3": "suwon-chancedome-night",
+  "daejeon-seven-night": "daejeon-seven-night",
+  "ilsan-shampoo-3": "ilsan-shampoo-night",
+  "cheongdam-night": "cheongdam-night",
+  "daejeon-one-night": "daejeon-one-night",
+  "doksan-gukbingwan-2": "doksan-gukbingwan-night",
+  "gangseo-hobak-2": "gangseo-hobak-night",
+  "yeongdeungpo-terminal-2": "yeongdeungpo-terminal-night",
+  "nowon-hobak-2": "nowon-hobak-night",
+  "gildong-chance-2": "gildong-chance-night",
+  "paju-skydome-2": "paju-skydome-night",
+  "guri-hobak-2": "guri-hobak-night",
+  "uijeongbu-hangukgwan-2": "uijeongbu-hangukgwan-night",
+  "uijeongbu-baekakgwan-2": "uijeongbu-baekakgwan-night",
+  "suwon-korea-2": "suwon-korea-night",
+  "osan-hobak-3": "osan-hobak-night",
+  "indeogwon-gukbingwan-2": "indeogwon-gukbingwan-night",
+  "seongnam-shampoo-2": "seongnam-shampoo-night",
+  "incheon-arabian-2": "incheon-arabian-night",
+  "bucheon-gorae-2": "bucheon-gorae-night",
+  "pyeongtaek-hobak-2": "pyeongtaek-hobak-night",
+  "cheonan-stardome-2": "cheonan-stardome-night",
+  "cheonan-korea-2": "cheonan-korea-night",
+  "cheongju-hobak-2": "cheongju-hobak-night",
+  "ulsan-newworld-2": "ulsan-newworld-night",
+  "osan-hobak-4": "osan-hobak-night-1",
+  "daegu-hobak-2": "daegu-hobak-night",
+  "gumi-hobak-2": "gumi-hobak-night",
+  "gwangju-sangmu-2": "gwangju-sangmu-night",
+  "gwangju-cheomdan-1": "gwangju-cheomdan-night",
+  "jeju-1": "jeju-night",
+};
+export const BOOKING_SLUG_BY_URL: Record<string, string> = Object.fromEntries(
+  Object.entries(BOOKING_URL_MAP).map(([slug, url]) => [url, slug])
+);
+export const bookingPath = (slug: string) =>
+  BOOKING_KEEP_OLD.has(slug) ? `${BOOKING_VENUE_BASE}${slug}/` : `/${BOOKING_URL_MAP[slug] ?? slug}/`;
 
 export const AD_KAKAO = "besta12";
 export const AD_TEXT = "광고·제휴 입점 문의";

@@ -5,6 +5,7 @@ import BookingStyles from "@/components/booking/BookingStyles";
 import BookingBar from "@/components/booking/BookingBar";
 import {
   BOOKING_VENUES,
+  BOOKING_KEEP_OLD,
   BOOKING_BY_SLUG,
   bookingPath,
   BOOKING_BASE,
@@ -23,7 +24,7 @@ const UPDATED = "2026-08-17";
 const UPDATED_LABEL = "2026년 8월 17일";
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-  paths: BOOKING_VENUES.map((v) => ({ params: { slug: v.slug } })),
+  paths: BOOKING_VENUES.filter((v) => BOOKING_KEEP_OLD.has(v.slug)).map((v) => ({ params: { slug: v.slug } })),
   fallback: false,
 });
 

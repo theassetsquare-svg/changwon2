@@ -6,6 +6,7 @@ import CallBar from "@/components/night/CallBar";
 import {
   VENUES,
   VENUE_BY_SLUG,
+  NIGHT_KEEP_OLD,
   nightPath,
   NIGHT_BASE,
   type Venue,
@@ -19,7 +20,7 @@ import {
 } from "@/lib/night/seo";
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-  paths: VENUES.map((v) => ({ params: { slug: v.slug } })),
+  paths: VENUES.filter((v) => NIGHT_KEEP_OLD.has(v.slug)).map((v) => ({ params: { slug: v.slug } })),
   fallback: false,
 });
 
