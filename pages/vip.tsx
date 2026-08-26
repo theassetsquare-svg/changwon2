@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import StickyCTA from "@/components/StickyCTA";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
-const PATH = "/vip/";
+const PATH = "/vip-1/";
 const TITLE = "창원룰루랄라나이트 VIP·단체 8인+ | 생일·송별·동호회 콘셉트 세팅 한 번에";
 const DESCRIPTION = "프라이빗 룸 + 콘셉트 세팅 + 케이크·플래카드 옵션. 8명 이상 단체, 생일·승진·송별·MT·동호회를 한 통으로 정리합니다.";
 const PUBLISHED = "2026-05-26";

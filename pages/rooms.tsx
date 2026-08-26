@@ -74,7 +74,7 @@ export default function Rooms({ dateModified }: { dateModified: string }) {
           <p className="capsule"><strong>2~3명</strong> — 사이드 룸 또는 메인 코너. 부킹 흐름이 가장 자연스럽습니다.</p>
           <p className="capsule"><strong>4~6명</strong> — 사이드 룸 표준. 그날 분위기에 맞춰 DJ 근처로 옮길 수 있습니다.</p>
           <p className="capsule"><strong>7~10명</strong> — 안쪽 프라이빗 룸. 대화도 편하고 콘셉트 세팅도 미리 가능.</p>
-          <p className="capsule"><strong>11명 이상</strong> — <a href="/vip/">VIP/단체 페이지</a> 참고 후 사전 콜 필수.</p>
+          <p className="capsule"><strong>11명 이상</strong> — <a href="/vip-1/">VIP/단체 페이지</a> 참고 후 사전 콜 필수.</p>
         </section>
 
         <section>

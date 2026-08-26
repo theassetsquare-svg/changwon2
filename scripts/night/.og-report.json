@@ -1,6 +1,6 @@
 [
   {
-    "slug": "bulgwang-hobak-night",
+    "slug": "bulgwang-hobak-night-1",
     "group": "A",
     "kb": "79",
     "bg": "#3a1b04",
@@ -14,7 +14,7 @@
     "bright": "9.0"
   },
   {
-    "slug": "changwon-lululala-night",
+    "slug": "changwon-lululala-night-1",
     "group": "A",
     "kb": "80",
     "bg": "#4a0d2e",
@@ -28,7 +28,7 @@
     "bright": "8.7"
   },
   {
-    "slug": "ulsan-champion-night",
+    "slug": "ulsan-champion-night-1",
     "group": "A",
     "kb": "78",
     "bg": "#06304a",
@@ -56,7 +56,7 @@
     "bright": "8.7"
   },
   {
-    "slug": "daejeon-one-night",
+    "slug": "daejeon-one-night-2",
     "group": "B",
     "kb": "104",
     "bg": "#072b1f",
@@ -84,7 +84,7 @@
     "bright": "4.4"
   },
   {
-    "slug": "sangbong-hangukgwan-night",
+    "slug": "sangbong-hangukgwan-night-1",
     "group": "B",
     "kb": "110",
     "bg": "#2b1145",

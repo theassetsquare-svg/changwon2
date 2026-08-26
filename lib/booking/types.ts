@@ -16,7 +16,7 @@
  * 예전에는 한 상수로 묶여 있어서 가게 링크가 전부 /booking-2/<슬러그>/ 가 됐고,
  * 그 주소는 없으므로 **내부 링크 57개가 404** 였다(2026-08-24 실측).
  * 목록 주소가 또 바뀌어도 가게 경로는 따라가면 안 된다. */
-export const BOOKING_BASE = "/booking-2/";        // 목록(허브) 주소
+export const BOOKING_BASE = "/booking-3/";        // 목록(허브) 주소
 export const BOOKING_VENUE_BASE = "/booking/";    // 가게 페이지 상위 = pages/booking/[slug].tsx
 
 /* ★ 2026-08-26 대표님 확정 — 가게 페이지 주소는 메인주소 바로 뒤에 가게이름.

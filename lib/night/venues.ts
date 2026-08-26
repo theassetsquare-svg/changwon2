@@ -65,7 +65,7 @@ export type Venue = {
 export const VENUES: Venue[] = [
   // ───────────────────────── A그룹 (광고주 있음) ─────────────────────────
   {
-    slug: "bulgwang-hobak-night",
+    slug: "bulgwang-hobak-night-1",
     name: "불광동호박나이트",
     group: "A",
     region: "서울 은평구 불광동",
@@ -203,7 +203,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "changwon-lululala-night",
+    slug: "changwon-lululala-night-1",
     name: "창원룰루랄라나이트",
     group: "A",
     region: "경남 창원시 성산구 상남동",
@@ -289,7 +289,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "ulsan-champion-night",
+    slug: "ulsan-champion-night-1",
     name: "울산챔피언나이트",
     group: "A",
     region: "울산 남구 삼산동",
@@ -484,7 +484,7 @@ export const VENUES: Venue[] = [
 
   // ───────────────────────── B그룹 (광고주 없음) ─────────────────────────
   {
-    slug: "daejeon-one-night",
+    slug: "daejeon-one-night-2",
     name: "대전원나이트",
     group: "B",
     region: "대전 동구 용전동",
@@ -656,7 +656,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "sangbong-hangukgwan-night",
+    slug: "sangbong-hangukgwan-night-1",
     name: "상봉동한국관나이트",
     group: "B",
     region: "서울 중랑구 상봉동",
@@ -1271,7 +1271,7 @@ export const VENUE_BY_SLUG: Record<string, Venue> = Object.fromEntries(
  * pages/night/[slug].tsx 라 여전히 /night/<슬러그>/ 다.
  * 한 상수로 묶여 있어서 가게 링크가 /night-2/<슬러그>/ 가 됐고, 그 주소는 없다.
  * booking 쪽과 똑같은 사고다. 목록 주소가 또 바뀌어도 가게 경로는 따라가면 안 된다. */
-export const NIGHT_BASE = "/night-2/";        // 목록(허브) 주소
+export const NIGHT_BASE = "/night-3/";        // 목록(허브) 주소
 export const NIGHT_VENUE_BASE = "/night/";    // 가게 페이지 상위 = pages/night/[slug].tsx
 
 /* ★ 2026-08-26 — 메인주소 뒤에 가게이름. 네이버에 나오는 것만 옛 경로 유지 */

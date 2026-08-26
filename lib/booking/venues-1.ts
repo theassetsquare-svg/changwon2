@@ -421,7 +421,7 @@ export const VENUES_1: BookingVenue[] = [
   },
 
   {
-    slug: "ansan-hit-night",
+    slug: "ansan-hit-night-1",
     name: "안산히트나이트",
     group: "B",
     region: "경기 안산시 상록구 본오동",
@@ -504,7 +504,7 @@ export const VENUES_1: BookingVenue[] = [
   },
 
   {
-    slug: "daejeon-seven-night",
+    slug: "daejeon-seven-night-2",
     name: "대전세븐나이트",
     group: "A",
     contact: { nick: "영탁", phone: "010-7770-0869", tel: "01077700869" },
@@ -671,7 +671,7 @@ export const VENUES_1: BookingVenue[] = [
   },
 
   {
-    slug: "cheongdam-night",
+    slug: "cheongdam-night-2",
     name: "청담나이트",
     group: "A",
     region: "서울 강남구 청담동",
@@ -754,7 +754,7 @@ export const VENUES_1: BookingVenue[] = [
   },
 
   {
-    slug: "daejeon-one-night",
+    slug: "daejeon-one-night-2",
     name: "대전원나이트",
     group: "B",
     region: "대전 동구 용전동",
