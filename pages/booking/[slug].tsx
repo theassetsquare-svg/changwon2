@@ -37,9 +37,19 @@ export const getStaticProps: GetStaticProps<{ venue: BookingVenue }> = async (ct
 
 export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
   const path = bookingPath(venue.slug);
-  const related = venue.related
-    .map((s) => BOOKING_BY_SLUG[s])
-    .filter(Boolean) as BookingVenue[];
+  /* ★ 2026-08-26 — 관련 링크가 적으면 색인이 안 된다. 모자라면 6개까지 채운다. */
+  const related = (() => {
+    const out = venue.related.map((s) => BOOKING_BY_SLUG[s]).filter(Boolean) as BookingVenue[];
+    if (out.length < 6) {
+      const have = new Set(out.map((x) => x.slug));
+      for (const o of BOOKING_VENUES) {
+        if (out.length >= 6) break;
+        if (o.slug === venue.slug || have.has(o.slug)) continue;
+        out.push(o); have.add(o.slug);
+      }
+    }
+    return out.slice(0, 6);
+  })();
 
   const facts: [string, string][] = [
     ["지역", venue.region],
