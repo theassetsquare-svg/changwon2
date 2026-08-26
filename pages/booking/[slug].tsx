@@ -41,10 +41,12 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
   const related = (() => {
     const out = venue.related.map((s) => BOOKING_BY_SLUG[s]).filter(Boolean) as BookingVenue[];
     if (out.length < 6) {
+      /* ★ 자기 위치 다음부터 순환해 채운다 — 앞에서부터 채우면 뒤쪽 가게가 고립된다 */
       const have = new Set(out.map((x) => x.slug));
-      for (const o of BOOKING_VENUES) {
-        if (out.length >= 6) break;
-        if (o.slug === venue.slug || have.has(o.slug)) continue;
+      const base = Math.max(0, BOOKING_VENUES.findIndex((x) => x.slug === venue.slug));
+      for (let i = 1; out.length < 6 && i <= BOOKING_VENUES.length; i++) {
+        const o = BOOKING_VENUES[(base + i) % BOOKING_VENUES.length];
+        if (!o || o.slug === venue.slug || have.has(o.slug)) continue;
         out.push(o); have.add(o.slug);
       }
     }
