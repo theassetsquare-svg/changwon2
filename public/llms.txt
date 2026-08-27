@@ -27,8 +27,8 @@
 - [룸·메인홀·DJ존](https://i.nolcool.com/rooms/): 자리 포지션별 차이
 - [영업시간](https://i.nolcool.com/hours/): 요일별 한 줄·골든타임
 - [주차](https://i.nolcool.com/parking/): 모아엔트몰 지하 주차장
-- [대중교통](https://i.nolcool.com/access-1/): KTX·시청·택시 동선
-- [VIP·단체](https://i.nolcool.com/vip-1/): 8인+ 콘셉트 세팅
+- [대중교통](https://i.nolcool.com/access/): KTX·시청·택시 동선
+- [VIP·단체](https://i.nolcool.com/vip/): 8인+ 콘셉트 세팅
 - [방문 후기](https://i.nolcool.com/reviews/): 입장별 솔직 톤
 - [자주 묻는 질문](https://i.nolcool.com/faq/): 25문항 풀버전
 - [robots.txt](https://i.nolcool.com/robots.txt) · [sitemap.xml](https://i.nolcool.com/sitemap.xml) · [feed.xml](https://i.nolcool.com/feed.xml)

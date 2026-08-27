@@ -21,7 +21,7 @@ import {
 
 const SITE = "https://i.nolcool.com/";
 const HOST = "https://i.nolcool.com";
-const PATHS = ["/", "/location/", "/booking-3/", "/rooms/", "/hours/", "/parking/", "/access-1/", "/vip-1/", "/reviews/", "/faq/"];
+const PATHS = ["/", "/location/", "/booking-2/", "/rooms/", "/hours/", "/parking/", "/access/", "/vip/", "/reviews/", "/faq/"];
 const SITEMAPS = [`${HOST}/sitemap.xml`, `${HOST}/feed.xml`];
 const ALERT_TO = process.env.ALERT_TO || "theassetsquare@gmail.com";
 

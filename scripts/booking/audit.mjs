@@ -232,8 +232,8 @@ gate("G9 확인 불가 표기", g9.length === 0, `주소 미확인 ${unknownCoun
 // ── G10 링크 허용표 ──
 const allow = (h) =>
   h === "/" ||
-  h === "/booking-3/" ||
-  h === "/night-3/" ||
+  h === "/booking-2/" ||
+  h === "/night-2/" ||
   /^\/booking\/[a-z0-9-]+\/$/.test(h) ||
   /^\/night\/[a-z0-9-]+\/$/.test(h) ||
   /^tel:0\d{9,10}$/.test(h) ||

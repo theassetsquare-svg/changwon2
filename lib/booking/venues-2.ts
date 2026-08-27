@@ -3,7 +3,7 @@ import type { BookingVenue } from "./types";
 /** 11~20번 업소. 각도: 일행 / 지각 회복 / 담당 교체 / 대기 시간 / 신호 / 거리감 / 단체 / 둘 / 나이대 / 옷차림 */
 export const VENUES_2: BookingVenue[] = [
   {
-    slug: "changwon-lululala-night-1",
+    slug: "changwon-lululala-night",
     name: "창원룰루랄라나이트",
     group: "A",
     region: "경남 창원시 성산구 상남동",
@@ -89,7 +89,7 @@ export const VENUES_2: BookingVenue[] = [
   },
 
   {
-    slug: "bulgwang-hobak-night-1",
+    slug: "bulgwang-hobak-night",
     name: "불광동호박나이트",
     group: "A",
     region: "서울 은평구 불광동",
@@ -173,7 +173,7 @@ export const VENUES_2: BookingVenue[] = [
   },
 
   {
-    slug: "ulsan-champion-night-1",
+    slug: "ulsan-champion-night",
     name: "울산챔피언나이트",
     group: "A",
     region: "울산 남구 삼산동",

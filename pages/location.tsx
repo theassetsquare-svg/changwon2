@@ -79,7 +79,7 @@ export default function Location({ dateModified }: { dateModified: string }) {
 
         <section>
           <h2>주변 랜드마크</h2>
-          <p>상남시장, 용지호수공원, 더시티세븐 라인이 도보권입니다. 1차로 상남동에서 식사·술자리 잡으셨다면 도보로 그대로 넘어오시는 분들이 많고, 차로 오시는 분은 모아엔트몰 지하 주차장을 이용하시면 됩니다. 자세한 주차 안내는 <a href="/parking/">주차 페이지</a>, 대중교통은 <a href="/access-1/">대중교통 페이지</a>에서.</p>
+          <p>상남시장, 용지호수공원, 더시티세븐 라인이 도보권입니다. 1차로 상남동에서 식사·술자리 잡으셨다면 도보로 그대로 넘어오시는 분들이 많고, 차로 오시는 분은 모아엔트몰 지하 주차장을 이용하시면 됩니다. 자세한 주차 안내는 <a href="/parking/">주차 페이지</a>, 대중교통은 <a href="/access/">대중교통 페이지</a>에서.</p>
         </section>
 
         <section className="ps">
