@@ -5,7 +5,8 @@ import BookingStyles from "@/components/booking/BookingStyles";
 import BookingBar from "@/components/booking/BookingBar";
 import {
   BOOKING_VENUES,
-  BOOKING_KEEP_OLD,
+  BOOKING_URL_MAP,
+  BOOKING_SLUG_BY_URL,
   BOOKING_BY_SLUG,
   bookingPath,
   BOOKING_BASE,
@@ -24,13 +25,13 @@ const UPDATED = "2026-08-17";
 const UPDATED_LABEL = "2026년 8월 17일";
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-  paths: BOOKING_VENUES.filter((v) => BOOKING_KEEP_OLD.has(v.slug)).map((v) => ({ params: { slug: v.slug } })),
+  paths: BOOKING_VENUES.map((v) => ({ params: { slug: BOOKING_URL_MAP[v.slug] ?? v.slug } })),
   fallback: false,
 });
 
 export const getStaticProps: GetStaticProps<{ venue: BookingVenue }> = async (ctx) => {
   const slug = String(ctx.params?.slug);
-  const venue = BOOKING_BY_SLUG[slug];
+  const venue = BOOKING_BY_SLUG[BOOKING_SLUG_BY_URL[slug] ?? slug];
   if (!venue) return { notFound: true };
   return { props: { venue } };
 };

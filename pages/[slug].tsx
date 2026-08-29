@@ -1,6 +1,6 @@
 import type { GetStaticPaths, GetStaticProps } from "next";
 import BookingVenuePage from "./booking/[slug]";
-import NightVenuePage from "./night/[slug]";
+import NightVenuePage from "./club/[slug]";
 import {
   BOOKING_VENUES,
   BOOKING_BY_SLUG,
@@ -38,18 +38,9 @@ export default function VenueRoute(props: Props) {
   return <BookingVenuePage venue={props.venue} />;
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths: { params: { slug: string } }[] = [];
-  for (const v of BOOKING_VENUES) {
-    if (BOOKING_KEEP_OLD.has(v.slug)) continue;
-    paths.push({ params: { slug: BOOKING_URL_MAP[v.slug] ?? v.slug } });
-  }
-  for (const v of NIGHT_VENUES) {
-    if (NIGHT_KEEP_OLD.has(v.slug)) continue;
-    paths.push({ params: { slug: NIGHT_URL_MAP[v.slug] ?? v.slug } });
-  }
-  return { paths, fallback: false };
-};
+/* ★★ 2026-08-29 — 가게 페이지는 전부 폴더 주소(/booking/ · /club/)로 옮겼다.
+   여기서는 아무 주소도 만들지 않는다. */
+export const getStaticPaths: GetStaticPaths = async () => ({ paths: [], fallback: false });
 
 export const getStaticProps: GetStaticProps<Props> = async (ctx) => {
   const url = String(ctx.params?.slug);

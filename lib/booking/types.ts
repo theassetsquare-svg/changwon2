@@ -61,8 +61,11 @@ export const BOOKING_URL_MAP: Record<string, string> = {
 export const BOOKING_SLUG_BY_URL: Record<string, string> = Object.fromEntries(
   Object.entries(BOOKING_URL_MAP).map(([slug, url]) => [url, slug])
 );
+/* ★★ 2026-08-29 — 평면 주소는 색인이 안 된다(468개 중 1개, 0.2%).
+   폴더 주소는 39개 전부 색인됐다(100%). 그래서 가게 페이지를 모두 폴더 안으로 넣는다.
+   [[index-cause-flat-url-2026-08-28]] */
 export const bookingPath = (slug: string) =>
-  BOOKING_KEEP_OLD.has(slug) ? `${BOOKING_VENUE_BASE}${slug}/` : `/${BOOKING_URL_MAP[slug] ?? slug}/`;
+  `${BOOKING_VENUE_BASE}${BOOKING_URL_MAP[slug] ?? slug}/`;
 
 export const AD_KAKAO = "besta12";
 export const AD_TEXT = "광고·제휴 입점 문의";

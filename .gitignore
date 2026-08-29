@@ -44,3 +44,4 @@ next-env.d.ts
 scripts/.gsc-data/
 *.sa.json
 theasset-gsc.json
+out/

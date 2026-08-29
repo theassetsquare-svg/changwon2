@@ -1272,7 +1272,9 @@ export const VENUE_BY_SLUG: Record<string, Venue> = Object.fromEntries(
  * 한 상수로 묶여 있어서 가게 링크가 /night-2/<슬러그>/ 가 됐고, 그 주소는 없다.
  * booking 쪽과 똑같은 사고다. 목록 주소가 또 바뀌어도 가게 경로는 따라가면 안 된다. */
 export const NIGHT_BASE = "/night-2/";        // 목록(허브) 주소
-export const NIGHT_VENUE_BASE = "/night/";    // 가게 페이지 상위 = pages/night/[slug].tsx
+/* ★ 폴더 이름을 night 로 두면 /night/xxx-night 가 되어 같은 단어가 두 번 들어간다.
+   [[naver-url-no-duplicate-word]] 그래서 club 을 쓴다. */
+export const NIGHT_VENUE_BASE = "/club/";    // 가게 페이지 상위 = pages/club/[slug].tsx
 
 /* ★ 2026-08-26 — 메인주소 뒤에 가게이름. 네이버에 나오는 것만 옛 경로 유지 */
 export const NIGHT_KEEP_OLD = new Set<string>(["busan-asiad-night", "sangbong-hangukgwan-night"]);
@@ -1293,4 +1295,4 @@ export const NIGHT_SLUG_BY_URL: Record<string, string> = Object.fromEntries(
   Object.entries(NIGHT_URL_MAP).map(([slug, url]) => [url, slug])
 );
 export const nightPath = (slug: string) =>
-  NIGHT_KEEP_OLD.has(slug) ? `${NIGHT_VENUE_BASE}${slug}/` : `/${NIGHT_URL_MAP[slug] ?? slug}/`;
+  `${NIGHT_VENUE_BASE}${NIGHT_URL_MAP[slug] ?? slug}/`;
