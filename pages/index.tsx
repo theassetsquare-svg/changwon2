@@ -351,6 +351,9 @@ export default function Home({ dateModified }: { dateModified: string }) {
       <footer style={{ maxWidth: 760, margin: '0 auto', padding: '26px 20px 40px', borderTop: '1px solid #e5e7eb', fontSize: '.9rem', lineHeight: 1.8, color: '#6b7280' }}>
         <nav aria-label="사이트 안내">
           <a href="/area/landmark-guide/" style={{ color: '#1f5f8b', textDecoration: 'underline' }}>랜드마크 길찾기</a>
+          {' · '}
+          {/* 색인된 주소 — 로봇이 홈에서 닿게 하는 허브 링크 (2026-08-31) */}
+          <a href="/night/ulsan-champion-night/" style={{ color: '#1f5f8b', textDecoration: 'underline' }}>울산챔피언나이트 방문 순서</a>
         </nav>
       </footer>
       {/* /area-guide-link */}
