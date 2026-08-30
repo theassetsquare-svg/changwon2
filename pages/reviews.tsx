@@ -7,7 +7,7 @@ import { INSTA_1, INSTA_2 } from "@/lib/site";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/reviews/";
-const TITLE = "창원룰루랄라나이트 방문 후기 모음 | 왜 단골들이 룰루랄라만 찾는가 — 솔직 톤";
+const TITLE = "창원룰루랄라나이트 후기 — 무엇을 보고 판단할까";
 const DESCRIPTION = "첫방문·단골·단체·생일·여자 일행 입장에서 본 실사용 후기. 자리·부킹·분위기·동선의 솔직한 평가와 단점까지 그대로 정리.";
 const PUBLISHED = "2026-05-26";
 

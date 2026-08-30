@@ -179,7 +179,7 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
         <p className="night-kw">{kwClose(venue.name, venue.slug)}</p>
         </article>
 
-        <aside className="night-related" aria-label="관련 업소 안내">
+        <nav className="night-related" aria-label="관련 업소 안내">
           <h2>같이 보면 좋은 업소</h2>
           <ul>
             {related.map((r) => (
@@ -193,7 +193,7 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
               <a href={NIGHT_BASE}>전체 목록 보기</a>
             </li>
           </ul>
-        </aside>
+        </nav>
 
         <p className="night-note">
           이 페이지는 업소 정보를 정리해 제공하는 안내 문서입니다. 영업시간, 가격, 상세

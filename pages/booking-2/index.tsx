@@ -122,6 +122,7 @@ export default function BookingHub() {
               <h2>
                 {g.label} 부킹 안내 {g.slugs.length}곳
               </h2>
+              <nav aria-label="지역별 부킹 안내 목록">
               <ul className="bk-list">
                 {g.slugs.map((slug) => {
                   const v = BOOKING_BY_SLUG[slug];
@@ -139,6 +140,7 @@ export default function BookingHub() {
                   );
                 })}
               </ul>
+              </nav>
             </section>
           ))}
         </article>
