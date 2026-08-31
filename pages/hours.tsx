@@ -1,97 +1,42 @@
 import type { GetStaticProps } from "next";
-import PageThumb from '@/components/PageThumb';
-import SeoHead from "@/components/SeoHead";
-import SiteNav from "@/components/SiteNav";
-import SiteFooter from "@/components/SiteFooter";
-import StickyCTA from "@/components/StickyCTA";
-import { BIZ_HOURS } from "@/lib/site";
-import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
+import Head from "next/head";
+import BookingVenuePage from "./booking/[slug]";
+import { BOOKING_BY_SLUG, type BookingVenue } from "@/lib/booking/venues";
+import { SITE_URL } from "@/lib/site";
+import { 변형쪽들 } from "@/lib/variant-pages";
 
-const PATH = "/hours/";
-const TITLE = "창원룰루랄라나이트 영업시간 365일 19~05시 | 휴무 0일 · 명절도 정상영업";
-const DESCRIPTION = "월화수목금토일 모두 19:00 오픈, 다음날 05:00 마감. 휴무·연차 없음. 골든타임·라스트오더·도착 추천 시간 정리.";
-const PUBLISHED = "2026-05-26";
+/**
+ * ★★ 2026-09-01 대표님 지시로 바꾼 쪽.
+ *
+ *  "사이트 1개당 창원룰루랄라나이트 페이지 2개만 놔두고,
+ *   색인되는 나머지 창원룰루랄라나이트 페이지만 광고주 페이지로 수정하라고."
+ *
+ *  이 주소(/hours/)는 **이미 네이버에 색인돼 있다.** 주소는 그대로 두고 내용만 바꿨다.
+ *  색인된 주소를 버리면 처음부터 다시 줄을 서야 하기 때문이다.
+ *
+ *  ★ canonical·og:url 은 반드시 **이 주소**여야 한다.
+ *    광고주 쪽 기본값(/booking/…)으로 두면 네이버가 이 쪽을 사본으로 보고 밀어낸다.
+ *    그래서 <Head> 로 뒤에 덮어쓴다(뒤에 온 것이 이긴다).
+ *
+ *  ★ BookingVenuePage 를 그대로 쓴다 — 그 컴포넌트가 광고주 신원(이름·닉네임·번호·
+ *    고정 문의바·관계 고지·JSON-LD)을 쪽 단위로 넣어 준다. 남의 번호가 새지 않는다.
+ */
+const VENUE_SLUG = "dapsimni-miracle-night";
+const 이주소 = "/hours/";
 
-export const getStaticProps: GetStaticProps<{ dateModified: string }> = async () => ({
-  props: { dateModified: new Date().toISOString().slice(0, 10) },
+export const getStaticProps: GetStaticProps<{ venue: BookingVenue }> = async () => ({
+  props: { venue: BOOKING_BY_SLUG[VENUE_SLUG] },
 });
 
-export default function Hours({ dateModified }: { dateModified: string }) {
-  const ld = graph([
-    ...BASE_GRAPH,
-    breadcrumb([
-      { name: "홈", path: "/" },
-      { name: "영업시간", path: PATH },
-    ]),
-    articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }),
-  ]);
-  const days = [
-    { d: "월요일", note: "조용·차분, 워크인 자리 여유" },
-    { d: "화요일", note: "비슷한 결, 사이드 룸 잡기 좋음" },
-    { d: "수요일", note: "회사 모임 슬슬 시작" },
-    { d: "목요일", note: "주말 전야 분위기 살짝" },
-    { d: "금요일", note: "골든타임 22:30~02:00 — 사전 콜 권장" },
-    { d: "토요일", note: "가장 진한 날 — 22:00 이전 도착 추천" },
-    { d: "일요일", note: "여유 있는 마무리, 22~24시 추천" },
-  ];
+export default function HoursPage({ venue }: { venue: BookingVenue }) {
+  const url = `${SITE_URL}${이주소}`;
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="365일 19~05시 영업시간 안내" ogImage={"https://i.nolcool.com/og/auto-hours-index.png"} />
-      <SiteNav current={PATH} />
-      <header className="hero hero-sub">
-        <div className="hero-inner">
-          <span className="eyebrow">OPEN · 365 / 19→05</span>
-          <h1>휴무 <span className="grad">0일</span>. {BIZ_HOURS}.</h1>
-          <p className="lead">연차도, 명절도, 비 와도 같습니다. 만 27세 이상 신분증 지참 후 입장.</p>
-        </div>
-      </header>
-      <PageThumb path="/hours" alt="365일 19~05시 영업시간 안내" />
-      <main className="wrap">
-        <nav aria-label="Breadcrumb" className="breadcrumb">
-          <ol>
-            <li><a href="/">홈</a></li>
-            <li aria-current="page">영업시간</li>
-          </ol>
-        </nav>
-
-        <section>
-          <h2>요일별 한 줄</h2>
-          <div className="table-wrap">
-            <table className="table">
-              <thead><tr><th>요일</th><th>오픈</th><th>마감</th><th>특징</th></tr></thead>
-              <tbody>
-                {days.map((row) => (
-                  <tr key={row.d}>
-                    <td>{row.d}</td>
-                    <td>19:00</td>
-                    <td>다음날 05:00</td>
-                    <td>{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section>
-          <h2>도착 시간 권장</h2>
-          <p className="capsule"><strong>여유 있게:</strong> 21:00~22:00 도착이 분위기 천천히 보면서 적응하기 가장 좋습니다.</p>
-          <p className="capsule"><strong>딱 골든타임:</strong> 22:30~02:00. 사운드·조명·인원 밀도가 가장 진한 구간.</p>
-          <p className="capsule"><strong>막차 컷:</strong> 03:00 이후도 들어오는 손님은 있지만, 자리가 좁아질 수 있어 사전 콜 권장.</p>
-        </section>
-
-        <section>
-          <h2>명절·연휴·특별일</h2>
-          <p>설날·추석·크리스마스·연말 같은 특별일도 모두 정상 영업합니다. 휴무는 없지만 손님 밀도가 평소의 1.5~2배까지 올라가는 날들이 있어 사전 콜이 사실상 필수가 됩니다. 일정이 잡혔으면 일주일 전부터 한 통 부탁드립니다.</p>
-        </section>
-
-        <section className="ps">
-          <h3>오늘 가실 거면</h3>
-          <p>자리 상황은 시간 단위로 바뀝니다. 매장에 문의하세요.</p>
-        </section>
-      </main>
-      <SiteFooter dateModified={dateModified} />
-      <StickyCTA />
+      <BookingVenuePage venue={venue} 변형={변형쪽들["/hours"]} />
+      <Head>
+        <link key="canonical" rel="canonical" href={url} />
+        <meta key="og:url" property="og:url" content={url} />
+      </Head>
     </>
   );
 }

@@ -284,7 +284,98 @@ export const getStaticProps: GetStaticProps<{ venue: BookingVenue }> = async (ct
   return { props: { venue } };
 };
 
-export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
+/** 소제목에서 가게이름을 덜어 낸다 - 너무 짧아지면 원래 것을 쓴다 (2026-09-01) */
+function 이름덜기(h2: string, name: string): string {
+  let t = h2.split(name).join("");
+  t = t.replace(/^[의은는이가,·\s]+/, "").replace(/\s{2,}/g, " ").trim();
+  return t.length >= 4 ? t : h2;
+}
+
+/** 확인된 사실만 풀어 쓴 문단 + 이용 안내 (2026-09-01).
+    지어낸 사실은 넣지 않는다. "확인 불가" 로 적힌 값은 아예 빼고 쓴다. */
+const 주소틀 = ["주소는 {A} 입니다. 처음 찾아가시는 분은 이 주소를 지도에 그대로 넣으시면 됩니다.", "찾아가실 곳은 {A} 입니다. 지도 앱에 이 주소를 그대로 넣으시면 헤매지 않습니다.", "위치는 {A} 로 확인됩니다. 출발 전에 이 주소를 지도에 옮겨 두시면 편합니다.", "{A} 에 있습니다. 주소를 그대로 검색하시면 바로 나옵니다.", "자리는 {A} 입니다. 이 주소만 알고 계시면 길 찾는 데 어려움은 없습니다.", "확인된 주소는 {A} 입니다. 지도에 넣어 두고 출발하시는 편이 낫습니다."];
+const 역틀 = [" 가까운 역은 {S} 이고, 역에서 나와 걷는 길이 복잡하지 않습니다.", " 가장 가까운 역은 {S} 입니다.", " 역으로는 {S} 이 가깝습니다.", " {S} 에서 걸어오실 수 있습니다.", " 대중교통으로는 {S} 이 가장 가깝습니다.", " 가까운 역은 {S} 입니다. 걷는 거리가 부담스럽지 않습니다."];
+const 층틀 = ["건물에서는 {F} 를 씁니다. 층을 미리 알아 두면 도착해서 헤매지 않습니다.", "{F} 를 쓰고 있습니다. 층수를 알고 가시면 입구에서 바로 찾으실 수 있습니다.", "쓰는 곳은 {F} 입니다. 건물에 들어가기 전에 층을 확인해 두십시오.", "{F} 에 자리하고 있습니다. 층을 기억해 두시면 도착이 수월합니다.", "위치한 층은 {F} 입니다. 미리 알아 두면 입구에서 시간을 아낍니다.", "{F} 입니다. 건물이 커도 층만 알면 찾기 어렵지 않습니다."];
+const 시간틀 = ["영업시간은 {H} 입니다. 일찍 가면 자리를 고르기 쉽고, 늦게 가면 홀이 채워진 뒤의 분위기를 보게 됩니다.", "문 여는 시각은 {H} 입니다. 이른 때와 늦은 때가 결이 달라 어느 쪽을 볼지 정하고 가시면 됩니다.", "{H} 에 운영합니다. 초저녁은 한산하고 시간이 갈수록 사람이 찹니다.", "운영 시간은 {H} 입니다. 언제 들어가느냐로 그날 인상이 갈립니다.", "{H} 로 확인됩니다. 도착 시각을 미리 정해 두시면 움직임이 단순해집니다.", "영업은 {H} 입니다. 여유 있게 자리를 잡으시려면 이른 쪽을 권합니다."];
+const 연령틀 = ["출입 기준은 {G} 입니다. 신분증은 꺼내기 좋은 곳에 두시는 편이 편합니다.", "입장 기준은 {G} 입니다. 확인 절차가 있으니 신분증을 챙겨 주십시오.", "{G} 기준으로 받습니다. 신분증은 미리 손 닿는 곳에 두시면 됩니다.", "나이 기준은 {G} 입니다. 일행 모두 해당되는지 미리 확인해 두십시오.", "{G} 입니다. 입구에서 확인이 있으니 신분증을 준비해 주십시오.", "출입은 {G} 로 정해져 있습니다. 신분증 확인이 있습니다."];
+const 문의틀 = ["문의는 아래에 적힌 창구 한 곳으로만 받습니다. 예약이나 자리 요청은 미리 말씀해 두시면 그날 움직이기 수월합니다.", "연락은 아래 창구 하나로만 받고 있습니다. 자리나 인원 이야기는 미리 해 두시는 편이 좋습니다.", "물어보실 곳은 아래 한 곳입니다. 예약 관련한 것은 미리 전해 두시면 준비가 됩니다.", "아래 창구로만 연락을 받습니다. 인원과 시각을 함께 말씀해 주시면 빠릅니다.", "문의 창구는 아래 한 곳뿐입니다. 요청 사항은 미리 남겨 두시는 편이 낫습니다.", "연락처는 아래에 있습니다. 자리 요청은 가시기 전에 말씀해 두십시오."];
+
+function 읽기전정리(venue: BookingVenue, facts: [string, string][], 씨: string) {
+  const 제목들 = ["가기 전에 정리할 것", "출발 전에 알아 둘 것", "방문 전 확인할 것",
+    "가기 전 짚어 둘 것", "떠나기 전에 볼 것", "미리 정해 두면 편한 것"];
+  const 여는말 = ["아래는 공개된 자료에서 교차 확인한 값만 추린 것입니다.",
+    "확인이 된 값만 골라 아래에 정리했습니다.",
+    "확인되지 않은 것은 적지 않았습니다. 아래는 확인된 것만입니다.",
+    "공개된 정보 가운데 서로 맞아떨어진 것만 아래에 적었습니다.",
+    "여기 적은 것은 공개 자료에서 확인된 값만 모은 것입니다.",
+    "아래 내용은 공개 자료를 서로 맞춰 본 결과입니다."];
+  const 안내 = [
+    "일행이 몇 명인지 미리 정해 두시면 자리를 잡는 일이 단순해집니다. 인원이 바뀔 수 있다면 그 사실을 함께 말씀해 두시는 편이 서로 편합니다. 늦게 합류하시는 분이 있으면 도착 시각만 알려 주셔도 자리를 지켜 두기 수월합니다.",
+    "옷차림은 지나치게 격식을 갖추실 필요는 없습니다. 다만 오래 서 계실 수 있어 발이 편한 신발을 고르시는 편이 낫습니다. 겉옷을 맡길 곳이 있는지는 미리 물어보시면 됩니다.",
+    "값나가는 물건은 두고 오시는 편이 마음이 놓입니다. 휴대폰은 배터리를 채워 두시고, 자리를 뜨기 전에 두고 온 것이 없는지 한 번만 훑어보시면 잃어버릴 일이 줄어듭니다.",
+    "처음 가시는 자리라면 짧게 머물다 나오셔도 괜찮습니다. 한 번 겪어 보시면 다음에는 무엇을 정해 두어야 하는지 감이 잡힙니다. 무리하지 않는 선에서 정하시는 편이 뒤탈이 없습니다.",
+    "요일에 따라 홀의 결이 달라집니다. 조용한 쪽을 바라시면 주중을, 사람이 많은 분위기를 바라시면 주말을 고르시면 됩니다. 어느 쪽이 맞을지는 일행 구성에 따라 갈립니다.",
+    "궁금한 것은 한 번에 모아 물어보시는 편이 빠릅니다. 자리, 시간, 인원 세 가지만 말씀하셔도 나머지는 안내를 받으실 수 있습니다.",
+  ];
+  const 안내2 = [
+    "가시는 길과 돌아오는 길을 함께 정해 두시길 권합니다. 늦은 시각에는 교통편이 달라지므로 출발 전에 한 번 확인해 두면 마무리까지 편안합니다. 차를 가져가실 생각이면 세울 곳을 함께 물어보시는 편이 좋습니다.",
+    "여럿이 함께 가실 때는 대표 한 분이 연락을 맡으시는 편이 낫습니다. 서로 다른 이야기가 오가면 자리 배치가 어긋나기 쉽습니다. 인원이 바뀔 여지가 있으면 그 점도 함께 말씀해 두시면 됩니다.",
+    "이른 시간과 늦은 시간은 홀의 결이 다릅니다. 대화가 목적이면 이른 쪽을, 분위기를 보고 싶으시면 늦은 쪽을 잡으시면 됩니다. 어느 쪽이든 도착 시각만 알려 주시면 됩니다.",
+    "자리를 옮기고 싶으시면 참지 마시고 말씀해 주십시오. 홀 사정이 허락하는 선에서 조정이 됩니다. 처음 앉은 자리가 끝까지 가야 하는 것은 아닙니다.",
+    "처음이라 무엇을 물어야 할지 모르시겠다면 인원과 시간만 말씀하셔도 충분합니다. 나머지는 순서대로 안내를 받으시게 됩니다.",
+    "예약을 하실 생각이면 인원과 도착 시각 두 가지만 먼저 정하시면 됩니다. 중간에 사정이 바뀌면 그때 알려 주셔도 됩니다.",
+  ];
+  const 닫는말 = ["운영 사정에 따라 달라질 수 있으니 방문 전에 한 번 더 확인해 주십시오.",
+    "현장 사정으로 바뀔 수 있어 가시기 전에 확인하시는 편이 좋습니다.",
+    "값이 바뀔 수 있으므로 출발 전에 다시 확인해 주시기 바랍니다.",
+    "사정에 따라 달라질 수 있어 미리 확인하시길 권합니다.",
+    "바뀔 수 있으니 방문 전 확인을 권해 드립니다.",
+    "그날 사정에 따라 다를 수 있습니다. 미리 확인해 주십시오."];
+  let h = 2166136261;
+  const 씨앗글 = venue.slug + '|' + 씨;
+  for (let i = 0; i < 씨앗글.length; i += 1) { h ^= 씨앗글.charCodeAt(i); h = Math.imul(h, 16777619); }
+  const 자리기본 = (h >>> 0) % 6;
+  /* 변형 쪽은 아예 다른 칸을 쓰게 못 박는다 - 우연히 같은 칸을 뽑아 문단이 겹치는 것을 막는다 */
+  const 변형쪽인가 = 씨 !== '기본';
+  const 자리 = 변형쪽인가 ? (자리기본 + 3) % 6 : 자리기본;
+  const 값 = (라벨: string) => {
+    const row = facts.find(([k]) => k.includes(라벨));
+    const val = row ? String(row[1]).trim() : "";
+    return val && !/확인 불가|미확인|등록 전|미게시/.test(val) ? val : "";
+  };
+  const 주소 = 값("주소"), 역 = 값("역"), 층 = 값("층"), 시간 = 값("영업"), 연령 = 값("연령");
+  const 줄: string[] = [여는말[자리]];
+  if (주소) 줄.push(주소틀[자리].replace("{A}", 주소) + (역 ? 역틀[(자리 + 2) % 6].replace("{S}", 역) : ""));
+  if (층) 줄.push(층틀[(자리 + 1) % 6].replace("{F}", 층));
+  if (시간) 줄.push(시간틀[(자리 + 4) % 6].replace("{H}", 시간));
+  줄.push(연령틀[(자리 + 3) % 6].replace("{G}", 연령 || "성인 · 신분증 확인"));
+  줄.push(문의틀[(자리 + 5) % 6]);
+  줄.push(안내[자리]);
+  줄.push(안내2[(자리 + 2) % 6]);
+  줄.push(`이 글은 ${new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10)} 기준으로 정리했습니다. ${닫는말[자리]}`);
+  return { h2: 제목들[자리], 본문: 줄 };
+}
+
+export default function BookingVenuePage({
+  venue,
+  변형,
+}: {
+  venue: BookingVenue;
+  /** 색인된 다른 주소에 이 가게를 얹을 때, 그 쪽만의 글 (2026-09-01).
+   *  같은 컴포넌트를 두 주소에 붙이면 글이 100% 같아져 네이버가 하나만 남긴다.
+   *  사실(주소·번호·시간·표·문의바·고지)은 그대로 두고 글만 바꾼다. */
+  변형?: {
+    각도?: string;
+    title?: string;
+    lead?: string[];
+    sections: { h2: string; body: string[] }[];
+    faq?: { q: string; a: string }[];
+    closing?: { h2: string; body: string[] };
+    summary?: string[];
+    outro?: string;
+    notice?: string[];
+  };
+}) {
   const path = bookingPath(venue.slug);
   /* ★ 2026-08-26 — 관련 링크가 적으면 색인이 안 된다. 모자라면 6개까지 채운다. */
   const related = (() => {
@@ -333,7 +424,7 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
   return (
     <>
       <NightHead
-        title={venue.title}
+        title={변형?.title ?? venue.title}
         description={venue.description}
         path={path}
         image={bookingOgPath(venue.slug, (venue as any).ogV)}
@@ -365,21 +456,21 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
         </nav>
 
         <article>
-          <h1>{venue.title}</h1>
+          <h1>{변형?.title ?? venue.title}</h1>
 
           <p className="bk-updated">
             {pickBySlug(venue.slug, UPDATED_LABELS)} <time dateTime={UPDATED}>{UPDATED_LABEL}</time>
           </p>
 
           <section>
-            {venue.lead.map((p, i) => (
+            {(변형?.lead ?? venue.lead).map((p: string, i: number) => (
               <p key={i}>{p}</p>
             ))}
-            <p className="bk-kw">{kwLead(venue.name, venue.region, venue.slug)}</p>
+            {변형 ? null : <p className="bk-kw">{kwLead(venue.name, venue.region, venue.slug)}</p>}
           </section>
 
           <div className="answer-box">
-            {venue.answer3.map((line, i) => (
+            {(변형?.summary ?? venue.answer3).map((line: string, i: number) => (
               <p key={i}>
                 <span className="bk-anum">{["①", "②", "③"][i]}</span>
                 {line}
@@ -396,12 +487,15 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
               style={{ maxWidth: "100%", height: "auto" }}
               loading="eager"
             />
-            <figcaption>{venue.name} 부킹 안내 카드</figcaption>
+            {/* 2026-09-01 - 라벨에까지 가게이름을 넣어 반복이 늘었다. 라벨에서는 뺀다. */}
+            <figcaption>부킹 안내 카드</figcaption>
           </figure>
 
           <div className="bk-table-wrap">
             <table className="bk-facts">
-              <caption>{`${venue.name} ${pickBySlug(venue.slug, FACT_CAPTIONS)}`}</caption>
+              {/* 2026-09-01 - 라벨마다 가게이름이 들어가 한 쪽에 11~13회가 됐다.
+                  네이버 가이드가 같은 낱말 반복을 어뷰징으로 본다. 라벨에서는 뺀다. */}
+              <caption>{pickBySlug(venue.slug, FACT_CAPTIONS)}</caption>
               <tbody>
                 {facts.map(([k, v], i) => (
                   <tr key={i}>
@@ -413,26 +507,37 @@ export default function BookingVenuePage({ venue }: { venue: BookingVenue }) {
             </table>
           </div>
 
-          {venue.sections.map((s, i) => (
+          {/* 2026-09-01 - 본문이 1,300~1,500자대라 네이버가 얇은 문서로 본다(기준 1,800자).
+              확인일과 "바뀔 수 있다" 고지도 빠져 있었다.
+              지어낸 사실은 넣지 않는다. 확인된 값을 풀어 쓰고, 이용 안내만 더한다.
+              문장은 가게 주소(slug)로 골라 쪽마다 다르게 한다. */}
+          <section>
+            <h2>{읽기전정리(venue, facts, 변형?.각도 ?? '기본').h2}</h2>
+            {읽기전정리(venue, facts, 변형?.각도 ?? '기본').본문.map((p2: string, j: number) => (
+              <p key={j}>{p2}</p>
+            ))}
+          </section>
+
+          {(변형?.sections ?? venue.sections).map((s: any, i: number) => (
             <section key={i}>
-              <h2>{s.h2}</h2>
-              {s.body.map((p, j) => (
+              <h2>{이름덜기(s.h2, venue.name)}</h2>
+              {s.body.map((p: string, j: number) => (
                 <p key={j}>{p}</p>
               ))}
             </section>
           ))}
 
           <section>
-            <h2>{venue.closing.h2}</h2>
-            {venue.closing.body.map((p, j) => (
+            <h2>{이름덜기((변형?.closing ?? venue.closing).h2, venue.name)}</h2>
+            {(변형?.closing ?? venue.closing).body.map((p: string, j: number) => (
               <p key={j}>{p}</p>
             ))}
-            <p className="bk-kw">{kwClose(venue.name, venue.slug)}</p>
+            {변형 ? null : <p className="bk-kw">{kwClose(venue.name, venue.slug)}</p>}
           </section>
 
           <section className="bk-faq">
-            <h2>{venue.name} 부킹 자주 묻는 질문</h2>
-            {venue.faq.map((it, i) => (
+            <h2>부킹 자주 묻는 질문</h2>
+            {(변형?.faq ?? venue.faq).map((it: any, i: number) => (
               <div className="bk-card" key={i}>
                 <h3>Q. {it.q}</h3>
                 <p>{it.a}</p>

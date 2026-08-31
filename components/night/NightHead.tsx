@@ -41,14 +41,17 @@ export default function NightHead({
       <meta name="theme-color" content="#0b0410" />
       <meta name="format-detection" content="telephone=yes" />
 
-      <link rel="canonical" href={url} />
+      {/* ★ 2026-09-01 — key 를 달아야 바깥 쪽에서 덮어쓸 수 있다.
+         색인된 주소(/hours/ 등)에 이 컴포넌트를 다시 쓸 때
+         canonical 이 두 개 나와 네이버가 엉뚱한 쪽을 고르는 일을 막는다. */}
+      <link key="canonical" rel="canonical" href={url} />
       <link rel="alternate" hrefLang="ko" href={url} />
       <link rel="icon" href="/favicon.ico" />
 
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={url} />
+      <meta key="og:url" property="og:url" content={url} />
       <meta property="og:locale" content="ko_KR" />
       <meta property="og:image" content={img} />
       <meta property="og:image:secure_url" content={img} />
