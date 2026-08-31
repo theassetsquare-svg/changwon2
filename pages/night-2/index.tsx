@@ -134,7 +134,7 @@ export default function NightIndex() {
           <li><a href="/booking/nowon-hobak-night/">노원호박나이트</a></li>
           <li><a href="/booking/dapsimni-miracle-night/">답십리미라클나이트</a></li>
           <li><a href="/booking/doksan-gukbingwan-night/">독산동국빈관나이트</a></li>
-          <li><a href="/club/club/sangbong-hangukgwan-night/">상봉동한국관나이트</a></li>
+          <li><a href="/club/sangbong-hangukgwan-night/">상봉동한국관나이트</a></li>
           <li><a href="/club/sangbong-hangukgwan-night/">상봉동한국관나이트</a></li>
           <li><a href="/booking/seongnam-shampoo-night/">성남샴푸나이트</a></li>
           <li><a href="/club/suyu-shampoo-night-1/">수유샴푸나이트</a></li>
