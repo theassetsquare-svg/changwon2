@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="ko">
       <Head>
+        {/* ★ 2026-08-31 — 파비콘 선언이 없어 검색 결과에 아이콘이 안 떴다(체크리스트 #58) */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta charSet="utf-8" />
         {/* 구 등록(changwonc.pages.dev) 유지 — 2026-08-18 */}
         <meta name="naver-site-verification" content="3bb98ddc2b6fee3ffb0f267744f3689f8f3a7ca6" />
