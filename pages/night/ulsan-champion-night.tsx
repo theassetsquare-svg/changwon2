@@ -1,5 +1,5 @@
 /**
- * 울산챔피언나이트 — /night/ulsan-champion-night/
+ * 울산챔피언나이트 — /night/night/ulsan-champion-night/
  *
  * ★ 이 주소는 네이버에 색인된 자산이다. 주소를 바꾸지 않는다(끝 슬래시 포함 글자 그대로).
  *   2026-08-31 이 경로가 404 여서 같은 주소에서 200 으로 되살렸다. 리디렉션은 쓰지 않는다.
@@ -17,7 +17,7 @@ const 닉 = "춘자";
 const 번호 = "010-5653-0069";
 const 주소 = "울산 남구 정동로 75 (삼산동 1559-17) 1층";
 const 확인일 = "2026-08-31";
-const URL = "https://i.nolcool.com/night/ulsan-champion-night/";
+const URL = "https://i.nolcool.com/night/night/ulsan-champion-night/";
 const OG = "https://i.nolcool.com/og/night-ulsan-champion-night-og.png";
 
 const TITLE = "울산챔피언나이트 예약부터 입장까지 순서 정리";
