@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -32,7 +33,7 @@ export default function Reviews({ dateModified }: { dateModified: string }) {
   ]);
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="방문 후기 모음" />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="방문 후기 모음" ogImage={"https://i.nolcool.com/og/auto-reviews-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -41,6 +42,7 @@ export default function Reviews({ dateModified }: { dateModified: string }) {
           <p className="lead">첫방문·단골·단체·여자 일행·외지 손님 입장에서 본 실사용 후기. 매장 측 큐레이션이며 솔직한 톤으로 정리했습니다.</p>
         </div>
       </header>
+      <PageThumb path="/reviews" alt="방문 후기 모음" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

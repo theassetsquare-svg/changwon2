@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -22,7 +23,7 @@ export default function Access({ dateModified }: { dateModified: string }) {
   ]);
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="대중교통 가이드" />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="대중교통 가이드" ogImage={"https://i.nolcool.com/og/auto-access-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -31,6 +32,7 @@ export default function Access({ dateModified }: { dateModified: string }) {
           <p className="lead">상남동 메인거리 안쪽이라 어느 방향에서 오셔도 동선이 단순합니다. 새벽 귀가도 콜택시 응답이 빠른 지역입니다.</p>
         </div>
       </header>
+      <PageThumb path="/access" alt="대중교통 가이드" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

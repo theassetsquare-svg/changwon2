@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -29,7 +30,7 @@ export default function Location({ dateModified }: { dateModified: string }) {
   const gmaps = `https://www.google.com/maps/search/?api=1&query=${GEO_LAT},${GEO_LNG}`;
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="모아엔트몰 외관 · 마디미로43번길 진입로" />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="모아엔트몰 외관 · 마디미로43번길 진입로" ogImage={"https://i.nolcool.com/og/auto-location-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -43,6 +44,7 @@ export default function Location({ dateModified }: { dateModified: string }) {
           </div>
         </div>
       </header>
+      <PageThumb path="/location" alt="모아엔트몰 외관 · 마디미로43번길 진입로" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -22,7 +23,7 @@ export default function Parking({ dateModified }: { dateModified: string }) {
   ]);
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="주차 안내" />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="주차 안내" ogImage={"https://i.nolcool.com/og/auto-parking-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -31,6 +32,7 @@ export default function Parking({ dateModified }: { dateModified: string }) {
           <p className="lead">모아엔트몰 지하 주차장 진입 → 엘리베이터 → 지하 3층. 별도 안내 없이 동선이 자연스럽습니다.</p>
         </div>
       </header>
+      <PageThumb path="/parking" alt="주차 안내" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

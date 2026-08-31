@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -26,7 +27,7 @@ export default function Rooms({ dateModified }: { dateModified: string }) {
   ]);
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="룸·메인홀·DJ존 안내" />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="룸·메인홀·DJ존 안내" ogImage={"https://i.nolcool.com/og/auto-rooms-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -35,6 +36,7 @@ export default function Rooms({ dateModified }: { dateModified: string }) {
           <p className="lead">{BIZ_AREA} 안에서 사이드 룸·메인 플로어·DJ 부근·안쪽 프라이빗까지. 인원과 분위기에 맞는 자리를 매칭해드립니다.</p>
         </div>
       </header>
+      <PageThumb path="/rooms" alt="룸·메인홀·DJ존 안내" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

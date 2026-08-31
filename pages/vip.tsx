@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -22,7 +23,7 @@ export default function Vip({ dateModified }: { dateModified: string }) {
   ]);
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="VIP·단체 가이드" />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="VIP·단체 가이드" ogImage={"https://i.nolcool.com/og/auto-vip-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -31,6 +32,7 @@ export default function Vip({ dateModified }: { dateModified: string }) {
           <p className="lead">생일·송별·승진·MT·동호회·기념일. 룸 + 음악 + 조명 + 데코까지 미리 잡습니다.</p>
         </div>
       </header>
+      <PageThumb path="/vip" alt="VIP·단체 가이드" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

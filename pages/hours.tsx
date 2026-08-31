@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -35,7 +36,7 @@ export default function Hours({ dateModified }: { dateModified: string }) {
   ];
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="365일 19~05시 영업시간 안내" />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="365일 19~05시 영업시간 안내" ogImage={"https://i.nolcool.com/og/auto-hours-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -44,6 +45,7 @@ export default function Hours({ dateModified }: { dateModified: string }) {
           <p className="lead">연차도, 명절도, 비 와도 같습니다. 만 27세 이상 신분증 지참 후 입장.</p>
         </div>
       </header>
+      <PageThumb path="/hours" alt="365일 19~05시 영업시간 안내" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

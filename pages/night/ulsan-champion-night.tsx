@@ -224,6 +224,11 @@ export default function UlsanChampionNightPage() {
         <p className="ucn-rel">광고 · 업소 제공 정보 · 확인일 {확인일}</p>
 
         <h1>{TITLE}</h1>
+      {/* 본문 그림 — og:image 와 같은 파일 (2026-08-31). 네이버는 본문에 그림이 있는 문서를 더 잘 집어 간다. 첫 그림이라 lazy 를 붙이지 않는다. */}
+      <figure style={{ margin: "0 0 18px" }}>
+        <img src="/og/night-ulsan-champion-night-og.png" alt="울산 챔피언 나이트 안내" width={1200} height={1200} decoding="async"
+             style={{ width: "100%", maxWidth: 420, height: "auto", borderRadius: 12, display: "block" }} />
+      </figure>
 
         <div className="ucn-answer">
           {이름} 예약은 전화 한 통이면 끝납니다. 인원과 방문 시간대만 정해서 말하면, 도착했을 때

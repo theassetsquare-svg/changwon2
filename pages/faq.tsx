@@ -1,4 +1,5 @@
 import type { GetStaticProps } from "next";
+import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -51,7 +52,7 @@ export default function Faq({ dateModified }: { dateModified: string }) {
   ]);
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="자주 묻는 질문" />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="자주 묻는 질문" ogImage={"https://i.nolcool.com/og/auto-faq-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -60,6 +61,7 @@ export default function Faq({ dateModified }: { dateModified: string }) {
           <p className="lead">첫방문 체크리스트로도 충분한 25문항. 추가 질문은 매장에 한 통.</p>
         </div>
       </header>
+      <PageThumb path="/faq" alt="자주 묻는 질문" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>
