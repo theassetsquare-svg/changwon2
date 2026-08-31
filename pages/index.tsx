@@ -55,7 +55,9 @@ const CSS = `
   margin:56px 0 18px;padding-top:8px;
 }
 .story h2 .no{
-  display:block;font-size:.72rem;letter-spacing:.24em;color:#ff86c9;
+  /* ★ 2026-08-31 — .72rem 은 모바일에서 11.5px 이라 12px 미만이다.
+     네이버는 모바일 화면 기준으로 보고 12px 미만을 읽기 어려움으로 본다. */
+  display:block;font-size:.8rem;letter-spacing:.24em;color:#ff86c9;
   font-weight:700;margin-bottom:9px;
 }
 .story p{margin:0 0 22px;color:#e4dcf2;}
