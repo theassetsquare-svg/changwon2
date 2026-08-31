@@ -46,6 +46,7 @@ export default function BookingHub() {
         title={TITLE}
         description={DESCRIPTION}
         path={BOOKING_BASE}
+        그림없음
         image={bookingOgPath("index")}
         imageAlt="전국 나이트 부킹 안내 40 목록 카드 — 부킹 흐름과 매너 정리"
         jsonLd={[itemListSchema, breadcrumb]}
@@ -56,11 +57,6 @@ export default function BookingHub() {
         <a href="/">홈</a>
         <a href="/night-2/">나이트 업소 목록</a>
       </header>
-      {/* 본문 그림 — og:image 와 같은 파일 (2026-08-31). 네이버는 본문에 그림이 있는 문서를 더 잘 집어 간다. 첫 그림이라 lazy 를 붙이지 않는다. */}
-      <figure style={{ margin: "0 0 18px" }}>
-        <img src="/og/booking-index-og.png" alt="놀쿨 나이트 예약 안내" width={1200} height={1200} decoding="async"
-             style={{ width: "100%", maxWidth: 420, height: "auto", borderRadius: 12, display: "block" }} />
-      </figure>
 
       <main className="bk-wrap">
         <nav aria-label="Breadcrumb" className="bk-crumb">

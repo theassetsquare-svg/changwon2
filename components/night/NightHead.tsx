@@ -6,6 +6,8 @@ type Props = {
   description: string;
   path: string;
   image: string;
+  /** ★ 2026-09-01 — 썸네일은 나이트(가게) 쪽에만. 허브·목록은 true 로 넘긴다. */
+  그림없음?: boolean;
   imageAlt: string;
   jsonLd?: object[];
 };
@@ -22,6 +24,7 @@ export default function NightHead({
   path,
   image,
   imageAlt,
+  그림없음 = false,
   jsonLd,
 }: Props) {
   const url = SITE_URL + path;
@@ -53,22 +56,29 @@ export default function NightHead({
       <meta property="og:description" content={description} />
       <meta key="og:url" property="og:url" content={url} />
       <meta property="og:locale" content="ko_KR" />
-      <meta property="og:image" content={img} />
-      <meta property="og:image:secure_url" content={img} />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="1200" />
-      <meta property="og:image:alt" content={imageAlt} />
-
-      {/* 네이버 썸네일 수집용 */}
-      <meta name="thumbnail" content={img} />
+      {그림없음 ? null : (
+        <>
+          <meta property="og:image" content={img} />
+          <meta property="og:image:secure_url" content={img} />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="1200" />
+          <meta property="og:image:alt" content={imageAlt} />
+          {/* 네이버 썸네일 수집용 */}
+          <meta name="thumbnail" content={img} />
+        </>
+      )}
 
       {/* 1:1 이미지이므로 summary. summary_large_image 는 좌우가 잘린다. */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={img} />
-      <meta name="twitter:image:alt" content={imageAlt} />
+      {그림없음 ? null : (
+        <>
+          <meta name="twitter:image" content={img} />
+          <meta name="twitter:image:alt" content={imageAlt} />
+        </>
+      )}
 
       {/* 검색·AI 크롤러 허용 (robots.txt 와 동일 정책) */}
       <meta name="Yeti" content="index, follow" />
