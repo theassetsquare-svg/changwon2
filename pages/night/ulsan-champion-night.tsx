@@ -87,6 +87,22 @@ export default function UlsanChampionNightPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
         />
+        {/* ★ 2026-08-31 — 이동 경로가 없어 검색 결과에 경로가 안 나왔다(점검표 #72).
+            /night/ 은 목록 페이지가 없으므로 홈 → 이 쪽 두 단계로 둔다.
+            없는 주소를 가리키면 오히려 잘못된 자료를 주는 것이다. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "홈", item: "https://i.nolcool.com/" },
+                { "@type": "ListItem", position: 2, name: "울산챔피언나이트", item: URL },
+              ],
+            }),
+          }}
+        />
       </Head>
 
       <style jsx global>{`
