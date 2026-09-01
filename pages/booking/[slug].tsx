@@ -273,8 +273,16 @@ const NO_CONTACT = [
 const UPDATED = "2026-08-17";
 const UPDATED_LABEL = "2026년 8월 17일";
 
+/** ★ 2026-09-02 — 이 주소들은 같은 폴더의 **고정 라우트 파일**이 맡는다.
+ *  (대표님 지시로 안에 든 가게를 바꾼 쪽 — 주소는 그대로 두고 내용만 바꿨다)
+ *  여기서도 만들면 같은 주소를 둘이 만들어 빌드가 충돌한다. 그래서 빼 둔다. */
+const 고정라우트가맡는주소 = new Set<string>(["changwon-lululala-night"]);
+
 export const getStaticPaths: GetStaticPaths = async () => ({
-  paths: BOOKING_VENUES.map((v) => ({ params: { slug: BOOKING_URL_MAP[v.slug] ?? v.slug } })),
+  paths: BOOKING_VENUES
+    .map((v) => BOOKING_URL_MAP[v.slug] ?? v.slug)
+    .filter((slug) => !고정라우트가맡는주소.has(slug))
+    .map((slug) => ({ params: { slug } })),
   fallback: false,
 });
 
@@ -344,7 +352,18 @@ function 읽기전정리(venue: BookingVenue, facts: [string, string][], 씨: st
     const val = row ? String(row[1]).trim() : "";
     return val && !/확인 불가|미확인|등록 전|미게시/.test(val) ? val : "";
   };
-  const 주소 = 값("주소"), 역 = 값("역"), 층 = 값("층"), 시간 = 값("영업"), 연령 = 값("연령");
+  /* ★★ 2026-09-02 — 라벨을 「포함」으로 찾으면 없는 사실을 지어낸다.
+     값("역") 이 라벨 「지역」을 집어 「가까운 역은 서울 중랑구 상봉동」 같은 문장이 나온다.
+     g 저장소에서 실제로 그렇게 나갔고 AI 검토관이 C7(허위조작)로 잡았다. 정확히 집는다. */
+  const 값정확 = (...라벨들: string[]) => {
+    const row = facts.find(([k]) => 라벨들.some((L) => String(k).trim() === L));
+    const val = row ? String(row[1]).trim() : "";
+    return val && !/확인 불가|미확인|등록 전/.test(val) ? val : "";
+  };
+  const 주소 = 값("주소");
+  const 역 = 값정확("가까운 역", "가장 가까운 역", "역");
+  const 층 = 값정확("층·건물", "층", "건물·층");
+  const 시간 = 값("영업"), 연령 = 값("연령");
   const 줄: string[] = [여는말[자리]];
   if (주소) 줄.push(주소틀[자리].replace("{A}", 주소) + (역 ? 역틀[(자리 + 2) % 6].replace("{S}", 역) : ""));
   if (층) 줄.push(층틀[(자리 + 1) % 6].replace("{F}", 층));
@@ -360,8 +379,18 @@ function 읽기전정리(venue: BookingVenue, facts: [string, string][], 씨: st
 export default function BookingVenuePage({
   venue,
   변형,
+  이주소,
+  설명,
 }: {
   venue: BookingVenue;
+  /** ★ 2026-09-02 — 이 쪽 자신의 주소. 주면 canonical·og:url 이 이것이 된다.
+   *  안 주면 지금까지처럼 bookingPath(venue.slug) 를 쓴다(기존 40쪽은 그대로).
+   *  왜 — canonical 이 /booking/… 로 남으면 네이버가 이 쪽을 그쪽의 사본으로 보고 밀어낸다.
+   *  [[url-one-shape-rule]] */
+  이주소?: string;
+  /** ★ 2026-09-02 — 이 쪽만의 설명문(70~80자). 설명문을 여러 쪽이 나눠 쓰면
+   *  그것만으로 색인이 막힌다 [[description-must-be-unique]]. */
+  설명?: string;
   /** 색인된 다른 주소에 이 가게를 얹을 때, 그 쪽만의 글 (2026-09-01).
    *  같은 컴포넌트를 두 주소에 붙이면 글이 100% 같아져 네이버가 하나만 남긴다.
    *  사실(주소·번호·시간·표·문의바·고지)은 그대로 두고 글만 바꾼다. */
@@ -377,7 +406,7 @@ export default function BookingVenuePage({
     notice?: string[];
   };
 }) {
-  const path = bookingPath(venue.slug);
+  const path = 이주소 ?? bookingPath(venue.slug);
   /* ★ 2026-08-26 — 관련 링크가 적으면 색인이 안 된다. 모자라면 6개까지 채운다. */
   const related = (() => {
     const out = venue.related.map((s) => BOOKING_BY_SLUG[s]).filter(Boolean) as BookingVenue[];
@@ -426,14 +455,14 @@ export default function BookingVenuePage({
     <>
       <NightHead
         title={변형?.title ?? venue.title}
-        description={venue.description}
+        description={설명 ?? venue.description}
         path={path}
         image={bookingOgPath(venue.slug, (venue as any).ogV)}
         imageAlt={venue.ogAlt}
         jsonLd={[
-          bookingClubSchema(venue),
-          bookingFaqSchema(venue),
-          bookingBreadcrumbSchema(venue),
+          bookingClubSchema(venue, 이주소),
+          bookingFaqSchema(venue, 변형?.faq),
+          bookingBreadcrumbSchema(venue, 이주소),
         ]}
       />
       <BookingStyles />
@@ -470,7 +499,7 @@ export default function BookingVenuePage({
             {변형 ? null : <p className="bk-kw">{kwLead(venue.name, venue.region, venue.slug)}</p>}
           </section>
 
-          <div className="answer-box">
+          <div data-frame="1" className="answer-box">
             {(변형?.summary ?? venue.answer3).map((line: string, i: number) => (
               <p key={i}>
                 <span className="bk-anum">{["①", "②", "③"][i]}</span>
@@ -492,7 +521,7 @@ export default function BookingVenuePage({
             <figcaption>부킹 안내 카드</figcaption>
           </figure>
 
-          <div className="bk-table-wrap">
+          <div data-frame="1" className="bk-table-wrap">
             <table className="bk-facts">
               {/* 2026-09-01 - 라벨마다 가게이름이 들어가 한 쪽에 11~13회가 됐다.
                   네이버 가이드가 같은 낱말 반복을 어뷰징으로 본다. 라벨에서는 뺀다. */}
@@ -512,7 +541,7 @@ export default function BookingVenuePage({
               확인일과 "바뀔 수 있다" 고지도 빠져 있었다.
               지어낸 사실은 넣지 않는다. 확인된 값을 풀어 쓰고, 이용 안내만 더한다.
               문장은 가게 주소(slug)로 골라 쪽마다 다르게 한다. */}
-          <section>
+          <section data-frame="1">
             <h2>{읽기전정리(venue, facts, 변형?.각도 ?? '기본').h2}</h2>
             {읽기전정리(venue, facts, 변형?.각도 ?? '기본').본문.map((p2: string, j: number) => (
               <p key={j}>{p2}</p>
@@ -554,14 +583,14 @@ export default function BookingVenuePage({
           </div>
           {/* ★ 2026-09-01 — 확인일·관계 고지를 본문에 둔다(신고 방어 C7-03·C7-04).
               소제목에 우연히 든 「확인일」 낱말은 고지가 아니다. */}
-          <p className="bk-checked">
+          <p data-frame="1" className="bk-checked">
             {venue.group === "A" ? "광고 · 업소 제공 정보 · " : "공개된 자료 기준 · "}
             확인일 <time dateTime="2026-09-01">2026년 9월 1일</time>.
             운영 사정에 따라 내용은 바뀔 수 있습니다.
           </p>
         </article>
 
-        <nav className="bk-related" aria-label="함께 보면 좋은 부킹 안내">
+        <nav data-frame="1" className="bk-related" aria-label="함께 보면 좋은 부킹 안내">
           <h2>함께 보면 좋은 부킹 안내</h2>
           <ul>
             {related.map((r) => (

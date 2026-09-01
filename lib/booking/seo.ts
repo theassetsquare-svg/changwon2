@@ -6,8 +6,11 @@ export const bookingOgPath = (slug: string, v?: string) => `/og/booking-${slug}-
 export const absUrl = (path: string) => SITE_URL + path;
 
 /** ① NightClub — 확인되지 않은 항목(상세 주소·영업시간·가격)은 키 자체를 넣지 않는다. */
-export function bookingClubSchema(v: BookingVenue) {
-  const url = absUrl(bookingPath(v.slug));
+export function bookingClubSchema(v: BookingVenue, 이주소?: string) {
+  /* ★ 2026-09-02 — 이 쪽 자신의 주소를 주면 그것을 쓴다.
+     구조화 데이터의 url 이 다른 쪽을 가리키면 네이버가 그쪽을 정본으로 보고
+     이 쪽을 사본 취급한다 [[url-one-shape-rule]]. */
+  const url = absUrl(이주소 ?? bookingPath(v.slug));
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "NightClub",
@@ -30,12 +33,15 @@ export function bookingClubSchema(v: BookingVenue) {
   return schema;
 }
 
-/** ② FAQPage */
-export function bookingFaqSchema(v: BookingVenue) {
+/** ② FAQPage
+ *  ★ 2026-09-02 — 화면에 보이는 FAQ 와 구조화 데이터가 반드시 같아야 한다.
+ *  변형 쪽은 화면에 변형 FAQ 를 그리는데 여기서 원래 FAQ 를 내보내고 있었다.
+ *  화면과 다른 구조화 데이터는 네이버가 기만으로 보는 항목이다. */
+export function bookingFaqSchema(v: BookingVenue, 보이는FAQ?: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: v.faq.map((it) => ({
+    mainEntity: (보이는FAQ?.length ? 보이는FAQ : v.faq).map((it) => ({
       "@type": "Question",
       name: it.q,
       acceptedAnswer: { "@type": "Answer", text: it.a },
@@ -44,7 +50,7 @@ export function bookingFaqSchema(v: BookingVenue) {
 }
 
 /** ③ BreadcrumbList — 홈 > 부킹 안내 > {업소명} */
-export function bookingBreadcrumbSchema(v: BookingVenue) {
+export function bookingBreadcrumbSchema(v: BookingVenue, 이주소?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -55,7 +61,7 @@ export function bookingBreadcrumbSchema(v: BookingVenue) {
         "@type": "ListItem",
         position: 3,
         name: v.name,
-        item: absUrl(bookingPath(v.slug)),
+        item: absUrl(이주소 ?? bookingPath(v.slug)),
       },
     ],
   };
