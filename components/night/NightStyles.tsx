@@ -95,7 +95,7 @@ export default function NightStyles() {
       .site-footer {
         border-top: 1px solid rgba(255, 255, 255, 0.14);
         margin-top: 32px;
-        /* 하단 여백은 고정바(64~ px) 위로 .ad-inquiry 가 절대 걸리지 않도록 넉넉히 준다. G12 로 실측 검증. */
+        /* 하단 여백은 고정바(64~ px) 위로 .ad-inquiry 가 결코 걸리지 않도록 넉넉히 준다. G12 로 실측 검증. */
         padding: 8px 20px 88px;
       }
       .footer-note {

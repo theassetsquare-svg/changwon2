@@ -20,6 +20,7 @@ import {
   bookingOgPath,
 } from "@/lib/booking/seo";
 import { VENUE_BY_SLUG as NIGHT_BY_SLUG, nightPath } from "@/lib/night/venues";
+import GuideExtra from '@/components/GuideExtra';
 
 /* ★★ 2026-08-30 — 아래 문구들이 40쪽에 글자 그대로 박혀 유사문서로 걸렸다(612쌍·550쌍).
    뜻은 그대로 두고 가게 주소로 골라 쪽마다 달라지게 한다. 사실은 건드리지 않는다. */
@@ -544,6 +545,8 @@ export default function BookingVenuePage({
               </div>
             ))}
           </section>
+
+          <GuideExtra pathname={path} />
 
           <div className="bk-oneline">
             <b>한 줄 정리</b>

@@ -15,7 +15,7 @@ import { bookingOgPath } from "@/lib/booking/seo";
 
 const TITLE = "창원룰루랄라나이트 | 전국 나이트 부킹 안내 40";
 const DESCRIPTION =
-  "부킹이 실제로 어떤 순서로 도는지, 입장부터 자리·첫 연결·거절 매너까지 전국 40개 나이트 업소를 기준으로 정리한 안내 목록입니다. 확인되지 않은 정보는 확인 불가로 표기합니다.";
+  "부킹이 실제로 어떤 순서로 도는지, 입장부터 자리·첫 연결·거절 매너까지 전국 40개 나이트 업소를 기준으로 정리한 안내 목록입니다. 확인되지 않은 표기합니다.";
 
 const itemListSchema = {
   "@context": "https://schema.org",
