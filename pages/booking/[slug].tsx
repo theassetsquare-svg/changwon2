@@ -552,6 +552,13 @@ export default function BookingVenuePage({
             <b>한 줄 정리</b>
             {venue.oneline}
           </div>
+          {/* ★ 2026-09-01 — 확인일·관계 고지를 본문에 둔다(신고 방어 C7-03·C7-04).
+              소제목에 우연히 든 「확인일」 낱말은 고지가 아니다. */}
+          <p className="bk-checked">
+            {venue.group === "A" ? "광고 · 업소 제공 정보 · " : "공개된 자료 기준 · "}
+            확인일 <time dateTime="2026-09-01">2026년 9월 1일</time>.
+            운영 사정에 따라 내용은 바뀔 수 있습니다.
+          </p>
         </article>
 
         <nav className="bk-related" aria-label="함께 보면 좋은 부킹 안내">
