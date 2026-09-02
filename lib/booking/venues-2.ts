@@ -746,7 +746,8 @@ export const VENUES_2: BookingVenue[] = [
   {
     slug: "paju-skydome-2",
     name: "파주야당스카이돔나이트",
-    group: "B",
+    group: "A",
+    contact: { nick: "딸기", phone: "010-3447-0963", tel: "01034470963" },
     region: "경기 파주시 야당동",
     locality: "파주시",
     addressRegion: "경기도",
