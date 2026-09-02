@@ -32,7 +32,13 @@ export default function HoursPage({ venue }: { venue: BookingVenue }) {
   const url = `${SITE_URL}${이주소}`;
   return (
     <>
-      <BookingVenuePage venue={venue} 변형={변형쪽들["/hours"]} />
+      {/* ★ 2026-09-02 (A2) — 설명문이 /booking/ 쪽과 글자까지 같아 색인을 막고 있었다
+          (색인 점검표 #48). 제목·주소·사실은 그대로 두고 설명문만 이 쪽의 것으로 넘긴다. */}
+      <BookingVenuePage
+        venue={venue}
+        변형={변형쪽들["/hours"]}
+        설명={변형쪽들["/hours"].description}
+      />
       <Head>
         <link key="canonical" rel="canonical" href={url} />
         <meta key="og:url" property="og:url" content={url} />
