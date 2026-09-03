@@ -144,7 +144,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://i.nolcool.com/favicon.ico" />
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
         <script
           type="application/ld+json"

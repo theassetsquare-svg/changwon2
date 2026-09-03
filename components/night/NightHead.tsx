@@ -49,7 +49,7 @@ export default function NightHead({
          canonical 이 두 개 나와 네이버가 엉뚱한 쪽을 고르는 일을 막는다. */}
       <link key="canonical" rel="canonical" href={url} />
       <link rel="alternate" hrefLang="ko" href={url} />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="https://i.nolcool.com/favicon.ico" />
 
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
