@@ -492,7 +492,8 @@ export const VENUES_3: BookingVenue[] = [
   {
     slug: "seongnam-shampoo-2",
     name: "성남샴푸나이트",
-    group: "B",
+    group: "A",
+    contact: { nick: "이쁜이", phone: "010-3432-4758", tel: "01034324758" },
     region: "경기 성남시 중원구 성남동",
     locality: "성남시 중원구",
     addressRegion: "경기도",
