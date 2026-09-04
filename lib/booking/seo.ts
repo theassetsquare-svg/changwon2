@@ -55,7 +55,7 @@ export function bookingBreadcrumbSchema(v: BookingVenue, 이주소?: string) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "홈", item: absUrl("/") },
+      { "@type": "ListItem", position: 1, name: "새벽 4시 40분", item: absUrl("/") },
       { "@type": "ListItem", position: 2, name: "부킹 안내", item: absUrl(BOOKING_BASE) },
       {
         "@type": "ListItem",

@@ -1,471 +1,361 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>새벽 4시 40분 — 무너진 자리에서 다시 일어선 세 사람의 기록</title>
   <link>https://i.nolcool.com/</link>
-  <description>전국 나이트 안내 — 전체 페이지</description>
+  <atom:link href="https://i.nolcool.com/rss.xml" rel="self" type="application/rss+xml" />
+  <description>재능도 운도 아니었다. 바닥에서 다시 시작한 세 사람이 공통으로 지켜낸 것은 딱 하나였다. 끝까지 읽고 나면 오늘 밤이 조금 달라지는 이야기.</description>
   <language>ko</language>
-  <lastBuildDate>Wed, 26 Aug 2026 00:00:00 GMT</lastBuildDate>
-    <item>
-      <title>울산챔피언나이트 예약부터 입장까지 순서 정리</title>
-      <link>https://i.nolcool.com/night/ulsan-champion-night/</link>
-      <guid>https://i.nolcool.com/night/ulsan-champion-night/</guid>
-      <description>울산챔피언나이트 예약 전화에서 자리 안내까지, 처음 방문 순서를 정리했습니다.</description>
-    </item>
-
+  <lastBuildDate>Fri, 04 Sep 2026 18:24:30 GMT</lastBuildDate>
   <item>
     <title>새벽 4시 40분 — 무너진 자리에서 다시 일어선 세 사람의 기록</title>
     <link>https://i.nolcool.com/</link>
     <guid isPermaLink="true">https://i.nolcool.com/</guid>
     <description>재능도 운도 아니었다. 바닥에서 다시 시작한 세 사람이 공통으로 지켜낸 것은 딱 하나였다. 끝까지 읽고 나면 오늘 밤이 조금 달라지는 이야기.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 위치 · 찾아가는 길 | 상남동 모아엔트몰 지하 3층 도착 5분컷</title>
-    <link>https://i.nolcool.com/location/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/location/</guid>
-    <description>마디미로43번길 10, 상남동 22-4. 창원시청 차로 5분, KTX 창원중앙 15분. 모아엔트몰 지하 주차장 그대로 사용. 도보·차·택시 동선 정리.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 | 전국 나이트 부킹 안내 40</title>
-    <link>https://i.nolcool.com/booking-2/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/booking-2/</guid>
-    <description>부킹이 실제로 어떤 순서로 도는지, 입장부터 자리·첫 연결·거절 매너까지 전국 40개 나이트 업소를 기준으로 정리한 안내 목록입니다. 확인되지 않은 정보는 확인 불가로 표기합니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 룸·메인홀·DJ존 한눈에 | 어디 앉아야 그날 밤이 살아나는가</title>
-    <link>https://i.nolcool.com/rooms/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/rooms/</guid>
-    <description>457평 메인홀, 프라이빗 룸, DJ 부스 옆 진한 자리, 사이드 룸의 차이를 정리. 첫방문·단골·단체에게 맞는 포지션 매칭 가이드.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 영업시간 365일 19~05시 | 휴무 0일 · 명절도 정상영업</title>
-    <link>https://i.nolcool.com/hours/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/hours/</guid>
-    <description>월화수목금토일 모두 19:00 오픈, 다음날 05:00 마감. 휴무·연차 없음. 골든타임·라스트오더·도착 추천 시간 정리.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 주차 OK | 모아엔트몰 지하 주차장 그대로 — 발렛·대리 동선</title>
-    <link>https://i.nolcool.com/parking/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/parking/</guid>
-    <description>건물 지하 주차장 직접 이용. 진입로·출차 동선, 대리운전 호출 위치, 인근 대체 주차장까지 정리. 음주 시 대중교통·대리 사용 권장.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
   </item>
   <item>
     <title>창원룰루랄라나이트 대중교통 가이드 | KTX·시청·시외버스에서 가장 짧은 동선</title>
     <link>https://i.nolcool.com/access/</link>
     <guid isPermaLink="true">https://i.nolcool.com/access/</guid>
     <description>KTX 창원중앙역 차로 15분, 창원시청 5분, 마산역 20분. 시내버스·택시·카카오T 호출 동선과 새벽 귀가 루트까지 정리.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 VIP·단체 8인+ | 생일·송별·동호회 콘셉트 세팅 한 번에</title>
-    <link>https://i.nolcool.com/vip/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/vip/</guid>
-    <description>프라이빗 룸 + 콘셉트 세팅 + 케이크·플래카드 옵션. 8명 이상 단체, 생일·승진·송별·MT·동호회를 한 통으로 정리합니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 방문 후기 모음 | 왜 단골들이 룰루랄라만 찾는가 — 솔직 톤</title>
-    <link>https://i.nolcool.com/reviews/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/reviews/</guid>
-    <description>첫방문·단골·단체·생일·여자 일행 입장에서 본 실사용 후기. 자리·부킹·분위기·동선의 솔직한 평가와 단점까지 그대로 정리.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 자주 묻는 질문 25선 | 첫방문 체크리스트 + AI 검색 대비 답변</title>
-    <link>https://i.nolcool.com/faq/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/faq/</guid>
-    <description>위치·예약·복장·결제·연령·동반 가능 여부·새벽 귀가까지. 검색 엔진과 AI가 그대로 인용할 수 있도록 정돈된 25문항.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>전국 나이트 업소 안내 목록</title>
-    <link>https://i.nolcool.com/night-2/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/night-2/</guid>
-    <description>서울·경기·충청·영남 13개 나이트 업소의 위치와 이용 안내를 지역별로 정리한 목록입니다. 출입 연령 기준이 따로 있는 업소는 목록에서 바로 확인할 수 있습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>불광동호박나이트 통일로 대로변 궁금한 것 몰아보기</title>
-    <link>https://i.nolcool.com/bulgwang-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/bulgwang-hobak-night/</guid>
-    <description>불광동호박나이트에 전화를 걸기 전 알아두면 좋은 것들을 문답으로 모았습니다. 몇 시에 도착해야 자리가 남는지, 몇 명이 적당한지, 부킹이 어떤 순서로 도는지까지 짧게 답합니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트 상남동 지하 3층 하루 밤 흐름</title>
-    <link>https://i.nolcool.com/changwon-lululala-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/changwon-lululala-night/</guid>
-    <description>창원룰루랄라나이트의 저녁 일곱 시부터 새벽 다섯 시까지를 시간 단위로 끊어 정리했습니다. 언제 홀이 차고 언제 자리가 아깝게 비는지, 만 27세 이상 기준까지 함께 확인하세요.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>울산챔피언나이트 남구 삼산동 돔형 홀 다른 점 셋</title>
-    <link>https://i.nolcool.com/ulsan-champion-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/ulsan-champion-night/</guid>
-    <description>울산챔피언나이트가 보통의 나이트클럽과 어디서 갈리는지 세 가지로 짚었습니다. 돔형 홀 구조, 자리 배치가 만드는 시야, 그리고 손님층이 어떻게 다른지 확인해 보세요.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>청담나이트 청담동 리베라호텔 지하 1층 빠른 안내</title>
-    <link>https://i.nolcool.com/cheongdam-night-1/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/cheongdam-night-1/</guid>
-    <description>청담나이트 방문 전 확인할 것만 골라 표로 묶었습니다. 좌석 종류, 도착 시각, 인원 구성, 진입 동선까지 한 화면에서 확인하고 바로 전화 걸 수 있게 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>대전원나이트 복합터미널 앞 성인 홀 인원별 정리</title>
-    <link>https://i.nolcool.com/daejeon-one-night-1/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/daejeon-one-night-1/</guid>
-    <description>대전원나이트를 둘이 갈 때와 넷이 갈 때, 단체로 갈 때 자리와 부킹이 어떻게 달라지는지 정리했습니다. 만 38세 이상 기준과 도착 시각까지 함께 확인하세요.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>신림그랑프리나이트 신림역 7번 출구 조심할 것</title>
-    <link>https://i.nolcool.com/sillim-grandprix-night-1/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/sillim-grandprix-night-1/</guid>
-    <description>신림그랑프리나이트에서 헛걸음하는 사람들은 대개 같은 세 가지에서 걸립니다. 도착 시각, 인원 구성, 복장. 실수를 줄이는 방법과 대안까지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>상봉동한국관나이트 망우로 2층 홀 오래 다닌 시선</title>
-    <link>https://i.nolcool.com/night/sangbong-hangukgwan-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/night/sangbong-hangukgwan-night/</guid>
-    <description>상봉동한국관나이트를 여러 번 다녀본 사람은 자리부터 다르게 잡습니다. 웨이터에게 무엇을 말하는지, 몇 시에 들어가는지, 금·토 2부제를 어떻게 쓰는지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>수유샴푸나이트 도봉로 지하 홀 첫인상이 갈리는 곳</title>
-    <link>https://i.nolcool.com/suyu-shampoo-night-1/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/suyu-shampoo-night-1/</guid>
-    <description>수유샴푸나이트는 강북 도봉로 지하에 두 개 층으로 앉는 홀입니다. 층이 나뉜 구조가 자리와 부킹을 어떻게 바꾸는지, 몇 시에 들어가야 하는지 짚었습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>부산아시아드나이트 온천장 지하 어떤 사람들이 올까</title>
-    <link>https://i.nolcool.com/night/busan-asiad-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/night/busan-asiad-night/</guid>
-    <description>부산아시아드나이트에는 대체 누가 모일까요. 닫는 시간이 없는 홀에는 시간대별로 어떤 팀이 들어오는지, 자리와 부킹은 무엇이 달라지는지 하나씩 짚었습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>수원찬스돔나이트 권선동 돔 홀 가장 뜨거운 한 시간</title>
-    <link>https://i.nolcool.com/suwon-chancedome-night-1/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/suwon-chancedome-night-1/</guid>
-    <description>수원찬스돔나이트의 돔 천장 아래에서 조명과 음악이 가장 세게 겹치는 한 시간이 있습니다. 그 시간 홀이 어떻게 움직이는지, 언제 들어가야 그 안에 있을 수 있는지 적었습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>안산히트나이트 본오동 상록수 처음 가면 이렇다</title>
-    <link>https://i.nolcool.com/ansan-hit-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/ansan-hit-night/</guid>
-    <description>안산히트나이트에 처음 가면 문 앞에서부터 막막합니다. 들어가서 무엇부터 해야 하는지, 자리는 어떻게 받고 부킹은 어떻게 붙는지 순서대로 적었습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>대전세븐나이트 중구 유천동 630평 소문난 이유</title>
-    <link>https://i.nolcool.com/daejeon-seven-night-1/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/daejeon-seven-night-1/</guid>
-    <description>대전세븐나이트가 계속 이름이 오르내리는 데는 이유가 있습니다. 630평대 규모, 메인 홀과 별실로 나뉜 구조, 30년 넘게 같은 자리라는 점까지 하나씩 짚었습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>일산샴푸나이트 마두역 8번 출구 오원빌딩 소문과 실제</title>
-    <link>https://i.nolcool.com/ilsan-shampoo-night-1/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/ilsan-shampoo-night-1/</guid>
-    <description>일산샴푸나이트는 차려입고 가야 한다고들 합니다. 옷차림과 준비물을 둘러싼 오해부터 정리하고, 실제로 필요한 것과 자리 잡는 요령까지 담았습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>신림그랑프리나이트, 첫 부킹에서 하는 흔한 실수</title>
-    <link>https://i.nolcool.com/sillim-grandprix-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/sillim-grandprix-night/</guid>
-    <description>부킹은 손님이 만드는 게 아니라 홀이 돌리는 흐름에 얹히는 일입니다. 신림그랑프리나이트를 예로 들어 입장부터 자리, 첫 연결, 마무리까지 초보가 자주 어긋나는 지점을 순서대로 짚었습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>상봉동한국관나이트, 거절 잘하는 사람이 더 즐긴다</title>
-    <link>https://i.nolcool.com/sangbong-hangukgwan-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/sangbong-hangukgwan-night/</guid>
-    <description>부킹에서 가장 자주 쓰는 기술은 사실 거절입니다. 상봉동한국관나이트의 부킹 흐름을 따라가며 상대와 일행 모두 상하지 않게 끊는 말과 순서, 그 뒤에 오는 연결까지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>수유샴푸나이트, 웨이터에게 건네는 첫마디</title>
-    <link>https://i.nolcool.com/suyu-shampoo-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/suyu-shampoo-night/</guid>
-    <description>부킹의 속도는 담당 웨이터에게 처음 건네는 한 문장에서 갈립니다. 수유샴푸나이트를 기준으로 무엇을 말하고 무엇을 말하지 않아야 하는지, 자리 배정부터 연결까지 순서대로 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>부산아시아드나이트, 합석 첫 3분이 전부다</title>
-    <link>https://i.nolcool.com/booking/busan-asiad-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/booking/busan-asiad-night/</guid>
-    <description>합석이 성사된 뒤 처음 3분이 그 자리의 결말을 거의 정합니다. 부산아시아드나이트의 부킹 흐름을 따라가며 인사, 자리 배치, 대화의 첫 화제와 물러설 타이밍까지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>수원찬스돔나이트, 인원수가 부킹 속도를 바꾼다</title>
-    <link>https://i.nolcool.com/suwon-chancedome-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/suwon-chancedome-night/</guid>
-    <description>같은 시간에 들어와도 몇 명이냐에 따라 부킹 속도가 달라집니다. 수원찬스돔나이트를 예로 둘·넷·여섯 이상의 팀이 각각 어떤 순서로 연결되는지와 인원별 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>안산히트나이트, 성비를 먼저 말하는 이유</title>
-    <link>https://i.nolcool.com/booking/ansan-hit-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/booking/ansan-hit-night/</guid>
-    <description>부킹에서 인원만큼 중요한 정보가 성비입니다. 안산히트나이트를 기준으로 성비가 자리 배정과 연결 순서를 어떻게 바꾸는지, 어떻게 전달해야 오해가 없는지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>대전세븐나이트, 자리 위치가 부킹 순서를 만든다</title>
-    <link>https://i.nolcool.com/daejeon-seven-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/daejeon-seven-night/</guid>
-    <description>같은 홀 안에서도 어디에 앉느냐에 따라 부킹이 도는 순서가 달라집니다. 대전세븐나이트를 기준으로 동선과 자리의 관계, 자리 이동을 요청하는 타이밍과 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>일산샴푸나이트, 부킹이 안 도는 날의 신호</title>
-    <link>https://i.nolcool.com/ilsan-shampoo-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/ilsan-shampoo-night/</guid>
-    <description>홀에는 부킹이 잘 도는 날과 그렇지 않은 날이 있습니다. 일산샴푸나이트를 기준으로 그날의 흐름을 읽는 신호와, 흐름이 느릴 때 팀이 취할 수 있는 매너 있는 대응을 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>청담나이트, 잔을 건네는 타이밍의 매너</title>
-    <link>https://i.nolcool.com/cheongdam-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/cheongdam-night/</guid>
-    <description>합석 자리에서 잔을 언제 어떻게 건네느냐가 그 자리의 온도를 정합니다. 청담나이트의 부킹 흐름을 따라 첫 잔, 권하는 말, 마시지 않는 사람에 대한 배려까지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>대전원나이트, 연락처를 묻는 선과 매너</title>
-    <link>https://i.nolcool.com/daejeon-one-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/daejeon-one-night/</guid>
-    <description>합석이 잘 풀렸을 때 마지막에 남는 문제가 연락처입니다. 대전원나이트를 기준으로 언제 물어야 하는지, 거절을 어떻게 받아야 하는지, 그 뒤 자리를 어떻게 정리하는지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>창원룰루랄라나이트, 일행을 지키면서 노는 법</title>
-    <link>https://i.nolcool.com/booking/changwon-lululala-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/booking/changwon-lululala-night/</guid>
-    <description>부킹은 혼자 하는 일이 아니라 일행을 데리고 하는 일입니다. 창원룰루랄라나이트를 기준으로 한 사람만 자리를 뜨는 상황, 남은 일행의 역할, 다시 모이는 타이밍까지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>불광동호박나이트, 늦게 도착한 날의 회복법</title>
-    <link>https://i.nolcool.com/booking/bulgwang-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/booking/bulgwang-hobak-night/</guid>
-    <description>홀이 이미 찬 뒤에 도착하면 자리도 부킹도 한 박자씩 밀립니다. 불광동호박나이트를 기준으로 늦은 입장에서 흐름을 되찾는 순서와, 그때 지켜야 할 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>울산챔피언나이트, 담당을 바꿔 달라는 말</title>
-    <link>https://i.nolcool.com/booking/ulsan-champion-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/booking/ulsan-champion-night/</guid>
-    <description>담당 웨이터와 결이 안 맞을 때 어떻게 말해야 할지 모르는 분이 많습니다. 울산챔피언나이트를 기준으로 교체를 요청하는 순서와 표현, 그리고 그 전에 확인할 것들을 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>독산동국빈관나이트, 기다리는 시간 쓰는 법</title>
-    <link>https://i.nolcool.com/doksan-gukbingwan-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/doksan-gukbingwan-night/</guid>
-    <description>부킹은 기다리는 시간이 더 깁니다. 독산동국빈관나이트를 기준으로 연결을 기다리는 동안 팀이 무엇을 하면 좋은지, 무엇이 흐름을 막는지 순서대로 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>답십리미라클나이트, 처음 온 팀이 놓치는 신호</title>
-    <link>https://i.nolcool.com/booking/dapsimni-miracle-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/booking/dapsimni-miracle-night/</guid>
-    <description>홀 안에서는 말이 아니라 신호로 오가는 정보가 많습니다. 답십리미라클나이트를 기준으로 처음 방문한 팀이 자주 놓치는 신호와, 그 신호에 맞춰 움직이는 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>강서호박나이트, 무대와 테이블 사이의 거리</title>
-    <link>https://i.nolcool.com/gangseo-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/gangseo-hobak-night/</guid>
-    <description>무대 앞에 서 있을 때와 테이블에 앉아 있을 때는 연결되는 경로가 서로 다릅니다. 강서호박나이트 안에서 두 공간이 어떻게 이어지는지, 오갈 때 무엇을 알리고 무엇을 남겨야 하는지 짚었습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>영등포터미널나이트, 단체로 갈 때의 부킹 흐름</title>
-    <link>https://i.nolcool.com/yeongdeungpo-terminal-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/yeongdeungpo-terminal-night/</guid>
-    <description>여덟 명이 넘어가면 부킹은 다른 방식으로 돕니다. 영등포터미널나이트를 기준으로 단체 팀의 자리 배정, 나뉘어 연결되는 순서, 남는 인원을 챙기는 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>노원호박나이트, 둘이 왔을 때 부킹 요령</title>
-    <link>https://i.nolcool.com/nowon-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/nowon-hobak-night/</guid>
-    <description>두 명 팀은 자리는 빨리 받지만 연결에서 순서가 밀리기 쉽습니다. 노원호박나이트를 기준으로 둘일 때 부킹을 앞당기는 요청 방식과 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>길동찬스나이트, 나이대가 다를 때의 예의</title>
-    <link>https://i.nolcool.com/gildong-chance-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/gildong-chance-night/</guid>
-    <description>합석한 팀과 나이 차이가 있을 때 대화의 결이 흔들리기 쉽습니다. 길동찬스나이트를 기준으로 호칭, 화제, 속도 조절까지 나이대가 다른 자리의 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>파주야당스카이돔나이트, 옷차림이 만드는 차이</title>
-    <link>https://i.nolcool.com/paju-skydome-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/paju-skydome-night/</guid>
-    <description>옷차림은 입장 여부보다 부킹의 첫인상에 더 크게 작용합니다. 파주야당스카이돔나이트를 기준으로 홀에서 무난한 차림과 피하는 편이 나은 차림을 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>구리호박나이트, 팁과 요청 사이의 경계</title>
-    <link>https://i.nolcool.com/guri-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/guri-hobak-night/</guid>
-    <description>웨이터에게 무엇을 어디까지 부탁할 수 있는지 헷갈릴 때가 많습니다. 구리호박나이트를 기준으로 정상적인 요청과 부담이 되는 요구의 경계, 그리고 팁을 대하는 태도를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>의정부한국관나이트, 대화가 끊겼을 때 빠져나오기</title>
-    <link>https://i.nolcool.com/uijeongbu-hangukgwan-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/uijeongbu-hangukgwan-night/</guid>
-    <description>합석 자리에서 대화가 멈추면 그다음이 더 어렵습니다. 의정부한국관나이트를 기준으로 정적을 다루는 법과, 무리하지 않고 자리를 빠져나오는 순서를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>의정부백악관나이트, 상대 팀에 실례가 되는 것</title>
-    <link>https://i.nolcool.com/uijeongbu-baekakgwan-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/uijeongbu-baekakgwan-night/</guid>
-    <description>합석 자리에서 의도 없이 실례가 되는 행동이 있습니다. 의정부백악관나이트를 기준으로 상대 팀이 불편해하는 순간과, 그 선을 넘지 않는 부킹 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>수원코리아나이트, 부킹 끝나고 돌아오는 매너</title>
-    <link>https://i.nolcool.com/suwon-korea-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/suwon-korea-night/</guid>
-    <description>합석이 끝난 뒤 자리로 돌아오는 방식이 다음 연결에 영향을 줍니다. 수원코리아나이트를 기준으로 복귀 순서와 일행에게 전할 말, 담당 웨이터와의 정리를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>오산호박나이트, 마감 한 시간 전의 부킹</title>
-    <link>https://i.nolcool.com/osan-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/osan-hobak-night/</guid>
-    <description>마감이 가까워지면 홀의 부킹 방식이 달라집니다. 오산호박나이트를 기준으로 막바지에 연결이 빨라지는 이유와, 그 시간대에 특히 필요한 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>인덕원국빈관나이트, 평일과 주말의 밀도 차이</title>
-    <link>https://i.nolcool.com/indeogwon-gukbingwan-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/indeogwon-gukbingwan-night/</guid>
-    <description>같은 홀도 요일에 따라 부킹이 도는 방식이 달라집니다. 인덕원국빈관나이트를 기준으로 평일과 주말의 밀도 차이, 그리고 요일별로 달라지는 요청 방법을 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>성남샴푸나이트, 혼자 갔을 때의 부킹 경로</title>
-    <link>https://i.nolcool.com/seongnam-shampoo-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/seongnam-shampoo-night/</guid>
-    <description>혼자 방문하면 부킹이 도는 경로 자체가 달라집니다. 성남샴푸나이트를 기준으로 혼자 온 손님이 자리를 받는 방식과, 팀에 합류할 때 지켜야 할 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>인천아라비안나이트, 사진 요청은 어디까지</title>
-    <link>https://i.nolcool.com/incheon-arabian-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/incheon-arabian-night/</guid>
-    <description>홀에서 사진과 영상은 가장 예민한 부분입니다. 인천아라비안나이트(인천아라비아나이트)를 기준으로 촬영 요청의 선과 거절하는 법, 이미 찍힌 경우의 처리를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>부천고래나이트, 술 없이도 부킹은 된다</title>
-    <link>https://i.nolcool.com/bucheon-gorae-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/bucheon-gorae-night/</guid>
-    <description>술을 못 마시거나 마시지 않는 사람도 부킹 흐름에서 빠지지 않습니다. 부천고래나이트를 기준으로 무알코올 손님의 자리 잡기와 합석에서의 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>평택호박나이트, 두 번째 방문에서 달라지는 것</title>
-    <link>https://i.nolcool.com/pyeongtaek-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/pyeongtaek-hobak-night/</guid>
-    <description>같은 홀을 두 번째 찾으면 부킹의 조건이 바뀝니다. 평택호박나이트를 기준으로 재방문 팀이 얻는 이점과, 그 이점을 만드는 첫 방문의 마무리 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>천안스타돔나이트, 자리에서 휴대폰 쓰는 법</title>
-    <link>https://i.nolcool.com/cheonan-stardome-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/cheonan-stardome-night/</guid>
-    <description>합석 자리에서 휴대폰을 언제 꺼내느냐가 인상을 크게 바꿉니다. 천안스타돔나이트를 기준으로 자리에서의 휴대폰 매너와, 연락이 필요한 순간의 처리 방법을 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>천안코리아나이트, 첫 인사 3초를 어떻게 쓰나</title>
-    <link>https://i.nolcool.com/cheonan-korea-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/cheonan-korea-night/</guid>
-    <description>합석 첫 인사는 3초 안에 끝나지만 그 3초가 자리의 방향을 정합니다. 천안코리아나이트를 기준으로 인사의 구성과 목소리, 시선 처리까지 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>청주호박나이트, 여러 번 연결되는 팀의 공통점</title>
-    <link>https://i.nolcool.com/cheongju-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/cheongju-hobak-night/</guid>
-    <description>하룻밤에 여러 번 연결되는 팀에는 몇 가지 공통점이 있습니다. 청주호박나이트를 기준으로 그 특징과, 반대로 연결이 한 번에서 끊기는 팀의 습관을 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>울산뉴월드나이트, 거절을 받은 쪽의 태도</title>
-    <link>https://i.nolcool.com/ulsan-newworld-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/ulsan-newworld-night/</guid>
-    <description>부킹에서 거절은 늘 양쪽에 있습니다. 울산뉴월드나이트를 기준으로 거절을 받았을 때의 태도와, 그 태도가 다음 연결에 어떻게 이어지는지를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>서산호박나이트, 주대 이야기 꺼내는 시점</title>
-    <link>https://i.nolcool.com/osan-hobak-night-1/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/osan-hobak-night-1/</guid>
-    <description>합석 자리에서 계산 이야기를 언제 꺼내느냐가 분위기를 좌우합니다. 서산호박나이트를 기준으로 주대와 계산을 정리하는 순서와, 서로 부담을 주지 않는 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>대구호박나이트, 마지막 인사가 남기는 것</title>
-    <link>https://i.nolcool.com/daegu-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/daegu-hobak-night/</guid>
-    <description>그날 밤의 인상은 첫 인사가 아니라 마지막 인사에서 정해집니다. 대구호박나이트를 기준으로 자리를 마무리하는 순서와, 다음을 여는 작별 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>구미호박나이트, 일행이 취했을 때의 순서</title>
-    <link>https://i.nolcool.com/gumi-hobak-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/gumi-hobak-night/</guid>
-    <description>일행 중 한 사람이 많이 취하면 부킹보다 정리가 먼저입니다. 구미호박나이트를 기준으로 그때 필요한 판단 순서와, 자리와 상대 팀에 대한 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>광주상무나이트, 목소리 크기가 만드는 인상</title>
-    <link>https://i.nolcool.com/gwangju-sangmu-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/gwangju-sangmu-night/</guid>
-    <description>홀에서는 무슨 말을 했는지보다 어떻게 들렸는지가 먼저 남습니다. 광주상무나이트를 기준으로 목소리 크기와 거리 감각, 소음 속 대화 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>광주첨단나이트, 기대를 낮추면 잘 되는 이유</title>
-    <link>https://i.nolcool.com/gwangju-cheomdan-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/gwangju-cheomdan-night/</guid>
-    <description>부킹을 목적으로 삼을수록 결과가 나빠지는 구조가 있습니다. 광주첨단나이트를 기준으로 기대치와 태도의 관계, 그리고 자리에서 힘을 빼는 방법을 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-  </item>
-  <item>
-    <title>제주도나이트, 원정 팀이 지켜야 할 선</title>
-    <link>https://i.nolcool.com/jeju-night/</link>
-    <guid isPermaLink="true">https://i.nolcool.com/jeju-night/</guid>
-    <description>여행지에서의 부킹은 지역 손님과 섞이는 자리입니다. 제주도나이트를 기준으로 원정 팀이 자주 놓치는 선과, 짧은 일정 안에서의 부킹 매너를 정리했습니다.</description>
-    <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
   </item>
   <item>
     <title>랜드마크로 찾는 지역 안내</title>
     <link>https://i.nolcool.com/area/landmark-guide/</link>
     <guid isPermaLink="true">https://i.nolcool.com/area/landmark-guide/</guid>
-    <description>주소보다 눈에 보이는 건물이 빠릅니다. 지역별로 기준 삼을 만한 랜드마크를 정리했습니다.</description>
+    <description>주소보다 눈에 보이는 건물이 빠릅니다. 지역별로 기준 삼을 만한 랜드마크를 정리했습니다. 랜드마크로 찾는 지역 안내 주소보다 눈에 보이는 건물이 빠릅니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>창원룰루랄라나이트 | 전국 나이트 부킹 안내 40</title>
+    <link>https://i.nolcool.com/booking-2/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking-2/</guid>
+    <description>부킹이 실제로 어떤 순서로 도는지, 입장부터 자리·첫 연결·거절 매너까지 전국 40개 나이트 업소를 기준으로 정리한 안내 목록입니다. 확인되지 않은 표기합니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>안산히트나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/ansan-hit-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/ansan-hit-night/</guid>
+    <description>안산히트나이트 예약·좌석·영업시간·위치 안내. 경기 안산시 상록구 상록수로 34 (본오동 874) 지층 안산히트나이트 재방문 요령과 위치 달았습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>부천고래나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/bucheon-gorae-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/bucheon-gorae-night/</guid>
+    <description>부천고래나이트 예약·좌석·영업시간·위치 안내. 경기 부천시 원미구 중동로248번길 105 (중동 1138-1)</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>불광동호박나이트 복장과 신분증 안내</title>
+    <link>https://i.nolcool.com/booking/bulgwang-hobak-night-1/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/bulgwang-hobak-night-1/</guid>
+    <description>불광동호박나이트 예약·좌석·영업시간·위치 안내. 서울 은평구 통일로 730 (불광동 281-92) 지하. 문의 손흥민 010-2221-1937</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>불광동호박나이트 처음 방문 전 체크리스트</title>
+    <link>https://i.nolcool.com/booking/bulgwang-hobak-night-2/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/bulgwang-hobak-night-2/</guid>
+    <description>불광동호박나이트 예약 상담과 자리 배정 안내. 서울 은평구 통일로 730 (불광동 281-92) 지하. 담당 손흥민 010-2221-1937</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>서울 은평구 불광동호박나이트 찾아가는 길과 문의</title>
+    <link>https://i.nolcool.com/booking/bulgwang-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/bulgwang-hobak-night/</guid>
+    <description>불광동호박나이트 예약·좌석·영업시간·위치 안내. 서울 은평구 통일로 730 (불광동 281-92) 지하. 문의 손흥민 010-2221-1937</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>부산아시아드나이트 자리 잡기 전에 볼 것</title>
+    <link>https://i.nolcool.com/booking/busan-asiad-night-1/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/busan-asiad-night-1/</guid>
+    <description>부산아시아드나이트 예약·좌석·영업시간·위치 안내. 부산 동래구 온천장로107번길 32 (온천동 137). 문의 새우깡 010-3614-1056</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>부산아시아드나이트 이용 안내 열다섯 가지</title>
+    <link>https://i.nolcool.com/booking/busan-asiad-night-2/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/busan-asiad-night-2/</guid>
+    <description>부산아시아드나이트 위치·영업시간·자리 문의 정리. 부산 동래구 온천장로107번길 32 (온천동 137). 연락 새우깡 010-3614-1056</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>부산아시아드나이트 이용 방법 한눈에 부산 동래구</title>
+    <link>https://i.nolcool.com/booking/busan-asiad-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/busan-asiad-night/</guid>
+    <description>부산아시아드나이트 예약·좌석·영업시간·위치 안내. 부산 동래구 온천장로107번길 32 (온천동 137). 문의 새우깡 010-3614-1056</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>창원룰루랄라나이트 시간대별 분위기와 준비물</title>
+    <link>https://i.nolcool.com/booking/changwon-lululala-night-1/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/changwon-lululala-night-1/</guid>
+    <description>창원룰루랄라나이트 예약·좌석·영업시간·위치 안내. 창원시 성산구 상남동 22-4 (마디미로43번길 10). 문의 로또 010-7528-4936</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>창원룰루랄라나이트 이용 전 궁금한 것 정리</title>
+    <link>https://i.nolcool.com/booking/changwon-lululala-night-2/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/changwon-lululala-night-2/</guid>
+    <description>창원룰루랄라나이트 예약 상담과 자리 배정 안내. 창원시 성산구 상남동 22-4 (마디미로43번길 10). 상담 로또 010-7528-4936</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>창원룰루랄라나이트 인원별 자리 안내</title>
+    <link>https://i.nolcool.com/booking/changwon-lululala-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/changwon-lululala-night/</guid>
+    <description>창원룰루랄라나이트 예약·좌석·영업시간·위치 안내. 창원시 성산구 상남동 22-4 (마디미로43번길 10). 문의 로또 010-7528-4936</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>천안코리아나이트, 첫 인사 3초를 어떻게 쓰나</title>
+    <link>https://i.nolcool.com/booking/cheonan-korea-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/cheonan-korea-night/</guid>
+    <description>합석 첫 인사는 3초 안에 끝나지만 그 3초가 자리의 방향을 정합니다. 천안코리아나이트를 기준으로 인사의 구성과 목소리, 시선 처리까지 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>천안스타돔나이트, 자리에서 휴대폰 쓰는 법</title>
+    <link>https://i.nolcool.com/booking/cheonan-stardome-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/cheonan-stardome-night/</guid>
+    <description>합석 자리에서 휴대폰을 언제 꺼내느냐가 인상을 크게 바꿉니다. 천안스타돔나이트를 기준으로 자리에서의 휴대폰 매너와, 연락이 필요한 순간의 처리 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>청담나이트 이용 안내 열다섯 가지</title>
+    <link>https://i.nolcool.com/booking/cheongdam-night-1/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/cheongdam-night-1/</guid>
+    <description>청담나이트 예약·좌석·영업시간·위치 안내. 서울 강남구 영동대로 737 호텔 지하 1층. 문의 펩시맨 010-5655-4866</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>청담나이트 인원별 자리 안내</title>
+    <link>https://i.nolcool.com/booking/cheongdam-night-2/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/cheongdam-night-2/</guid>
+    <description>청담나이트 예약 방법과 자리, 시간 안내. 서울 강남구 영동대로 737 호텔 지하 1층. 예약 문의 펩시맨 010-5655-4866</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>청담나이트 알아두면 편한 것들 서울 강남구</title>
+    <link>https://i.nolcool.com/booking/cheongdam-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/cheongdam-night/</guid>
+    <description>청담나이트 예약·좌석·영업시간·위치 안내. 서울 강남구 영동대로 737 호텔 지하 1층. 문의 펩시맨 010-5655-4866</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>청주호박나이트, 여러 번 연결되는 팀의 공통점</title>
+    <link>https://i.nolcool.com/booking/cheongju-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/cheongju-hobak-night/</guid>
+    <description>하룻밤에 여러 번 연결되는 팀에는 몇 가지 공통점이 있습니다. 청주호박나이트를 기준으로 그 특징과, 반대로 연결이 한 번에서 끊기는 팀의 습관을 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>대구호박나이트, 마지막 인사가 남기는 것</title>
+    <link>https://i.nolcool.com/booking/daegu-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/daegu-hobak-night/</guid>
+    <description>그날 밤의 인상은 첫 인사가 아니라 마지막 인사에서 정해집니다. 대구호박나이트를 기준으로 자리를 마무리하는 순서와, 다음을 여는 작별 매너를 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>대전원나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/daejeon-one-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/daejeon-one-night/</guid>
+    <description>대전원나이트 예약·좌석·영업시간·위치 안내. 대전 동구 동서대로1683번길 76-8 (용전동 63-1) 대전원나이트 재방문 요령과 위치 대전원나이트 글입니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>대전세븐나이트 기본 안내 대전 중구</title>
+    <link>https://i.nolcool.com/booking/daejeon-seven-night-1/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/daejeon-seven-night-1/</guid>
+    <description>대전세븐나이트 예약·좌석·영업시간·위치 안내. 대전 중구 당디로 112 (유천동 332-28). 문의 영탁 010-7770-0869</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>대전세븐나이트 문의 전에 정리해 둘 것</title>
+    <link>https://i.nolcool.com/booking/daejeon-seven-night-2/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/daejeon-seven-night-2/</guid>
+    <description>대전세븐나이트 자리 문의와 영업시간, 오시는 길 안내. 대전 중구 당디로 112 (유천동 332-28). 문의처 영탁 010-7770-0869</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>대전세븐나이트 예약 요령과 자리 안내</title>
+    <link>https://i.nolcool.com/booking/daejeon-seven-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/daejeon-seven-night/</guid>
+    <description>대전세븐나이트 예약·좌석·영업시간·위치 안내. 대전 중구 당디로 112 (유천동 332-28). 문의 영탁 010-7770-0869</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>답십리미라클나이트 예약 요령과 자리 안내</title>
+    <link>https://i.nolcool.com/booking/dapsimni-miracle-night-1/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/dapsimni-miracle-night-1/</guid>
+    <description>답십리미라클나이트 예약·좌석·영업시간·위치 안내. 서울 동대문구 고미술로 99. 문의 유재석 010-8156-6558</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>답십리미라클나이트 자리 종류와 고르는 요령</title>
+    <link>https://i.nolcool.com/booking/dapsimni-miracle-night-2/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/dapsimni-miracle-night-2/</guid>
+    <description>답십리미라클나이트 영업시간과 위치, 자리 문의 안내. 서울 동대문구 고미술로 99. 연락 유재석 010-8156-6558</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>답십리미라클나이트, 처음 온 팀이 놓치는 신호</title>
+    <link>https://i.nolcool.com/booking/dapsimni-miracle-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/dapsimni-miracle-night/</guid>
+    <description>홀 안에서는 말이 아니라 신호로 오가는 정보가 많습니다. 답십리미라클나이트를 기준으로 처음 방문한 팀이 자주 놓치는 신호와, 그 신호에 맞춰 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>독산동국빈관나이트, 기다리는 시간 쓰는 법</title>
+    <link>https://i.nolcool.com/booking/doksan-gukbingwan-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/doksan-gukbingwan-night/</guid>
+    <description>부킹은 기다리는 시간이 더 깁니다. 독산동국빈관나이트를 기준으로 연결을 기다리는 동안 팀이 무엇을 하면 좋은지, 무엇이 흐름을 막는지 순서대로 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>강서호박나이트, 무대와 테이블 사이의 거리</title>
+    <link>https://i.nolcool.com/booking/gangseo-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/gangseo-hobak-night/</guid>
+    <description>무대 앞에 서 있을 때와 테이블에 앉아 있을 때는 연결되는 경로가 서로 다릅니다. 강서호박나이트 안에서 두 공간이 어떻게 이어지는지, 오갈 때 무엇을 짚었습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>길동찬스나이트, 나이대가 다를 때의 예의</title>
+    <link>https://i.nolcool.com/booking/gildong-chance-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/gildong-chance-night/</guid>
+    <description>합석한 팀과 나이 차이가 있을 때 대화의 결이 흔들리기 쉽습니다. 길동찬스나이트를 기준으로 호칭, 화제, 속도 조절까지 나이대가 다른 자리의 매너를 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>구미호박나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/gumi-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/gumi-hobak-night/</guid>
+    <description>구미호박나이트 예약·좌석·영업시간·위치 안내. 경북 구미시 산업로 242 (원평동 1051-4)</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>구리호박나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/guri-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/guri-hobak-night/</guid>
+    <description>구리호박나이트 예약·좌석·영업시간·위치 안내. 경기 구리시 안골로 105 (수택동 424-21) 은산빌딩 지하 1층</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>광주첨단나이트, 기대를 낮추면 잘 되는 이유</title>
+    <link>https://i.nolcool.com/booking/gwangju-cheomdan-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/gwangju-cheomdan-night/</guid>
+    <description>부킹을 목적으로 삼을수록 결과가 나빠지는 구조가 있습니다. 광주첨단나이트를 기준으로 기대치와 태도의 관계, 그리고 자리에서 힘을 빼는 방법을 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>광주상무나이트, 목소리 크기가 만드는 인상</title>
+    <link>https://i.nolcool.com/booking/gwangju-sangmu-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/gwangju-sangmu-night/</guid>
+    <description>홀에서는 무슨 말을 했는지보다 어떻게 들렸는지가 먼저 남습니다. 광주상무나이트를 기준으로 목소리 크기와 거리 감각, 소음 속 대화 매너를 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>일산샴푸나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/ilsan-shampoo-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/ilsan-shampoo-night/</guid>
+    <description>일산샴푸나이트 예약·좌석·영업시간·위치 안내. 경기 고양시 일산동구 중앙로 1160 (마두동 805-1) 일산샴푸나이트 재방문 요령과 위치 일산샴푸나이트 됩니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>인천아라비안나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/incheon-arabian-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/incheon-arabian-night/</guid>
+    <description>인천아라비안나이트 예약·좌석·영업시간·위치 안내. 인천 계양구 도두리로 14 (작전동 907-2) 맘모스빌딩 4~7층</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>인덕원국빈관나이트, 평일과 주말의 밀도 차이</title>
+    <link>https://i.nolcool.com/booking/indeogwon-gukbingwan-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/indeogwon-gukbingwan-night/</guid>
+    <description>같은 홀도 요일에 따라 부킹이 도는 방식이 달라집니다. 인덕원국빈관나이트를 기준으로 평일과 주말의 밀도 차이, 그리고 요일별로 달라지는 요청 방법을 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>제주도나이트, 원정 팀이 지켜야 할 선</title>
+    <link>https://i.nolcool.com/booking/jeju-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/jeju-night/</guid>
+    <description>여행지에서의 부킹은 지역 손님과 섞이는 자리입니다. 제주도나이트를 기준으로 원정 팀이 자주 놓치는 선과, 짧은 일정 안에서의 부킹 매너를 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>노원호박나이트, 둘이 왔을 때 부킹 요령</title>
+    <link>https://i.nolcool.com/booking/nowon-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/nowon-hobak-night/</guid>
+    <description>두 명 팀은 자리는 빨리 받지만 연결에서 순서가 밀리기 쉽습니다. 노원호박나이트를 기준으로 둘일 때 부킹을 앞당기는 요청 방식과 매너를 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>서산호박나이트, 주대 이야기 꺼내는 시점</title>
+    <link>https://i.nolcool.com/booking/osan-hobak-night-1/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/osan-hobak-night-1/</guid>
+    <description>합석 자리에서 계산 이야기를 언제 꺼내느냐가 분위기를 좌우합니다. 서산호박나이트를 기준으로 주대와 계산을 정리하는 순서와, 서로 부담을 주지 않는 정리했습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>오산호박나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/osan-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/osan-hobak-night/</guid>
+    <description>오산호박나이트 예약·좌석·영업시간·위치 안내. 경기 오산시 성호대로 130 (원동 811-8) 중앙상가</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>파주야당스카이돔나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/paju-skydome-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/paju-skydome-night/</guid>
+    <description>파주야당스카이돔나이트 예약·좌석·영업시간·위치 안내. 경기 파주시 소리천로 25 (야당동 1083)</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>평택호박나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/pyeongtaek-hobak-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/pyeongtaek-hobak-night/</guid>
+    <description>평택호박나이트 예약·좌석·영업시간·위치 안내. 경기 평택시 중앙로 16 (평택동 69-8 외) 2~3층</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>상봉동한국관나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/sangbong-hangukgwan-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/sangbong-hangukgwan-night/</guid>
+    <description>상봉동한국관나이트 예약·좌석·영업시간·위치 안내. 서울 중랑구 망우로 326 (상봉동 128-91) 2층 상봉동한국관나이트 재방문 요령과 위치 담았습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>성남샴푸나이트 가기 전 준비와 문의처</title>
+    <link>https://i.nolcool.com/booking/seongnam-shampoo-night-1/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/seongnam-shampoo-night-1/</guid>
+    <description>성남샴푸나이트 예약·좌석·영업시간·위치 안내. 경기 성남시 중원구 광명로 21 (성남동 3182). 문의 이쁜이 010-3432-4758</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>성남샴푸나이트 재방문 요령과 위치</title>
+    <link>https://i.nolcool.com/booking/seongnam-shampoo-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/seongnam-shampoo-night/</guid>
+    <description>성남샴푸나이트 예약·좌석·영업시간·위치 안내. 경기 성남시 중원구 광명로 21 (성남동 3182)</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>신림그랑프리나이트 처음 방문 전 체크리스트</title>
+    <link>https://i.nolcool.com/booking/sillim-grandprix-night-2/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/sillim-grandprix-night-2/</guid>
+    <description>신림그랑프리나이트 예약·좌석·영업시간·위치 안내. 서울 관악구 신림로 340 신림그랑프리나이트 처음 방문 전 체크리스트 신림그랑프리나이트 이용 관련 달았습니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>신림그랑프리나이트 기본 정보와 자주 묻는 질문</title>
+    <link>https://i.nolcool.com/booking/sillim-grandprix-night/</link>
+    <guid isPermaLink="true">https://i.nolcool.com/booking/sillim-grandprix-night/</guid>
+    <description>신림그랑프리나이트 예약·좌석·영업시간·위치 안내. 서울 관악구 신림로 340 신림그랑프리나이트 기본 정보와 자주 묻는 질문 신림그랑프리나이트 를 안내드립니다.</description>
+    <pubDate>Wed, 02 Sep 2026 15:00:00 GMT</pubDate>
   </item>
 </channel>
 </rss>

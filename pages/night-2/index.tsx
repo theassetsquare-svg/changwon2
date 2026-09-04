@@ -25,7 +25,7 @@ const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL + "/" },
+    { "@type": "ListItem", position: 1, name: "새벽 4시 40분", item: SITE_URL + "/" },
     { "@type": "ListItem", position: 2, name: "나이트", item: SITE_URL + NIGHT_BASE },
   ],
 };

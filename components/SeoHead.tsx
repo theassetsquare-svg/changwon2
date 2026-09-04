@@ -52,8 +52,6 @@ export default function SeoHead({
       <meta name="ICBM" content={`${GEO_LAT}, ${GEO_LNG}`} />
 
       <link rel="canonical" href={url} />
-      <link rel="alternate" hrefLang="ko" href={url} />
-      <link rel="alternate" hrefLang="x-default" href={url} />
       <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} RSS`} href={SITE_URL + "/rss.xml"} />
       <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} 피드`} href={SITE_URL + "/feed.xml"} />
       <link rel="icon" href="https://i.nolcool.com/favicon.ico" />

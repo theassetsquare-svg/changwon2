@@ -34,7 +34,7 @@ const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "홈", item: SITE_URL + "/" },
+    { "@type": "ListItem", position: 1, name: "새벽 4시 40분", item: SITE_URL + "/" },
     { "@type": "ListItem", position: 2, name: "부킹 안내", item: SITE_URL + BOOKING_BASE },
   ],
 };

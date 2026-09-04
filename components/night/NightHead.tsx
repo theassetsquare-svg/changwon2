@@ -48,7 +48,6 @@ export default function NightHead({
          색인된 주소(/hours/ 등)에 이 컴포넌트를 다시 쓸 때
          canonical 이 두 개 나와 네이버가 엉뚱한 쪽을 고르는 일을 막는다. */}
       <link key="canonical" rel="canonical" href={url} />
-      <link rel="alternate" hrefLang="ko" href={url} />
       <link rel="icon" href="https://i.nolcool.com/favicon.ico" />
 
       <meta property="og:type" content="article" />

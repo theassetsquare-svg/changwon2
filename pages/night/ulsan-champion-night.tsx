@@ -97,7 +97,7 @@ export default function UlsanChampionNightPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "홈", item: "https://i.nolcool.com/" },
+                { "@type": "ListItem", position: 1, name: "새벽 4시 40분", item: "https://i.nolcool.com/" },
                 { "@type": "ListItem", position: 2, name: "울산챔피언나이트", item: URL },
               ],
             }),

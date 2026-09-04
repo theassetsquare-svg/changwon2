@@ -18,7 +18,7 @@ export const getStaticProps: GetStaticProps<{ dateModified: string }> = async ()
 export default function Access({ dateModified }: { dateModified: string }) {
   const ld = graph([
     ...BASE_GRAPH,
-    breadcrumb([{ name: "홈", path: "/" }, { name: "대중교통", path: PATH }]),
+    breadcrumb([{ name: "새벽 4시 40분", path: "/" }, { name: "대중교통", path: PATH }]),
     articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }),
   ]);
   return (
