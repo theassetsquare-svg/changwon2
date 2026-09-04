@@ -371,6 +371,7 @@ export default function UlsanChampionNightPage() {
           <br />
           광고문의 카톡 <b>besta12</b>
         </div>
+        <p className="ucn-foot cafe-link" style={{ margin: "14px 0 0", fontSize: 14, lineHeight: 1.7 }}><a href="https://nolcool.com/cafe/?utm_source=i&utm_medium=site_link&utm_campaign=cafe" rel="noopener">놀쿨 카페 안내 →</a></p>
       </main>
 
       <div className="ucn-callbar" role="complementary" aria-label="전화 연결">
