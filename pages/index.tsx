@@ -150,6 +150,8 @@ export default function Home({ dateModified }: { dateModified: string }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
         />
+        {/* 2026-09-05 AI-100·AI-101 — 홈 head 에만 WebSite·Organization (홈 본문 불변) */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@graph': [{ '@type': 'WebSite', '@id': SITE_URL + '/#website', name: '새벽 4시 40분', url: SITE_URL + '/', inLanguage: 'ko-KR', publisher: { '@id': SITE_URL + '/#org' } }, { '@type': 'Organization', '@id': SITE_URL + '/#org', name: '놀쿨', url: SITE_URL + '/' }] }) }} />
       </Head>
 
       <div className="story-root">

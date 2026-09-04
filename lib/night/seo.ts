@@ -22,7 +22,8 @@ export function nightClubSchema(v: Venue) {
       addressCountry: "KR",
     },
   };
-  if (v.contact) schema.telephone = v.contact.phone;
+  /* 2026-09-05 AI-088 — JSON-LD 전화는 +82 국가코드 꼴(화면 표기는 그대로) */
+  if (v.contact) schema.telephone = String(v.contact.phone).replace(/^0(\d{1,2})-?(\d{3,4})-?(\d{4})$/, '+82-$1-$2-$3');
   if (v.ageRange) schema.typicalAgeRange = v.ageRange;
   return schema;
 }
