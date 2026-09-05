@@ -149,7 +149,7 @@ export default function NightIndex() {
           <li><a href="/booking/suwon-chancedome-night/">수원찬스돔나이트</a></li>
           <li><a href="/booking/suwon-korea-night/">수원코리아나이트</a></li>
           <li><a href="/club/ansan-hit-night/">안산히트나이트</a></li>
-          <li><a href="/booking/club/ansan-hit-night/">안산히트나이트</a></li>
+          <li><a href="/booking/ansan-hit-night/">안산히트나이트</a></li>
           <li><a href="/booking/osan-hobak-night/">오산호박나이트</a></li>
           <li><a href="/booking/osan-hobak-night-1/">오산호박나이트</a></li>
           <li><a href="/booking/uijeongbu-baekakgwan-night/">의정부백악관나이트</a></li>
@@ -179,9 +179,9 @@ export default function NightIndex() {
           <li><a href="/booking/busan-asiad-night/">부산아시아드나이트</a></li>
           <li><a href="/booking/ulsan-newworld-night/">울산뉴월드나이트</a></li>
           <li><a href="/night/ulsan-champion-night/">울산챔피언나이트</a></li>
-          <li><a href="/booking/night/ulsan-champion-night/">울산챔피언나이트</a></li>
+          <li><a href="/booking/ulsan-champion-night/">울산챔피언나이트</a></li>
           <li><a href="/club/changwon-lululala-night/">창원룰루랄라나이트</a></li>
-          <li><a href="/booking/club/changwon-lululala-night/">창원룰루랄라나이트</a></li>
+          <li><a href="/booking/changwon-lululala-night/">창원룰루랄라나이트</a></li>
         </ul>
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>호남·제주</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
@@ -192,7 +192,7 @@ export default function NightIndex() {
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>그 밖의 지역</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
           <li><a href="/club/bulgwang-hobak-night/">불광동호박나이트</a></li>
-          <li><a href="/booking/club/bulgwang-hobak-night/">불광동호박나이트</a></li>
+          <li><a href="/booking/bulgwang-hobak-night/">불광동호박나이트</a></li>
         </ul>
       </nav>
     </>
