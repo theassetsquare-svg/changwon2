@@ -17,9 +17,10 @@ export const getStaticProps: GetStaticProps<{ dateModified: string }> = async ()
 
 export default function Access({ dateModified }: { dateModified: string }) {
   const ld = graph([
-    ...BASE_GRAPH,
+    /* S4 T-006(2026-09-05): 업소 JSON-LD 의 image 를 이 쪽 og:image 와 같게 */
+    ...BASE_GRAPH.map((x: any) => (Array.isArray(x["@type"]) && x["@type"].includes("NightClub") ? { ...x, image: "https://i.nolcool.com/og/auto-access-index.png" } : x)),
     breadcrumb([{ name: "새벽 4시 40분", path: "/" }, { name: "대중교통", path: PATH }]),
-    articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }),
+    { ...articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }), image: "https://i.nolcool.com/og/auto-access-index.png" },
   ]);
   return (
     <>
@@ -28,6 +29,8 @@ export default function Access({ dateModified }: { dateModified: string }) {
       <header className="hero hero-sub">
         <div className="hero-inner">
           <span className="eyebrow">TRANSIT · 택시도 OK</span>
+          {/* 설계도 4장 — 광고주 쪽 상단 「광고」 라벨 (S4 2026-09-05) */}
+          <p className="ad-label" style={{ display: "inline-block", margin: "0 0 10px", padding: "3px 10px", border: "1px solid #c9a227", borderRadius: 4, fontSize: 12, color: "#c9a227", letterSpacing: ".04em" }}>광고</p>
           <h1>택시 기사님께 <span className="grad">"상남동 모아엔트몰"</span> 한마디면 끝.</h1>
           <p className="lead">상남동 메인거리 안쪽이라 어느 방향에서 오셔도 동선이 단순합니다. 새벽 귀가도 콜택시 응답이 빠른 지역입니다.</p>
         </div>

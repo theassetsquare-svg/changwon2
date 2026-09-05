@@ -3,6 +3,9 @@ import type { BookingVenue } from "./types";
 import { bookingPath, BOOKING_BASE } from "./types";
 
 export const bookingOgPath = (slug: string, v?: string) => `/og/booking-${slug}-og${v ?? ""}.png`;
+/** S4(2026-09-05) T-117: 변형 쪽(이주소)은 그 주소 이름의 썸네일 — 한 그림을 여러 쪽이 나눠 쓰지 않는다. NightHead·본문 img·JSON-LD 가 전부 이것을 쓴다 */
+export const bookingOgPathFor = (v: { slug: string; ogV?: string }, 이주소?: string) =>
+  이주소 ? `/og/booking-${이주소.replace(/^\/+|\/+$/g, "").replace(/\//g, "-")}-og${v.ogV ?? ""}.png` : bookingOgPath(v.slug, v.ogV);
 export const absUrl = (path: string) => SITE_URL + path;
 
 /** ① NightClub — 확인되지 않은 항목(상세 주소·영업시간·가격)은 키 자체를 넣지 않는다. */
@@ -16,7 +19,7 @@ export function bookingClubSchema(v: BookingVenue, 이주소?: string) {
     "@type": "NightClub",
     name: v.name,
     url,
-    image: absUrl(bookingOgPath(v.slug, (v as any).ogV)),
+    image: absUrl(bookingOgPathFor(v as any, 이주소)),
     description: v.answer,
     address: {
       "@type": "PostalAddress",

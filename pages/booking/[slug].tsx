@@ -17,7 +17,7 @@ import {
   bookingBreadcrumbSchema,
   bookingClubSchema,
   bookingFaqSchema,
-  bookingOgPath,
+  bookingOgPath, bookingOgPathFor,
 } from "@/lib/booking/seo";
 import { VENUE_BY_SLUG as NIGHT_BY_SLUG, nightPath } from "@/lib/night/venues";
 import GuideExtra from '@/components/GuideExtra';
@@ -457,7 +457,7 @@ export default function BookingVenuePage({
         title={변형?.title ?? venue.title}
         description={설명 ?? venue.description}
         path={path}
-        image={bookingOgPath(venue.slug, (venue as any).ogV)}
+        image={bookingOgPathFor(venue as any, 이주소)}
         imageAlt={venue.ogAlt}
         jsonLd={[
           bookingClubSchema(venue, 이주소),
@@ -524,7 +524,7 @@ export default function BookingVenuePage({
 
           <figure className="bk-og">
             <img
-              src={bookingOgPath(venue.slug, (venue as any).ogV)}
+              src={bookingOgPathFor(venue as any, 이주소)}
               alt={`${venue.name} 부킹 안내`}
               width={1200}
               height={1200}

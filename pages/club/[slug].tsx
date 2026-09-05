@@ -69,6 +69,8 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
         </nav>
 
         <article>
+        {/* 설계도 4장 — 광고주 쪽 상단 「광고」 라벨 (S4 2026-09-05) */}
+        {venue.contact ? <p className="ad-label" style={{ display: "inline-block", margin: "0 0 10px", padding: "3px 10px", border: "1px solid #c9a227", borderRadius: 4, fontSize: 12, color: "#c9a227", letterSpacing: ".04em" }}>광고</p> : null}
         <h1>{venue.name}</h1>
 
         <p className="night-updated">

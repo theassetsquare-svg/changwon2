@@ -78,6 +78,10 @@ export default function UlsanChampionNightPage() {
         <meta property="og:description" content={DESC} />
         <meta property="og:url" content={URL} />
         <meta property="og:image" content={OG} />
+        <meta property="og:image:secure_url" content={OG} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
         <meta name="twitter:card" content="summary_large_image" />
         <script
           type="application/ld+json"
@@ -375,7 +379,7 @@ export default function UlsanChampionNightPage() {
       </main>
 
       <div className="ucn-callbar" role="complementary" aria-label="전화 연결">
-        <a href={`tel:${번호}`}>
+        <a href={`tel:${번호.replace(/\D/g, "")}`}>
           📞 {이름} 예약 · {닉} {번호}
         </a>
       </div>
