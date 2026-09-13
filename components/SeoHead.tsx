@@ -26,7 +26,7 @@ export default function SeoHead({
   noindex,
 }: Props) {
   const url = SITE_URL + path;
-  const image = ogImage ?? SITE_URL + "/images/og-square.png";
+  const image = ogImage;   /* 2026-09-14 — 기본 그림(og-square.png)이 로또 번호 카드였다. 표준: 가게 쪽만 썸네일 → 기본값 없음 */
   const imageAlt = ogImageAlt ?? title;
 
   return (
@@ -62,18 +62,22 @@ export default function SeoHead({
       <meta property="og:url" content={url} />
       <meta property="og:locale" content="ko_KR" />
       <meta property="og:site_name" content={SITE_NAME} />
-      <meta property="og:image" content={image} />
-      <meta property="og:image:secure_url" content={image} />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="1200" />
-      <meta property="og:image:alt" content={imageAlt} />
+      {image ? (
+        <>
+          <meta property="og:image" content={image} />
+          <meta property="og:image:secure_url" content={image} />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="1200" />
+          <meta property="og:image:alt" content={imageAlt} />
+        </>
+      ) : null}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
-      <meta name="twitter:image:alt" content={imageAlt} />
+      {image ? <meta name="twitter:image" content={image} /> : null}
+      {image ? <meta name="twitter:image:alt" content={imageAlt} /> : null}
 
       <meta name="GPTBot" content="index, follow" />
       <meta name="ClaudeBot" content="index, follow" />

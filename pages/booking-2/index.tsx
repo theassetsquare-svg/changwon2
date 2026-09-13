@@ -2,7 +2,7 @@ import NightHead from "@/components/night/NightHead";
 import NightFooter from "@/components/night/NightFooter";
 import BookingStyles from "@/components/booking/BookingStyles";
 import { BookingHomeBar } from "@/components/booking/BookingBar";
-import { SITE_URL, BIZ_NICKNAME, BIZ_PHONE, BIZ_PHONE_TEL, BIZ_MIN_AGE } from "@/lib/site";
+import { SITE_URL, BIZ_MIN_AGE } from "@/lib/site";
 import {
   BOOKING_VENUES,
   BOOKING_BY_SLUG,
@@ -104,14 +104,13 @@ export default function BookingHub() {
           <section>
             <h2>창원룰루랄라나이트 부킹은 어떻게 잡나요?</h2>
             <p>
-              이 사이트를 운영하는 매장은 경남 창원시 성산구 상남동 모아엔트몰 지하 3층의
-              창원룰루랄라나이트입니다. 자리와 부킹은 전화 한 통으로 정리됩니다. 인원과 성비,
-              도착 예정 시각, 원하는 자리 성격을 한 번에 전해 주시면 그에 맞춰 자리를 잡아 둡니다.
+              창원룰루랄라나이트는 경남 창원시 성산구 상남동 모아엔트몰 지하 3층에 있습니다.
+              이 사이트는 업소와 제휴 관계가 없는 안내 페이지라 예약을 받지 않습니다. 인원과 성비,
+              도착 예정 시각, 원하는 자리 성격은 도착해서 입구 직원에게 한 번에 말하면 됩니다.
             </p>
             <p>
               출입 연령은 {BIZ_MIN_AGE}으로 안내되며 입구에서 신분증을 확인합니다. 일행 전원이
-              신분증을 챙겨 주세요. 예약문의 {BIZ_NICKNAME}{" "}
-              <a href={`tel:${BIZ_PHONE_TEL}`}>{BIZ_PHONE}</a> 로 연락하시면 됩니다. 부킹 흐름을
+              신분증을 챙겨 주세요. 업소 연락처는 싣지 않습니다. 부킹 흐름을
               먼저 보고 싶다면{" "}
               <a href={bookingPath("changwon-lululala-night")}>창원룰루랄라나이트 부킹 안내</a>{" "}
               페이지에 순서대로 정리해 두었습니다.

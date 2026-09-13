@@ -18,13 +18,13 @@ export const getStaticProps: GetStaticProps<{ dateModified: string }> = async ()
 export default function Access({ dateModified }: { dateModified: string }) {
   const ld = graph([
     /* S4 T-006(2026-09-05): 업소 JSON-LD 의 image 를 이 쪽 og:image 와 같게 */
-    ...BASE_GRAPH.map((x: any) => (Array.isArray(x["@type"]) && x["@type"].includes("NightClub") ? { ...x, image: "https://i.nolcool.com/og/auto-access-index.png" } : x)),
+    ...BASE_GRAPH.map((x: any) => (Array.isArray(x["@type"]) && x["@type"].includes("NightClub") ? { ...x, image: "https://i.nolcool.com/og/auto-access-v2-index.png" } : x)),
     breadcrumb([{ name: "새벽 4시 40분", path: "/" }, { name: "대중교통", path: PATH }]),
-    { ...articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }), image: "https://i.nolcool.com/og/auto-access-index.png" },
+    { ...articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }), image: "https://i.nolcool.com/og/auto-access-v2-index.png" },
   ]);
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="대중교통 가이드" ogImage={"https://i.nolcool.com/og/auto-access-index.png"} />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="창원룰루랄라나이트 · 광고문의 · 카톡 besta12" ogImage={"https://i.nolcool.com/og/auto-access-v2-index.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -35,7 +35,7 @@ export default function Access({ dateModified }: { dateModified: string }) {
           <p className="lead">상남동 메인거리 안쪽이라 어느 방향에서 오셔도 동선이 단순합니다. 새벽 귀가도 콜택시 응답이 빠른 지역입니다.</p>
         </div>
       </header>
-      <PageThumb path="/access" alt="대중교통 가이드" />
+      <PageThumb path="/access-v2" alt="창원룰루랄라나이트 · 광고문의 · 카톡 besta12" />
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

@@ -4,9 +4,6 @@ import {
   BIZ_ADDRESS_ROAD,
   BIZ_FLOOR,
   BIZ_LICENSE,
-  BIZ_NICKNAME,
-  BIZ_PHONE,
-  BIZ_PHONE_TEL,
   BIZ_MIN_AGE,
   INSTA_1,
   INSTA_2,
@@ -51,8 +48,7 @@ export default function SiteFooter({ dateModified }: Props) {
         <div>
           <div className="sitefoot-brand">창원 룰루랄라 나이트클럽</div>
           <p className="sitefoot-meta">
-            예약문의 {BIZ_NICKNAME}{" "}
-            <a href={`tel:${BIZ_PHONE_TEL}`}>{BIZ_PHONE}</a>
+            업소와 제휴 관계가 없는 안내 페이지입니다(연락처 미게재).
             <br />
             {BIZ_ADDRESS_ROAD}, {BIZ_FLOOR}
             <br />

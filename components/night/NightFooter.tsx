@@ -39,6 +39,7 @@ export default function NightFooter({ 씨, 광고쪽 = true }: { 씨?: string; �
         본 페이지는 업소 정보 제공 페이지입니다. 출입 연령 및 이용 규정은 각 업소 방침을 따릅니다.
       </p>
       <p className="footer-note">{고지고르기(씨, 광고쪽)}</p>
+      {광고쪽 ? null : <p className="footer-note">확인일 2026-09-14 · 영업 시간과 자리 사정은 바뀔 수 있으니 방문 당일 현장에서 다시 확인하세요.</p>}
       <p className="footer-note cafe-link" style={{ margin: "14px 0 0", fontSize: 14, lineHeight: 1.7 }}><a href="https://nolcool.com/cafe/?utm_source=i&utm_medium=site_link&utm_campaign=cafe" rel="noopener">놀쿨 카페 안내 →</a></p>
     </footer>
   );

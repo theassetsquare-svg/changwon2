@@ -70,13 +70,7 @@ export const bookingPath = (slug: string) =>
 export const AD_KAKAO = "besta12";
 export const AD_TEXT = "광고·제휴 입점 문의";
 
-/** 홈·허브 고정바에 쓰는 자사 매장 라인 */
-export const HOME_BAR = {
-  name: "창원룰루랄라나이트",
-  nick: "로또",
-  phone: "010-7528-4936",
-  tel: "01075284936",
-};
+/* 홈·허브 고정바의 매장 전화 줄(HOME_BAR)은 2026-09-13 창원룰루랄라 광고 해지로 지웠다 — 홈·허브도 광고 입점 문의 바 */
 
 export type BookingSection = {
   /** 부킹 흐름 소제목. 질문형 2개 이상이 되도록 배분한다. */

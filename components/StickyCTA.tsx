@@ -1,29 +1,16 @@
-import { INSTA_1, BIZ_NICKNAME, BIZ_PHONE, BIZ_PHONE_TEL } from "@/lib/site";
+import { AD_KAKAO } from "@/lib/booking/types";
+/* 2026-09-14 C0 — 해지 광고주 전화 CTA·업소 인스타그램(외부 링크) → 광고 입점 문의 바 */
 
 export default function StickyCTA() {
   return (
     <div
       className="sticky-cta"
-      aria-label={`창원룰루랄라나이트 예약문의 ${BIZ_NICKNAME} ${BIZ_PHONE}`}
+      aria-label="광고 제휴 문의"
     >
-      <a className="sticky-cta-call" href={`tel:${BIZ_PHONE_TEL}`}>
-        <span className="sticky-cta-icon" aria-hidden>
-          📞
-        </span>
-        <span className="sticky-cta-body">
-          <strong>창원룰루랄라나이트 {BIZ_NICKNAME}</strong>
-          <span>{BIZ_PHONE}</span>
-        </span>
-      </a>
-      <a
-        className="sticky-cta-insta"
-        href={INSTA_1}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="인스타그램 보기"
-      >
-        IG
-      </a>
+      <span className="sticky-cta-body">
+        <strong>광고·제휴 입점 문의</strong>
+        <span>카톡 {AD_KAKAO}</span>
+      </span>
     </div>
   );
 }

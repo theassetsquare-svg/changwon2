@@ -1,8 +1,6 @@
 export const SITE_URL = "https://i.nolcool.com";
 export const SITE_NAME = "창원 룰루랄라 나이트클럽";
-export const BIZ_NICKNAME = "로또";
-export const BIZ_PHONE = "010-7528-4936"; /* S4(2026-09-05): 광고주 명단 표기(하이픈)로 통일 */
-export const BIZ_PHONE_TEL = "01075284936";
+/* 2026-09-13 창원룰루랄라나이트 광고 해지(비광고주) — 닉네임·전화 상수를 지웠다. 어느 쪽에도 연락처를 싣지 않는다. */
 export const BIZ_MIN_AGE = "만 27세 이상";
 export const BIZ_ADDRESS_ROAD = "경상남도 창원시 성산구 마디미로43번길 10";
 export const BIZ_ADDRESS_LOT = "경상남도 창원시 성산구 상남동 22-4";

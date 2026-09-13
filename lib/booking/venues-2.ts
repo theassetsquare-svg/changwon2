@@ -4,6 +4,7 @@ import type { BookingVenue } from "./types";
 export const VENUES_2: BookingVenue[] = [
   {
     slug: "changwon-lululala-night",
+    ogV: "-v2",   /* 2026-09-14 — 옛 그림이 로또 번호 카드였다 */
     name: "창원룰루랄라나이트",
     group: "B",
     region: "경남 창원시 성산구 상남동",
