@@ -206,7 +206,7 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
         </p>
       </main>
 
-      <NightFooter />
+      <NightFooter 광고쪽={!!venue.contact} />
       <CallBar venue={venue} />
     </>
   );

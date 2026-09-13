@@ -10,11 +10,18 @@ const 광고고지 = [
   "이 쪽의 연락처는 광고로 게재된 것입니다. 만 19세 이상만 출입할 수 있습니다.",
   "업소 담당자의 요청으로 광고를 싣고 있습니다. 성인(만 19세 이상) 대상입니다.",
 ];
-function 고지고르기(씨: unknown) {
+const 비광고고지 = [
+  "만 19세 이상 이용 가능한 성인 업소 안내입니다. 업소와 제휴 관계가 없는 정보 페이지입니다(미제휴).",
+  "성인(만 19세 이상)만 이용할 수 있는 곳을 다룹니다. 업소와 광고·제휴 관계가 없습니다(미제휴).",
+  "이 글은 만 19세 이상 성인 대상 업소 안내이며, 업소와 아무런 관계가 없습니다(미제휴).",
+  "만 19세 미만은 출입할 수 없습니다. 공개 자료만 정리한 제3자 안내 페이지입니다(미제휴).",
+];
+function 고지고르기(씨: unknown, 광고쪽: boolean = true) {
+  const 곳간 = 광고쪽 ? 광고고지 : 비광고고지;
   const s = String(씨 ?? '');
   let n = 0;
   for (let k = 0; k < s.length; k++) n = (n * 131 + s.charCodeAt(k)) % 1000003;
-  return 광고고지[n % 광고고지.length];
+  return 곳간[n % 곳간.length];
 }
 
 /**
@@ -22,7 +29,7 @@ function 고지고르기(씨: unknown) {
  * 광고·제휴 입점 문의(besta12)는 광고주 모집 채널이며 손님 예약 창구가 아니다.
  * 고정바(64px)에 가리지 않도록 body padding-bottom 으로 여백을 확보한다.
  */
-export default function NightFooter({ 씨 }: { 씨?: string } = {}) {
+export default function NightFooter({ 씨, 광고쪽 = true }: { 씨?: string; 광고쪽?: boolean } = {}) {
   return (
     <footer className="site-footer">
       <div className="ad-inquiry">
@@ -31,7 +38,7 @@ export default function NightFooter({ 씨 }: { 씨?: string } = {}) {
       <p className="footer-note">
         본 페이지는 업소 정보 제공 페이지입니다. 출입 연령 및 이용 규정은 각 업소 방침을 따릅니다.
       </p>
-      <p className="footer-note">{고지고르기(씨)}</p>
+      <p className="footer-note">{고지고르기(씨, 광고쪽)}</p>
       <p className="footer-note cafe-link" style={{ margin: "14px 0 0", fontSize: 14, lineHeight: 1.7 }}><a href="https://nolcool.com/cafe/?utm_source=i&utm_medium=site_link&utm_campaign=cafe" rel="noopener">놀쿨 카페 안내 →</a></p>
     </footer>
   );

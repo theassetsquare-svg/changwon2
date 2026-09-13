@@ -341,7 +341,8 @@ export const VENUES_1: BookingVenue[] = [
   {
     slug: "suwon-chancedome-3",
     name: "수원찬스돔나이트",
-    group: "B",
+    group: "A",
+    contact: { nick: "박찬호", phone: "010-7117-5077", tel: "01071175077" },
     region: "경기 수원시 권선구 권선동",
     locality: "수원시 권선구",
     addressRegion: "경기도",

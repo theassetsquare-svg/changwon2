@@ -644,7 +644,7 @@ export default function BookingVenuePage({
         </p>
       </main>
 
-      <NightFooter />
+      <NightFooter 광고쪽={!!venue.contact} />
       <BookingBar venue={venue} />
     </>
   );

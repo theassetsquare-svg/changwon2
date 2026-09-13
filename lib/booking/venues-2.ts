@@ -5,7 +5,7 @@ export const VENUES_2: BookingVenue[] = [
   {
     slug: "changwon-lululala-night",
     name: "창원룰루랄라나이트",
-    group: "A",
+    group: "B",
     region: "경남 창원시 성산구 상남동",
     locality: "창원시 성산구",
     addressRegion: "경상남도",
@@ -14,12 +14,11 @@ export const VENUES_2: BookingVenue[] = [
     hours: "매일 19:00 ~ 다음 날 05:00",
     ageBadge: "만 27세 이상",
     ageRange: "만 27세 이상",
-    contact: { nick: "로또", phone: "010-7528-4936", tel: "01075284936" },
     nightSlug: "changwon-lululala-night",
     title: "창원룰루랄라나이트, 일행을 지키면서 노는 법",
     description:
       "부킹은 혼자 하는 일이 아니라 일행을 데리고 하는 일입니다. 창원룰루랄라나이트를 기준으로 한 사람만 자리를 뜨는 상황, 남은 일행의 역할, 다시 정리했습니다.",
-    ogAlt: "창원룰루랄라나이트 부킹 안내 카드 — 경남 창원 상남동, 담당 로또 전화번호 표기",
+    ogAlt: "창원룰루랄라나이트 · 광고문의 · 카톡 besta12",
     lead: [
       "부킹이 잘 풀린 밤인데도 돌아가는 길이 어색한 경우가 있습니다. 대개는 한 사람만 계속 자리를 비웠거나, 남은 일행이 방치된 채로 시간을 보냈을 때입니다.",
       "창원룰루랄라나이트는 만 27세 이상 출입으로 안내되는 홀이라 대체로 일행 단위의 방문이 많습니다. 어떻게 하면 둘 다 챙길 수 있는지는 흐름을 본 뒤에 정리하겠습니다.",
@@ -79,7 +78,7 @@ export const VENUES_2: BookingVenue[] = [
       },
       {
         q: "창원룰루랄라나이트 자리 문의는 어디로 하나요?",
-        a: "담당 로또 010-7528-4936입니다. 화면 아래 고정바를 누르면 바로 통화로 연결됩니다.",
+        a: "광고문의 카톡 besta12입니다. 화면 아래 고정바를 누르면 바로 통화로 연결됩니다.",
       },
     ],
     oneline:
