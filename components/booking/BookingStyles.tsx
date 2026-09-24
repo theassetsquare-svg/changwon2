@@ -1,12 +1,11 @@
+import { useSalt, 소금CSS } from "@/lib/salt";
 /**
  * /booking/ 계열 전용 스타일.
  * 딥 퍼플 그라데이션 배경 + 핑크 포인트 + 라운드 카드.
  * styles/globals.css 와 _app.tsx 는 건드리지 않고 styled-jsx global 로만 주입한다.
  * 고정바(.callbar) 사양은 /night/ 와 동일하게 유지한다 — 스크롤해도 좌표가 변하지 않아야 한다.
  */
-export default function BookingStyles() {
-  return (
-    <style jsx global>{`
+const CSS = `
       :root {
         --bk-bg: #12042a;
         --bk-bg2: #0a0212;
@@ -388,6 +387,10 @@ export default function BookingStyles() {
         color: #f0e7ff;
         font-weight: 600;
       }
-    `}</style>
-  );
+    `;
+
+/* 2026-09-25 — styled-jsx 대신 쪽 소금을 입힌 인라인 CSS(lib/salt.tsx) */
+export default function BookingStyles() {
+  const s = useSalt();
+  return <style dangerouslySetInnerHTML={{ __html: 소금CSS(CSS, s) }} />;
 }

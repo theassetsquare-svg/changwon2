@@ -1,3 +1,4 @@
+import { useSalt, 소금입히기 } from "@/lib/salt";
 
 /* ★ 2026-08-31 — 연령·관계 고지가 없었다(설계도 4장 · 점검표 #121·#122).
    이 푸터가 붙는 쪽에는 담당자 광고(연락처)가 실린다.
@@ -29,7 +30,7 @@ function 고지고르기(씨: unknown, 광고쪽: boolean = true) {
  * 광고·제휴 입점 문의(besta12)는 광고주 모집 채널이며 손님 예약 창구가 아니다.
  * 고정바(64px)에 가리지 않도록 body padding-bottom 으로 여백을 확보한다.
  */
-export default function NightFooter({ 씨, 광고쪽 = true }: { 씨?: string; 광고쪽?: boolean } = {}) {
+function NightFooter안쪽({ 씨, 광고쪽 = true }: { 씨?: string; 광고쪽?: boolean } = {}) {
   return (
     <footer className="site-footer">
       <div className="ad-inquiry">
@@ -43,4 +44,10 @@ export default function NightFooter({ 씨, 광고쪽 = true }: { 씨?: string; �
       <p className="footer-note cafe-link" style={{ margin: "14px 0 0", fontSize: 14, lineHeight: 1.7 }}><a href="https://nolcool.com/cafe/?utm_source=i&utm_medium=site_link&utm_campaign=cafe" rel="noopener">놀쿨 카페 안내 →</a></p>
     </footer>
   );
+}
+
+/* 2026-09-25 — 이 컴포넌트 출력에도 쪽 소금(lib/salt.tsx) */
+export default function NightFooter(props: any) {
+  const s = useSalt();
+  return <>{소금입히기((NightFooter안쪽 as any)(props), s)}</>;
 }

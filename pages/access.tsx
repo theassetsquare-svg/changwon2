@@ -1,119 +1,84 @@
-import { useThumb } from '@/lib/thumb';
 import type { GetStaticProps } from "next";
-import SeoHead from "@/components/SeoHead";
-import SiteNav from "@/components/SiteNav";
-import SiteFooter from "@/components/SiteFooter";
-import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
+import BookingVenuePage from "./booking/[slug]";
+import { BOOKING_BY_SLUG, type BookingVenue } from "@/lib/booking/venues";
 
-const PATH = "/access/";
-const TITLE = "창원룰루랄라나이트 대중교통 가이드 | KTX·시청·시외버스에서 가장 짧은 동선";
-const DESCRIPTION = "KTX 창원중앙역 차로 15분, 창원시청 5분, 마산역 20분. 시내버스·택시·카카오T 호출 동선과 새벽 귀가 루트까지 정리.";
-const PUBLISHED = "2026-05-26";
+/**
+ * /access/ — 창원룰루랄라나이트 가는 길·귀갓길 (광고주 로또 쪽)
+ *
+ * ★ 2026-09-25 전부10 — 옛 판은 택시 소요 시간·정류장 거리·건물 층처럼 장부(data/shops)에 확인 값이 없는
+ *   숫자를 싣고 있었고, 바깥 링크(인스타그램)도 있었다. 주소는 그대로 두고 글을 확인된 값(주소·영업시간·
+ *   광고주 연락처)만으로 다시 썼다. 사실 표·전화바·광고 표시·JSON-LD 는 BookingVenuePage 가 장부 값으로 그린다.
+ */
+const VENUE_SLUG = "changwon-lululala-night";
+const 이주소 = "/access/";
 
-export const getStaticProps: GetStaticProps<{ dateModified: string }> = async () => ({
-  props: { dateModified: new Date().toISOString().slice(0, 10) },
+const 변형 = {
+  각도: "가는길",
+  title: "창원룰루랄라나이트 가는 길과 귀갓길 준비",
+  lead: [
+    "창원룰루랄라나이트를 처음 찾아가는 분이 출발 전에 정해 두면 좋은 것을 순서대로 적었습니다. 기준은 공개 자료로 확인된 주소 하나입니다.",
+    "소요 시간이나 요금처럼 날마다 달라지는 값은 적지 않았습니다. 그 대신 어떤 순서로 준비하면 헤매지 않는지를 정리했습니다.",
+  ],
+  summary: [
+    "주소는 창원시 성산구 상남동 22-4, 도로명으로는 마디미로43번길 10입니다.",
+    "지도 앱에는 도로명 주소를 그대로 넣고, 일행과는 같은 주소를 글로 나눠 두시면 됩니다.",
+    "영업은 매일 오후 7시부터 새벽 5시까지라 돌아가는 방법을 출발 전에 정해 두는 편이 좋습니다.",
+  ],
+  sections: [
+    {
+      h2: "지도 앱에는 어떤 주소를 넣나요?",
+      body: [
+        "도로명 주소인 마디미로43번길 10을 넣는 편이 가장 정확합니다. 지번인 상남동 22-4로 찾아도 같은 자리가 나옵니다. 상가가 많은 동네라 건물 이름이나 간판만으로 찾으면 비슷한 이름에 헷갈릴 수 있으니 주소로 찾는 쪽을 권합니다.",
+        "택시를 타신다면 기사님께 도로명 주소를 불러 드리거나 지도 화면을 보여 드리면 됩니다. 호출 앱을 쓰실 때도 도착지를 주소로 넣어 두면 내리는 자리가 어긋나지 않습니다.",
+      ],
+    },
+    {
+      h2: "일행이 따로 출발하면 어떻게 모이나요?",
+      body: [
+        "일행이 여러 곳에서 출발하면 도착 시각이 제각각이 됩니다. 만나는 자리를 주소 하나로 정하고, 먼저 도착한 사람이 연락을 돌리는 방식이 가장 단순합니다.",
+        "말로 전하면 동 이름이나 번지를 잘못 알아듣기 쉽습니다. 주소는 메시지로 한 번 보내 두시면 늦게 합류하는 분도 같은 곳으로 옵니다. 자리가 필요하시면 광고로 실린 담당자 번호로 인원과 도착 예정 시각을 미리 알려 두시면 됩니다.",
+      ],
+    },
+    {
+      h2: "몇 시에 도착할지는 어떻게 정하나요?",
+      body: [
+        "문을 여는 시각은 매일 오후 7시입니다. 이른 시간에는 자리를 고르기 쉽고, 늦을수록 홀이 채워진 뒤의 분위기를 보게 됩니다. 어느 쪽을 원하시는지 일행과 먼저 맞춰 두면 출발 시각이 저절로 정해집니다.",
+        "퇴근 시간대에는 길이 막힐 수 있으니 약속 시각보다 조금 일찍 나서는 편이 마음이 편합니다. 늦어질 것 같으면 먼저 도착한 일행에게 알려 두세요.",
+      ],
+    },
+    {
+      h2: "새벽에 돌아갈 방법은 미리 정해야 하나요?",
+      body: [
+        "영업이 새벽 5시까지라 마무리 시각이 늦어지기 쉽습니다. 늦은 시각에는 대중교통이 끊겨 있을 수 있으니, 택시나 호출 앱을 쓸지, 대리운전을 부를지, 아침 첫차를 기다릴지를 출발 전에 정해 두시는 편이 좋습니다.",
+        "술을 드실 계획이라면 차는 두고 오시는 편이 안전합니다. 일행 가운데 한 분이 귀가 방법을 챙기기로 정해 두면 마지막에 서두를 일이 줄어듭니다.",
+      ],
+    },
+  ],
+  faq: [
+    { q: "주소를 어떻게 검색하면 되나요?", a: "도로명 주소 마디미로43번길 10이나 지번 주소 상남동 22-4로 검색하시면 됩니다. 간판 이름보다 주소로 찾는 편이 정확합니다." },
+    { q: "영업시간은 어떻게 되나요?", a: "공개 자료로 확인된 영업시간은 매일 오후 7시부터 새벽 5시까지입니다. 사정에 따라 달라질 수 있으니 방문 전에 한 번 더 확인해 주세요." },
+    { q: "자리를 미리 부탁할 수 있나요?", a: "이 쪽에 광고로 실린 담당자 로또에게 인원과 도착 예정 시각을 말씀하시면 됩니다. 번호는 위 표와 아래 전화 연결에 있습니다." },
+    { q: "소요 시간이나 요금은 왜 적지 않았나요?", a: "출발지와 시간대에 따라 크게 달라지는 값이라 확인된 숫자로 적을 수 없었습니다. 지도 앱에 주소를 넣으면 그날 기준으로 알려 줍니다." },
+  ],
+  closing: {
+    h2: "그래서 출발 전에 무엇을 정하면 되나요?",
+    body: [
+      "주소 하나, 도착 시각, 돌아가는 방법 세 가지면 충분합니다. 주소는 도로명으로 지도에 넣고, 도착 시각은 일행과 맞추고, 새벽 귀갓길은 떠나기 전에 정해 두세요.",
+    ],
+  },
+};
+
+export const getStaticProps: GetStaticProps<{ venue: BookingVenue }> = async () => ({
+  props: { venue: BOOKING_BY_SLUG[VENUE_SLUG] },
 });
 
-export default function Access({ dateModified }: { dateModified: string }) {
-  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
-  const ld = graph([
-    /* S4 T-006(2026-09-05): 업소 JSON-LD 의 image 를 이 쪽 og:image 와 같게 */
-    ...BASE_GRAPH.map((x: any) => (Array.isArray(x["@type"]) && x["@type"].includes("NightClub") ? { ...x, image: "https://i.nolcool.com/og/card-changwon-lululala-bbeaae4a.png", telephone: "+82-10-7528-4936" } : x)),
-    breadcrumb([{ name: "새벽 4시 40분", path: "/" }, { name: "대중교통", path: PATH }]),
-    { ...articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }), image: "https://i.nolcool.com/og/card-changwon-lululala-bbeaae4a.png" },
-  ]);
+export default function AccessPage({ venue }: { venue: BookingVenue }) {
   return (
-    <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936" ogImage={"https://i.nolcool.com/og/card-changwon-lululala-bbeaae4a.png"} />
-      <SiteNav current={PATH} />
-      <header className="hero hero-sub">
-        <div className="hero-inner">
-          <span className="eyebrow">TRANSIT · 택시도 OK</span>
-          {/* 설계도 4장 — 광고주 쪽 상단 「광고」 라벨 (S4 2026-09-05) */}
-          <p className="ad-label" style={{ display: "inline-block", margin: "0 0 10px", padding: "3px 10px", border: "1px solid #c9a227", borderRadius: 4, fontSize: 12, color: "#c9a227", letterSpacing: ".04em" }}>광고</p>
-          <h1>택시 기사님께 <span className="grad">"상남동 모아엔트몰"</span> 한마디면 끝.</h1>
-          <p className="lead">상남동 메인거리 안쪽이라 어느 방향에서 오셔도 동선이 단순합니다. 새벽 귀가도 콜택시 응답이 빠른 지역입니다.</p>
-        </div>
-      </header>
-      {/* 2026-09-24 광고주 복구 — 창원룰루랄라나이트 가게 쪽 = 로또 세트(표준 4줄 카드 · 전화바) */}
-      <figure className="page-thumb" style={{ margin: "0 0 18px" }}><img src={표 ? 표.file : "/og/card-changwon-lululala-bbeaae4a.png"} alt={표 ? 표.alt : "광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936"} width={1200} height={1200} decoding="async" style={{ width: "100%", maxWidth: 420, height: "auto", borderRadius: 12, display: "block" }} /></figure>
-      <main className="wrap">
-        <nav aria-label="Breadcrumb" className="breadcrumb">
-          <ol>
-            <li><a href="/">홈</a></li>
-            <li aria-current="page">대중교통</li>
-          </ol>
-        </nav>
-
-        <section>
-          <h2>주요 출발지 → 매장</h2>
-          <div className="table-wrap">
-            <table className="table">
-              <thead><tr><th>출발지</th><th>택시/차</th><th>비고</th></tr></thead>
-              <tbody>
-                <tr><td>창원시청</td><td>약 5분</td><td>가장 가까운 공공시설</td></tr>
-                <tr><td>창원중앙역(KTX)</td><td>약 15분</td><td>도계광장 → 상남대로</td></tr>
-                <tr><td>창원역</td><td>약 20분</td><td>창원대로 경유</td></tr>
-                <tr><td>마산역</td><td>약 20분</td><td>3·15대로 → 창원로</td></tr>
-                <tr><td>김해공항</td><td>약 40분</td><td>남해고속 + 창원IC</td></tr>
-                <tr><td>진해</td><td>약 25분</td><td>안민터널 경유</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section>
-          <h2>택시·콜 동선</h2>
-          <p>택시 기사님께는 <strong>"상남동 모아엔트몰"</strong> 한마디면 충분합니다. 카카오T·UT 등 호출 앱에서도 같은 키워드로 잡힙니다. 새벽 시간대 귀가 시에는 매장 1층 출입구 앞에서 잡기 좋고, 골목 안쪽이라 안전한 편입니다.</p>
-        </section>
-
-        <section>
-          <h2>시내버스</h2>
-          <p>상남동 메인 정류장에 노선이 다수 정차합니다. 가장 가까운 정류장에서 도보 3~5분이면 입구에 닿습니다. 막차 이후라면 택시·대리·카카오T 야간 호출을 권합니다.</p>
-        </section>
-
-        <section>
-          <h2>도착 시각에 따라 달라지는 것</h2>
-          <p>
-            초저녁에는 상남동 큰길에서 바로 들어오시면 됩니다. 밤이 깊어질수록 골목 진입 차량이
-            늘어 정차 위치를 잡기 어려워지므로, 큰길에서 내려 도보로 들어오시는 편이 빠릅니다.
-            일행이 나눠 도착하실 때는 만나는 지점을 한 곳으로 정해 두시면 헤맬 일이 없습니다.
-          </p>
-        </section>
-
-        <section>
-          <h2>돌아갈 방법을 먼저 정해 두십시오</h2>
-          <p>
-            새벽 두 시를 넘기면 상남동 큰길에서도 택시 잡기가 경쟁이 됩니다. 호출 앱을 미리 켜
-            두시거나, 대리를 부르실 계획이라면 차를 어디에 세워 두었는지 먼저 확인해 두십시오.
-            돌아갈 방법을 정해 두면 남은 시간을 마음 편히 쓰실 수 있습니다.
-          </p>
-          <p>
-            술을 드실 예정이라면 차는 두고 오시는 편이 안전합니다. 다음 날 찾아가시는 것이
-            번거로워 보여도, 대리비와 견주면 크게 손해가 아닙니다.
-          </p>
-        </section>
-
-        <section>
-          <h2>처음 오시는 분이 자주 묻는 것</h2>
-          <p>
-            길이 헷갈릴 만한 구간은 큰길에서 골목으로 꺾는 부분 하나입니다. 그 지점만 지나면
-            입구가 바로 보입니다. 도착 직전에 연락 주시면 어느 쪽으로 들어오시면 되는지
-            알려 드립니다.
-          </p>
-          <p>
-            확인되지 않은 소요 시간이나 요금은 적지 않았습니다. 위 표의 시간은 교통 상황에 따라
-            달라질 수 있으니 여유를 두고 출발하시길 권합니다.
-          </p>
-        </section>
-
-        <section className="ps">
-          <h3>새벽 귀가 동선이 헷갈리면</h3>
-          <p>매장에 문의 주시면 출발지 기준으로 동선을 한 줄로 안내해드립니다.</p>
-        </section>
-      </main>
-      <SiteFooter dateModified={dateModified} />
-      <div className="sticky-cta" aria-label="전화 문의"><a className="sticky-cta-body" href="tel:01075284936"><strong>📞 로또 010-7528-4936</strong><span>창원룰루랄라나이트 통화 문의</span></a></div>
-    </>
+    <BookingVenuePage
+      venue={venue}
+      이주소={이주소}
+      변형={변형}
+      설명="창원룰루랄라나이트 주소 마디미로43번길 10을 기준으로 지도 검색, 일행 모이는 법, 새벽 귀갓길 준비를 순서대로 정리했습니다."
+    />
   );
 }

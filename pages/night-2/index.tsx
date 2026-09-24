@@ -6,6 +6,7 @@ import NightFooter from "@/components/night/NightFooter";
 import { SITE_URL } from "@/lib/site";
 import { VENUES, nightPath, NIGHT_BASE, AD_KAKAO } from "@/lib/night/venues";
 import { ogImagePath } from "@/lib/night/seo";
+import { useSalt, 소금입히기 } from "@/lib/salt";
 
 const TITLE = "전국 나이트 업소 안내 목록";
 const DESCRIPTION =
@@ -34,7 +35,8 @@ const breadcrumb = {
 
 export default function NightIndex() {
   const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
-  return (
+  const s = useSalt();
+  return 소금입히기(
     <>
       <NightHead
         title={TITLE}
@@ -95,6 +97,22 @@ export default function NightIndex() {
           </p>
         </section>
 
+        <section>
+          <h2>목록에 올린 기준</h2>
+          <p>
+            이 목록은 업소 한 곳마다 안내 페이지 하나를 두는 방식으로 만들었습니다. 같은 업소를 부킹 흐름으로 다룬
+            안내가 따로 있을 때는 아래 전체 목록에 두 주소를 함께 적었습니다. 두 페이지는 다루는 내용이 다르니
+            필요한 쪽을 골라 보시면 됩니다. 한 업소를 두 번 적었다고 해서 따로 떨어진 두 곳이라는 뜻은 아니니 헷갈리지 않으셔도 됩니다.
+          </p>
+          <p>
+            업소 순서는 지역과 상권을 기준으로 묶었을 뿐 순위나 추천 순서가 아닙니다. 광고로 실린 업소는 해당
+            업소 페이지 맨 위에 「광고」 표시가 있고, 그 밖의 업소는 공개 자료만으로 정리한 제3자 안내입니다.
+          </p>
+          <p className="night-checked">
+            확인일 <time dateTime="2026-09-25">2026년 9월 25일</time>. 업소 사정에 따라 주소와 운영 방식은 바뀔 수
+            있으니 방문 전에 한 번 더 확인해 주십시오.
+          </p>
+        </section>
         <nav aria-label="지역별 업소 목록">
         <ul className="night-list">
           {VENUES.map((v) => (
@@ -103,7 +121,7 @@ export default function NightIndex() {
                 <strong>{v.name}</strong>
                 <span>
                   {v.region}
-                  {v.ageBadge ? ` · ${v.ageBadge}` : ""}
+                  
                 </span>
               </a>
             </li>
@@ -200,5 +218,5 @@ export default function NightIndex() {
         </ul>
       </nav>
     </>
-  );
+  , s);
 }

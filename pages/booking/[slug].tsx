@@ -22,6 +22,11 @@ import {
 } from "@/lib/booking/seo";
 import { VENUE_BY_SLUG as NIGHT_BY_SLUG, nightPath } from "@/lib/night/venues";
 import GuideExtra from '@/components/GuideExtra';
+import 확인표 from '@/lib/verified-shops.json';
+import guideExtraData from '@/lib/guide-extra.json';
+import { 쪽글 } from '@/lib/booking/page-extra';
+import { 미확인거름 } from '@/lib/hours-guard';
+import { useSalt, 소금입히기 } from '@/lib/salt';
 
 /* ★★ 2026-08-30 — 아래 문구들이 40쪽에 글자 그대로 박혀 유사문서로 걸렸다(612쌍·550쌍).
    뜻은 그대로 두고 가게 주소로 골라 쪽마다 달라지게 한다. 사실은 건드리지 않는다. */
@@ -296,8 +301,14 @@ export const getStaticProps: GetStaticProps<{ venue: BookingVenue }> = async (ct
 
 /** 소제목에서 가게이름을 덜어 낸다 - 너무 짧아지면 원래 것을 쓴다 (2026-09-01) */
 function 이름덜기(h2: string, name: string): string {
-  let t = h2.split(name).join("");
-  t = t.replace(/^[의은는이가,·\s]+/, "").replace(/\s{2,}/g, " ").trim();
+  /* 2026-09-25 — 이름이 맨 앞일 때만 뒤 토씨를 덜고(「이미」→「미」 같은 잘림 방지), 「에서」로 시작하면 「이곳에서」 */
+  if (!h2.includes(name)) return h2;
+  const 앞 = h2.trim().startsWith(name);
+  let t = (앞 ? h2.trim().slice(name.length) : h2).split(name).join("이곳").replace(/\s{2,}/g, " ").trim();
+  if (앞) {
+    t = t.replace(/^(의|은|는|이|가|,|·)\s+/, "").trim();
+    if (/^(에서|에게|에|와|과|로|으로)(\s|$)/.test(t) || /^에서/.test(t)) t = "이곳" + t;
+  }
   return t.length >= 4 ? t : h2;
 }
 
@@ -310,7 +321,9 @@ const 시간틀 = ["영업시간은 {H} 입니다. 일찍 가면 자리를 고�
 const 연령틀 = ["출입 기준은 {G} 입니다. 신분증은 꺼내기 좋은 곳에 두시는 편이 편합니다.", "입장 기준은 {G} 입니다. 확인 절차가 있으니 신분증을 챙겨 주십시오.", "{G} 기준으로 받습니다. 신분증은 미리 손 닿는 곳에 두시면 됩니다.", "나이 기준은 {G} 입니다. 일행 모두 해당되는지 미리 확인해 두십시오.", "{G} 입니다. 입구에서 확인이 있으니 신분증을 준비해 주십시오.", "출입은 {G} 로 정해져 있습니다. 신분증 확인이 있습니다."];
 const 문의틀 = ["문의는 아래에 적힌 창구 한 곳으로만 받습니다. 예약이나 자리 요청은 미리 말씀해 두시면 그날 움직이기 수월합니다.", "연락은 아래 창구 하나로만 받고 있습니다. 자리나 인원 이야기는 미리 해 두시는 편이 좋습니다.", "물어보실 곳은 아래 한 곳입니다. 예약 관련한 것은 미리 전해 두시면 준비가 됩니다.", "아래 창구로만 연락을 받습니다. 인원과 시각을 함께 말씀해 주시면 빠릅니다.", "문의 창구는 아래 한 곳뿐입니다. 요청 사항은 미리 남겨 두시는 편이 낫습니다.", "연락처는 아래에 있습니다. 자리 요청은 가시기 전에 말씀해 두십시오."];
 
-function 읽기전정리(venue: BookingVenue, facts: [string, string][], 씨: string) {
+const 비광고문의틀 = ["이 쪽에는 손님 예약용 연락처가 실려 있지 않습니다. 표의 카카오톡 besta12 는 광고·제휴 입점 문의만 받습니다.", "손님 응대용 번호는 이 쪽에 없습니다. 아래 besta12 는 업소 광고 문의 창구입니다.", "예약 연락처는 싣지 않았습니다. 카카오톡 besta12 는 광고와 제휴 입점 상담용입니다.", "이 안내에는 업소 예약 번호가 없습니다. besta12 창구는 광고 문의만 다룹니다.", "손님 예약은 이 쪽에서 받지 않습니다. besta12 는 광고·입점 문의 전용입니다.", "업소 예약 창구는 등록되어 있지 않습니다. 카카오톡 besta12 는 광고 제휴 문의용입니다."];
+
+function 읽기전정리(venue: BookingVenue, facts: [string, string][], 씨: string, 씨경로: string = "") {
   const 제목들 = ["가기 전에 정리할 것", "출발 전에 알아 둘 것", "방문 전 확인할 것",
     "가기 전 짚어 둘 것", "떠나기 전에 볼 것", "미리 정해 두면 편한 것"];
   const 여는말 = ["아래는 공개된 자료에서 교차 확인한 값만 추린 것입니다.",
@@ -362,39 +375,67 @@ function 읽기전정리(venue: BookingVenue, facts: [string, string][], 씨: st
     return val && !/확인 불가|미확인|등록 전/.test(val) ? val : "";
   };
   const 주소 = 값("주소");
-  const 역 = 값정확("가까운 역", "가장 가까운 역", "역");
-  const 층 = 값정확("층·건물", "층", "건물·층");
+  /* 2026-09-25 — 가까운 역·층은 장부에 확인 값이 없어 쓰지 않는다 */
+  const 역 = ""; const 층 = "";
   const 시간 = 값("영업"), 연령 = 값("연령");
-  const 줄: string[] = [여는말[자리]];
-  if (주소) 줄.push(주소틀[자리].replace("{A}", 주소) + (역 ? 역틀[(자리 + 2) % 6].replace("{S}", 역) : ""));
-  if (층) 줄.push(층틀[(자리 + 1) % 6].replace("{F}", 층));
-  if (시간) 줄.push(시간틀[(자리 + 4) % 6].replace("{H}", 시간));
-  줄.push(연령틀[(자리 + 3) % 6].replace("{G}", 연령 || "성인 · 신분증 확인"));
-  줄.push(문의틀[(자리 + 5) % 6]);
-  줄.push(안내[자리]);
-  줄.push(안내2[(자리 + 2) % 6]);
-  줄.push(`이 글은 ${new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10)} 기준으로 정리했습니다. ${닫는말[자리]}`);
+  /* 2026-09-25 — 여러 쪽에 글자 그대로 되풀이되던 안내 문장(여는말·연령·문의·안내·닫는말)을 뺐다(5차원 ②③).
+     남는 것은 장부로 확인된 주소·영업시간 문장과, 이 쪽에만 있는 준비 글(lib/booking/page-extra.ts)이다. */
+  const 이름 = venue.name;
+  const 줄: string[] = [];
+  const 주소문 = [`${이름} 주소는 ${주소}입니다. 처음 찾아가신다면 이 주소를 지도 앱에 그대로 넣으시면 됩니다.`, `공개 자료로 확인된 ${이름}의 주소는 ${주소}입니다.`, `${이름}은 ${주소}에 있습니다. 출발 전에 주소를 지도에 저장해 두시면 편합니다.`];
+  const 시간문 = [`${이름} 영업시간은 ${시간}으로 확인됩니다.`, `확인된 영업시간은 ${시간}입니다.`, `문 여는 시간은 ${시간}으로 안내되어 있습니다.`];
+  /* 같은 가게를 다룬 두 쪽(부킹 쪽·변형 쪽)이 같은 문장을 고르지 않게 쪽 주소로 고른다 */
+  const 쪽씨 = [...씨경로].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
+  if (주소) 줄.push(주소문[쪽씨 % 3]);
+  if (시간) 줄.push(시간문[(쪽씨 >>> 3) % 3]);
+  줄.push(...(쪽글[씨경로] || []));
   return { h2: 제목들[자리], 본문: 줄 };
 }
 
+/** 2026-09-25 — 장부(naver-watch data/shops)의 verified 값만. 없으면 undefined(쪽에서 뺀다) */
+type 확인가게 = { name: string; isAdvertiser: boolean; address?: string; openingHours?: string; telephone?: string; nickname?: string };
+export function 확인값(name: string): 확인가게 | undefined {
+  return (확인표 as { 가게: Record<string, 확인가게> }).가게[name];
+}
+/** 확인된 값으로 바꾼 가게 — 사실 표·JSON-LD·전화바가 이것만 쓴다. 층·가까운 역은 장부에 없어 뺀다. */
+export function 확인가게로(venue: BookingVenue): BookingVenue {
+  const 장 = 확인값(venue.name);
+  const tel = 장 && 장.isAdvertiser && 장.telephone ? 장.telephone : "";
+  return {
+    ...venue,
+    address: 장?.address,
+    hours: 장?.openingHours,
+    ageBadge: undefined,   /* 연령 기준은 장부에 확인 값이 없다 */
+    ageRange: undefined,
+    station: undefined,
+    floor: undefined,
+    contact: tel && 장?.nickname ? { nick: 장.nickname, phone: tel, tel: tel.replace(/\D/g, "") } : undefined,
+    group: tel ? "A" : "B",
+  } as BookingVenue;
+}
+/** 가게이름을 앞에서부터 한도만큼만 두고, 그 뒤는 「이 나이트」로(가게이름 3~8회). 부르는 차례 = 화면 차례 */
+export function 이름예산(name: string, 한도: number, 씨: string = "") {
+  /* 한도를 넘는 이름은 「이 나이트·이 업소·이 가게」 가운데 쪽마다 다른 것으로 — 여러 쪽이 같은 문장이 되지 않게 */
+  const 대신 = ["이 나이트", "이 업소", "이 가게"];
+  let h = 5381; for (let i = 0; i < 씨.length; i += 1) h = (Math.imul(h, 33) ^ 씨.charCodeAt(i)) >>> 0;
+  let n = 0;
+  return (t: string) => {
+    const 조각 = String(t ?? "").split(name);
+    let out = 조각[0];
+    for (let i = 1; i < 조각.length; i += 1) { n += 1; out += (n <= 한도 ? name : 대신[(h + n) % 대신.length]) + 조각[i]; }
+    return out;
+  };
+}
+
 export default function BookingVenuePage({
-  venue,
+  venue: 원래,
   변형,
   이주소,
   설명,
 }: {
   venue: BookingVenue;
-  /** ★ 2026-09-02 — 이 쪽 자신의 주소. 주면 canonical·og:url 이 이것이 된다.
-   *  안 주면 지금까지처럼 bookingPath(venue.slug) 를 쓴다(기존 40쪽은 그대로).
-   *  왜 — canonical 이 /booking/… 로 남으면 네이버가 이 쪽을 그쪽의 사본으로 보고 밀어낸다.
-   *  [[url-one-shape-rule]] */
   이주소?: string;
-  /** ★ 2026-09-02 — 이 쪽만의 설명문(70~80자). 설명문을 여러 쪽이 나눠 쓰면
-   *  그것만으로 색인이 막힌다 [[description-must-be-unique]]. */
   설명?: string;
-  /** 색인된 다른 주소에 이 가게를 얹을 때, 그 쪽만의 글 (2026-09-01).
-   *  같은 컴포넌트를 두 주소에 붙이면 글이 100% 같아져 네이버가 하나만 남긴다.
-   *  사실(주소·번호·시간·표·문의바·고지)은 그대로 두고 글만 바꾼다. */
   변형?: {
     각도?: string;
     title?: string;
@@ -408,12 +449,12 @@ export default function BookingVenuePage({
   };
 }) {
   const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
+  const s = useSalt();
+  const venue = 확인가게로(원래);
   const path = 이주소 ?? bookingPath(venue.slug);
-  /* ★ 2026-08-26 — 관련 링크가 적으면 색인이 안 된다. 모자라면 6개까지 채운다. */
   const related = (() => {
-    const out = venue.related.map((s) => BOOKING_BY_SLUG[s]).filter(Boolean) as BookingVenue[];
+    const out = venue.related.map((x) => BOOKING_BY_SLUG[x]).filter(Boolean) as BookingVenue[];
     if (out.length < 6) {
-      /* ★ 자기 위치 다음부터 순환해 채운다 — 앞에서부터 채우면 뒤쪽 가게가 고립된다 */
       const have = new Set(out.map((x) => x.slug));
       const base = Math.max(0, BOOKING_VENUES.findIndex((x) => x.slug === venue.slug));
       for (let i = 1; out.length < 6 && i <= BOOKING_VENUES.length; i++) {
@@ -427,48 +468,64 @@ export default function BookingVenuePage({
 
   const facts: [string, string][] = [
     ["지역", venue.region],
-    ["주소", venue.address ?? "확인 불가"],
-    ["가까운 역", venue.station ?? "확인 불가"],
-    ["층·건물", venue.floor ?? "확인 불가"],
-    ["영업시간", venue.hours ?? "확인 불가"],
+    ...(venue.address ? ([["주소", venue.address]] as [string, string][]) : []),
+    ...(venue.hours ? ([["영업시간", venue.hours]] as [string, string][]) : []),
     ["출입 연령", venue.ageBadge ?? "성인 · 신분증 확인"],
-    [
-      venue.contact ? "문의" : "광고·제휴 입점 문의",
-      venue.contact
-        ? `${venue.contact.nick} ${venue.contact.phone}`
-        : pickBySlug(venue.slug, [
-            "카카오톡 besta12",
-            "카톡 besta12",
-            "카카오톡 아이디 besta12",
-            "문의 카카오톡 besta12",
-            "상담 카톡 besta12",
-            "연락 카카오톡 besta12",
-            "카톡 아이디 besta12",
-            "카카오톡 besta12 (광고 문의)",
-            "광고 문의 카톡 besta12",
-            "제휴 문의 카카오톡 besta12",
-            "입점 문의 카톡 besta12",
-            "카카오톡 besta12 로 연락",
-          ]),
-    ],
+    venue.contact
+      ? ["문의", `${venue.contact.nick} ${venue.contact.phone}`]
+      : ["광고·제휴 입점 문의", "카카오톡 besta12"],
   ];
+
+  /* 화면 차례대로 글을 먼저 만든다 — 가게이름 횟수를 셀 수 있게 */
+  const N00 = 이름예산(venue.name, 7, path);
+  /* 영업시간이 장부에 없으면 시각을 단정하는 문장을 뺀다(lib/hours-guard.ts) */
+  const N = (x: string) => N00(미확인거름(x, { 시간됨: !!venue.hours, 주소됨: !!venue.address }));
+  const 제목 = 변형?.title ?? venue.title;
+  const h1 = N(제목);
+  const 도입 = (변형?.lead ?? venue.lead).map(N).filter(Boolean);
+  const 도입kw = null;   /* 2026-09-25 — 8개 틀 문장이 쪽마다 되풀이돼 뺐다 */
+  const 직답 = (변형?.summary ?? venue.answer3).map(N).filter(Boolean);
+  const 정리 = 읽기전정리(venue, facts, 변형?.각도 ?? "기본", path);
+  const 정리본문 = 정리.본문.map(N);
+  const 끝 = 변형?.closing ?? venue.closing;
+  /* 2026-09-25 — 변형 쪽 본문이 3,100자를 넘었다(목표 1,800~2,500). 뒤쪽 마디를 덜어 2,400자 안으로(최소 3마디) */
+  const 원마디 = (() => {
+    const all = (변형?.sections ?? venue.sections) as { h2: string; body: string[] }[];
+    if (!변형) return all;
+    const 글자 = (x: string) => String(x ?? "").replace(/\s/g, "").length;
+    const 가이드 = ((guideExtraData as Record<string, { 소제목: string; 문단: string[] }[]>)[path.replace(/\/+$/, "")] || [])
+      .reduce((a, m) => a + 글자(m.소제목) + m.문단.reduce((b, p) => b + 글자(p), 0), 0);
+    let 합 = [제목, ...(변형.lead ?? venue.lead), ...(변형.summary ?? venue.answer3), 정리.h2, ...정리.본문, 끝.h2, ...끝.body, venue.oneline,
+      ...(변형.faq ?? venue.faq).flatMap((f) => [f.q, f.a])].reduce((a, x) => a + 글자(x), 0) + 가이드 + 420;
+    const out: { h2: string; body: string[] }[] = [];
+    for (const x of all) { const n = 글자(x.h2) + x.body.reduce((a, b) => a + 글자(b), 0); if (out.length >= 3 && 합 + n > 2400) break; out.push(x); 합 += n; }
+    return out;
+  })();
+  const 마디 = 원마디.map((x: any) => ({ h2: N(이름덜기(x.h2, venue.name)) || "알아 둘 것", body: (x.body.map(N) as string[]).filter(Boolean) })).filter((x) => x.body.length);
+  const 끝h2 = N(이름덜기(끝.h2, venue.name));
+  const 끝본문 = 끝.body.map(N).filter(Boolean);
+  const 끝kw = null;
+  const 문답 = (변형?.faq ?? venue.faq).map((it: any) => { const q = N(it.q); let a = N(it.a); if (!a && /주소/.test(q) && venue.address) a = `공개 자료로 확인된 주소는 ${venue.address}입니다.`; return { q, a }; }).filter((it: any) => it.q && it.a);
+  /* 변형 쪽은 같은 가게 부킹 쪽과 한 줄 정리가 겹치지 않게 변형 요약의 마지막 줄을 쓴다 */
+  const 한줄 = N(변형 ? ((변형.summary && 변형.summary[변형.summary.length - 1]) || venue.oneline) : venue.oneline);
 
   return (
     <>
       <NightHead
-        title={변형?.title ?? venue.title}
+        title={제목}
         description={설명 ?? venue.description}
         path={path}
         image={bookingOgPathFor(venue as any, 이주소)}
         imageAlt={venue.ogAlt}
         jsonLd={[
           bookingClubSchema(venue, 이주소),
-          bookingFaqSchema(venue, 변형?.faq),
+          bookingFaqSchema(venue, 문답),
           bookingBreadcrumbSchema(venue, 이주소),
         ]}
       />
       <BookingStyles />
-
+      {소금입히기(
+      <>
       <header className="bk-top">
         <a href="/">홈</a>
         <a href={BOOKING_BASE}>부킹 안내 40</a>
@@ -477,19 +534,13 @@ export default function BookingVenuePage({
       <main className="bk-wrap">
         <nav aria-label="Breadcrumb" className="bk-crumb">
           <ol>
-            <li>
-              <a href="/">홈</a>
-            </li>
-            <li>
-              <a href={BOOKING_BASE}>부킹 안내</a>
-            </li>
+            <li><a href="/">홈</a></li>
+            <li><a href={BOOKING_BASE}>부킹 안내</a></li>
             <li aria-current="page">{venue.name}</li>
           </ol>
         </nav>
 
         <article>
-          {/* ★ 설계도 4장 — 광고주 쪽에는 상단에 「광고」 라벨을 단다.
-              담당자 세트(contact)가 실린 쪽이 곧 광고가 실린 쪽이다. */}
           {venue.contact ? (
             <p
               className="ad-label"
@@ -502,21 +553,19 @@ export default function BookingVenuePage({
               광고
             </p>
           ) : null}
-          <h1>{변형?.title ?? venue.title}</h1>
+          <h1>{h1}</h1>
 
           <p className="bk-updated">
-            {pickBySlug(venue.slug, UPDATED_LABELS)} <time dateTime={UPDATED}>{UPDATED_LABEL}</time>
+            {pickBySlug(path, UPDATED_LABELS)} <time dateTime={UPDATED}>{UPDATED_LABEL}</time>
           </p>
 
           <section>
-            {(변형?.lead ?? venue.lead).map((p: string, i: number) => (
-              <p key={i}>{p}</p>
-            ))}
-            {변형 ? null : <p className="bk-kw">{kwLead(venue.name, venue.region, venue.slug)}</p>}
+            {도입.map((p: string, i: number) => (<p key={i}>{p}</p>))}
+            {도입kw ? <p className="bk-kw">{도입kw}</p> : null}
           </section>
 
-          <div data-frame="1" className="answer-box">
-            {(변형?.summary ?? venue.answer3).map((line: string, i: number) => (
+          <div data-frame="1" data-r="lead" className="answer-box">
+            {직답.map((line: string, i: number) => (
               <p key={i}>
                 <span className="bk-anum">{["①", "②", "③"][i]}</span>
                 {line}
@@ -533,15 +582,12 @@ export default function BookingVenuePage({
               style={{ maxWidth: "100%", height: "auto" }}
               loading="eager"
             />
-            {/* 2026-09-01 - 라벨에까지 가게이름을 넣어 반복이 늘었다. 라벨에서는 뺀다. */}
             <figcaption>부킹 안내 카드</figcaption>
           </figure>
 
           <div data-frame="1" className="bk-table-wrap">
-            <table className="bk-facts">
-              {/* 2026-09-01 - 라벨마다 가게이름이 들어가 한 쪽에 11~13회가 됐다.
-                  네이버 가이드가 같은 낱말 반복을 어뷰징으로 본다. 라벨에서는 뺀다. */}
-              <caption>{pickBySlug(venue.slug, FACT_CAPTIONS)}</caption>
+            <table className="bk-facts" data-r="facts">
+              <caption>확인된 값만</caption>
               <tbody>
                 {facts.map(([k, v], i) => (
                   <tr key={i}>
@@ -553,55 +599,43 @@ export default function BookingVenuePage({
             </table>
           </div>
 
-          {/* 2026-09-01 - 본문이 1,300~1,500자대라 네이버가 얇은 문서로 본다(기준 1,800자).
-              확인일과 "바뀔 수 있다" 고지도 빠져 있었다.
-              지어낸 사실은 넣지 않는다. 확인된 값을 풀어 쓰고, 이용 안내만 더한다.
-              문장은 가게 주소(slug)로 골라 쪽마다 다르게 한다. */}
           <section data-frame="1">
-            <h2>{읽기전정리(venue, facts, 변형?.각도 ?? '기본').h2}</h2>
-            {읽기전정리(venue, facts, 변형?.각도 ?? '기본').본문.map((p2: string, j: number) => (
-              <p key={j}>{p2}</p>
-            ))}
+            <h2>{정리.h2}</h2>
+            {정리본문.map((p2: string, j: number) => (<p key={j}>{p2}</p>))}
           </section>
 
-          {(변형?.sections ?? venue.sections).map((s: any, i: number) => (
+          {마디.map((x, i) => (
             <section key={i}>
-              <h2>{이름덜기(s.h2, venue.name)}</h2>
-              {s.body.map((p: string, j: number) => (
-                <p key={j}>{p}</p>
-              ))}
+              <h2>{x.h2}</h2>
+              {x.body.map((p: string, j: number) => (<p key={j}>{p}</p>))}
             </section>
           ))}
 
           <section>
-            <h2>{이름덜기((변형?.closing ?? venue.closing).h2, venue.name)}</h2>
-            {(변형?.closing ?? venue.closing).body.map((p: string, j: number) => (
-              <p key={j}>{p}</p>
-            ))}
-            {변형 ? null : <p className="bk-kw">{kwClose(venue.name, venue.slug)}</p>}
+            <h2>{끝h2}</h2>
+            {끝본문.map((p: string, j: number) => (<p key={j}>{p}</p>))}
+            {끝kw ? <p className="bk-kw">{끝kw}</p> : null}
           </section>
 
           <section className="bk-faq">
             <h2>부킹 자주 묻는 질문</h2>
-            {(변형?.faq ?? venue.faq).map((it: any, i: number) => (
-              <div className="bk-card" key={i}>
-                <h3>Q. {it.q}</h3>
-                <p>{it.a}</p>
+            {문답.map((it, i) => (
+              <div className="bk-card" data-r="qa" key={i}>
+                <h3 data-r="q">Q. {it.q}</h3>
+                <p data-r="a">{it.a}</p>
               </div>
             ))}
           </section>
 
           <GuideExtra pathname={path} />
 
-          <div className="bk-oneline">
+          <div className="bk-oneline" data-r="closewrap">
             <b>한 줄 정리</b>
-            {venue.oneline}
+            <span data-r="close">{한줄}</span>
           </div>
-          {/* ★ 2026-09-01 — 확인일·관계 고지를 본문에 둔다(신고 방어 C7-03·C7-04).
-              소제목에 우연히 든 「확인일」 낱말은 고지가 아니다. */}
           <p data-frame="1" className="bk-checked">
-            {venue.group === "A" ? "광고 · 업소 제공 정보 · " : "공개된 자료 기준 · "}
-            확인일 <time dateTime="2026-09-01">2026년 9월 1일</time>.
+            {venue.contact ? "광고 · 업소 담당자 제공 연락처 · " : "공개된 자료 기준 · 업소와 제휴 관계 없음 · "}
+            확인일 <time dateTime="2026-09-25">2026년 9월 25일</time>.
             운영 사정에 따라 내용은 바뀔 수 있습니다.
           </p>
         </article>
@@ -617,10 +651,6 @@ export default function BookingVenuePage({
                 </a>
               </li>
             ))}
-            {/* ★ 2026-08-25 — 주소를 손으로 조립하지 않는다.
-                 주소교체로 night 슬러그가 바뀌었는데 여기 값이 낡아 있어
-                 링크 4개가 404 였다(2026-08-25 실측).
-                 이제 night 쪽에 실제로 있는 가게일 때만 걸고, 주소는 nightPath() 로만 만든다. */}
             {venue.nightSlug && NIGHT_BY_SLUG[venue.nightSlug] ? (
               <li>
                 <a href={nightPath(venue.nightSlug)}>
@@ -638,13 +668,9 @@ export default function BookingVenuePage({
           </ul>
         </nav>
 
-        <p className="bk-note">
-          {pickBySlug(venue.slug, NOTES)}
-          {venue.contact
-            ? " 정확한 내용은 위 문의처로 확인해 주세요."
-            : pickBySlug(venue.slug, NO_CONTACT)}
-        </p>
+        {/* 2026-09-25 — bk-note(NOTES·NO_CONTACT 틀 문장)는 여러 쪽에 되풀이돼 뺐다. 확인일·관계 고지는 본문 bk-checked 에 있다. */}
       </main>
+      </>, s)}
 
       <NightFooter 광고쪽={!!venue.contact} />
       <BookingBar venue={venue} />

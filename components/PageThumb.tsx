@@ -1,3 +1,4 @@
+import { useSalt, 소금입히기 } from "@/lib/salt";
 /**
  * 페이지 썸네일 — og:image 와 본문에 같은 그림을 쓴다.
  *
@@ -16,7 +17,7 @@ export const thumbPath = (path: string) => {
   return '/og/auto-' + (p ? p.replace(/\//g, '-') + '-index' : 'index') + '.png';
 };
 
-export default function PageThumb({ path, alt: alt0 }: { path: string; alt: string }) {
+function PageThumb안쪽({ path, alt: alt0 }: { path: string; alt: string }) {
   const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 — og 와 같은 파일 */
   if (표 && 표.ogOnly) return null;
   const alt = 표 ? 표.alt : alt0;
@@ -34,3 +35,9 @@ export default function PageThumb({ path, alt: alt0 }: { path: string; alt: stri
   );
 }import { useThumb } from '@/lib/thumb';
 
+
+/* 2026-09-25 — 이 컴포넌트 출력에도 쪽 소금(lib/salt.tsx) */
+export default function PageThumb(props: any) {
+  const s = useSalt();
+  return <>{소금입히기((PageThumb안쪽 as any)(props), s)}</>;
+}

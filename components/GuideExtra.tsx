@@ -1,3 +1,4 @@
+import { useSalt, 소금입히기 } from "@/lib/salt";
 import guideExtra from '@/lib/guide-extra.json';
 
 /**
@@ -10,7 +11,7 @@ import guideExtra from '@/lib/guide-extra.json';
  */
 type 마디 = { 소제목: string; 문단: string[] };
 
-export default function GuideExtra({ pathname }: { pathname: string }) {
+function GuideExtra안쪽({ pathname }: { pathname: string }) {
   const 키 = String(pathname).replace(/\/+$/, '');
   const 마디들 = (guideExtra as Record<string, 마디[]>)[키];
   if (!마디들 || !마디들.length) return null;
@@ -26,4 +27,10 @@ export default function GuideExtra({ pathname }: { pathname: string }) {
       ))}
     </>
   );
+}
+
+/* 2026-09-25 — 이 컴포넌트 출력에도 쪽 소금(lib/salt.tsx) */
+export default function GuideExtra(props: any) {
+  const s = useSalt();
+  return <>{소금입히기((GuideExtra안쪽 as any)(props), s)}</>;
 }

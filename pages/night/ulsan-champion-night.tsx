@@ -12,6 +12,7 @@
  */
 import { useThumb } from '@/lib/thumb';
 import Head from "next/head";
+import { useSalt, 소금입히기, 소금CSS } from "@/lib/salt";
 
 const 이름 = "울산챔피언나이트";
 const 닉 = "춘자";
@@ -21,7 +22,7 @@ const 확인일 = "2026-08-31";
 const URL = "https://i.nolcool.com/night/ulsan-champion-night/";
 const OG = "https://i.nolcool.com/og/night-ulsan-champion-night-og.png";
 
-const TITLE = "울산챔피언나이트 예약부터 입장까지 순서 정리";
+const TITLE = "울산챔피언나이트 전화부터 자리까지 흐름 안내";
 const DESC =
   "울산챔피언나이트 예약 전화에서 자리 안내까지, 처음 방문 순서를 한 번에 정리했습니다. " +
   "인원·시간대만 정하면 준비 끝. 문의 010-5653-0069";
@@ -67,53 +68,7 @@ const faqPage = {
   })),
 };
 
-export default function UlsanChampionNightPage() {
-  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
-  const 그림 = 표 ? "https://i.nolcool.com" + 표.file : OG;
-  const 그림알트 = 표 ? 표.alt : "울산 챔피언 나이트 안내";
-  return (
-    <>
-      <Head>
-        <title>{TITLE}</title>
-        <meta name="description" content={DESC} />
-        <link rel="canonical" href={URL} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={TITLE} />
-        <meta property="og:description" content={DESC} />
-        <meta property="og:url" content={URL} />
-        <meta property="og:image" content={그림} />
-        <meta property="og:image:secure_url" content={그림} />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="1200" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...localBusiness, image: 그림 }) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
-        />
-        {/* ★ 2026-08-31 — 이동 경로가 없어 검색 결과에 경로가 안 나왔다(점검표 #72).
-            /night/ 은 목록 페이지가 없으므로 홈 → 이 쪽 두 단계로 둔다.
-            없는 주소를 가리키면 오히려 잘못된 자료를 주는 것이다. */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                { "@type": "ListItem", position: 1, name: "새벽 4시 40분", item: "https://i.nolcool.com/" },
-                { "@type": "ListItem", position: 2, name: "울산챔피언나이트", item: URL },
-              ],
-            }),
-          }}
-        />
-      </Head>
-
-      <style jsx global>{`
+const UCN_CSS = `
         :root {
           --ucn-bg: #0f1426;
           --ucn-card: #161d33;
@@ -241,11 +196,60 @@ export default function UlsanChampionNightPage() {
             padding: 16px 10px;
           }
         }
-      `}</style>
+      `;
+
+export default function UlsanChampionNightPage() {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
+  const s = useSalt();
+  const 그림 = 표 ? "https://i.nolcool.com" + 표.file : OG;
+  const 그림알트 = 표 ? 표.alt : "울산 챔피언 나이트 안내";
+  return 소금입히기(
+    <>
+      <Head>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <link rel="canonical" href={URL} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:url" content={URL} />
+        <meta property="og:image" content={그림} />
+        <meta property="og:image:secure_url" content={그림} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...localBusiness, image: 그림 }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
+        />
+        {/* ★ 2026-08-31 — 이동 경로가 없어 검색 결과에 경로가 안 나왔다(점검표 #72).
+            /night/ 은 목록 페이지가 없으므로 홈 → 이 쪽 두 단계로 둔다.
+            없는 주소를 가리키면 오히려 잘못된 자료를 주는 것이다. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "새벽 4시 40분", item: "https://i.nolcool.com/" },
+                { "@type": "ListItem", position: 2, name: "울산챔피언나이트", item: URL },
+              ],
+            }),
+          }}
+        />
+      </Head>
+
+      <style dangerouslySetInnerHTML={{ __html: 소금CSS(UCN_CSS, s) }} />
 
       <main className="ucn-wrap">
         <span className="ucn-adlabel">광고</span>
-        <p className="ucn-rel">광고 · 업소 제공 정보 · 확인일 {확인일}</p>
+        <p className="ucn-rel">이 쪽은 업소 담당자의 광고가 실린 페이지입니다 · 업소 제공 정보 · 확인일 {확인일}</p>
 
         <h1>{TITLE}</h1>
       {/* 본문 그림 — og:image 와 같은 파일 (2026-08-31). 네이버는 본문에 그림이 있는 문서를 더 잘 집어 간다. 첫 그림이라 lazy 를 붙이지 않는다. */}
@@ -388,5 +392,5 @@ export default function UlsanChampionNightPage() {
         </a>
       </div>
     </>
-  );
+  , s);
 }

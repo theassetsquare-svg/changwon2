@@ -22,6 +22,9 @@ export function nightClubSchema(v: Venue) {
       addressCountry: "KR",
     },
   };
+  /* 2026-09-25 — 장부 verified 값만 넘어온다(club 쪽 확인가게로) */
+  if (v.address) (schema.address as Record<string, unknown>).streetAddress = v.address;
+  if (v.hours) schema.openingHours = v.hours;
   /* 2026-09-05 AI-088 — JSON-LD 전화는 +82 국가코드 꼴(화면 표기는 그대로) */
   if (v.contact) schema.telephone = String(v.contact.phone).replace(/^0(\d{1,2})-?(\d{3,4})-?(\d{4})$/, '+82-$1-$2-$3');
   if (v.ageRange) schema.typicalAgeRange = v.ageRange;

@@ -1,3 +1,4 @@
+import { useSalt, 소금입히기 } from "@/lib/salt";
 import type { Venue } from "@/lib/night/venues";
 import { AD_KAKAO } from "@/lib/night/venues";
 
@@ -7,7 +8,7 @@ import { AD_KAKAO } from "@/lib/night/venues";
  * - A그룹(광고주 있음): 전화번호만. "besta12" 문자열이 들어가면 안 된다.
  * - B그룹(광고주 없음): 광고·제휴 입점 문의 카톡 ID.
  */
-export default function CallBar({ venue }: { venue: Venue }) {
+function CallBar안쪽({ venue }: { venue: Venue }) {
   if (venue.contact) {
     return (
       <div className="callbar" role="complementary" aria-label="전화 연결">
@@ -24,4 +25,10 @@ export default function CallBar({ venue }: { venue: Venue }) {
       </span>
     </div>
   );
+}
+
+/* 2026-09-25 — 이 컴포넌트 출력에도 쪽 소금(lib/salt.tsx) */
+export default function CallBar(props: any) {
+  const s = useSalt();
+  return <>{소금입히기((CallBar안쪽 as any)(props), s)}</>;
 }

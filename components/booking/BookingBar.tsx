@@ -1,3 +1,4 @@
+import { useSalt, 소금입히기 } from "@/lib/salt";
 import { AD_KAKAO } from "@/lib/booking/types";
 import type { BookingVenue } from "@/lib/booking/types";
 
@@ -7,7 +8,7 @@ import type { BookingVenue } from "@/lib/booking/types";
  * - A그룹 상세: 담당 닉네임 + 전화번호만. "besta12" 문자열이 들어가면 안 된다.
  * - B그룹 상세: 광고·제휴 입점 문의 카톡 ID.
  */
-export function BookingHomeBar() {
+function BookingHomeBar안쪽() {
   return (
     <div className="callbar" role="complementary" aria-label="광고 제휴 문의">
       <span>
@@ -17,7 +18,7 @@ export function BookingHomeBar() {
   );
 }
 
-export default function BookingBar({ venue }: { venue: BookingVenue }) {
+function BookingBar안쪽({ venue }: { venue: BookingVenue }) {
   if (venue.contact) {
     return (
       <div className="callbar" role="complementary" aria-label="전화 연결">
@@ -34,4 +35,15 @@ export default function BookingBar({ venue }: { venue: BookingVenue }) {
       </span>
     </div>
   );
+}
+
+/* 2026-09-25 — 이 컴포넌트 출력에도 쪽 소금(lib/salt.tsx) */
+export default function BookingBar(props: any) {
+  const s = useSalt();
+  return <>{소금입히기((BookingBar안쪽 as any)(props), s)}</>;
+}
+
+export function BookingHomeBar() {
+  const s = useSalt();
+  return <>{소금입히기(BookingHomeBar안쪽(), s)}</>;
 }

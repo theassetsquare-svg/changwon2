@@ -14,8 +14,9 @@ import {
   AD_KAKAO,
 } from "@/lib/booking/venues";
 import { bookingOgPath } from "@/lib/booking/seo";
+import { useSalt, 소금입히기 } from "@/lib/salt";
 
-const TITLE = "창원룰루랄라나이트 | 전국 나이트 부킹 안내 40";
+const TITLE = "전국 나이트 부킹 안내 40 — 지역별 목록";
 const DESCRIPTION =
   "부킹이 실제로 어떤 순서로 도는지, 입장부터 자리·첫 연결·거절 매너까지 전국 40개 나이트 업소를 기준으로 정리한 안내 목록입니다. 확인되지 않은 표기합니다.";
 
@@ -43,7 +44,8 @@ const breadcrumb = {
 
 export default function BookingHub() {
   const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
-  return (
+  const s = useSalt();
+  return 소금입히기(
     <>
       <NightHead
         title={TITLE}
@@ -106,18 +108,19 @@ export default function BookingHub() {
           </section>
 
           <section>
-            <h2>창원룰루랄라나이트 부킹은 어떻게 잡나요?</h2>
+            <h2>이 목록에서 안내를 고르는 방법</h2>
             <p>
-              창원룰루랄라나이트는 경남 창원시 성산구 상남동 모아엔트몰 지하 3층에 있습니다.
-              이 사이트는 업소와 제휴 관계가 없는 안내 페이지라 예약을 받지 않습니다. 인원과 성비,
-              도착 예정 시각, 원하는 자리 성격은 도착해서 입구 직원에게 한 번에 말하면 됩니다.
+              지역 이름으로 먼저 좁히고, 그 안에서 업소 이름을 누르면 그 업소 한 곳만 다룬 부킹 안내가 열립니다.
+              페이지마다 다루는 장면이 다르므로 같은 흐름이 되풀이되지 않습니다. 이 목록 쪽은 예약을 받지 않고,
+              손님 응대용 연락처도 싣지 않습니다. 업소 페이지에 적힌 주소와 영업시간은 공개 자료로 확인된 값만이며, 확인하지 못한 값은 적지 않고 비워 두었습니다. 업소 이름을 누르면 그 업소 안내로 넘어갑니다.
             </p>
             <p>
-              출입 연령은 {BIZ_MIN_AGE}으로 안내되며 입구에서 신분증을 확인합니다. 일행 전원이
-              신분증을 챙겨 주세요. 업소 연락처는 싣지 않습니다. 부킹 흐름을
-              먼저 보고 싶다면{" "}
-              <a href={bookingPath("changwon-lululala-night")}>창원룰루랄라나이트 부킹 안내</a>{" "}
-              페이지에 순서대로 정리해 두었습니다.
+              광고로 실린 업소는 업소 페이지 맨 위에 「광고」 표시와 담당자 연락처가 함께 있습니다. 표시가 없는
+              업소는 공개 자료로 확인한 값만 정리한 안내이며 업소와 제휴 관계가 없습니다. 출입은 성인만 가능하고 입구에서 신분증을 확인하니 일행 모두 챙겨 가시는 편이 안전합니다.
+            </p>
+            <p className="bk-checked">
+              확인일 <time dateTime="2026-09-25">2026년 9월 25일</time>. 운영 사정에 따라 내용은 바뀔 수 있으니 방문
+              전에 각 업소 안내를 한 번 더 확인해 주십시오.
             </p>
           </section>
 
@@ -136,7 +139,7 @@ export default function BookingHub() {
                       <a href={bookingPath(v.slug)}>
                         <strong>
                           {v.name}
-                          {v.ageBadge ? <em className="bk-badge">{v.ageBadge}</em> : null}
+                          
                         </strong>
                         <span>{v.region}</span>
                       </a>
@@ -156,8 +159,8 @@ export default function BookingHub() {
         </p>
       </main>
 
-      <NightFooter />
+      <NightFooter 광고쪽={false} />
       <BookingHomeBar />
     </>
-  );
+  , s);
 }

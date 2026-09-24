@@ -1,11 +1,10 @@
+import { useSalt, 소금CSS } from "@/lib/salt";
 /**
  * /night/ 계열 전용 스타일.
  * 기존 styles/globals.css 와 _app.tsx 를 수정하지 않기 위해 styled-jsx global 로 주입한다.
  * 클래스는 night- 접두 또는 사양서에 지정된 이름(.callbar/.site-footer/.ad-inquiry/.answer-box)만 사용한다.
  */
-export default function NightStyles() {
-  return (
-    <style jsx global>{`
+const CSS = `
       /* ── 사양서 지정 고정바 CSS (원문 유지) ── */
       .callbar {
         position: fixed;
@@ -378,6 +377,10 @@ export default function NightStyles() {
         font-weight: 600;
         line-height: 1.8;
       }
-    `}</style>
-  );
+    `;
+
+/* 2026-09-25 — styled-jsx 대신 쪽 소금을 입힌 인라인 CSS(lib/salt.tsx) */
+export default function NightStyles() {
+  const s = useSalt();
+  return <style dangerouslySetInnerHTML={{ __html: 소금CSS(CSS, s) }} />;
 }
