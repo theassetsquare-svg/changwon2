@@ -84,7 +84,7 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
         <figure className="night-og">
           <img
             src={ogImagePath(venue.slug, (venue as any).ogV)}
-            alt={`${venue.name} 위치·이용 안내`}
+            alt={venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 위치·이용 안내`}
             width={1200}
             height={1200}
             style={{ maxWidth: "100%", height: "auto" }}

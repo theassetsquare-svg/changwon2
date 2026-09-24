@@ -1,9 +1,7 @@
 import type { GetStaticProps } from "next";
-import PageThumb from '@/components/PageThumb';
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
-import StickyCTA from "@/components/StickyCTA";
 import { BASE_GRAPH, breadcrumb, articleSchema, graph } from "@/lib/schemas";
 
 const PATH = "/access/";
@@ -18,13 +16,13 @@ export const getStaticProps: GetStaticProps<{ dateModified: string }> = async ()
 export default function Access({ dateModified }: { dateModified: string }) {
   const ld = graph([
     /* S4 T-006(2026-09-05): 업소 JSON-LD 의 image 를 이 쪽 og:image 와 같게 */
-    ...BASE_GRAPH.map((x: any) => (Array.isArray(x["@type"]) && x["@type"].includes("NightClub") ? { ...x, image: "https://i.nolcool.com/og/auto-access-v2-index.png" } : x)),
+    ...BASE_GRAPH.map((x: any) => (Array.isArray(x["@type"]) && x["@type"].includes("NightClub") ? { ...x, image: "https://i.nolcool.com/og/card-changwon-lululala-bbeaae4a.png", telephone: "+82-10-7528-4936" } : x)),
     breadcrumb([{ name: "새벽 4시 40분", path: "/" }, { name: "대중교통", path: PATH }]),
-    { ...articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }), image: "https://i.nolcool.com/og/auto-access-v2-index.png" },
+    { ...articleSchema({ title: TITLE, description: DESCRIPTION, path: PATH, datePublished: PUBLISHED, dateModified }), image: "https://i.nolcool.com/og/card-changwon-lululala-bbeaae4a.png" },
   ]);
   return (
     <>
-      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="창원룰루랄라나이트 · 광고문의 · 카톡 besta12" ogImage={"https://i.nolcool.com/og/auto-access-v2-index.png"} />
+      <SeoHead title={TITLE} description={DESCRIPTION} path={PATH} jsonLd={ld} ogImageAlt="광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936" ogImage={"https://i.nolcool.com/og/card-changwon-lululala-bbeaae4a.png"} />
       <SiteNav current={PATH} />
       <header className="hero hero-sub">
         <div className="hero-inner">
@@ -35,7 +33,8 @@ export default function Access({ dateModified }: { dateModified: string }) {
           <p className="lead">상남동 메인거리 안쪽이라 어느 방향에서 오셔도 동선이 단순합니다. 새벽 귀가도 콜택시 응답이 빠른 지역입니다.</p>
         </div>
       </header>
-      <PageThumb path="/access-v2" alt="창원룰루랄라나이트 · 광고문의 · 카톡 besta12" />
+      {/* 2026-09-24 광고주 복구 — 창원룰루랄라나이트 가게 쪽 = 로또 세트(표준 4줄 카드 · 전화바) */}
+      <figure className="page-thumb" style={{ margin: "0 0 18px" }}><img src="/og/card-changwon-lululala-bbeaae4a.png" alt="광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936" width={1200} height={1200} decoding="async" style={{ width: "100%", maxWidth: 420, height: "auto", borderRadius: 12, display: "block" }} /></figure>
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>
@@ -112,7 +111,7 @@ export default function Access({ dateModified }: { dateModified: string }) {
         </section>
       </main>
       <SiteFooter dateModified={dateModified} />
-      <StickyCTA />
+      <div className="sticky-cta" aria-label="전화 문의"><a className="sticky-cta-body" href="tel:01075284936"><strong>📞 로또 010-7528-4936</strong><span>창원룰루랄라나이트 통화 문의</span></a></div>
     </>
   );
 }

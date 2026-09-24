@@ -525,7 +525,7 @@ export default function BookingVenuePage({
           <figure className="bk-og">
             <img
               src={bookingOgPathFor(venue as any, 이주소)}
-              alt={`${venue.name} 부킹 안내`}
+              alt={venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 부킹 안내`}
               width={1200}
               height={1200}
               style={{ maxWidth: "100%", height: "auto" }}
