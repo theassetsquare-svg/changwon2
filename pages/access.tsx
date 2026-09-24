@@ -1,3 +1,4 @@
+import { useThumb } from '@/lib/thumb';
 import type { GetStaticProps } from "next";
 import SeoHead from "@/components/SeoHead";
 import SiteNav from "@/components/SiteNav";
@@ -14,6 +15,7 @@ export const getStaticProps: GetStaticProps<{ dateModified: string }> = async ()
 });
 
 export default function Access({ dateModified }: { dateModified: string }) {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   const ld = graph([
     /* S4 T-006(2026-09-05): 업소 JSON-LD 의 image 를 이 쪽 og:image 와 같게 */
     ...BASE_GRAPH.map((x: any) => (Array.isArray(x["@type"]) && x["@type"].includes("NightClub") ? { ...x, image: "https://i.nolcool.com/og/card-changwon-lululala-bbeaae4a.png", telephone: "+82-10-7528-4936" } : x)),
@@ -34,7 +36,7 @@ export default function Access({ dateModified }: { dateModified: string }) {
         </div>
       </header>
       {/* 2026-09-24 광고주 복구 — 창원룰루랄라나이트 가게 쪽 = 로또 세트(표준 4줄 카드 · 전화바) */}
-      <figure className="page-thumb" style={{ margin: "0 0 18px" }}><img src="/og/card-changwon-lululala-bbeaae4a.png" alt="광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936" width={1200} height={1200} decoding="async" style={{ width: "100%", maxWidth: 420, height: "auto", borderRadius: 12, display: "block" }} /></figure>
+      <figure className="page-thumb" style={{ margin: "0 0 18px" }}><img src={표 ? 표.file : "/og/card-changwon-lululala-bbeaae4a.png"} alt={표 ? 표.alt : "광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936"} width={1200} height={1200} decoding="async" style={{ width: "100%", maxWidth: 420, height: "auto", borderRadius: 12, display: "block" }} /></figure>
       <main className="wrap">
         <nav aria-label="Breadcrumb" className="breadcrumb">
           <ol>

@@ -1,3 +1,4 @@
+import { useThumb } from '@/lib/thumb';
 import type { GetStaticPaths, GetStaticProps } from "next";
 import NightHead from "@/components/night/NightHead";
 import NightStyles from "@/components/night/NightStyles";
@@ -33,6 +34,7 @@ export const getStaticProps: GetStaticProps<{ venue: Venue }> = async (ctx) => {
 };
 
 export default function NightVenuePage({ venue }: { venue: Venue }) {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   const path = nightPath(venue.slug);
   const related = venue.related
     .map((s) => VENUE_BY_SLUG[s])
@@ -83,8 +85,8 @@ export default function NightVenuePage({ venue }: { venue: Venue }) {
 
         <figure className="night-og">
           <img
-            src={ogImagePath(venue.slug, (venue as any).ogV)}
-            alt={venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 위치·이용 안내`}
+            src={표 ? 표.file : ogImagePath(venue.slug, (venue as any).ogV)}
+            alt={표 ? 표.alt : venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 위치·이용 안내`}
             width={1200}
             height={1200}
             style={{ maxWidth: "100%", height: "auto" }}

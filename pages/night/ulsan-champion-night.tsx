@@ -10,6 +10,7 @@
  *   영업시간 __TODO__ → 확인 못 했으므로 그 문장을 넣지 않는다
  *   주차     확인 못 했으므로 그 문장을 넣지 않는다
  */
+import { useThumb } from '@/lib/thumb';
 import Head from "next/head";
 
 const 이름 = "울산챔피언나이트";
@@ -67,6 +68,9 @@ const faqPage = {
 };
 
 export default function UlsanChampionNightPage() {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
+  const 그림 = 표 ? "https://i.nolcool.com" + 표.file : OG;
+  const 그림알트 = 표 ? 표.alt : "울산 챔피언 나이트 안내";
   return (
     <>
       <Head>
@@ -77,15 +81,15 @@ export default function UlsanChampionNightPage() {
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESC} />
         <meta property="og:url" content={URL} />
-        <meta property="og:image" content={OG} />
-        <meta property="og:image:secure_url" content={OG} />
+        <meta property="og:image" content={그림} />
+        <meta property="og:image:secure_url" content={그림} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="1200" />
         <meta name="twitter:card" content="summary_large_image" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ ...localBusiness, image: 그림 }) }}
         />
         <script
           type="application/ld+json"
@@ -246,7 +250,7 @@ export default function UlsanChampionNightPage() {
         <h1>{TITLE}</h1>
       {/* 본문 그림 — og:image 와 같은 파일 (2026-08-31). 네이버는 본문에 그림이 있는 문서를 더 잘 집어 간다. 첫 그림이라 lazy 를 붙이지 않는다. */}
       <figure style={{ margin: "0 0 18px" }}>
-        <img src="/og/night-ulsan-champion-night-og.png" alt="울산 챔피언 나이트 안내" width={1200} height={1200} decoding="async"
+        <img src={표 ? 표.file : "/og/night-ulsan-champion-night-og.png"} alt={그림알트} width={1200} height={1200} decoding="async"
              style={{ width: "100%", maxWidth: 420, height: "auto", borderRadius: 12, display: "block" }} />
       </figure>
 

@@ -1,3 +1,4 @@
+import { useThumb, 이미지바꾸기 } from '@/lib/thumb';
 import Head from "next/head";
 import {
   SITE_URL,
@@ -26,8 +27,10 @@ export default function SeoHead({
   noindex,
 }: Props) {
   const url = SITE_URL + path;
-  const image = ogImage;   /* 2026-09-14 — 기본 그림(og-square.png)이 로또 번호 카드였다. 표준: 가게 쪽만 썸네일 → 기본값 없음 */
-  const imageAlt = ogImageAlt ?? title;
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
+  const image = 표 ? SITE_URL + 표.file : ogImage;   /* 2026-09-14 — 기본 그림(og-square.png)이 로또 번호 카드였다. 표준: 가게 쪽만 썸네일 → 기본값 없음 */
+  const imageAlt = 표 ? 표.alt : (ogImageAlt ?? title);
+  if (표 && !표.ogOnly && jsonLd) jsonLd = 이미지바꾸기(jsonLd, SITE_URL + 표.file);
 
   return (
     <Head>

@@ -1,0 +1,338 @@
+{
+ "_설명": "2026-09-24 썸네일 19곳 — 쪽 경로 → 그 쪽만의 카드(og·본문 첫 그림·JSON-LD image 같은 파일). 만든 곳 naver-watch/scripts/thumb/apply-thumbs.mjs",
+ "쪽": {
+  "/": {
+   "file": "/og/t-i-home-948a6a04.png",
+   "alt": "새벽 4시 40분 · 광고문의 · 카톡 besta12",
+   "ogOnly": true
+  },
+  "/access/": {
+   "file": "/og/t-i-access-a2901626.png",
+   "alt": "광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936"
+  },
+  "/area/landmark-guide/": {
+   "file": "/og/t-i-area-landmark-guide-ea59dca0.png",
+   "alt": "랜드마크로 찾는 지역 · 광고문의 · 카톡 besta12"
+  },
+  "/booking-2/": {
+   "file": "/og/t-i-booking-2-725d33f0.png",
+   "alt": "전국 나이트 부킹 안내 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/ansan-hit-night/": {
+   "file": "/og/t-i-booking-ansan-hit-night-fdef3bf7.png",
+   "alt": "안산히트나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/bucheon-gorae-night/": {
+   "file": "/og/t-i-booking-bucheon-gorae-night-cad8efe2.png",
+   "alt": "부천고래나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/bulgwang-hobak-night-1/": {
+   "file": "/og/t-i-booking-bulgwang-hobak-night-1-97e40a8b.png",
+   "alt": "광고 · 불광동호박나이트 · 손흥민 · 010-2221-1937"
+  },
+  "/booking/bulgwang-hobak-night/": {
+   "file": "/og/t-i-booking-bulgwang-hobak-night-4c171542.png",
+   "alt": "광고 · 불광동호박나이트 · 손흥민 · 010-2221-1937"
+  },
+  "/booking/busan-asiad-night-1/": {
+   "file": "/og/t-i-booking-busan-asiad-night-1-400c801c.png",
+   "alt": "광고 · 부산아시아드나이트 · 새우깡 · 010-3614-1056"
+  },
+  "/booking/busan-asiad-night/": {
+   "file": "/og/t-i-booking-busan-asiad-night-8056d873.png",
+   "alt": "광고 · 부산아시아드나이트 · 새우깡 · 010-3614-1056"
+  },
+  "/booking/changwon-lululala-night-1/": {
+   "file": "/og/t-i-booking-changwon-lululala-night-1-a95f8131.png",
+   "alt": "광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936"
+  },
+  "/booking/changwon-lululala-night/": {
+   "file": "/og/t-i-booking-changwon-lululala-night-3a1b5ffe.png",
+   "alt": "신림그랑프리나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/cheonan-korea-night/": {
+   "file": "/og/t-i-booking-cheonan-korea-night-d5fc14b3.png",
+   "alt": "천안코리아나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/cheonan-stardome-night/": {
+   "file": "/og/t-i-booking-cheonan-stardome-night-6ec474e0.png",
+   "alt": "천안스타돔나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/cheongdam-night-1/": {
+   "file": "/og/t-i-booking-cheongdam-night-1-baf4168d.png",
+   "alt": "광고 · 청담나이트 · 펩시맨 · 010-5655-4866"
+  },
+  "/booking/cheongdam-night/": {
+   "file": "/og/t-i-booking-cheongdam-night-b0d30b5a.png",
+   "alt": "광고 · 청담나이트 · 펩시맨 · 010-5655-4866"
+  },
+  "/booking/cheongju-hobak-night/": {
+   "file": "/og/t-i-booking-cheongju-hobak-night-b60e5604.png",
+   "alt": "청주호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/daegu-hobak-night/": {
+   "file": "/og/t-i-booking-daegu-hobak-night-37aa7403.png",
+   "alt": "대구호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/daejeon-one-night/": {
+   "file": "/og/t-i-booking-daejeon-one-night-52f7139c.png",
+   "alt": "대전원나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/daejeon-seven-night-1/": {
+   "file": "/og/t-i-booking-daejeon-seven-night-1-29affd2c.png",
+   "alt": "광고 · 대전세븐나이트 · 영탁 · 010-7770-0869"
+  },
+  "/booking/daejeon-seven-night/": {
+   "file": "/og/t-i-booking-daejeon-seven-night-13e9d5bf.png",
+   "alt": "광고 · 대전세븐나이트 · 영탁 · 010-7770-0869"
+  },
+  "/booking/dapsimni-miracle-night-1/": {
+   "file": "/og/t-i-booking-dapsimni-miracle-night-1-7fdd4c28.png",
+   "alt": "광고 · 답십리미라클나이트 · 유재석 · 010-8156-6558"
+  },
+  "/booking/dapsimni-miracle-night/": {
+   "file": "/og/t-i-booking-dapsimni-miracle-night-3e567cea.png",
+   "alt": "광고 · 답십리미라클나이트 · 유재석 · 010-8156-6558"
+  },
+  "/booking/doksan-gukbingwan-night/": {
+   "file": "/og/t-i-booking-doksan-gukbingwan-night-6dd477e1.png",
+   "alt": "독산동국빈관나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/gangseo-hobak-night/": {
+   "file": "/og/t-i-booking-gangseo-hobak-night-0e55f112.png",
+   "alt": "강서호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/gildong-chance-night/": {
+   "file": "/og/t-i-booking-gildong-chance-night-9aed7117.png",
+   "alt": "길동찬스나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/gumi-hobak-night/": {
+   "file": "/og/t-i-booking-gumi-hobak-night-6005c0d5.png",
+   "alt": "구미호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/guri-hobak-night/": {
+   "file": "/og/t-i-booking-guri-hobak-night-ac1a1a85.png",
+   "alt": "구리호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/gwangju-cheomdan-night/": {
+   "file": "/og/t-i-booking-gwangju-cheomdan-night-9ae7877f.png",
+   "alt": "광주첨단나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/gwangju-sangmu-night/": {
+   "file": "/og/t-i-booking-gwangju-sangmu-night-8fd6c2f2.png",
+   "alt": "광주상무나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/ilsan-shampoo-night/": {
+   "file": "/og/t-i-booking-ilsan-shampoo-night-588e93b3.png",
+   "alt": "일산샴푸나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/incheon-arabian-night/": {
+   "file": "/og/t-i-booking-incheon-arabian-night-2d8a7b52.png",
+   "alt": "인천아라비안나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/indeogwon-gukbingwan-night/": {
+   "file": "/og/t-i-booking-indeogwon-gukbingwan-night-49eb27c7.png",
+   "alt": "인덕원국빈관나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/jeju-night/": {
+   "file": "/og/t-i-booking-jeju-night-51e2b02b.png",
+   "alt": "제주도나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/nowon-hobak-night/": {
+   "file": "/og/t-i-booking-nowon-hobak-night-8a75737b.png",
+   "alt": "노원호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/osan-hobak-night-1/": {
+   "file": "/og/t-i-booking-osan-hobak-night-1-313c173a.png",
+   "alt": "서산호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/osan-hobak-night/": {
+   "file": "/og/t-i-booking-osan-hobak-night-89b6e860.png",
+   "alt": "오산호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/paju-skydome-night/": {
+   "file": "/og/t-i-booking-paju-skydome-night-3e4bfc25.png",
+   "alt": "광고 · 파주야당스카이돔나이트 · 딸기 · 010-3447-0963"
+  },
+  "/booking/pyeongtaek-hobak-night/": {
+   "file": "/og/t-i-booking-pyeongtaek-hobak-night-d4b16107.png",
+   "alt": "평택호박나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/sangbong-hangukgwan-night/": {
+   "file": "/og/t-i-booking-sangbong-hangukgwan-night-38b81940.png",
+   "alt": "상봉동한국관나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/seongnam-shampoo-night/": {
+   "file": "/og/t-i-booking-seongnam-shampoo-night-7c428071.png",
+   "alt": "광고 · 성남샴푸나이트 · 이쁜이 · 010-3432-4758"
+  },
+  "/booking/sillim-grandprix-night-2/": {
+   "file": "/og/t-i-booking-sillim-grandprix-night-2-659e428f.png",
+   "alt": "신림그랑프리나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/sillim-grandprix-night/": {
+   "file": "/og/t-i-booking-sillim-grandprix-night-0f8e489b.png",
+   "alt": "신림그랑프리나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/suwon-chancedome-night/": {
+   "file": "/og/t-i-booking-suwon-chancedome-night-c4c9378a.png",
+   "alt": "광고 · 수원찬스돔나이트 · 박찬호 · 010-7117-5077"
+  },
+  "/booking/suwon-korea-night/": {
+   "file": "/og/t-i-booking-suwon-korea-night-d0777dd0.png",
+   "alt": "수원코리아나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/suyu-shampoo-night/": {
+   "file": "/og/t-i-booking-suyu-shampoo-night-5d19e0d0.png",
+   "alt": "수유샴푸나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/uijeongbu-baekakgwan-night/": {
+   "file": "/og/t-i-booking-uijeongbu-baekakgwan-night-d1874b0b.png",
+   "alt": "의정부백악관나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/uijeongbu-hangukgwan-night/": {
+   "file": "/og/t-i-booking-uijeongbu-hangukgwan-night-a8a27347.png",
+   "alt": "의정부한국관나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/ulsan-champion-night-1/": {
+   "file": "/og/t-i-booking-ulsan-champion-night-1-4f01ff14.png",
+   "alt": "광고 · 울산챔피언나이트 · 춘자 · 010-5653-0069"
+  },
+  "/booking/ulsan-champion-night-2/": {
+   "file": "/og/t-i-booking-ulsan-champion-night-2-4544e19e.png",
+   "alt": "광고 · 울산챔피언나이트 · 춘자 · 010-5653-0069"
+  },
+  "/booking/ulsan-champion-night/": {
+   "file": "/og/t-i-booking-ulsan-champion-night-b6cde239.png",
+   "alt": "광고 · 울산챔피언나이트 · 춘자 · 010-5653-0069"
+  },
+  "/booking/ulsan-newworld-night/": {
+   "file": "/og/t-i-booking-ulsan-newworld-night-15c7b1da.png",
+   "alt": "울산뉴월드나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/booking/yeongdeungpo-terminal-night/": {
+   "file": "/og/t-i-booking-yeongdeungpo-terminal-night-22fa722d.png",
+   "alt": "영등포터미널나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/club/ansan-hit-night/": {
+   "file": "/og/t-i-club-ansan-hit-night-6a28c213.png",
+   "alt": "안산히트나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/club/bulgwang-hobak-night/": {
+   "file": "/og/t-i-club-bulgwang-hobak-night-d461725e.png",
+   "alt": "광고 · 불광동호박나이트 · 손흥민 · 010-2221-1937"
+  },
+  "/club/busan-asiad-night/": {
+   "file": "/og/t-i-club-busan-asiad-night-573f3ab3.png",
+   "alt": "광고 · 부산아시아드나이트 · 새우깡 · 010-3614-1056"
+  },
+  "/club/changwon-lululala-night/": {
+   "file": "/og/t-i-club-changwon-lululala-night-2749b792.png",
+   "alt": "광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936"
+  },
+  "/club/cheongdam-night-1/": {
+   "file": "/og/t-i-club-cheongdam-night-1-8fcbeb63.png",
+   "alt": "광고 · 청담나이트 · 펩시맨 · 010-5655-4866"
+  },
+  "/club/daejeon-one-night-1/": {
+   "file": "/og/t-i-club-daejeon-one-night-1-9832fff4.png",
+   "alt": "대전원나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/club/daejeon-seven-night-1/": {
+   "file": "/og/t-i-club-daejeon-seven-night-1-01882641.png",
+   "alt": "광고 · 대전세븐나이트 · 영탁 · 010-7770-0869"
+  },
+  "/club/ilsan-shampoo-night-1/": {
+   "file": "/og/t-i-club-ilsan-shampoo-night-1-84982b42.png",
+   "alt": "일산샴푸나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/club/sangbong-hangukgwan-night/": {
+   "file": "/og/t-i-club-sangbong-hangukgwan-night-a131a3c7.png",
+   "alt": "상봉동한국관나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/club/sillim-grandprix-night-1/": {
+   "file": "/og/t-i-club-sillim-grandprix-night-1-3b32b86c.png",
+   "alt": "신림그랑프리나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/club/suwon-chancedome-night-1/": {
+   "file": "/og/t-i-club-suwon-chancedome-night-1-68c5b2c6.png",
+   "alt": "광고 · 수원찬스돔나이트 · 박찬호 · 010-7117-5077"
+  },
+  "/club/suyu-shampoo-night-1/": {
+   "file": "/og/t-i-club-suyu-shampoo-night-1-9859c369.png",
+   "alt": "수유샴푸나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/club/ulsan-champion-night/": {
+   "file": "/og/t-i-club-ulsan-champion-night-8fec7da0.png",
+   "alt": "광고 · 울산챔피언나이트 · 춘자 · 010-5653-0069"
+  },
+  "/faq/": {
+   "file": "/og/t-i-faq-b303d274.png",
+   "alt": "광고 · 부산아시아드나이트 · 새우깡 · 010-3614-1056"
+  },
+  "/hours/": {
+   "file": "/og/t-i-hours-2a671124.png",
+   "alt": "광고 · 답십리미라클나이트 · 유재석 · 010-8156-6558"
+  },
+  "/location/": {
+   "file": "/og/t-i-location-eb3b54f5.png",
+   "alt": "상봉동한국관나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/night-2/": {
+   "file": "/og/t-i-night-2-f7dd3ea3.png",
+   "alt": "전국 나이트 업소 안내 · 광고문의 · 카톡 besta12"
+  },
+  "/parking/": {
+   "file": "/og/t-i-parking-1ff0188e.png",
+   "alt": "수유샴푸나이트 · 광고문의 · 카톡 besta12"
+  },
+  "/reviews/": {
+   "file": "/og/t-i-reviews-a34185f2.png",
+   "alt": "광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936"
+  },
+  "/rooms/": {
+   "file": "/og/t-i-rooms-30450007.png",
+   "alt": "광고 · 부산아시아드나이트 · 새우깡 · 010-3614-1056"
+  },
+  "/vip/": {
+   "file": "/og/t-i-vip-982b70b3.png",
+   "alt": "광고 · 울산챔피언나이트 · 춘자 · 010-5653-0069"
+  },
+  "/night/ulsan-champion-night/": {
+   "file": "/og/t-i-night-ulsan-champion-night-c52b307f.png",
+   "alt": "광고 · 울산챔피언나이트 · 춘자 · 010-5653-0069"
+  },
+  "/booking/bulgwang-hobak-night-2/": {
+   "file": "/og/t-i-booking-bulgwang-hobak-night-2-d16fe533.png",
+   "alt": "광고 · 불광동호박나이트 · 손흥민 · 010-2221-1937"
+  },
+  "/booking/busan-asiad-night-2/": {
+   "file": "/og/t-i-booking-busan-asiad-night-2-21d0bc91.png",
+   "alt": "광고 · 부산아시아드나이트 · 새우깡 · 010-3614-1056"
+  },
+  "/booking/changwon-lululala-night-2/": {
+   "file": "/og/t-i-booking-changwon-lululala-night-2-52bf3981.png",
+   "alt": "광고 · 창원룰루랄라나이트 · 로또 · 010-7528-4936"
+  },
+  "/booking/cheongdam-night-2/": {
+   "file": "/og/t-i-booking-cheongdam-night-2-8845eb6d.png",
+   "alt": "광고 · 청담나이트 · 펩시맨 · 010-5655-4866"
+  },
+  "/booking/daejeon-seven-night-2/": {
+   "file": "/og/t-i-booking-daejeon-seven-night-2-0c22b542.png",
+   "alt": "광고 · 대전세븐나이트 · 영탁 · 010-7770-0869"
+  },
+  "/booking/dapsimni-miracle-night-2/": {
+   "file": "/og/t-i-booking-dapsimni-miracle-night-2-12856ef7.png",
+   "alt": "광고 · 답십리미라클나이트 · 유재석 · 010-8156-6558"
+  },
+  "/booking/ulsan-champion-night-3/": {
+   "file": "/og/t-i-booking-ulsan-champion-night-3-c79c2fb2.png",
+   "alt": "광고 · 울산챔피언나이트 · 춘자 · 010-5653-0069"
+  },
+  "/booking/seongnam-shampoo-night-1/": {
+   "file": "/og/t-i-booking-seongnam-shampoo-night-1-2102b271.png",
+   "alt": "광고 · 성남샴푸나이트 · 이쁜이 · 010-3432-4758"
+  }
+ }
+}

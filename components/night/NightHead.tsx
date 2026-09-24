@@ -1,3 +1,4 @@
+import { useThumb, 이미지바꾸기 } from '@/lib/thumb';
 import Head from "next/head";
 import { SITE_URL } from "@/lib/site";
 
@@ -28,7 +29,9 @@ export default function NightHead({
   jsonLd,
 }: Props) {
   const url = SITE_URL + path;
-  const img = SITE_URL + image;
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
+  const img = SITE_URL + (표 ? 표.file : image);
+  if (표) { imageAlt = 표.alt; 그림없음 = false; if (!표.ogOnly && jsonLd) jsonLd = 이미지바꾸기(jsonLd, img); }
 
   return (
     <Head>

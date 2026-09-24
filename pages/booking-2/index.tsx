@@ -1,3 +1,5 @@
+import PageThumb from '@/components/PageThumb';
+import { useThumb } from '@/lib/thumb';
 import NightHead from "@/components/night/NightHead";
 import NightFooter from "@/components/night/NightFooter";
 import BookingStyles from "@/components/booking/BookingStyles";
@@ -40,6 +42,7 @@ const breadcrumb = {
 };
 
 export default function BookingHub() {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   return (
     <>
       <NightHead
@@ -70,6 +73,7 @@ export default function BookingHub() {
 
         <article>
           <h1>전국 나이트 부킹 안내 40</h1>
+          {표 ? <PageThumb path="/booking-2" alt={표.alt} /> : null}
 
           <p className="bk-updated">부킹 흐름·매너 기준으로 정리한 업소별 안내서</p>
 

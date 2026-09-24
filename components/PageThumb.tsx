@@ -16,11 +16,14 @@ export const thumbPath = (path: string) => {
   return '/og/auto-' + (p ? p.replace(/\//g, '-') + '-index' : 'index') + '.png';
 };
 
-export default function PageThumb({ path, alt }: { path: string; alt: string }) {
+export default function PageThumb({ path, alt: alt0 }: { path: string; alt: string }) {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 — og 와 같은 파일 */
+  if (표 && 표.ogOnly) return null;
+  const alt = 표 ? 표.alt : alt0;
   return (
     <figure className="page-thumb" style={{ margin: '0 0 18px' }}>
       <img
-        src={thumbPath(path)}
+        src={표 ? 표.file : thumbPath(path)}
         alt={alt}
         width={1200}
         height={1200}
@@ -29,4 +32,5 @@ export default function PageThumb({ path, alt }: { path: string; alt: string }) 
       />
     </figure>
   );
-}
+}import { useThumb } from '@/lib/thumb';
+

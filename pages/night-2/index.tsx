@@ -1,3 +1,5 @@
+import PageThumb from '@/components/PageThumb';
+import { useThumb } from '@/lib/thumb';
 import NightHead from "@/components/night/NightHead";
 import NightStyles from "@/components/night/NightStyles";
 import NightFooter from "@/components/night/NightFooter";
@@ -31,6 +33,7 @@ const breadcrumb = {
 };
 
 export default function NightIndex() {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   return (
     <>
       <NightHead
@@ -59,6 +62,7 @@ export default function NightIndex() {
         </nav>
 
         <h1>전국 나이트 업소 안내</h1>
+        {표 ? <PageThumb path="/night-2" alt={표.alt} /> : null}
 
         <div className="answer-box">
           <p>

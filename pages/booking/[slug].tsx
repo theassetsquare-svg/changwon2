@@ -1,3 +1,4 @@
+import { useThumb } from '@/lib/thumb';
 import type { GetStaticPaths, GetStaticProps } from "next";
 import NightHead from "@/components/night/NightHead";
 import NightFooter from "@/components/night/NightFooter";
@@ -406,6 +407,7 @@ export default function BookingVenuePage({
     notice?: string[];
   };
 }) {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   const path = 이주소 ?? bookingPath(venue.slug);
   /* ★ 2026-08-26 — 관련 링크가 적으면 색인이 안 된다. 모자라면 6개까지 채운다. */
   const related = (() => {
@@ -524,8 +526,8 @@ export default function BookingVenuePage({
 
           <figure className="bk-og">
             <img
-              src={bookingOgPathFor(venue as any, 이주소)}
-              alt={venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 부킹 안내`}
+              src={표 ? 표.file : bookingOgPathFor(venue as any, 이주소)}
+              alt={표 ? 표.alt : venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 부킹 안내`}
               width={1200}
               height={1200}
               style={{ maxWidth: "100%", height: "auto" }}

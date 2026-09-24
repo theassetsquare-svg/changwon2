@@ -1,3 +1,4 @@
+import { useThumb } from '@/lib/thumb';
 import Head from "next/head";
 import type { GetStaticProps } from "next";
 import { SITE_URL } from "@/lib/site";
@@ -114,6 +115,7 @@ const CSS = `
 
 
 export default function Home({ dateModified }: { dateModified: string }) {
+  const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   const ld = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -139,6 +141,7 @@ export default function Home({ dateModified }: { dateModified: string }) {
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:url" content={SITE_URL + PATH} />
+        {표 ? (<><meta property="og:image" content={SITE_URL + 표.file} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="1200" /><meta property="og:image:type" content="image/png" /><meta property="og:image:alt" content={표.alt} /><meta name="twitter:image" content={SITE_URL + 표.file} /></>) : null}
         <meta property="og:locale" content="ko_KR" />
         {/* 1:1 그림이라 summary. summary_large_image 는 좌우가 잘린다. */}
         <meta name="twitter:card" content="summary" />
