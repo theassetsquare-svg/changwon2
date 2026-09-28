@@ -2,10 +2,10 @@
 // 사이트맵 상태 확인 + (재)제출. 서브페이지가 크롤되지 않는 핵심 원인 대응.
 import { getAccessToken } from "./lib/gsc.mjs";
 
-const SITE = "https://i.nolcool.com/";
+const SITE = "https://p.nolcool.com/";
 const SITEMAPS = [
-  "https://i.nolcool.com/sitemap.xml",
-  "https://i.nolcool.com/feed.xml",
+  "https://p.nolcool.com/sitemap.xml",
+  "https://p.nolcool.com/feed.xml",
 ];
 
 async function listSitemaps(token) {

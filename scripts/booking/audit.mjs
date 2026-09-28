@@ -7,7 +7,7 @@ import { resolve, join } from "node:path";
 const ROOT = resolve(import.meta.dirname, "../..");
 const OUT = join(ROOT, "out/booking");
 const NIGHT_OUT = join(ROOT, "out/night");
-const SITE = "https://i.nolcool.com";
+const SITE = "https://p.nolcool.com";
 
 // ── 업소 메타 파싱 ──
 const META = [];

@@ -19,8 +19,8 @@ const 닉 = "춘자";
 const 번호 = "010-5653-0069";
 const 주소 = "울산 남구 정동로 75 (삼산동 1559-17) 1층";
 const 확인일 = "2026-08-31";
-const URL = "https://i.nolcool.com/night/ulsan-champion-night/";
-const OG = "https://i.nolcool.com/og/night-ulsan-champion-night-og.png";
+const URL = "https://p.nolcool.com/night/ulsan-champion-night/";
+const OG = "https://p.nolcool.com/og/night-ulsan-champion-night-og.png";
 
 const TITLE = "울산챔피언나이트 전화부터 자리까지 흐름 안내";
 const DESC =
@@ -201,7 +201,7 @@ const UCN_CSS = `
 export default function UlsanChampionNightPage() {
   const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   const s = useSalt();
-  const 그림 = 표 ? "https://i.nolcool.com" + 표.file : OG;
+  const 그림 = 표 ? "https://p.nolcool.com" + 표.file : OG;
   const 그림알트 = 표 ? 표.alt : "울산 챔피언 나이트 안내";
   return 소금입히기(
     <>
@@ -237,7 +237,7 @@ export default function UlsanChampionNightPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "새벽 4시 40분", item: "https://i.nolcool.com/" },
+                { "@type": "ListItem", position: 1, name: "새벽 4시 40분", item: "https://p.nolcool.com/" },
                 { "@type": "ListItem", position: 2, name: "울산챔피언나이트", item: URL },
               ],
             }),

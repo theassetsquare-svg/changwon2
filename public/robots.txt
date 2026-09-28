@@ -38,4 +38,4 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
-Sitemap: https://i.nolcool.com/sitemap.xml
+Sitemap: https://p.nolcool.com/sitemap.xml

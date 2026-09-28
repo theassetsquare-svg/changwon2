@@ -57,7 +57,7 @@ export default function SeoHead({
       <link rel="canonical" href={url} />
       <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} RSS`} href={SITE_URL + "/rss.xml"} />
       <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} 피드`} href={SITE_URL + "/feed.xml"} />
-      <link rel="icon" href="https://i.nolcool.com/favicon.ico" />
+      <link rel="icon" href="https://p.nolcool.com/favicon.ico" />
 
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />

@@ -5,13 +5,13 @@ export default function Document() {
     <Html lang="ko">
       <Head>
         {/* ★ 2026-08-31 — 파비콘 선언이 없어 검색 결과에 아이콘이 안 떴다(체크리스트 #58) */}
-        <link rel="shortcut icon" href="https://i.nolcool.com/favicon.ico" />
+        <link rel="shortcut icon" href="https://p.nolcool.com/favicon.ico" />
         <meta charSet="utf-8" />
         {/* 구 등록(changwonc.pages.dev) 유지 — 2026-08-18 */}
         <meta name="naver-site-verification" content="3bb98ddc2b6fee3ffb0f267744f3689f8f3a7ca6" />
         {/* 구 등록(changwona.pages.dev) 유지 */}
         <meta name="naver-site-verification" content="fb77bafd6276354f9e3aae2754d325d44526e700" />
-        {/* 새 도메인 등록(i.nolcool.com) — 2026-08-24 */}
+        {/* 새 도메인 등록(p.nolcool.com) — 2026-08-24 */}
         <meta name="naver-site-verification" content="c93b0d8d68e8ea14bee02e62cbf04f5e824057b5" />
         {/* 가게 전용 사이트 등록(p.nolcool.com · 같은 저장소를 받는 프로젝트 changwon2) — 대표님 2026-09-27 */}
         <meta name="naver-site-verification" content="8098d9f1e2fbca9bef6e161a14bec3cf5cbc355a" />

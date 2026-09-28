@@ -1,4 +1,4 @@
-export const SITE_URL = "https://i.nolcool.com";
+export const SITE_URL = "https://p.nolcool.com";
 export const SITE_NAME = "창원 룰루랄라 나이트클럽";
 /* 2026-09-13 창원룰루랄라나이트 광고 해지(비광고주) — 닉네임·전화 상수를 지웠다. 어느 쪽에도 연락처를 싣지 않는다. */
 export const BIZ_MIN_AGE = "만 27세 이상";

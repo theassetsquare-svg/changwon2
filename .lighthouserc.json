@@ -2,16 +2,16 @@
   "ci": {
     "collect": {
       "url": [
-        "https://i.nolcool.com/",
-        "https://i.nolcool.com/location/",
-        "https://i.nolcool.com/booking/",
-        "https://i.nolcool.com/rooms/",
-        "https://i.nolcool.com/hours/",
-        "https://i.nolcool.com/parking/",
-        "https://i.nolcool.com/access/",
-        "https://i.nolcool.com/vip/",
-        "https://i.nolcool.com/reviews/",
-        "https://i.nolcool.com/faq/"
+        "https://p.nolcool.com/",
+        "https://p.nolcool.com/location/",
+        "https://p.nolcool.com/booking/",
+        "https://p.nolcool.com/rooms/",
+        "https://p.nolcool.com/hours/",
+        "https://p.nolcool.com/parking/",
+        "https://p.nolcool.com/access/",
+        "https://p.nolcool.com/vip/",
+        "https://p.nolcool.com/reviews/",
+        "https://p.nolcool.com/faq/"
       ],
       "numberOfRuns": 1,
       "settings": {

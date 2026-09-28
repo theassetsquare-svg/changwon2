@@ -19,8 +19,8 @@ import {
   dateNDaysAgo,
 } from "./lib/gsc.mjs";
 
-const SITE = "https://i.nolcool.com/";
-const HOST = "https://i.nolcool.com";
+const SITE = "https://p.nolcool.com/";
+const HOST = "https://p.nolcool.com";
 const PATHS = ["/", "/location/", "/booking-2/", "/rooms/", "/hours/", "/parking/", "/access/", "/vip/", "/reviews/", "/faq/"];
 const SITEMAPS = [`${HOST}/sitemap.xml`, `${HOST}/feed.xml`];
 const ALERT_TO = process.env.ALERT_TO || "theassetsquare@gmail.com";
