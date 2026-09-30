@@ -658,7 +658,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "sangbong-hangukgwan-night",
+    slug: "sangbong-hangukgwan-night-1",
     name: "상봉동한국관나이트",
     group: "B",
     region: "서울 중랑구 상봉동",
