@@ -19,7 +19,7 @@ const 닉 = "춘자";
 const 번호 = "010-5653-0069";
 const 주소 = "울산 남구 정동로 75 (삼산동 1559-17) 1층";
 const 확인일 = "2026-08-31";
-const URL = "https://i.nolcool.com/night/ulsan-champion-night/";
+const URL = "https://i.nolcool.com/night/ulsan-champion-night-9/";
 const OG = "https://i.nolcool.com/og/night-ulsan-champion-night-og.png";
 
 const TITLE = "울산챔피언나이트 전화부터 자리까지 흐름 안내";

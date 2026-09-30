@@ -802,7 +802,7 @@ export const 변형쪽들: Record<string, 변형쪽> = {
       "확인되지 않은 항목은 비워 뒀어요."
     ]
   },
-  "/parking": {
+  "/parking-1": {
     "slug": "suyu-shampoo-3",
     "각도": "주차",
     "title": "수유샴푸나이트 차를 두고 갈지 정하는 기준",

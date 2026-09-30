@@ -8,7 +8,7 @@ const PATHS = [
   "/booking-2/",
   "/rooms/",
   "/hours/",
-  "/parking/",
+  "/parking-1/",
   "/access/",
   "/vip/",
   "/reviews/",

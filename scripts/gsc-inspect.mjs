@@ -4,7 +4,7 @@
 import { getAccessToken } from "./lib/gsc.mjs";
 
 const SITE = "https://i.nolcool.com/";
-const PATHS = ["/", "/location-1/", "/booking-2/", "/rooms/", "/hours/", "/parking/", "/access/", "/vip/", "/reviews/", "/faq/"];
+const PATHS = ["/", "/location-1/", "/booking-2/", "/rooms/", "/hours/", "/parking-1/", "/access/", "/vip/", "/reviews/", "/faq/"];
 
 async function inspect(token, url) {
   const res = await fetch("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", {

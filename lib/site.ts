@@ -20,7 +20,7 @@ export const PAGES = [
   { path: "/booking-2/", label: "부킹 안내 40" },
   { path: "/rooms/", label: "룸·메인홀·DJ존" },
   { path: "/hours/", label: "영업시간" },
-  { path: "/parking/", label: "주차 안내" },
+  { path: "/parking-1/", label: "주차 안내" },
   { path: "/access/", label: "대중교통" },
   { path: "/vip/", label: "VIP·단체" },
   { path: "/reviews/", label: "방문 후기" },

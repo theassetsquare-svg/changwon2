@@ -200,7 +200,7 @@ export default function NightIndex() {
           <li><a href="/club/busan-asiad-night/">부산아시아드나이트</a></li>
           <li><a href="/booking/busan-asiad-night/">부산아시아드나이트</a></li>
           <li><a href="/booking/ulsan-newworld-night/">울산뉴월드나이트</a></li>
-          <li><a href="/night/ulsan-champion-night/">울산챔피언나이트</a></li>
+          <li><a href="/night/ulsan-champion-night-9/">울산챔피언나이트</a></li>
           <li><a href="/booking/ulsan-champion-night/">울산챔피언나이트</a></li>
           <li><a href="/club/changwon-lululala-night/">창원룰루랄라나이트</a></li>
           <li><a href="/booking/changwon-lululala-night/">창원룰루랄라나이트</a></li>
