@@ -167,7 +167,7 @@ export default function NightIndex() {
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
           <li><a href="/booking/guri-hobak-night/">구리호박나이트</a></li>
           <li><a href="/booking/bucheon-gorae-night/">부천고래나이트</a></li>
-          <li><a href="/club/suwon-chancedome-night-1/">수원찬스돔나이트</a></li>
+          <li><a href="/club/suwon-chancedome-night-2/">수원찬스돔나이트</a></li>
           <li><a href="/booking/suwon-chancedome-night/">수원찬스돔나이트</a></li>
           <li><a href="/booking/suwon-korea-night/">수원코리아나이트</a></li>
           <li><a href="/club/ansan-hit-night/">안산히트나이트</a></li>

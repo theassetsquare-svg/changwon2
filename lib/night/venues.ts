@@ -1292,7 +1292,7 @@ export const NIGHT_URL_MAP: Record<string, string> = {
   "daejeon-one-night": "daejeon-one-night-1",
   "sillim-grandprix-3": "sillim-grandprix-night-1",
   "suyu-shampoo-3": "suyu-shampoo-night-1",
-  "suwon-chancedome-3": "suwon-chancedome-night-1",
+  "suwon-chancedome-3": "suwon-chancedome-night-2",
   "ansan-hit-3": "ansan-hit-night",
   "daejeon-seven-3": "daejeon-seven-night-1",
   "ilsan-shampoo-3": "ilsan-shampoo-night-2",
