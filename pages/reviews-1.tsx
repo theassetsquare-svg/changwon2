@@ -18,7 +18,7 @@ import { 변형쪽들 } from "@/lib/variant-pages";
  *    관계 고지·JSON-LD)을 쪽 단위로 넣어 준다. 남의 번호가 새지 않는다.
  */
 const VENUE_SLUG = "changwon-lululala-night";
-const 이주소 = "/reviews/";
+const 이주소 = "/reviews-1/";
 
 export const getStaticProps: GetStaticProps<{ venue: BookingVenue }> = async () => ({
   props: { venue: BOOKING_BY_SLUG[VENUE_SLUG] },
@@ -32,8 +32,8 @@ export default function ReviewsAdPage({ venue }: { venue: BookingVenue }) {
           (색인 점검표 #48). 제목·주소·사실은 그대로 두고 설명문만 이 쪽의 것으로 넘긴다. */}
       <BookingVenuePage
         venue={venue}
-        변형={변형쪽들["/reviews"]}
-        설명={변형쪽들["/reviews"].description}
+        변형={변형쪽들["/reviews-1"]}
+        설명={변형쪽들["/reviews-1"].description}
       />
       <Head>
         <link key="canonical" rel="canonical" href={url} />

@@ -11,7 +11,7 @@ const PATHS = [
   "/parking-1/",
   "/access/",
   "/vip/",
-  "/reviews/",
+  "/reviews-1/",
   "/faq/",
   "/robots.txt",
   "/sitemap.xml",

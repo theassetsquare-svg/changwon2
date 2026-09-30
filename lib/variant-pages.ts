@@ -445,7 +445,7 @@ export const 변형쪽들: Record<string, 변형쪽> = {
       "공개 자료에서 확인한 것만 담았다"
     ]
   },
-  "/reviews": {
+  "/reviews-1": {
     "slug": "changwon-lululala-night",
     "각도": "귀가",
     "title": "창원룰루랄라나이트 돌아갈 길까지 정리",

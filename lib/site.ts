@@ -23,6 +23,6 @@ export const PAGES = [
   { path: "/parking-1/", label: "주차 안내" },
   { path: "/access/", label: "대중교통" },
   { path: "/vip/", label: "VIP·단체" },
-  { path: "/reviews/", label: "방문 후기" },
+  { path: "/reviews-1/", label: "방문 후기" },
   { path: "/faq/", label: "자주 묻는 질문" },
 ] as const;
