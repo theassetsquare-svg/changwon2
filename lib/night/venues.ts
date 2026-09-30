@@ -1295,7 +1295,7 @@ export const NIGHT_URL_MAP: Record<string, string> = {
   "suwon-chancedome-3": "suwon-chancedome-night-1",
   "ansan-hit-3": "ansan-hit-night",
   "daejeon-seven-3": "daejeon-seven-night-1",
-  "ilsan-shampoo-3": "ilsan-shampoo-night-1",
+  "ilsan-shampoo-3": "ilsan-shampoo-night-2",
 };
 export const NIGHT_SLUG_BY_URL: Record<string, string> = Object.fromEntries(
   Object.entries(NIGHT_URL_MAP).map(([slug, url]) => [url, slug])
