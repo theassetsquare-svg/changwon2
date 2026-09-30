@@ -291,7 +291,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "ulsan-champion-night",
+    slug: "ulsan-champion-night-1",
     name: "울산챔피언나이트",
     group: "A",
     region: "울산 남구 삼산동",
@@ -1287,7 +1287,7 @@ export const NIGHT_KEEP_OLD = new Set<string>(["busan-asiad-night", "sangbong-ha
 export const NIGHT_URL_MAP: Record<string, string> = {
   "bulgwang-hobak-night": "bulgwang-hobak-night",
   "changwon-lululala-night": "changwon-lululala-night",
-  "ulsan-champion-night": "ulsan-champion-night",
+  "ulsan-champion-night": "ulsan-champion-night-1",
   "cheongdam-3": "cheongdam-night-1",
   "daejeon-one-night": "daejeon-one-night-1",
   "sillim-grandprix-3": "sillim-grandprix-night-1",

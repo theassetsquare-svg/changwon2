@@ -673,7 +673,7 @@ export const 변형쪽들: Record<string, 변형쪽> = {
       "후기와 평점은 싣지 않습니다."
     ]
   },
-  "/location": {
+  "/location-1": {
     "slug": "sangbong-hangukgwan-3",
     "각도": "오시는길",
     "title": "상봉동한국관나이트 위치 확인과 도착 순서",
