@@ -1,0 +1,25 @@
+{
+ "version": 1,
+ "include": [
+  "/*"
+ ],
+ "exclude": [
+  "/_next/*",
+  "/images/*",
+  "/og/*",
+  "/favicon.ico",
+  "/feed.xml",
+  "/llms.txt",
+  "/robots.txt",
+  "/rss.xml",
+  "/sitemap.xml",
+  "/7d6805ffcfbc7daebe670bae602c1d3f.txt",
+  "/file.svg",
+  "/globe.svg",
+  "/indexnow-key.txt",
+  "/next.svg",
+  "/og-sun-home.png",
+  "/vercel.svg",
+  "/window.svg"
+ ]
+}
