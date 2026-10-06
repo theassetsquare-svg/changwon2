@@ -1,6 +1,6 @@
 {
   "generated": "static",
-  "count": 55,
+  "count": 54,
   "items": [
     {
       "file": "/og/booking-sillim-grandprix-3-guide-og.png",
@@ -201,20 +201,6 @@
         "i.nolcool.com"
       ],
       "bytes": 32748,
-      "width": 1200,
-      "height": 1200
-    },
-    {
-      "file": "/og/booking-dapsimni-miracle-night-og.png",
-      "page": "https://i.nolcool.com/booking/dapsimni-miracle-night/",
-      "venue": "답십리미라클나이트",
-      "text": [
-        "BOOKING",
-        "답십리미라클나이트",
-        "서울 동대문구 답십리동",
-        "i.nolcool.com"
-      ],
-      "bytes": 31260,
       "width": 1200,
       "height": 1200
     },

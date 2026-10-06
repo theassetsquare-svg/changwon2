@@ -97,11 +97,9 @@
   "답십리미라클나이트": {
    "id": "dapsimni-miracle",
    "name": "답십리미라클나이트",
-   "isAdvertiser": true,
+   "isAdvertiser": false,
    "address": "서울 동대문구 고미술로 99",
-   "openingHours": "매일 오후 7시~새벽 5시",
-   "telephone": "010-8156-6558",
-   "nickname": "유재석"
+   "openingHours": "매일 오후 7시~새벽 5시"
   },
   "독산동국빈관나이트": {
    "id": "doksan-gukbingwan",
