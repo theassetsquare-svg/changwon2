@@ -393,7 +393,7 @@ function 읽기전정리(venue: BookingVenue, facts: [string, string][], 씨: st
 }
 
 /** 2026-09-25 — 장부(naver-watch data/shops)의 verified 값만. 없으면 undefined(쪽에서 뺀다) */
-type 확인가게 = { name: string; isAdvertiser: boolean; address?: string; openingHours?: string; telephone?: string; nickname?: string };
+type 확인가게 = { name: string; isAdvertiser: boolean; address?: string; openingHours?: string; telephone?: string; nickname?: string; checkedAt?: string };
 export function 확인값(name: string): 확인가게 | undefined {
   return (확인표 as { 가게: Record<string, 확인가게> }).가게[name];
 }
@@ -451,6 +451,8 @@ export default function BookingVenuePage({
   const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   const s = useSalt();
   const venue = 확인가게로(원래);
+  /* 2026-10-06 전용22-8 — 장부에 확인일(checkedAt)이 있는 광고 쪽만 새 규격(카드 자리·관계 고지·twitter 큰 카드). 다른 광고주 쪽은 예전 꼴 그대로 */
+  const 확인일 = venue.contact ? 확인값(원래.name)?.checkedAt : undefined;
   const path = 이주소 ?? bookingPath(venue.slug);
   const related = (() => {
     const out = venue.related.map((x) => BOOKING_BY_SLUG[x]).filter(Boolean) as BookingVenue[];
@@ -509,6 +511,20 @@ export default function BookingVenuePage({
   /* 변형 쪽은 같은 가게 부킹 쪽과 한 줄 정리가 겹치지 않게 변형 요약의 마지막 줄을 쓴다 */
   const 한줄 = N(변형 ? ((변형.summary && 변형.summary[변형.summary.length - 1]) || venue.oneline) : venue.oneline);
 
+  const 카드 = (
+    <figure className="bk-og">
+      <img
+        src={표 ? 표.file : bookingOgPathFor(venue as any, 이주소)}
+        alt={표 ? 표.alt : venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 부킹 안내`}
+        width={1200}
+        height={1200}
+        style={{ maxWidth: "100%", height: "auto" }}
+        loading="eager"
+      />
+      <figcaption>부킹 안내 카드</figcaption>
+    </figure>
+  );
+
   return (
     <>
       <NightHead
@@ -517,6 +533,7 @@ export default function BookingVenuePage({
         path={path}
         image={bookingOgPathFor(venue as any, 이주소)}
         imageAlt={venue.ogAlt}
+        큰카드={!!확인일}
         jsonLd={[
           bookingClubSchema(venue, 이주소),
           bookingFaqSchema(venue, 문답),
@@ -559,6 +576,9 @@ export default function BookingVenuePage({
             {pickBySlug(path, UPDATED_LABELS)} <time dateTime={UPDATED}>{UPDATED_LABEL}</time>
           </p>
 
+          {/* 새 광고 세트 쪽은 카드를 h1·갱신일 바로 뒤, 도입·직답 상자보다 위에 */}
+          {확인일 ? 카드 : null}
+
           <section>
             {도입.map((p: string, i: number) => (<p key={i}>{p}</p>))}
             {도입kw ? <p className="bk-kw">{도입kw}</p> : null}
@@ -573,17 +593,7 @@ export default function BookingVenuePage({
             ))}
           </div>
 
-          <figure className="bk-og">
-            <img
-              src={표 ? 표.file : bookingOgPathFor(venue as any, 이주소)}
-              alt={표 ? 표.alt : venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 부킹 안내`}
-              width={1200}
-              height={1200}
-              style={{ maxWidth: "100%", height: "auto" }}
-              loading="eager"
-            />
-            <figcaption>부킹 안내 카드</figcaption>
-          </figure>
+          {확인일 ? null : 카드}
 
           <div data-frame="1" className="bk-table-wrap">
             <table className="bk-facts" data-r="facts">
@@ -633,11 +643,17 @@ export default function BookingVenuePage({
             <b>한 줄 정리</b>
             <span data-r="close">{한줄}</span>
           </div>
-          <p data-frame="1" className="bk-checked">
-            {venue.contact ? "광고 · 업소 담당자 제공 연락처 · " : "공개된 자료 기준 · 업소와 제휴 관계 없음 · "}
-            확인일 <time dateTime="2026-09-25">2026년 9월 25일</time>.
-            운영 사정에 따라 내용은 바뀔 수 있습니다.
-          </p>
+          {확인일 && venue.contact ? (
+            <p data-frame="1" className="bk-checked">
+              {`이 페이지는 광고이며, 업소 제공 정보를 받아 실었습니다(담당 ${venue.contact.nick}). 확인일 `}<time dateTime={확인일}>{확인일}</time>{". 운영 사정에 따라 내용은 바뀔 수 있습니다."}
+            </p>
+          ) : (
+            <p data-frame="1" className="bk-checked">
+              {venue.contact ? "광고 · 업소 담당자 제공 연락처 · " : "공개된 자료 기준 · 업소와 제휴 관계 없음 · "}
+              확인일 <time dateTime="2026-09-25">2026년 9월 25일</time>.
+              운영 사정에 따라 내용은 바뀔 수 있습니다.
+            </p>
+          )}
         </article>
 
         <nav data-frame="1" className="bk-related" aria-label="함께 보면 좋은 부킹 안내">

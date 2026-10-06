@@ -218,8 +218,11 @@
   "신림그랑프리나이트": {
    "id": "sillim-grandprix",
    "name": "신림그랑프리나이트",
-   "isAdvertiser": false,
-   "address": "서울 관악구 신림로 340"
+   "isAdvertiser": true,
+   "address": "서울 관악구 신림로 340",
+   "telephone": "010-7352-1606",
+   "nickname": "쌍코피",
+   "checkedAt": "2026-10-06"
   },
   "수원찬스돔나이트": {
    "id": "suwon-chancedome",

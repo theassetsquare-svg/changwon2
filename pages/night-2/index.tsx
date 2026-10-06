@@ -203,7 +203,7 @@ export default function NightIndex() {
           <li><a href="/night/ulsan-champion-night/">울산챔피언나이트</a></li>
           <li><a href="/booking/ulsan-champion-night/">울산챔피언나이트</a></li>
           <li><a href="/club/changwon-lululala-night/">창원룰루랄라나이트</a></li>
-          <li><a href="/booking/changwon-lululala-night/">창원룰루랄라나이트</a></li>
+          <li><a href="/booking/changwon-lululala-night/">신림그랑프리나이트</a></li>
         </ul>
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>호남·제주</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>

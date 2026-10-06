@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps<{ venue: Venue }> = async (ctx) => {
   return { props: { venue } };
 };
 
-type 확인가게 = { name: string; isAdvertiser: boolean; address?: string; openingHours?: string; telephone?: string; nickname?: string };
+type 확인가게 = { name: string; isAdvertiser: boolean; address?: string; openingHours?: string; telephone?: string; nickname?: string; checkedAt?: string };
 /** 2026-09-25 — 장부 verified 값만 쓰는 가게(주소·영업시간·광고주 연락처). 없는 값은 쪽에서 뺀다 */
 function 확인가게로(v: Venue): Venue {
   const 장 = (확인표 as { 가게: Record<string, 확인가게> }).가게[v.name];
@@ -82,6 +82,8 @@ export default function NightVenuePage({ venue: 원래 }: { venue: Venue }) {
   const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
   const s = useSalt();
   const venue = 확인가게로(원래);
+  /* 2026-10-06 전용22-8 — 장부에 확인일(checkedAt)이 있는 광고 쪽만 새 규격(카드 자리·관계 고지·twitter 큰 카드). 다른 광고주 쪽은 예전 꼴 그대로 */
+  const 확인일 = venue.contact ? (확인표 as { 가게: Record<string, 확인가게> }).가게[원래.name]?.checkedAt : undefined;
   const path = nightPath(venue.slug);
   const related = venue.related
     .map((x) => VENUE_BY_SLUG[x])
@@ -122,6 +124,20 @@ export default function NightVenuePage({ venue: 원래 }: { venue: Venue }) {
     venue.contact ? ["문의", `${venue.contact.nick} ${venue.contact.phone}`] : ["광고·제휴 입점 문의", "카카오톡 besta12"],
   ];
 
+  const 카드 = (
+    <figure className="night-og">
+      <img
+        src={표 ? 표.file : ogImagePath(venue.slug, (venue as any).ogV)}
+        alt={표 ? 표.alt : venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 위치·이용 안내`}
+        width={1200}
+        height={1200}
+        style={{ maxWidth: "100%", height: "auto" }}
+        loading="eager"
+      />
+      <figcaption>안내 카드</figcaption>
+    </figure>
+  );
+
   return (
     <>
       <NightHead
@@ -130,6 +146,7 @@ export default function NightVenuePage({ venue: 원래 }: { venue: Venue }) {
         path={path}
         image={ogImagePath(venue.slug, (venue as any).ogV)}
         imageAlt={venue.ogAlt}
+        큰카드={!!확인일}
         jsonLd={[nightClubSchema(venue), faqPageSchema({ ...venue, faq: 문답 }), breadcrumbSchema(venue)]}
       />
       <NightStyles />
@@ -157,21 +174,14 @@ export default function NightVenuePage({ venue: 원래 }: { venue: Venue }) {
           최종 정리 <time dateTime="2026-09-25">2026년 9월 25일</time>
         </p>
 
+        {/* 새 광고 세트 쪽은 카드를 h1·갱신일 바로 뒤, 직답 상자보다 위에 */}
+        {확인일 ? 카드 : null}
+
         <div className="answer-box" data-r="lead">
           <p>{직답}</p>
         </div>
 
-        <figure className="night-og">
-          <img
-            src={표 ? 표.file : ogImagePath(venue.slug, (venue as any).ogV)}
-            alt={표 ? 표.alt : venue.contact ? ["광고", venue.name, venue.contact.nick, venue.contact.phone].join(" · ") : `${venue.name} 위치·이용 안내`}
-            width={1200}
-            height={1200}
-            style={{ maxWidth: "100%", height: "auto" }}
-            loading="eager"
-          />
-          <figcaption>안내 카드</figcaption>
-        </figure>
+        {확인일 ? null : 카드}
 
 
         <div className="night-table-wrap">
@@ -243,10 +253,16 @@ export default function NightVenuePage({ venue: 원래 }: { venue: Venue }) {
           <p>③ {요약[2]}</p>
         </div>
 
-        <p className="night-checked">
-          {venue.contact ? "광고 · 업소 담당자 제공 연락처 · " : "공개된 자료 기준 · 업소와 제휴 관계 없음 · "}
-          확인일 <time dateTime="2026-09-25">2026년 9월 25일</time>. 운영 사정에 따라 내용은 바뀔 수 있으니 방문 전에 다시 확인해 주십시오.
-        </p>
+        {확인일 && venue.contact ? (
+          <p className="night-checked">
+            {`이 페이지는 광고이며, 업소 제공 정보를 받아 실었습니다(담당 ${venue.contact.nick}). 확인일 `}<time dateTime={확인일}>{확인일}</time>{". 운영 사정에 따라 내용은 바뀔 수 있으니 방문 전에 다시 확인해 주십시오."}
+          </p>
+        ) : (
+          <p className="night-checked">
+            {venue.contact ? "광고 · 업소 담당자 제공 연락처 · " : "공개된 자료 기준 · 업소와 제휴 관계 없음 · "}
+            확인일 <time dateTime="2026-09-25">2026년 9월 25일</time>. 운영 사정에 따라 내용은 바뀔 수 있으니 방문 전에 다시 확인해 주십시오.
+          </p>
+        )}
         </article>
 
         <nav className="night-related" aria-label="관련 업소 안내">

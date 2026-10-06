@@ -11,6 +11,8 @@ type Props = {
   그림없음?: boolean;
   imageAlt: string;
   jsonLd?: object[];
+  /** ★ 2026-10-06 전용22-8 — 광고 세트를 새 규격(확인일 checkedAt 있음)으로 넣은 쪽만 true. 없으면 예전대로 summary. */
+  큰카드?: boolean;
 };
 
 /**
@@ -27,6 +29,7 @@ export default function NightHead({
   imageAlt,
   그림없음 = false,
   jsonLd,
+  큰카드 = false,
 }: Props) {
   const url = SITE_URL + path;
   const 표 = useThumb();   /* 2026-09-24 쪽마다 고유 카드 */
@@ -71,8 +74,9 @@ export default function NightHead({
         </>
       )}
 
-      {/* 1:1 이미지이므로 summary. summary_large_image 는 좌우가 잘린다. */}
-      <meta name="twitter:card" content="summary" />
+      {/* 1:1 이미지이므로 summary. summary_large_image 는 좌우가 잘린다.
+          단 새 광고 세트 쪽(큰카드)은 규격 5자리-⑤대로 summary_large_image. */}
+      <meta name="twitter:card" content={큰카드 && !그림없음 ? "summary_large_image" : "summary"} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {그림없음 ? null : (
