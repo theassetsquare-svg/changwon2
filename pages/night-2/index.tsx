@@ -165,7 +165,7 @@ export default function NightIndex() {
         </ul>
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>경기·인천</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
-          <li><a href="/booking/guri-hobak-night/">구리호박나이트</a></li>
+          <li><a href="/booking/guri-hobak-night-4/">구리호박나이트</a></li>
           <li><a href="/booking/bucheon-gorae-night/">부천고래나이트</a></li>
           <li><a href="/club/suwon-chancedome-night-2/">수원찬스돔나이트</a></li>
           <li><a href="/booking/suwon-chancedome-night/">수원찬스돔나이트</a></li>
@@ -188,14 +188,14 @@ export default function NightIndex() {
           <li><a href="/club/daejeon-seven-night-1/">대전세븐나이트</a></li>
           <li><a href="/booking/daejeon-seven-night/">대전세븐나이트</a></li>
           <li><a href="/club/daejeon-one-night-1/">대전원나이트</a></li>
-          <li><a href="/booking/daejeon-one-night/">대전원나이트</a></li>
+          <li><a href="/booking/daejeon-one-night-4/">대전원나이트</a></li>
           <li><a href="/booking/cheonan-stardome-night/">천안스타돔나이트</a></li>
           <li><a href="/booking/cheonan-korea-night/">천안코리아나이트</a></li>
           <li><a href="/booking/cheongju-hobak-night/">청주호박나이트</a></li>
         </ul>
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>영남</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
-          <li><a href="/booking/gumi-hobak-night/">구미호박나이트</a></li>
+          <li><a href="/booking/gumi-hobak-night-4/">구미호박나이트</a></li>
           <li><a href="/booking/daegu-hobak-night/">대구호박나이트</a></li>
           <li><a href="/club/busan-asiad-night/">부산아시아드나이트</a></li>
           <li><a href="/booking/busan-asiad-night/">부산아시아드나이트</a></li>

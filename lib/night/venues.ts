@@ -369,7 +369,7 @@ export const VENUES: Venue[] = [
       "30대와 40대 비중이 높아 밤의 진행 속도가 완만합니다.",
       "울산 남구 정동로 75, 문의는 춘자 010-5653-0069.",
     ],
-    related: ["busan-asiad-night", "changwon-lululala-night", "daejeon-one-night"],
+    related: ["busan-asiad-night", "changwon-lululala-night", "daejeon-one-night-4"],
     og: { bg: "#06304a", bg2: "#0b0410", fg: "#ffffff", accent: "#33c4ff" },
   },
 
@@ -486,7 +486,7 @@ export const VENUES: Venue[] = [
 
   // ───────────────────────── B그룹 (광고주 없음) ─────────────────────────
   {
-    slug: "daejeon-one-night",
+    slug: "daejeon-one-night-4",
     name: "대전원나이트",
     group: "B",
     region: "대전 동구 용전동",
@@ -1004,7 +1004,7 @@ export const VENUES: Venue[] = [
       "정점 구간은 자정 전후. 그전에 들어가 있어야 합니다.",
       "경기 수원시 권선구 권선로 673, 권선동 중심 축입니다.",
     ],
-    related: ["ansan-hit-3", "ilsan-shampoo-3", "daejeon-one-night"],
+    related: ["ansan-hit-3", "ilsan-shampoo-3", "daejeon-one-night-4"],
     og: { bg: "#14351a", bg2: "#0b0410", fg: "#ffffff", accent: "#7bed6f" },
   },
 
@@ -1177,7 +1177,7 @@ export const VENUES: Venue[] = [
       "메인 홀과 별실이 나뉘어 밤을 나눠 쓸 수 있습니다.",
       "1994년 개업 이후 대전 중구 유천동 같은 자리입니다.",
     ],
-    related: ["daejeon-one-night", "changwon-lululala-night", "busan-asiad-night"],
+    related: ["daejeon-one-night-4", "changwon-lululala-night", "busan-asiad-night"],
     og: { bg: "#101f4d", bg2: "#0b0410", fg: "#ffffff", accent: "#5aa9ff" },
   },
 
