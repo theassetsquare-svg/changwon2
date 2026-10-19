@@ -16,9 +16,9 @@ import {
 import { bookingOgPath } from "@/lib/booking/seo";
 import { useSalt, 소금입히기 } from "@/lib/salt";
 
-const TITLE = "전국 나이트 부킹 안내 40 — 지역별 목록";
+const TITLE = "전국 나이트 40곳 부킹 흐름, 서울부터 제주까지 목록";
 const DESCRIPTION =
-  "부킹이 실제로 어떤 순서로 도는지, 입장부터 자리·첫 연결·거절 매너까지 전국 40개 나이트 업소를 기준으로 정리한 안내 목록입니다. 확인되지 않은 표기합니다.";
+  "입장부터 자리, 첫 연결, 거절 매너까지 부킹이 도는 순서를 전국 40개 나이트 기준으로 서울·경기·인천·충청·영남·호남·제주로 나눴습니다.";
 
 const itemListSchema = {
   "@context": "https://schema.org",

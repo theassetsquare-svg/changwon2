@@ -22,7 +22,7 @@ const 확인일 = "2026-08-31";
 const URL = "https://p.nolcool.com/night/ulsan-champion-night/";
 const OG = "https://p.nolcool.com/og/night-ulsan-champion-night-og.png";
 
-const TITLE = "울산챔피언나이트 전화부터 자리까지 흐름 안내";
+const TITLE = "울산챔피언나이트 전화로 말할 세 가지와 도착 뒤 순서";
 const DESC =
   "울산챔피언나이트 예약 전화에서 자리 안내까지, 처음 방문 순서를 한 번에 정리했습니다. " +
   "인원·시간대만 정하면 준비 끝. 문의 010-5653-0069";

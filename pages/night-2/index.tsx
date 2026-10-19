@@ -8,9 +8,9 @@ import { VENUES, nightPath, NIGHT_BASE, AD_KAKAO } from "@/lib/night/venues";
 import { ogImagePath } from "@/lib/night/seo";
 import { useSalt, 소금입히기 } from "@/lib/salt";
 
-const TITLE = "전국 나이트 업소 안내 목록";
+const TITLE = "전국 나이트 업소 목록, 지역별 위치와 출입 연령 표시";
 const DESCRIPTION =
-  "서울·경기·충청·영남 13개 나이트 업소의 위치와 이용 안내를 지역별로 정리한 목록입니다. 출입 연령 기준이 따로 있는 업소는 목록에서 바로 확인할 수 있습니다.";
+  "지역별로 묶은 나이트 업소 목록입니다. 서울, 경기·인천, 충청, 영남, 호남·제주 순이며 확인 안 된 주소는 빼고 출입 연령 기준을 표시했습니다.";
 
 const itemListSchema = {
   "@context": "https://schema.org",
