@@ -1,6 +1,6 @@
 {
   "generated": "static",
-  "count": 54,
+  "count": 52,
   "items": [
     {
       "file": "/og/booking-sillim-grandprix-3-guide-og.png",
@@ -172,21 +172,6 @@
         "010-2221-1937"
       ],
       "bytes": 42712,
-      "width": 1200,
-      "height": 1200
-    },
-    {
-      "file": "/og/booking-ulsan-champion-night-og.png",
-      "page": "https://i.nolcool.com/booking/night/ulsan-champion-night/",
-      "venue": "울산챔피언나이트",
-      "text": [
-        "BOOKING",
-        "울산챔피언나이트",
-        "울산 남구 삼산동",
-        "춘자",
-        "010-5653-0069"
-      ],
-      "bytes": 43560,
       "width": 1200,
       "height": 1200
     },
@@ -580,20 +565,6 @@
         "카카오톡 besta12"
       ],
       "bytes": 77568,
-      "width": 1200,
-      "height": 1200
-    },
-    {
-      "file": "/og/ulsan-champion-night-og.png",
-      "page": "https://i.nolcool.com/night/ulsan-champion-night-9/",
-      "venue": "울산챔피언나이트",
-      "text": [
-        "울산챔피언나이트",
-        "울산 남구 삼산동",
-        "춘자",
-        "010-5653-0069"
-      ],
-      "bytes": 83443,
       "width": 1200,
       "height": 1200
     },

@@ -6,7 +6,7 @@
  *
  * 사실은 data/shops/ulsan-champion.json 의 verified:true 값만 쓴다.
  *   주소     울산 남구 정동로 75 (삼산동 1559-17) 1층   (verified)
- *   전화     010-5653-0069 · 닉네임 춘자                (verified, 광고주 등록 정보)
+ *   전화     (2026-10-25 광고 해지 · 연락처 싣지 않음 → 광고문의 카톡 besta12)
  *   영업시간 __TODO__ → 확인 못 했으므로 그 문장을 넣지 않는다
  *   주차     확인 못 했으므로 그 문장을 넣지 않는다
  */
@@ -15,17 +15,15 @@ import Head from "next/head";
 import { useSalt, 소금입히기, 소금CSS } from "@/lib/salt";
 
 const 이름 = "울산챔피언나이트";
-const 닉 = "춘자";
-const 번호 = "010-5653-0069";
 const 주소 = "울산 남구 정동로 75 (삼산동 1559-17) 1층";
 const 확인일 = "2026-08-31";
 const URL = "https://i.nolcool.com/night/ulsan-champion-night-9/";
-const OG = "https://i.nolcool.com/og/night-ulsan-champion-night-og.png";
+const OG = "https://i.nolcool.com/og/t-i-night-ulsan-champion-night-9-5336747a.png";
 
 const TITLE = "울산챔피언나이트 전화부터 자리까지 흐름 안내";
 const DESC =
   "울산챔피언나이트 예약 전화에서 자리 안내까지, 처음 방문 순서를 한 번에 정리했습니다. " +
-  "인원·시간대만 정하면 준비 끝. 문의 010-5653-0069";
+  "인원·시간대만 정하면 준비 끝. 문의 광고문의 카카오톡 besta12";
 
 const FAQ = [
   {
@@ -48,7 +46,6 @@ const localBusiness = {
   name: 이름,
   url: URL,
   image: OG,
-  telephone: 번호,
   address: {
     "@type": "PostalAddress",
     addressCountry: "KR",
@@ -218,6 +215,7 @@ export default function UlsanChampionNightPage() {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="1200" />
+        <meta property="og:image:alt" content={그림알트} />
         <meta name="twitter:card" content="summary_large_image" />
         <script
           type="application/ld+json"
@@ -248,19 +246,18 @@ export default function UlsanChampionNightPage() {
       <style dangerouslySetInnerHTML={{ __html: 소금CSS(UCN_CSS, s) }} />
 
       <main className="ucn-wrap">
-        <span className="ucn-adlabel">광고</span>
-        <p className="ucn-rel">이 쪽은 업소 담당자의 광고가 실린 페이지입니다 · 업소 제공 정보 · 확인일 {확인일}</p>
+        <p className="ucn-rel">업소와 지금은 광고·제휴 관계가 없습니다(광고 종료 2026-10-25). 아래 정보는 광고 당시 업소가 알려 준 것입니다 · 확인일 {확인일}</p>
 
         <h1>{TITLE}</h1>
       {/* 본문 그림 — og:image 와 같은 파일 (2026-08-31). 네이버는 본문에 그림이 있는 문서를 더 잘 집어 간다. 첫 그림이라 lazy 를 붙이지 않는다. */}
       <figure style={{ margin: "0 0 18px" }}>
-        <img src={표 ? 표.file : "/og/night-ulsan-champion-night-og.png"} alt={그림알트} width={1200} height={1200} decoding="async"
+        <img src={표 ? 표.file : "/og/t-i-night-ulsan-champion-night-9-5336747a.png"} alt={그림알트} width={1200} height={1200} decoding="async"
              style={{ width: "100%", maxWidth: 420, height: "auto", borderRadius: 12, display: "block" }} />
       </figure>
 
         <div className="ucn-answer">
-          {이름} 예약은 전화 한 통이면 끝납니다. 인원과 방문 시간대만 정해서 말하면, 도착했을 때
-          자리 안내까지 바로 이어집니다. 예약·문의: {닉} {번호}
+          {이름} 예약은 문의 한 번이면 끝납니다. 인원과 방문 시간대만 정해서 말하면, 도착했을 때
+          자리 안내까지 바로 이어집니다. 예약·문의: 광고문의 카카오톡 besta12
         </div>
 
         <table className="ucn-facts">
@@ -276,7 +273,7 @@ export default function UlsanChampionNightPage() {
             <tr>
               <th>예약·문의</th>
               <td>
-                {번호} ({닉})
+                광고문의 카카오톡 besta12
               </td>
             </tr>
             <tr>
@@ -299,7 +296,7 @@ export default function UlsanChampionNightPage() {
         </p>
         <p>
           세 가지가 아직 정해지지 않았어도 괜찮습니다. 통화하면서 정해도 되고, 변경이 생기면 같은
-          번호로 다시 알려 주면 됩니다.
+          창구로 다시 알려 주면 됩니다.
         </p>
 
         <h2>도착부터 자리까지</h2>
@@ -372,8 +369,8 @@ export default function UlsanChampionNightPage() {
         </dl>
 
         <div className="ucn-sum">
-          한 줄 정리 — 방문 준비는 인원·시간대·선호 자리 세 가지를 정해 담당 {닉} 에게
-          전화하는 것으로 끝납니다. 번호는 위 표에 있습니다.
+          한 줄 정리 — 방문 준비는 인원·시간대·선호 자리 세 가지를 정해 광고문의 카카오톡 besta12 로
+          연락하는 것으로 끝납니다. 연락처는 위 표에 있습니다.
         </div>
 
         <div className="ucn-foot">
@@ -387,9 +384,7 @@ export default function UlsanChampionNightPage() {
       </main>
 
       <div className="ucn-callbar" role="complementary" aria-label="전화 연결">
-        <a href={`tel:${번호.replace(/\D/g, "")}`}>
-          📞 {이름} 예약 · {닉} {번호}
-        </a>
+        💬 광고 문의 받습니다 · 카카오톡 besta12
       </div>
     </>
   , s);

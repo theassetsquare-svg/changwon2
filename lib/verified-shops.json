@@ -24,10 +24,8 @@
   "부평키스나이트": {
    "id": "bupyeong-kiss",
    "name": "부평키스나이트",
-   "isAdvertiser": true,
-   "address": "인천광역시 부평구 시장로 47, 3층(부평동)",
-   "telephone": "010-8497-3072",
-   "nickname": "오빠"
+   "isAdvertiser": false,
+   "address": "인천광역시 부평구 시장로 47, 3층(부평동)"
   },
   "부산아시아드나이트": {
    "id": "busan-asiad",
@@ -254,10 +252,8 @@
   "울산챔피언나이트": {
    "id": "ulsan-champion",
    "name": "울산챔피언나이트",
-   "isAdvertiser": true,
-   "address": "울산 남구 정동로 75 (삼산동 1559-17) 1층",
-   "telephone": "010-5653-0069",
-   "nickname": "춘자"
+   "isAdvertiser": false,
+   "address": "울산 남구 정동로 75 (삼산동 1559-17) 1층"
   },
   "울산뉴월드나이트": {
    "id": "ulsan-newworld",
