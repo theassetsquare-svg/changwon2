@@ -161,7 +161,7 @@ export default function NightIndex() {
           <li><a href="/booking/sillim-grandprix-night-4/">신림그랑프리나이트</a></li>
           <li><a href="/booking/yeongdeungpo-terminal-night/">영등포터미널나이트</a></li>
           <li><a href="/club/cheongdam-night-1/">청담나이트</a></li>
-          <li><a href="/booking/cheongdam-night/">청담나이트</a></li>
+          <li><a href="/booking/cheongdam-night-5/">청담나이트</a></li>
         </ul>
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>경기·인천</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
