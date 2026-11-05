@@ -186,9 +186,9 @@ export default function NightIndex() {
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>충청</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
           <li><a href="/club/daejeon-seven-night-1/">대전세븐나이트</a></li>
-          <li><a href="/booking/daejeon-seven-night/">대전세븐나이트</a></li>
+          <li><a href="/booking/daejeon-seven-night-4/">대전세븐나이트</a></li>
           <li><a href="/club/daejeon-one-night-1/">대전원나이트</a></li>
-          <li><a href="/booking/daejeon-one-night/">대전원나이트</a></li>
+          <li><a href="/booking/daejeon-one-night-2/">대전원나이트</a></li>
           <li><a href="/booking/cheonan-stardome-night/">천안스타돔나이트</a></li>
           <li><a href="/booking/cheonan-korea-night/">천안코리아나이트</a></li>
           <li><a href="/booking/cheongju-hobak-night/">청주호박나이트</a></li>
