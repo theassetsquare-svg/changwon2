@@ -154,9 +154,9 @@ export default function NightIndex() {
           <li><a href="/booking/doksan-gukbingwan-night/">독산동국빈관나이트</a></li>
           <li><a href="/club/sangbong-hangukgwan-night/">상봉동한국관나이트</a></li>
           <li><a href="/club/sangbong-hangukgwan-night/">상봉동한국관나이트</a></li>
-          <li><a href="/booking/seongnam-shampoo-night/">성남샴푸나이트</a></li>
+          <li><a href="/booking/seongnam-shampoo-night-2/">성남샴푸나이트</a></li>
           <li><a href="/club/suyu-shampoo-night-1/">수유샴푸나이트</a></li>
-          <li><a href="/booking/suyu-shampoo-night/">수유샴푸나이트</a></li>
+          <li><a href="/booking/suyu-shampoo-night-2/">수유샴푸나이트</a></li>
           <li><a href="/club/sillim-grandprix-night-1/">신림그랑프리나이트</a></li>
           <li><a href="/booking/sillim-grandprix-night-4/">신림그랑프리나이트</a></li>
           <li><a href="/booking/yeongdeungpo-terminal-night/">영등포터미널나이트</a></li>
@@ -168,11 +168,11 @@ export default function NightIndex() {
           <li><a href="/booking/guri-hobak-night-2/">구리호박나이트</a></li>
           <li><a href="/booking/bucheon-gorae-night-2/">부천고래나이트</a></li>
           <li><a href="/club/suwon-chancedome-night-1/">수원찬스돔나이트</a></li>
-          <li><a href="/booking/suwon-chancedome-night/">수원찬스돔나이트</a></li>
-          <li><a href="/booking/suwon-korea-night/">수원코리아나이트</a></li>
+          <li><a href="/booking/suwon-chancedome-night-2/">수원찬스돔나이트</a></li>
+          <li><a href="/booking/suwon-korea-night-2/">수원코리아나이트</a></li>
           <li><a href="/club/ansan-hit-night/">안산히트나이트</a></li>
           <li><a href="/booking/ansan-hit-night-2/">안산히트나이트</a></li>
-          <li><a href="/booking/osan-hobak-night/">오산호박나이트</a></li>
+          <li><a href="/booking/osan-hobak-night-2/">오산호박나이트</a></li>
           <li><a href="/booking/osan-hobak-night-1/">오산호박나이트</a></li>
           <li><a href="/booking/uijeongbu-baekakgwan-night/">의정부백악관나이트</a></li>
           <li><a href="/booking/uijeongbu-hangukgwan-night/">의정부한국관나이트</a></li>
@@ -180,8 +180,8 @@ export default function NightIndex() {
           <li><a href="/booking/incheon-arabian-night-2/">인천아라비안나이트</a></li>
           <li><a href="/club/ilsan-shampoo-night-1/">일산샴푸나이트</a></li>
           <li><a href="/booking/ilsan-shampoo-night-2/">일산샴푸나이트</a></li>
-          <li><a href="/booking/paju-skydome-night/">파주야당스카이돔나이트</a></li>
-          <li><a href="/booking/pyeongtaek-hobak-night/">평택호박나이트</a></li>
+          <li><a href="/booking/paju-skydome-night-2/">파주야당스카이돔나이트</a></li>
+          <li><a href="/booking/pyeongtaek-hobak-night-2/">평택호박나이트</a></li>
         </ul>
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>충청</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
