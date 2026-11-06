@@ -170,7 +170,7 @@ export default function NightIndex() {
           <li><a href="/club/suwon-chancedome-night-1/">수원찬스돔나이트</a></li>
           <li><a href="/booking/suwon-chancedome-night-2/">수원찬스돔나이트</a></li>
           <li><a href="/booking/suwon-korea-night-2/">수원코리아나이트</a></li>
-          <li><a href="/club/ansan-hit-night/">안산히트나이트</a></li>
+          <li><a href="/club/ansan-hit-night-2/">안산히트나이트</a></li>
           <li><a href="/booking/ansan-hit-night-2/">안산히트나이트</a></li>
           <li><a href="/booking/osan-hobak-night-2/">오산호박나이트</a></li>
           <li><a href="/booking/osan-hobak-night-1/">오산호박나이트</a></li>
@@ -213,7 +213,7 @@ export default function NightIndex() {
         </ul>
         <h3 style={{ fontSize: ".95rem", margin: "16px 0 8px", opacity: .75 }}>그 밖의 지역</h3>
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
-          <li><a href="/club/bulgwang-hobak-night/">불광동호박나이트</a></li>
+          <li><a href="/club/bulgwang-hobak-night-2/">불광동호박나이트</a></li>
           <li><a href="/booking/bulgwang-hobak-night-4/">불광동호박나이트</a></li>
         </ul>
       </nav>
