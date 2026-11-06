@@ -197,7 +197,7 @@ export default function NightIndex() {
         <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(190px,1fr))", gap: "8px 16px", fontSize: ".92rem" }}>
           <li><a href="/booking/gumi-hobak-night-2/">구미호박나이트</a></li>
           <li><a href="/booking/daegu-hobak-night/">대구호박나이트</a></li>
-          <li><a href="/club/busan-asiad-night/">부산아시아드나이트</a></li>
+          <li><a href="/club/busan-asiad-night-2/">부산아시아드나이트</a></li>
           <li><a href="/booking/busan-asiad-night-4/">부산아시아드나이트</a></li>
           <li><a href="/booking/ulsan-newworld-night/">울산뉴월드나이트</a></li>
           <li><a href="/night/ulsan-champion-night/">울산챔피언나이트</a></li>
