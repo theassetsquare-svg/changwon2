@@ -4,14 +4,14 @@
 const HOST = process.env.HOST || "https://i.nolcool.com";
 const PATHS = [
   "/",
-  "/location-1/",
+  "/location-3/",
   "/booking-2/",
   "/rooms/",
   "/hours/",
-  "/parking-1/",
+  "/parking-3/",
   "/access/",
   "/vip/",
-  "/reviews-1/",
+  "/reviews-3/",
   "/faq/",
   "/robots.txt",
   "/sitemap.xml",

@@ -291,7 +291,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "ulsan-champion-night-1",
+    slug: "ulsan-champion-night-3",
     name: "울산챔피언나이트",
     group: "B",
     region: "울산 남구 삼산동",
@@ -657,7 +657,7 @@ export const VENUES: Venue[] = [
   },
 
   {
-    slug: "sangbong-hangukgwan-night-1",
+    slug: "sangbong-hangukgwan-night-3",
     name: "상봉동한국관나이트",
     group: "B",
     region: "서울 중랑구 상봉동",
@@ -1286,15 +1286,15 @@ export const NIGHT_KEEP_OLD = new Set<string>(["busan-asiad-night", "sangbong-ha
 export const NIGHT_URL_MAP: Record<string, string> = {
   "bulgwang-hobak-night": "bulgwang-hobak-night",
   "changwon-lululala-night": "changwon-lululala-night",
-  "ulsan-champion-night": "ulsan-champion-night-1",
+  "ulsan-champion-night": "ulsan-champion-night-3",
   "cheongdam-3": "cheongdam-night-1",
   "daejeon-one-night": "daejeon-one-night-1",
   "sillim-grandprix-3": "sillim-grandprix-night-1",
-  "suyu-shampoo-3": "suyu-shampoo-night-2",
-  "suwon-chancedome-3": "suwon-chancedome-night-2",
+  "suyu-shampoo-3": "suyu-shampoo-night-4",
+  "suwon-chancedome-3": "suwon-chancedome-night-4",
   "ansan-hit-3": "ansan-hit-night",
-  "daejeon-seven-3": "daejeon-seven-night-1",
-  "ilsan-shampoo-3": "ilsan-shampoo-night-2",
+  "daejeon-seven-3": "daejeon-seven-night-4",
+  "ilsan-shampoo-3": "ilsan-shampoo-night-4",
 };
 export const NIGHT_SLUG_BY_URL: Record<string, string> = Object.fromEntries(
   Object.entries(NIGHT_URL_MAP).map(([slug, url]) => [url, slug])

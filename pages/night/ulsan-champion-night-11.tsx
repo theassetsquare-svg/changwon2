@@ -17,7 +17,7 @@ import { useSalt, 소금입히기, 소금CSS } from "@/lib/salt";
 const 이름 = "울산챔피언나이트";
 const 주소 = "울산 남구 정동로 75 (삼산동 1559-17) 1층";
 const 확인일 = "2026-08-31";
-const URL = "https://i.nolcool.com/night/ulsan-champion-night-9/";
+const URL = "https://i.nolcool.com/night/ulsan-champion-night-11/";
 const OG = "https://i.nolcool.com/og/t-i-night-ulsan-champion-night-9-5336747a.png";
 
 const TITLE = "울산챔피언나이트 전화부터 자리까지 흐름 안내";

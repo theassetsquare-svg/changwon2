@@ -445,7 +445,7 @@ export const 변형쪽들: Record<string, 변형쪽> = {
       "공개 자료에서 확인한 것만 담았다"
     ]
   },
-  "/reviews-1": {
+  "/reviews-3": {
     "slug": "changwon-lululala-night",
     "각도": "귀가",
     "title": "창원룰루랄라나이트 돌아갈 길까지 정리",
@@ -673,7 +673,7 @@ export const 변형쪽들: Record<string, 변형쪽> = {
       "후기와 평점은 싣지 않습니다."
     ]
   },
-  "/location-1": {
+  "/location-3": {
     "slug": "sangbong-hangukgwan-3",
     "각도": "오시는길",
     "title": "상봉동한국관나이트 위치 확인과 도착 순서",
@@ -802,7 +802,7 @@ export const 변형쪽들: Record<string, 변형쪽> = {
       "확인되지 않은 항목은 비워 뒀어요."
     ]
   },
-  "/parking-1": {
+  "/parking-3": {
     "slug": "suyu-shampoo-3",
     "각도": "주차",
     "title": "수유샴푸나이트 차를 두고 갈지 정하는 기준",
